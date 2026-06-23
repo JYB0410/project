@@ -36,6 +36,51 @@ if (/customDomain:\s*"/.test(configText)) {
 fs.writeFileSync(configPath, configText);
 fs.writeFileSync(path.join(ROOT, "CNAME"), `${hostname}\n`);
 
+const OLD_URL_PATTERNS = [
+  /https:\/\/hopet\.github\.io\/pet-hamkke-guide/g,
+  /https:\/\/JYB0410\.github\.io\/project/g
+];
+
+function patchStaticHtml() {
+  const staticFiles = [
+    "index.html",
+    "about/index.html",
+    "author/index.html",
+    "contact/index.html",
+    "privacy/index.html",
+    "terms/index.html",
+    "disclaimer/index.html",
+    "categories/index.html",
+    "columns/index.html",
+    "sitemap/index.html"
+  ];
+  let count = 0;
+  for (const rel of staticFiles) {
+    const p = path.join(ROOT, rel);
+    if (!fs.existsSync(p)) continue;
+    let html = fs.readFileSync(p, "utf8");
+    const before = html;
+    for (const re of OLD_URL_PATTERNS) html = html.replace(re, siteUrl);
+    if (rel === "index.html") {
+      html = html.replace(
+        /<meta property="og:url" content="[^"]*">/,
+        `<meta property="og:url" content="${siteUrl}/">`
+      );
+      html = html.replace(
+        /<script type="application\/ld\+json">[\s\S]*?<\/script>/,
+        `<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"펫함께 가이드","description":"반려동물과 함께하는 일상을 차분하게 정리하는 정보 사이트","url":"${siteUrl}/","publisher":{"@type":"Organization","name":"펫함께 가이드","url":"${siteUrl}/"}}</script>`
+      );
+    }
+    if (html !== before) {
+      fs.writeFileSync(p, html);
+      count++;
+    }
+  }
+  return count;
+}
+
+patchStaticHtml();
+
 const build = spawnSync("node", ["scripts/build-site.mjs"], {
   cwd: ROOT,
   encoding: "utf8",

@@ -21,7 +21,7 @@ const categories = loadJsExport("data/categories.js", "CATEGORIES_DATA");
 let posts = loadJsExport("data/posts.js", "POSTS_DATA");
 const columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
 
-const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://JYB0410.github.io/project").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://bcstarts.org").replace(/\/$/, "");
 
 const BOILERPLATE_PATTERNS = [
   /<p>정지석이 상담할 때 자주 확인하는 질문은[\s\S]*?<\/p>/g,

@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://JYB0410.github.io/project/sitemap.xml
+Sitemap: https://bcstarts.org/sitemap.xml
 
 Disallow: /admin/
