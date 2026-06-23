@@ -22,6 +22,7 @@ window.SITE_CONFIG = {
   adsensePublisherId: "",
   termsLastUpdated: "2026-06-05",
   disclaimerLastUpdated: "2026-06-03",
+  customDomain: "",
   siteUrl: "https://JYB0410.github.io/project",
   privacyLastUpdated: "2026-06-11",
   editorialPrinciples: [

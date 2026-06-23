@@ -31,8 +31,7 @@ jobs:
 
       - name: Build site
         run: node scripts/build-site.mjs
-        env:
-          SITE_URL: https://JYB0410.github.io/project
+        # siteUrl은 data/site.config.js 기준 (커스텀 도메인 변경 시 set-custom-domain.mjs 사용)
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
