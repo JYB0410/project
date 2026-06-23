@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="food-storage-and-freshness-signs-t">
+  <title id="food-storage-and-freshness-signs-t">food-storage-and-freshness-signs</title>
+  <defs>
+    <linearGradient id="food-storage-and-freshness-signs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(55, 42%, 97%)"/><stop offset="100%" stop-color="hsl(55, 55%, 92%)"/>
+    </linearGradient>
+    <filter id="food-storage-and-freshness-signs-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#food-storage-and-freshness-signs-bg)"/>
+  
+  <ellipse cx="480" cy="420" rx="200" ry="35" fill="hsl(55, 12%, 58%)" opacity="0.2"/>
+  <path d="M300 420c0-100 60-180 180-180s180 80 180 180" fill="#ffffff" stroke="hsl(55, 68%, 48%)" stroke-width="3" filter="url(#food-storage-and-freshness-signs-sh)"/>
+  <ellipse cx="480" cy="300" rx="120" ry="35" fill="hsl(55, 68%, 48%)" opacity="0.45"/>
+  <ellipse cx="480" cy="290" rx="90" ry="25" fill="hsl(55, 68%, 48%)" opacity="0.7"/>
+  <rect x="620" y="200" width="100" height="140" rx="12" fill="#ffffff" filter="url(#food-storage-and-freshness-signs-sh)"/>
+  <rect x="640" y="230" width="60" height="8" rx="4" fill="hsl(55, 60%, 88%)"/>
+  <text x="670" y="290" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="28" font-weight="600" fill="hsl(55, 68%, 48%)">g</text>
+
+</svg>

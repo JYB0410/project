@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="indoor-play-ideas-types-t">
+  <title id="indoor-play-ideas-types-t">indoor-play-ideas-types</title>
+  <defs>
+    <linearGradient id="indoor-play-ideas-types-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(98, 42%, 97%)"/><stop offset="100%" stop-color="hsl(98, 55%, 92%)"/>
+    </linearGradient>
+    <filter id="indoor-play-ideas-types-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#indoor-play-ideas-types-bg)"/>
+  
+  <circle cx="300" cy="360" r="40" fill="hsl(98, 68%, 48%)" opacity="0.8"/>
+  <rect x="420" y="320" width="80" height="80" rx="12" fill="#ffffff" filter="url(#indoor-play-ideas-types-sh)" transform="rotate(15 460 360)"/>
+  <ellipse cx="580" cy="380" rx="55" ry="35" fill="hsl(98, 60%, 88%)"/>
+  <path d="M650 300 Q700 250 750 300 Q700 350 650 300" fill="hsl(98, 68%, 48%)" opacity="0.4"/>
+  <circle cx="480" cy="220" r="55" fill="hsl(98, 60%, 88%)"/>
+  <circle cx="460" cy="210" r="8" fill="hsl(98, 68%, 48%)"/><circle cx="500" cy="210" r="8" fill="hsl(98, 68%, 48%)"/>
+  <path d="M470 235q20 12 40 0" fill="none" stroke="hsl(98, 68%, 48%)" stroke-width="3" stroke-linecap="round"/>
+
+</svg>

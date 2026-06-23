@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="paw-care-after-walk-when-t">
+  <title id="paw-care-after-walk-when-t">paw-care-after-walk-when</title>
+  <defs>
+    <linearGradient id="paw-care-after-walk-when-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(185, 42%, 97%)"/><stop offset="100%" stop-color="hsl(185, 55%, 92%)"/>
+    </linearGradient>
+    <filter id="paw-care-after-walk-when-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#paw-care-after-walk-when-bg)"/>
+  
+  <path d="M140 400 Q280 280 420 340 T700 220" fill="none" stroke="hsl(185, 68%, 48%)" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+  <circle cx="200" cy="360" r="16" fill="hsl(185, 60%, 88%)"/><circle cx="350" cy="320" r="12" fill="hsl(185, 60%, 88%)"/><circle cx="550" cy="280" r="16" fill="hsl(185, 60%, 88%)"/>
+  <ellipse cx="320" cy="360" rx="50" ry="35" fill="#ffffff" filter="url(#paw-care-after-walk-when-sh)"/>
+  <circle cx="300" cy="345" r="22" fill="hsl(185, 68%, 48%)"/>
+  <circle cx="292" cy="340" r="4" fill="#ffffff"/><circle cx="308" cy="340" r="4" fill="#ffffff"/>
+  <ellipse cx="580" cy="300" rx="40" ry="28" fill="hsl(185, 68%, 48%)" opacity="0.25"/>
+  <rect x="680" y="180" width="8" height="120" rx="4" fill="hsl(185, 68%, 48%)" opacity="0.5"/>
+  <circle cx="684" cy="170" r="35" fill="hsl(185, 60%, 88%)"/>
+
+</svg>

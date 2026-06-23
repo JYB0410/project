@@ -1,0 +1,12 @@
+run = "node server.js"
+entrypoint = "index.html"
+hidden = [".git"]
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm start"]
+deploymentTarget = "static"
+publicDir = "."

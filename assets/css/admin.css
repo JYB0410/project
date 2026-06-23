@@ -1,0 +1,156 @@
+:root {
+  --admin-sidebar: #1d1d1f;
+  --admin-sidebar-text: #f5f5f7;
+  --admin-accent: #0071e3;
+  --admin-bg: #f5f5f7;
+  --admin-border: #d2d2d7;
+  --admin-radius: 12px;
+}
+
+body.admin-body {
+  margin: 0;
+  background: var(--admin-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.022em;
+}
+.admin-login-wrap {
+  min-height: 100vh; display: grid; place-items: center; padding: 2rem;
+  background: var(--admin-bg);
+}
+.admin-login-box {
+  background: #fff; padding: 2.5rem; border-radius: var(--admin-radius);
+  width: min(100%, 400px); box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.admin-login-box h1 {
+  margin: 0 0 0.5rem; font-size: 1.5rem;
+  font-weight: 600; letter-spacing: -0.02em; color: #1d1d1f;
+}
+.admin-login-box .notice { font-size: 0.85rem; color: #86868b; margin-bottom: 1.5rem; line-height: 1.5; }
+.login-error {
+  color: #ff3b30; background: rgba(255, 59, 48, 0.08);
+  border: none; padding: 0.75rem 1rem; border-radius: var(--admin-radius);
+  font-size: 0.88rem; margin-bottom: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 59, 48, 0.2);
+}
+.admin-login-box label { display: grid; gap: 0.4rem; font-weight: 500; font-size: 0.85rem; color: #86868b; }
+.admin-login-box input {
+  padding: 0.75rem 1rem; border: 1px solid var(--admin-border);
+  border-radius: var(--admin-radius); margin-bottom: 1.25rem; font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.admin-login-box input:focus {
+  outline: none; border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+}
+.admin-btn {
+  background: var(--admin-accent); color: #fff; border: none;
+  padding: 0.7rem 1.25rem; border-radius: 980px; cursor: pointer;
+  font-weight: 400; font-size: 0.94rem; letter-spacing: -0.01em;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.admin-btn:hover { background: #0077ed; }
+.admin-btn:active { transform: scale(0.98); }
+.admin-btn.secondary {
+  background: transparent; color: var(--admin-accent);
+  box-shadow: inset 0 0 0 1px var(--admin-accent);
+}
+.admin-btn.secondary:hover { background: rgba(0, 113, 227, 0.06); }
+.admin-btn.danger { background: #ff3b30; }
+.admin-btn.danger:hover { background: #ff453a; }
+.admin-layout { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+.admin-sidebar {
+  background: var(--admin-sidebar); color: var(--admin-sidebar-text);
+  padding: 1.25rem 0;
+}
+.admin-sidebar .brand {
+  padding: 0 1.25rem 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 0.75rem; font-weight: 600; font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+.admin-sidebar .brand small {
+  display: block; font-weight: 400; color: #86868b;
+  font-size: 0.72rem; margin-top: 0.3rem;
+}
+.admin-menu { list-style: none; margin: 0; padding: 0; }
+.admin-menu a {
+  display: block; padding: 0.55rem 1.25rem; color: #a1a1a6;
+  text-decoration: none; font-size: 0.85rem;
+  transition: color 0.2s ease, background 0.2s ease;
+  border-radius: 0;
+}
+.admin-menu a:hover { color: #f5f5f7; }
+.admin-menu a.active { background: rgba(0, 113, 227, 0.15); color: #fff; }
+.admin-topbar {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0.85rem 1.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.admin-main { padding: 1.5rem; }
+.admin-notice {
+  background: rgba(255, 149, 0, 0.08); border: none;
+  border-radius: var(--admin-radius); padding: 0.85rem 1.15rem;
+  margin-bottom: 1.25rem; font-size: 0.88rem; color: #1d1d1f;
+  box-shadow: inset 0 0 0 1px rgba(255, 149, 0, 0.2);
+}
+.admin-cards {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem; margin-bottom: 1.5rem;
+}
+.admin-card {
+  background: #fff; border: none; border-radius: var(--admin-radius);
+  padding: 1.25rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.admin-card strong {
+  display: block; font-size: 1.75rem; color: var(--admin-accent);
+  font-weight: 600; letter-spacing: -0.02em;
+}
+.admin-card span { font-size: 0.82rem; color: #86868b; }
+.admin-panel {
+  background: #fff; border: none; border-radius: var(--admin-radius);
+  padding: 1.5rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.admin-panel h2 {
+  margin: 0 0 1.25rem; font-size: 1.15rem;
+  font-weight: 600; letter-spacing: -0.02em; color: #1d1d1f;
+}
+.admin-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.admin-table th, .admin-table td {
+  border-bottom: 1px solid #f0f0f0; padding: 0.75rem; text-align: left;
+}
+.admin-table th {
+  background: transparent; font-weight: 500; color: #86868b;
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em;
+}
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-form { display: grid; gap: 1.15rem; }
+.admin-form .row { display: grid; gap: 0.4rem; }
+.admin-form label { font-weight: 500; font-size: 0.85rem; color: #86868b; }
+.admin-form input, .admin-form textarea, .admin-form select {
+  padding: 0.7rem 1rem; border: 1px solid var(--admin-border);
+  border-radius: var(--admin-radius); font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.admin-form input:focus, .admin-form textarea:focus, .admin-form select:focus {
+  outline: none; border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+}
+.admin-form textarea { min-height: 120px; resize: vertical; }
+.admin-form .inline { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.admin-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.badge {
+  display: inline-block; padding: 0.2rem 0.55rem;
+  border-radius: 980px; font-size: 0.72rem; font-weight: 500;
+}
+.badge-published { background: rgba(52, 199, 89, 0.12); color: #248a3d; }
+.badge-draft { background: rgba(0, 0, 0, 0.05); color: #86868b; }
+.badge-featured { background: rgba(0, 113, 227, 0.1); color: #0071e3; }
+.hidden { display: none !important; }
+@media (max-width: 768px) {
+  .admin-layout { grid-template-columns: 1fr; }
+  .admin-sidebar { display: none; }
+  .admin-sidebar.mobile-open { display: block; }
+}

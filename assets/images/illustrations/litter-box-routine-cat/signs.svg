@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="litter-box-routine-cat-signs-t">
+  <title id="litter-box-routine-cat-signs-t">litter-box-routine-cat-signs</title>
+  <defs>
+    <linearGradient id="litter-box-routine-cat-signs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(42, 42%, 97%)"/><stop offset="100%" stop-color="hsl(42, 55%, 92%)"/>
+    </linearGradient>
+    <filter id="litter-box-routine-cat-signs-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#litter-box-routine-cat-signs-bg)"/>
+  
+  <rect x="300" y="200" width="360" height="200" rx="20" fill="#ffffff" filter="url(#litter-box-routine-cat-signs-sh)"/>
+  <rect x="320" y="280" width="320" height="80" rx="12" fill="hsl(42, 60%, 88%)"/>
+  <ellipse cx="380" cy="310" rx="18" ry="14" fill="hsl(42, 68%, 48%)" opacity="0.35"/><ellipse cx="435" cy="310" rx="18" ry="14" fill="hsl(42, 68%, 48%)" opacity="0.35"/><ellipse cx="490" cy="310" rx="18" ry="14" fill="hsl(42, 68%, 48%)" opacity="0.35"/><ellipse cx="545" cy="310" rx="18" ry="14" fill="hsl(42, 68%, 48%)" opacity="0.35"/><ellipse cx="600" cy="310" rx="18" ry="14" fill="hsl(42, 68%, 48%)" opacity="0.35"/>
+  <ellipse cx="720" cy="260" rx="50" ry="40" fill="hsl(42, 68%, 48%)" opacity="0.2"/>
+  <circle cx="700" cy="245" r="8" fill="hsl(42, 68%, 48%)"/><circle cx="730" cy="245" r="8" fill="hsl(42, 68%, 48%)"/>
+
+</svg>

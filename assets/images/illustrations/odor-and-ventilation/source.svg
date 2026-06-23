@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="odor-and-ventilation-source-t">
+  <title id="odor-and-ventilation-source-t">odor-and-ventilation-source</title>
+  <defs>
+    <linearGradient id="odor-and-ventilation-source-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(268, 42%, 97%)"/><stop offset="100%" stop-color="hsl(268, 55%, 92%)"/>
+    </linearGradient>
+    <filter id="odor-and-ventilation-source-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#odor-and-ventilation-source-bg)"/>
+  
+  <rect x="300" y="100" width="360" height="360" rx="16" fill="#ffffff" filter="url(#odor-and-ventilation-source-sh)"/>
+  <rect x="340" y="140" width="280" height="200" rx="8" fill="hsl(268, 60%, 88%)" opacity="0.5"/>
+  <line x1="340" y1="140" x2="340" y2="340" stroke="hsl(268, 68%, 48%)" stroke-width="3"/>
+  <path d="M700 180 Q760 200 820 180" fill="none" stroke="hsl(268, 68%, 48%)" stroke-width="3" stroke-linecap="round" opacity="0.9"/><path d="M700 230 Q760 250 820 230" fill="none" stroke="hsl(268, 68%, 48%)" stroke-width="3" stroke-linecap="round" opacity="0.7"/><path d="M700 280 Q760 300 820 280" fill="none" stroke="hsl(268, 68%, 48%)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <ellipse cx="480" cy="400" rx="120" ry="30" fill="hsl(268, 60%, 88%)"/>
+  <circle cx="440" cy="370" r="24" fill="hsl(268, 68%, 48%)"/>
+
+</svg>

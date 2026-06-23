@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="welcoming-guests-at-home-after-t">
+  <title id="welcoming-guests-at-home-after-t">welcoming-guests-at-home-after</title>
+  <defs>
+    <linearGradient id="welcoming-guests-at-home-after-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(212, 42%, 97%)"/><stop offset="100%" stop-color="hsl(212, 55%, 92%)"/>
+    </linearGradient>
+    <filter id="welcoming-guests-at-home-after-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#welcoming-guests-at-home-after-bg)"/>
+  
+  <rect x="380" y="100" width="200" height="360" rx="12" fill="#ffffff" filter="url(#welcoming-guests-at-home-after-sh)"/>
+  <circle cx="480" cy="280" r="28" fill="hsl(212, 60%, 88%)"/>
+  <rect x="420" y="160" width="120" height="80" rx="8" fill="hsl(212, 55%, 92%)"/>
+  <rect x="200" y="200" width="140" height="200" rx="16" fill="hsl(212, 60%, 88%)"/>
+  <rect x="220" y="240" width="100" height="12" rx="6" fill="hsl(212, 68%, 48%)" opacity="0.5"/>
+  <rect x="220" y="270" width="80" height="12" rx="6" fill="hsl(212, 55%, 92%)"/>
+  <ellipse cx="700" cy="360" rx="60" ry="40" fill="hsl(212, 68%, 48%)" opacity="0.2"/>
+
+</svg>

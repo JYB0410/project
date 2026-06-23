@@ -1,0 +1,11 @@
+{
+  "name": "pet-hamkke-guide",
+  "version": "1.0.0",
+  "description": "반려동물 실용 가이드 정보 사이트 (정적 + CMS-lite)",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["pet", "static-site", "cms-lite"],
+  "license": "MIT"
+}

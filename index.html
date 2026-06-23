@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="반려동물과 함께하는 일상을 차분하게 정리하는 정보 사이트">
+  <meta property="og:title" content="펫함께 가이드">
+  <meta property="og:description" content="반려동물 실용 가이드 정보 사이트">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hopet.github.io/pet-hamkke-guide/">
+  <meta property="og:image" content="https://hopet.github.io/pet-hamkke-guide/assets/images/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://hopet.github.io/pet-hamkke-guide/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>펫함께 가이드</title>
+  <script src="assets/js/consent-mode.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"펫함께 가이드","description":"반려동물과 함께하는 일상을 차분하게 정리하는 정보 사이트","url":"https://hopet.github.io/pet-hamkke-guide/","publisher":{"@type":"Organization","name":"펫함께 가이드","url":"https://hopet.github.io/pet-hamkke-guide/"}}</script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-title">펫함께 가이드</h1>
+          <p class="hero-lead" id="hero-lead"></p>
+          <p id="hero-topic"></p>
+          <p id="hero-audience" style="color:var(--color-muted);font-size:0.95rem"></p>
+          <div class="hero-actions">
+            <a href="categories/" class="btn btn-primary">카테고리 보기</a>
+            <a href="about/" class="btn btn-secondary">사이트 소개</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>이 사이트에서 다루는 것</h2>
+          <ul>
+            <li>입양 전 준비와 일상 루틴</li>
+            <li>생활 환경·위생·식습관 관리</li>
+            <li>함께 보내는 시간과 관찰 습관</li>
+            <li>입문자가 헷갈리기 쉬운 기준 정리</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <div class="container page-main">
+      <section class="section" aria-labelledby="cat-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="cat-heading">주제별 카테고리</h2>
+            <p>반려생활 정보를 목적에 맞게 찾아보세요</p>
+          </div>
+          <a href="categories/" class="text-link">전체 보기 →</a>
+        </div>
+        <div id="category-grid" class="category-grid"></div>
+      </section>
+
+      <section class="section" aria-labelledby="latest-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="latest-heading">최신 글</h2>
+            <p>최근 수정·발행 기준으로 정렬됩니다</p>
+          </div>
+        </div>
+        <div id="latest-posts"></div>
+      </section>
+
+      <section class="section" aria-labelledby="featured-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="featured-heading">추천 글</h2>
+            <p>입문자에게 특히 도움이 되는 글을 골랐습니다</p>
+          </div>
+        </div>
+        <div id="featured-posts"></div>
+      </section>
+
+      <section class="section" aria-labelledby="purpose-heading">
+        <h2 id="purpose-heading">운영 목적</h2>
+        <p id="site-purpose-text" class="prose"></p>
+      </section>
+
+      <section class="section" aria-labelledby="principles-heading">
+        <h2 id="principles-heading">편집 원칙</h2>
+        <ul id="principles-list" class="principles-list"></ul>
+      </section>
+
+      <section class="section" aria-labelledby="editor-heading">
+        <h2 id="editor-heading">편집·운영</h2>
+        <div id="editor-mini" class="editor-mini"></div>
+      </section>
+
+      <section class="section" aria-labelledby="column-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="column-heading">운영자 칼럼</h2>
+            <p>관점과 편집 메모를 담은 글</p>
+          </div>
+          <a href="columns/" class="text-link">칼럼 전체 →</a>
+        </div>
+        <div id="column-preview"></div>
+      </section>
+
+      <section class="section cta-box" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">문의하기</h2>
+        <p>오류 제보, 콘텐츠 관련 문의는 이메일로 연락해 주세요.</p>
+        <a id="contact-email-cta" href="#" class="btn btn-primary">이메일 보내기</a>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+
+  <script src="data/site.config.js"></script>
+  <script src="data/categories.js"></script>
+  <script src="data/posts.js"></script>
+  <script src="data/columns.js"></script>
+  <script src="assets/js/data-store.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/seo.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/consent.js" defer></script>
+  <script src="assets/js/adsense.js" defer></script>
+</body>
+</html>
