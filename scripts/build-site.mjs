@@ -22,6 +22,12 @@ let posts = loadJsExport("data/posts.js", "POSTS_DATA");
 const columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
 
 const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://bcstarts.org").replace(/\/$/, "");
+const ADSENSE_PUB_ID = config.adsensePublisherId || "";
+
+function renderAdSenseHeadScript() {
+  if (!ADSENSE_PUB_ID) return "";
+  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}" crossorigin="anonymous"></script>`;
+}
 
 const BOILERPLATE_PATTERNS = [
   /<p>정지석이 상담할 때 자주 확인하는 질문은[\s\S]*?<\/p>/g,
@@ -279,6 +285,7 @@ for (const post of posts) {
   <link rel="stylesheet" href="../assets/css/main.css">
   <title>${escapeHtml(title)}</title>
   <script src="../assets/js/consent-mode.js"></script>
+  ${renderAdSenseHeadScript()}
   ${postJsonLd}
 </head>
 <body data-prerendered="post" data-slug="${post.slug}">
@@ -347,6 +354,7 @@ for (const col of columns) {
   <link rel="stylesheet" href="../assets/css/main.css">
   <title>${escapeHtml(title)}</title>
   <script src="../assets/js/consent-mode.js"></script>
+  ${renderAdSenseHeadScript()}
   ${columnJsonLd}
 </head>
 <body data-prerendered="column" data-slug="${col.slug}">

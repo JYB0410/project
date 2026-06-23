@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
   ],
   contactEmail: "onhopetoj@gmail.com",
   adsenseEnabled: false,
-  adsensePublisherId: "",
+  adsensePublisherId: "ca-pub-6909907004622412",
   termsLastUpdated: "2026-06-05",
   disclaimerLastUpdated: "2026-06-03",
   customDomain: "bcstarts.org",
