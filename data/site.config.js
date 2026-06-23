@@ -22,7 +22,7 @@ window.SITE_CONFIG = {
   adsensePublisherId: "",
   termsLastUpdated: "2026-06-05",
   disclaimerLastUpdated: "2026-06-03",
-  siteUrl: "https://hopet.github.io/pet-hamkke-guide",
+  siteUrl: "https://JYB0410.github.io/project",
   privacyLastUpdated: "2026-06-11",
   editorialPrinciples: [
     "의료·법률·금융처럼 전문 자문이 필요한 영역은 다루지 않습니다.",

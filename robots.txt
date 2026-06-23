@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hopet.github.io/pet-hamkke-guide/sitemap.xml
+Sitemap: https://JYB0410.github.io/project/sitemap.xml
 
 Disallow: /admin/

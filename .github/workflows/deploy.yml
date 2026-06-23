@@ -32,7 +32,7 @@ jobs:
       - name: Build site
         run: node scripts/build-site.mjs
         env:
-          SITE_URL: https://hopet.github.io/pet-hamkke-guide
+          SITE_URL: https://JYB0410.github.io/project
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
