@@ -10,6 +10,10 @@
     };
   }
 
+  function isAdminPage() {
+    return /\/admin(?:\/|$)/.test(window.location.pathname || "");
+  }
+
   function mergeBySlug(defaultItems, cachedItems) {
     const bySlug = new Map((cachedItems || []).map((item) => [item.slug, item]));
     for (const item of defaultItems || []) {
@@ -19,6 +23,7 @@
   }
 
   function load() {
+    if (!isAdminPage()) return getDefaults();
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return getDefaults();

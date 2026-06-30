@@ -45,6 +45,30 @@ const BOILERPLATE_PATTERNS = [
   /<p>사료·간식 변경은 7~10일에 걸쳐 천천히 하는 편이 소화 부담이 적습니다[\s\S]*?<\/p>/g
 ];
 
+function formatKoDate(dateStr) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric" });
+}
+
+function renderHomePostCards(homePosts) {
+  if (!homePosts.length) return '<p class="empty-msg">표시할 글이 없습니다.</p>';
+  return `<div class="card-grid">${homePosts
+    .map((post) => {
+      const cat = categories.find((c) => c.slug === post.category);
+      return `
+        <article class="post-card">
+          <a href="posts/${post.slug}.html" class="card-link">
+            <span class="card-category">${escapeHtml(cat?.name || "")}</span>
+            <h3>${escapeHtml(post.title)}</h3>
+            <p>${escapeHtml(post.excerpt)}</p>
+            <time datetime="${post.updatedAt}">수정 ${formatKoDate(post.updatedAt)}</time>
+          </a>
+        </article>`;
+    })
+    .join("")}</div>`;
+}
+
 function escapeHtml(str) {
   if (!str) return "";
   return String(str)
@@ -385,7 +409,65 @@ for (const col of columns) {
 }
 console.log(`✓ ${columns.length}개 칼럼 HTML 프리렌더`);
 
-// 5) Sitemap + robots
+// 5) 홈 최신·추천 글 프리렌더 + 데이터 JS 캐시 무력화
+const publishedPosts = posts.filter((p) => p.status !== "draft");
+const latestPosts = [...publishedPosts]
+  .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+  .slice(0, 6);
+const featuredOnly = publishedPosts
+  .filter((p) => p.featured)
+  .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+const featuredPosts = [
+  ...featuredOnly,
+  ...publishedPosts
+    .filter((p) => !p.featured)
+    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+].slice(0, 4);
+
+const buildDate = new Date().toISOString().slice(0, 10);
+const dataVersion = `${publishedPosts.length}-${latestPosts[0]?.updatedAt || buildDate}`;
+const dataFiles = ["site.config.js", "categories.js", "posts.js", "columns.js"];
+
+function patchDataScriptTags(filePath) {
+  let html = fs.readFileSync(filePath, "utf8");
+  for (const file of dataFiles) {
+    const pattern = new RegExp(`(src="(?:\\.\\./)?data/${file})(?:\\?v=[^"]*)?(")`, "g");
+    html = html.replace(pattern, `$1?v=${dataVersion}$2`);
+  }
+  fs.writeFileSync(filePath, html);
+}
+
+const indexPath = path.join(ROOT, "index.html");
+let indexHtml = fs.readFileSync(indexPath, "utf8");
+indexHtml = indexHtml.replace(
+  /<div id="latest-posts"><\/div>/,
+  `<div id="latest-posts">${renderHomePostCards(latestPosts)}</div>`
+);
+indexHtml = indexHtml.replace(
+  /<div id="featured-posts"><\/div>/,
+  `<div id="featured-posts">${renderHomePostCards(featuredPosts)}</div>`
+);
+for (const file of dataFiles) {
+  const pattern = new RegExp(`(src="data/${file})(?:\\?v=[^"]*)?(")`, "g");
+  indexHtml = indexHtml.replace(pattern, `$1?v=${dataVersion}$2`);
+}
+fs.writeFileSync(indexPath, indexHtml);
+
+function walkHtmlFiles(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (entry.name === "node_modules" || entry.name === ".git") continue;
+      walkHtmlFiles(full);
+    } else if (entry.name.endsWith(".html")) {
+      patchDataScriptTags(full);
+    }
+  }
+}
+walkHtmlFiles(ROOT);
+console.log(`✓ 홈 최신글 프리렌더 (${latestPosts[0]?.slug || "none"}) + data ?v=${dataVersion}`);
+
+// 6) Sitemap + robots
 const today = new Date().toISOString().slice(0, 10);
 const staticPages = [
   { loc: "/", priority: "1.0", changefreq: "weekly", lastmod: today },
