@@ -10,6 +10,14 @@
     };
   }
 
+  function mergeBySlug(defaultItems, cachedItems) {
+    const bySlug = new Map((cachedItems || []).map((item) => [item.slug, item]));
+    for (const item of defaultItems || []) {
+      if (!bySlug.has(item.slug)) bySlug.set(item.slug, item);
+    }
+    return [...bySlug.values()];
+  }
+
   function load() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -19,8 +27,8 @@
       return {
         config: { ...defaults.config, ...(parsed.config || {}) },
         categories: parsed.categories || defaults.categories,
-        posts: parsed.posts || defaults.posts,
-        columns: parsed.columns || defaults.columns
+        posts: mergeBySlug(defaults.posts, parsed.posts),
+        columns: mergeBySlug(defaults.columns, parsed.columns)
       };
     } catch (e) {
       console.warn("데이터 로드 실패, 기본값 사용", e);
