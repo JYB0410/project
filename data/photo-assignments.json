@@ -1,0 +1,620 @@
+{
+  "updatedAt": "2026-07-02T02:20:50.642Z",
+  "usedCount": 110,
+  "assignments": {
+    "first-week-checklist": {
+      "why-first-week": {
+        "photoId": 20736349,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/20736349/"
+      },
+      "daily-rhythm": {
+        "photoId": 14610317,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/14610317/"
+      },
+      "practice-notes": {
+        "photoId": 35511894,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/35511894/"
+      }
+    },
+    "family-agreement-before-adoption": {
+      "problem": {
+        "photoId": 10672058,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/10672058/"
+      },
+      "kids": {
+        "photoId": 34905034,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/34905034/"
+      },
+      "practice-notes": {
+        "photoId": 20065728,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/20065728/"
+      }
+    },
+    "essential-supplies-guide": {
+      "priority": {
+        "photoId": 25583838,
+        "scene": "supplies",
+        "pexels": "https://www.pexels.com/photo/25583838/"
+      },
+      "budget": {
+        "photoId": 18723525,
+        "scene": "supplies",
+        "pexels": "https://www.pexels.com/photo/18723525/"
+      },
+      "practice-notes": {
+        "photoId": 31923181,
+        "scene": "supplies",
+        "pexels": "https://www.pexels.com/photo/31923181/"
+      }
+    },
+    "daily-grooming-basics": {
+      "why": {
+        "photoId": 6235115,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/6235115/"
+      },
+      "season": {
+        "photoId": 19022002,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/19022002/"
+      },
+      "practice-notes": {
+        "photoId": 7678416,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/7678416/"
+      }
+    },
+    "home-observation-habits": {
+      "observe": {
+        "photoId": 33394245,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/33394245/"
+      },
+      "when": {
+        "photoId": 6235651,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/6235651/"
+      },
+      "family": {
+        "photoId": 7210300,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/7210300/"
+      }
+    },
+    "dental-care-routine": {
+      "start": {
+        "photoId": 3981763,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/3981763/"
+      },
+      "signs": {
+        "photoId": 19021958,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/19021958/"
+      },
+      "practice-notes": {
+        "photoId": 7678415,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/7678415/"
+      }
+    },
+    "safe-space-setup": {
+      "define": {
+        "photoId": 14938954,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/14938954/"
+      },
+      "multi": {
+        "photoId": 30586499,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/30586499/"
+      },
+      "practice-notes": {
+        "photoId": 30157132,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/30157132/"
+      }
+    },
+    "pet-proofing-basics": {
+      "areas": {
+        "photoId": 28657260,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/28657260/"
+      },
+      "practice-notes": {
+        "photoId": 7210748,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/7210748/"
+      },
+      "schedule": {
+        "photoId": 33834401,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/33834401/"
+      }
+    },
+    "odor-and-ventilation": {
+      "source": {
+        "photoId": 8473712,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/8473712/"
+      },
+      "vent": {
+        "photoId": 15100854,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/15100854/"
+      },
+      "practice-notes": {
+        "photoId": 28397653,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/28397653/"
+      }
+    },
+    "seasonal-home-check": {
+      "opening-case": {
+        "photoId": 38224234,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/38224234/"
+      },
+      "practice-notes": {
+        "photoId": 16588117,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/16588117/"
+      },
+      "checklist-season": {
+        "photoId": 32171575,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/32171575/"
+      },
+      "health": {
+        "photoId": 6235019,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/6235019/"
+      }
+    },
+    "feeding-schedule-basics": {
+      "routine-first": {
+        "photoId": 220938,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/220938/"
+      },
+      "tips": {
+        "photoId": 13702948,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/13702948/"
+      },
+      "multi": {
+        "photoId": 458800,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/458800/"
+      }
+    },
+    "treat-and-snack-guidelines": {
+      "role": {
+        "photoId": 36034310,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/36034310/"
+      },
+      "family": {
+        "photoId": 17409770,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/17409770/"
+      },
+      "practice-notes": {
+        "photoId": 4000314,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/4000314/"
+      }
+    },
+    "water-intake-tips": {
+      "basics": {
+        "photoId": 16366333,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/16366333/"
+      },
+      "fountain": {
+        "photoId": 16395151,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/16395151/"
+      },
+      "practice-notes": {
+        "photoId": 8434670,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/8434670/"
+      }
+    },
+    "walk-routine-for-beginners": {
+      "purpose": {
+        "photoId": 31173351,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/31173351/"
+      },
+      "start": {
+        "photoId": 37118957,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/37118957/"
+      },
+      "gear": {
+        "photoId": 35826718,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/35826718/"
+      },
+      "social": {
+        "photoId": 18423161,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/18423161/"
+      }
+    },
+    "indoor-play-ideas": {
+      "types": {
+        "photoId": 576296,
+        "scene": "play",
+        "pexels": "https://www.pexels.com/photo/576296/"
+      },
+      "safety": {
+        "photoId": 7210673,
+        "scene": "play",
+        "pexels": "https://www.pexels.com/photo/7210673/"
+      },
+      "cat": {
+        "photoId": 2306899,
+        "scene": "play",
+        "pexels": "https://www.pexels.com/photo/2306899/"
+      },
+      "practice-notes": {
+        "photoId": 130764,
+        "scene": "play",
+        "pexels": "https://www.pexels.com/photo/130764/"
+      }
+    },
+    "rest-and-sleep-routine": {
+      "why-rest": {
+        "photoId": 19176926,
+        "scene": "sleep",
+        "pexels": "https://www.pexels.com/photo/19176926/"
+      },
+      "signs": {
+        "photoId": 3299901,
+        "scene": "sleep",
+        "pexels": "https://www.pexels.com/photo/3299901/"
+      },
+      "practice-notes": {
+        "photoId": 7329892,
+        "scene": "sleep",
+        "pexels": "https://www.pexels.com/photo/7329892/"
+      }
+    },
+    "daily-routine-design": {
+      "map": {
+        "photoId": 35406086,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/35406086/"
+      },
+      "practice-notes": {
+        "photoId": 35614411,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/35614411/"
+      },
+      "exceptions": {
+        "photoId": 8570243,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/8570243/"
+      }
+    },
+    "moving-with-pet-basics": {
+      "before": {
+        "photoId": 28468158,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/28468158/"
+      },
+      "vet": {
+        "photoId": 35651203,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/35651203/"
+      },
+      "practice-notes": {
+        "photoId": 7310228,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/7310228/"
+      }
+    },
+    "welcoming-guests-at-home": {
+      "rule": {
+        "photoId": 5667026,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/5667026/"
+      },
+      "after": {
+        "photoId": 32054246,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/32054246/"
+      },
+      "practice-notes": {
+        "photoId": 1170986,
+        "scene": "home",
+        "pexels": "https://www.pexels.com/photo/1170986/"
+      }
+    },
+    "paw-care-after-walk": {
+      "when": {
+        "photoId": 681686,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/681686/"
+      },
+      "season": {
+        "photoId": 1493111,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/1493111/"
+      },
+      "training": {
+        "photoId": 32138086,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/32138086/"
+      },
+      "practice-notes": {
+        "photoId": 19175821,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/19175821/"
+      }
+    },
+    "litter-box-routine-cat": {
+      "place": {
+        "photoId": 28176029,
+        "scene": "litter",
+        "pexels": "https://www.pexels.com/photo/28176029/"
+      },
+      "signs": {
+        "photoId": 11174018,
+        "scene": "litter",
+        "pexels": "https://www.pexels.com/photo/11174018/"
+      },
+      "practice-notes": {
+        "photoId": 28787686,
+        "scene": "litter",
+        "pexels": "https://www.pexels.com/photo/28787686/"
+      }
+    },
+    "multi-pet-space-sharing": {
+      "space": {
+        "photoId": 29265319,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/29265319/"
+      },
+      "observe": {
+        "photoId": 1254140,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/1254140/"
+      },
+      "intro": {
+        "photoId": 34527500,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/34527500/"
+      }
+    },
+    "balcony-window-safety": {
+      "check": {
+        "photoId": 406014,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/406014/"
+      },
+      "season": {
+        "photoId": 2253275,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/2253275/"
+      },
+      "practice-notes": {
+        "photoId": 1851164,
+        "scene": "safety",
+        "pexels": "https://www.pexels.com/photo/1851164/"
+      }
+    },
+    "food-storage-and-freshness": {
+      "basic": {
+        "photoId": 69372,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/69372/"
+      },
+      "signs": {
+        "photoId": 8056255,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/8056255/"
+      },
+      "treats": {
+        "photoId": 1490908,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/1490908/"
+      }
+    },
+    "slow-feeding-habits": {
+      "why": {
+        "photoId": 8584574,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/8584574/"
+      },
+      "when-stop": {
+        "photoId": 19231164,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/19231164/"
+      },
+      "practice-notes": {
+        "photoId": 33507210,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/33507210/"
+      }
+    },
+    "car-travel-prep": {
+      "carrier": {
+        "photoId": 29040678,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/29040678/"
+      },
+      "heat": {
+        "photoId": 10522707,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/10522707/"
+      },
+      "practice-notes": {
+        "photoId": 17984200,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/17984200/"
+      }
+    },
+    "quiet-time-with-pet": {
+      "value": {
+        "photoId": 2248516,
+        "scene": "sleep",
+        "pexels": "https://www.pexels.com/photo/2248516/"
+      },
+      "balance": {
+        "photoId": 14320533,
+        "scene": "play",
+        "pexels": "https://www.pexels.com/photo/14320533/"
+      },
+      "practice-notes": {
+        "photoId": 1546351,
+        "scene": "sleep",
+        "pexels": "https://www.pexels.com/photo/1546351/"
+      }
+    },
+    "alone-time-practice": {
+      "opening-case": {
+        "photoId": 7527369,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/7527369/"
+      },
+      "why-practice": {
+        "photoId": 34071784,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/34071784/"
+      },
+      "practice-notes": {
+        "photoId": 1108099,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/1108099/"
+      },
+      "after-return": {
+        "photoId": 30338195,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/30338195/"
+      }
+    },
+    "overnight-absence-checklist": {
+      "opening-case": {
+        "photoId": 458799,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/458799/"
+      },
+      "why-prep": {
+        "photoId": 2027884,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/2027884/"
+      },
+      "handover-list": {
+        "photoId": 1276553,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/1276553/"
+      },
+      "practice-notes": {
+        "photoId": 208984,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/208984/"
+      }
+    },
+    "first-vet-visit-prep": {
+      "opening-case": {
+        "photoId": 30337930,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/30337930/"
+      },
+      "why-timing": {
+        "photoId": 7008099,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/7008099/"
+      },
+      "bring-list": {
+        "photoId": 6234609,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/6234609/"
+      },
+      "carrier-practice": {
+        "photoId": 13569303,
+        "scene": "travel",
+        "pexels": "https://www.pexels.com/photo/13569303/"
+      },
+      "questions": {
+        "photoId": 12943750,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/12943750/"
+      },
+      "practice-notes": {
+        "photoId": 979247,
+        "scene": "health",
+        "pexels": "https://www.pexels.com/photo/979247/"
+      }
+    },
+    "weather-walk-adjustments": {
+      "opening-case": {
+        "photoId": 19432610,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/19432610/"
+      },
+      "hot-weather": {
+        "photoId": 20424486,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/20424486/"
+      },
+      "cold-weather": {
+        "photoId": 21365496,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/21365496/"
+      },
+      "rain-humidity": {
+        "photoId": 19296628,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/19296628/"
+      },
+      "practice-notes": {
+        "photoId": 29932035,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/29932035/"
+      }
+    },
+    "food-transition-routine": {
+      "opening-case": {
+        "photoId": 34485569,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/34485569/"
+      },
+      "why-gradual": {
+        "photoId": 14770947,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/14770947/"
+      },
+      "mix-schedule": {
+        "photoId": 978695,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/978695/"
+      },
+      "snack-rules": {
+        "photoId": 6234636,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/6234636/"
+      },
+      "warning-signs": {
+        "photoId": 458801,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/458801/"
+      },
+      "practice-notes": {
+        "photoId": 1805164,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/1805164/"
+      }
+    }
+  }
+}

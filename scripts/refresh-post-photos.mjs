@@ -1,32 +1,58 @@
+/**
+ * 전체 글 사진 재다운로드 — Pexels ID 사이트 전역 중복 없이 배정
+ * 사용: node scripts/refresh-post-photos.mjs [--force]
+ */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { pickPhotoId, pexelsUrl } from "./photo-library.mjs";
+import { photoCandidates, pexelsUrl } from "./photo-library.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = path.join(__dirname, "..");
-const postsPath = path.join(root, "data", "posts.js");
-const photoDir = path.join(root, "assets", "images", "photos");
+const ROOT = path.join(__dirname, "..");
+const postsPath = path.join(ROOT, "data", "posts.js");
+const photoDir = path.join(ROOT, "assets", "images", "photos");
+const manifestPath = path.join(ROOT, "data", "photo-assignments.json");
 
-const posts = eval(fs.readFileSync(postsPath, "utf8").replace("window.POSTS_DATA = ", ""));
+const force = process.argv.includes("--force") || process.argv.includes("-f");
 
-async function downloadPhoto(slug, sectionId, title) {
-  const photoId = pickPhotoId(slug, sectionId, title);
+function loadPosts() {
+  const code = fs.readFileSync(postsPath, "utf8");
+  return Function(`return (${code.replace("window.POSTS_DATA = ", "").replace(/;\s*$/, "")})`)();
+}
+
+async function downloadPhoto(slug, sectionId, title, usedIds) {
   const dir = path.join(photoDir, slug);
   fs.mkdirSync(dir, { recursive: true });
   const filename = `${sectionId}.jpg`;
   const filePath = path.join(dir, filename);
 
-  if (!fs.existsSync(filePath) || fs.statSync(filePath).size < 10000) {
-    const url = pexelsUrl(photoId);
-    const res = await fetch(url, { redirect: "follow" });
-    if (!res.ok) throw new Error(`Download failed ${res.status}: ${url}`);
-    const buf = Buffer.from(await res.arrayBuffer());
-    fs.writeFileSync(filePath, buf);
-    console.log(`  ↓ ${slug}/${filename} (pexels:${photoId}, ${Math.round(buf.length / 1024)}KB)`);
+  if (!force && fs.existsSync(filePath) && fs.statSync(filePath).size >= 10000) {
+    console.log(`  · ${slug}/${filename} (skip, use --force to replace)`);
+    return { src: `../assets/images/photos/${slug}/${filename}`, photoId: null, scene: null };
   }
 
-  return { src: `../assets/images/photos/${slug}/${filename}`, photoId };
+  const candidates = photoCandidates(slug, sectionId, title, usedIds);
+  for (const { photoId, scene } of candidates) {
+    const url = pexelsUrl(photoId);
+    const res = await fetch(url, { redirect: "follow" });
+    if (!res.ok) {
+      console.warn(`  ! pexels:${photoId} ${res.status}, 다음 후보...`);
+      continue;
+    }
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 8000) {
+      console.warn(`  ! pexels:${photoId} too small, 다음 후보...`);
+      continue;
+    }
+    fs.writeFileSync(filePath, buf);
+    usedIds.add(photoId);
+    console.log(
+      `  ↓ ${slug}/${filename} (pexels:${photoId}, ${scene}, ${Math.round(buf.length / 1024)}KB)`
+    );
+    return { src: `../assets/images/photos/${slug}/${filename}`, photoId, scene };
+  }
+
+  throw new Error(`다운로드 가능한 Pexels ID 없음: ${slug}/${sectionId}`);
 }
 
 function stripFigures(html) {
@@ -44,27 +70,43 @@ function insertFigure(content, figure) {
   return content.slice(0, firstClose + 4) + figure + content.slice(firstClose + 4);
 }
 
-console.log("Downloading Pexels photos...");
-for (const post of posts) {
-  const total = post.sections.length;
+function shouldHaveImage(sec, index, total) {
+  if (sec.id === "editor-note") return false;
   const slots = new Set(
-    [0, Math.floor(total / 2), total - 2].filter(
-      (i) => i >= 0 && i < total && post.sections[i].id !== "editor-note"
+    [0, Math.floor(total / 2), total - 2].filter((i) => i >= 0 && i < total)
+  );
+  return (
+    slots.has(index) ||
+    /why|start|opening|problem|hot|cold|rain|mix|warning|bring|snack|feed|groom|vet|carrier|walk|play|sleep|litter|suppl|safe|odor|season/.test(
+      sec.id
     )
   );
+}
+
+const posts = loadPosts();
+const usedIds = new Set();
+const manifest = {};
+
+console.log(`Pexels 사진 재배정 (${force ? "강제 덮어쓰기" : "누락분만"})...`);
+
+for (const post of posts) {
+  const total = post.sections.length;
+  manifest[post.slug] = {};
 
   for (const [index, sec] of post.sections.entries()) {
     sec.content = stripFigures(sec.content);
-    if (sec.id === "editor-note") continue;
-    if (!slots.has(index) && !sec.id.includes("why") && !sec.id.includes("start")) continue;
+    if (!shouldHaveImage(sec, index, total)) continue;
 
-    const { src } = await downloadPhoto(post.slug, sec.id, sec.title);
+    const { src, photoId, scene } = await downloadPhoto(post.slug, sec.id, sec.title, usedIds);
     const caption = `${sec.title} — ${post.title}`;
     sec.content = insertFigure(sec.content, figureHtml(src, caption));
+    manifest[post.slug][sec.id] = { photoId, scene, pexels: `https://www.pexels.com/photo/${photoId}/` };
   }
-  post.updatedAt = "2026-06-22";
   console.log(`✓ ${post.slug}`);
 }
 
 fs.writeFileSync(postsPath, `window.POSTS_DATA = ${JSON.stringify(posts, null, 2)};\n`, "utf8");
-console.log(`Done — ${posts.length} posts updated with Pexels photos.`);
+fs.writeFileSync(manifestPath, JSON.stringify({ updatedAt: new Date().toISOString(), usedCount: usedIds.size, assignments: manifest }, null, 2) + "\n");
+
+console.log(`\n완료 — ${posts.length}개 글, ${usedIds.size}개 고유 Pexels ID 배정`);
+console.log(`매니페스트: data/photo-assignments.json`);

@@ -2,7 +2,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { pickPhotoId, pexelsUrl } from "./photo-library.mjs";
+import { assignPhotoId, pexelsUrl } from "./photo-library.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const slug = process.argv[2];
@@ -16,7 +16,13 @@ for (const id of sections) {
   const dir = path.join(ROOT, "assets/images/photos", slug);
   fs.mkdirSync(dir, { recursive: true });
   const fp = path.join(dir, `${id}.jpg`);
-  const photoId = pickPhotoId(slug, id, id);
+  const title = process.env.SECTION_TITLE || id;
+  const usedIds = new Set();
+  if (process.env.USED_PHOTO_IDS) {
+    process.env.USED_PHOTO_IDS.split(",").forEach((n) => usedIds.add(Number(n)));
+  }
+  const { photoId, scene } = assignPhotoId(slug, id, title, usedIds);
+  console.log(`  scene: ${scene}, pexels: ${photoId}`);
   const res = await fetch(pexelsUrl(photoId), { redirect: "follow" });
   if (!res.ok) throw new Error(`Download failed ${res.status}`);
   const buf = Buffer.from(await res.arrayBuffer());
