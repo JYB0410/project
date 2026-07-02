@@ -440,11 +440,11 @@ function patchDataScriptTags(filePath) {
 const indexPath = path.join(ROOT, "index.html");
 let indexHtml = fs.readFileSync(indexPath, "utf8");
 indexHtml = indexHtml.replace(
-  /<div id="latest-posts"><\/div>/,
+  /<div id="latest-posts">[\s\S]*?<\/div>(?=\s*<\/section>)/,
   `<div id="latest-posts">${renderHomePostCards(latestPosts)}</div>`
 );
 indexHtml = indexHtml.replace(
-  /<div id="featured-posts"><\/div>/,
+  /<div id="featured-posts">[\s\S]*?<\/div>(?=\s*<\/section>)/,
   `<div id="featured-posts">${renderHomePostCards(featuredPosts)}</div>`
 );
 for (const file of dataFiles) {
