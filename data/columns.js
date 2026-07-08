@@ -67,8 +67,8 @@ window.COLUMNS_DATA = [
     ],
     "summary": "지칠 때는 루틴을 최소 3개(급여·배변·최소 활동)로 줄이고, 5일 유지 후 하나씩만 추가하세요. 피로는 포기가 아니라 조정 신호입니다.",
     "relatedSlugs": [
-      "family-care-notes",
-      "why-routine-matters",
+      "daily-routine-design",
+      "family-agreement-before-adoption",
       "quiet-time-with-pet",
       "rest-and-sleep-routine"
     ]
