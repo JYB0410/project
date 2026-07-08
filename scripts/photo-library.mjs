@@ -47,6 +47,8 @@ export function pickScene(slug, sectionId, title = "") {
   if (/groom|dental|구강|빗|그루밍|발톱/.test(t)) return "grooming";
   if (/weather-walk|hot-weather|cold-weather|rain-humidity|폭염|한파|더위|습도|미세|장마|소나기|비 오는/.test(t))
     return "weather";
+  if (/rainy-season|why-humidity|paw-dry|ear-belly|indoor-humidity|skin-watch|장마철|습기/.test(t))
+    return "weather";
   if (/walk|산책|paw-care|paw|발바닥|outdoor/.test(t)) return "walk";
   if (/car-travel|moving-with|carrier|이동장|차량|차 안/.test(t)) return "travel";
   if (/first-vet|vet-visit|병원|observ|관찰|warning-sign|구토/.test(t)) return "health";

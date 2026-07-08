@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-02T02:20:50.642Z",
-  "usedCount": 110,
+  "updatedAt": "2026-07-08T01:00:50.675Z",
+  "usedCount": 117,
   "assignments": {
     "first-week-checklist": {
       "why-first-week": {
@@ -614,6 +614,43 @@
         "photoId": 1805164,
         "scene": "feeding",
         "pexels": "https://www.pexels.com/photo/1805164/"
+      }
+    },
+    "rainy-season-hygiene": {
+      "opening-case": {
+        "photoId": 20154064,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/20154064/"
+      },
+      "why-humidity": {
+        "photoId": 2607544,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/2607544/"
+      },
+      "paw-dry-routine": {
+        "photoId": 35363342,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/35363342/"
+      },
+      "ear-belly-fur": {
+        "photoId": 30398762,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/30398762/"
+      },
+      "indoor-humidity": {
+        "photoId": 12810453,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/12810453/"
+      },
+      "skin-watch-signs": {
+        "photoId": 16196769,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/16196769/"
+      },
+      "practice-notes": {
+        "photoId": 16264430,
+        "scene": "weather",
+        "pexels": "https://www.pexels.com/photo/16264430/"
       }
     }
   }
