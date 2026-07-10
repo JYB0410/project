@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-08T01:00:50.675Z",
-  "usedCount": 117,
+  "updatedAt": "2026-07-10T04:06:46.059Z",
+  "usedCount": 123,
   "assignments": {
     "first-week-checklist": {
       "why-first-week": {
@@ -651,6 +651,38 @@
         "photoId": 16264430,
         "scene": "weather",
         "pexels": "https://www.pexels.com/photo/16264430/"
+      }
+    },
+    "bath-and-wipe-routine": {
+      "opening-case": {
+        "photoId": 2072373,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/2072373/"
+      },
+      "why-partial": {
+        "photoId": 685350,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/685350/"
+      },
+      "wipe-routine": {
+        "photoId": 31308251,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/31308251/"
+      },
+      "tools-and-shampoo": {
+        "photoId": 3764318,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/3764318/"
+      },
+      "dry-after-wipe": {
+        "photoId": 1805544,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/1805544/"
+      },
+      "practice-notes": {
+        "photoId": 1576151,
+        "scene": "grooming",
+        "pexels": "https://www.pexels.com/photo/1576151/"
       }
     }
   }

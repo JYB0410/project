@@ -44,7 +44,8 @@ export function pickScene(slug, sectionId, title = "") {
     )
   )
     return "feeding";
-  if (/groom|dental|구강|빗|그루밍|발톱/.test(t)) return "grooming";
+  if (/groom|dental|구강|빗|그루밍|발톱|bath-and-wipe|partial-wash|wipe-routine|목욕|부분.?세척|dry-after/.test(t))
+    return "grooming";
   if (/weather-walk|hot-weather|cold-weather|rain-humidity|폭염|한파|더위|습도|미세|장마|소나기|비 오는/.test(t))
     return "weather";
   if (/rainy-season|why-humidity|paw-dry|ear-belly|indoor-humidity|skin-watch|장마철|습기/.test(t))
