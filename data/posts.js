@@ -2324,7 +2324,7 @@ window.POSTS_DATA = [
     "category": "adoption-prep",
     "author": "정지석",
     "publishedAt": "2026-06-26",
-    "updatedAt": "2026-06-26",
+    "updatedAt": "2026-07-10",
     "featured": false,
     "status": "published",
     "excerpt": "1박 이상 떠나기 전에 '누가·어디서·몇 번'을 먼저 정하세요. 지인·펫시터·집에 두기를 비교하고, 급여·약·비상연락을 한 장에 모으면 돌아온 뒤 혼란이 줄어듭니다.",
@@ -2345,13 +2345,13 @@ window.POSTS_DATA = [
         "id": "compare-approach",
         "heading": "h2",
         "title": "돌봄 방식, 이렇게 vs 저렇게",
-        "content": "<p><strong>지인에게 부탁</strong>은 비용이 적지만, 우리 집 루틴을 모르는 경우가 많습니다. <strong>인수인계 한 장+1회 사전 방문</strong>은 번거롭지만 급여·산책 실수를 줄입니다.</p><p><strong>펫시터 방문</strong>은 하루 2~3회 방문으로 산책·급여가 가능하지만, 밤 시간 공백이 생깁니다. <strong>집에 두기+자동급식기</strong>는 밤까지 끊기지 않지만, 배변·응급 대응은 약합니다.</p><p><strong>펫호텔·동물병원 위탁</strong>은 24시간 관리에 가깝지만, 낯선 환경 스트레스가 있습니다. <strong>짧은 외출 연습 후 위탁</strong>은 비용이 들어도 갑작스러운 환경 변화를 줄이는 데 도움이 되는 경우가 있습니다.</p><p>개체·연령·건강 상태마다 적합한 방식이 다릅니다. '가장 편한 방법'보다 '우리 집 루틴을 가장 덜 깨는 방법'을 기준으로 고르는 편이 낫습니다.</p>"
+        "content": "<p><strong>지인에게 부탁</strong>은 비용이 적지만, 우리 집 루틴을 모르는 경우가 많습니다. <strong>인수인계 한 장+1회 사전 방문</strong>은 번거롭지만 급여·산책 실수를 줄입니다.</p><p><strong>펫시터 방문</strong>은 하루 2~3회 방문으로 산책·급여가 가능하지만, 밤 시간 공백이 생깁니다. 담당을 정했다면 <a href=\"pet-sitter-handoff.html\">펫시터 인수인계 5블록</a> 글로 사전 방문·시간표·사진 규칙을 문서화하세요. <strong>집에 두기+자동급식기</strong>는 밤까지 끊기지 않지만, 배변·응급 대응은 약합니다.</p><p><strong>펫호텔·동물병원 위탁</strong>은 24시간 관리에 가깝지만, 낯선 환경 스트레스가 있습니다. <strong>짧은 외출 연습 후 위탁</strong>은 비용이 들어도 갑작스러운 환경 변화를 줄이는 데 도움이 되는 경우가 있습니다.</p><p>개체·연령·건강 상태마다 적합한 방식이 다릅니다. '가장 편한 방법'보다 '우리 집 루틴을 가장 덜 깨는 방법'을 기준으로 고르는 편이 낫습니다.</p>"
       },
       {
         "id": "handover-list",
         "heading": "h2",
         "title": "인수인계 한 장",
-        "content": "<p>아래 항목을 A4 한 장·메모 앱 한 페이지에 모으세요. 사진 2장(사료 그릇 위치·약 봉투)을 붙이면 더 명확합니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/overnight-absence-checklist/handover-list.jpg\" alt=\"인수인계 한 장 — 하룻밤 이상 외출할 때, 집에 두거나 맡기기 전 체크리스트\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>인수인계 한 장 — 하룻밤 이상 외출할 때, 집에 두거나 맡기기 전 체크리스트<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ol><li><strong>기본 정보</strong>: 이름·나이·체중·중성화 여부·알레르기</li><li><strong>급여</strong>: 브랜드·하루 그램·시간(아침 7시/저녁 7시)·간식 규칙</li><li><strong>약</strong>: 이름·용량·시간·먹이는 방법(간식에 섞기 등)</li><li><strong>산책</strong>: 목줄 종류·회피할 대상(큰 개·오토바이)·배변 패드 위치</li><li><strong>비상</strong>: 주 수의사·24시 병원·보험·집주인 연락처</li><li><strong>집</strong>: 열쇠·비밀번호·쓰레기 배출·환기·CCTV 유무</li><li><strong>행동</strong>: 낯선 사람·문 소리·혼자 있을 때 습관(짖음·은신 위치)</li></ol><p>인수인계는 '완벽한 설명서'가 아니라 <strong>같은 질문을 반복하지 않게 하는 메모</strong>입니다. 담당자가 바뀌어도 7번 항목(행동)만 읽으면 오늘 밤 대응이 쉬워집니다.</p>"
+        "content": "<p>아래 항목을 A4 한 장·메모 앱 한 페이지에 모으세요. 사진 2장(사료 그릇 위치·약 봉투)을 붙이면 더 명확합니다. 펫시터를 맡길 때는 <a href=\"pet-sitter-handoff.html\">인수인계 5블록</a>(급여·약·산책·비상·행동) 형식이 더 빠르게 쓰이는 경우가 많습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/overnight-absence-checklist/handover-list.jpg\" alt=\"인수인계 한 장 — 하룻밤 이상 외출할 때, 집에 두거나 맡기기 전 체크리스트\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>인수인계 한 장 — 하룻밤 이상 외출할 때, 집에 두거나 맡기기 전 체크리스트<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ol><li><strong>기본 정보</strong>: 이름·나이·체중·중성화 여부·알레르기</li><li><strong>급여</strong>: 브랜드·하루 그램·시간(아침 7시/저녁 7시)·간식 규칙</li><li><strong>약</strong>: 이름·용량·시간·먹이는 방법(간식에 섞기 등)</li><li><strong>산책</strong>: 목줄 종류·회피할 대상(큰 개·오토바이)·배변 패드 위치</li><li><strong>비상</strong>: 주 수의사·24시 병원·보험·집주인 연락처</li><li><strong>집</strong>: 열쇠·비밀번호·쓰레기 배출·환기·CCTV 유무</li><li><strong>행동</strong>: 낯선 사람·문 소리·혼자 있을 때 습관(짖음·은신 위치)</li></ol><p>인수인계는 '완벽한 설명서'가 아니라 <strong>같은 질문을 반복하지 않게 하는 메모</strong>입니다. 담당자가 바뀌어도 7번 항목(행동)만 읽으면 오늘 밤 대응이 쉬워집니다.</p>"
       },
       {
         "id": "home-alone-prep",
@@ -2388,9 +2388,9 @@ window.POSTS_DATA = [
       "돌아온 뒤 30분 관찰"
     ],
     "relatedSlugs": [
+      "pet-sitter-handoff",
       "alone-time-practice",
       "family-agreement-before-adoption",
-      "essential-supplies-guide",
       "daily-routine-design"
     ],
     "faq": [
@@ -2400,11 +2400,15 @@ window.POSTS_DATA = [
       },
       {
         "q": "펫시터와 지인 중 무엇이 나을까요?",
-        "a": "비용·신뢰·우리 집 루틴 숙지도를 함께 봅니다. 지인이라도 인수인계 한 장과 1회 사전 방문이 있으면 실수가 줄어드는 경우가 많습니다."
+        "a": "비용·신뢰·우리 집 루틴 숙지도를 함께 봅니다. 지인이라도 인수인계 한 장과 1회 사전 방문이 있으면 실수가 줄어드는 경우가 많습니다. 펫시터를 맡기기로 했다면 pet-sitter-handoff 글의 5블록·시간표를 추가로 쓰세요."
       },
       {
         "q": "alone-time-practice 글과 무엇이 다른가요?",
         "a": "혼자 있는 시간 연습은 2~30분 단계 외출입니다. 이 글은 1박 이상 떠날 때 돌봄 방식 선택·인수인계·집에 둘 때 준비를 다룹니다. 연습 후 1박 준비 순서가 자연스럽습니다."
+      },
+      {
+        "q": "pet-sitter-handoff 글은 언제 보면 되나요?",
+        "a": "돌봄 방식 중 펫시터 방문을 고른 뒤 보세요. 이 글은 방식 비교가 아니라 인수인계 5블록·사전 방문·방문 시간표·사진 규칙에 집중합니다."
       }
     ]
   },
@@ -2890,6 +2894,104 @@ window.POSTS_DATA = [
       {
         "q": "고양이도 전신 목욕을 덜 해도 되나요?",
         "a": "자가 그루밍이 잘 되는 고양이는 전신 목욕 빈도를 줄이고, 엉덩이·발·턱 등 부분 닦기와 빗질·화장실 위생을 우선하는 집이 많습니다. 거부가 심하면 억지 전신 목욕보다 부분 2분을 반복하는 편이 안전한 경우가 많습니다."
+      }
+    ]
+  },
+  {
+    "slug": "pet-sitter-handoff",
+    "title": "펫시터 맡기기 전, 인수인계 5블록으로 정리하기",
+    "subtitle": "사전 방문·방문 시간표·사진 규칙까지 한 장에",
+    "category": "adoption-prep",
+    "author": "정지석",
+    "publishedAt": "2026-07-10",
+    "updatedAt": "2026-07-10",
+    "featured": false,
+    "status": "published",
+    "excerpt": "펫시터 예약 전 30분 사전 방문과 인수인계 5블록(급여·약·산책·비상·행동)을 한 장에 모으세요. 방문 시간표와 식사 후 사진 1장 규칙만 있어도 돌아온 뒤 추측이 줄어듭니다.",
+    "sections": [
+      {
+        "id": "opening-case",
+        "heading": "h2",
+        "title": "급여는 했는데 약이 빠졌을 때",
+        "content": "<p>출장 2박 3일, 펫시터에게 하루 2회 방문을 맡긴 집이 있었습니다. 돌아와 보니 사료 그릇은 비어 있었고, 배변 패드는 정리됐지만 <strong>저녁 약 먹이는 시간</strong>이 빠져 있었습니다. 펫시터에게 물어보니 '급여 시간만 받았다'고 했고, 보호자는 구두로만 설명했다고 말했습니다. 반려동물은 크게 다치지 않았지만, 그다음 주까지 식욕이 들쭉날쭉했습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/pet-sitter-handoff/opening-case.jpg\" alt=\"급여는 했는데 약이 빠졌을 때 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>급여는 했는데 약이 빠졌을 때 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 펫시터 업체 선정·계약·보험 비교를 다루지 않습니다. <strong>이미 담당을 정했거나 맡기기로 한 뒤, 인수인계를 문서로 정리하는 방법</strong>에 집중합니다. 돌봄 방식 전체 비교는 <a href=\"overnight-absence-checklist.html\">1박 이상 외출 체크리스트</a> 글, 짧은 외출 연습은 <a href=\"alone-time-practice.html\">혼자 있는 시간 연습</a> 글을 먼저 보세요.</p>"
+      },
+      {
+        "id": "why-handoff",
+        "heading": "h2",
+        "title": "왜 구두보다 5블록 문서일까",
+        "content": "<p>펫시터·지인 모두 '우리 집 루틴'을 처음 듣는 사람입니다. 구두 설명은 급여 시간은 남고, <strong>약·간식 규칙·산책 회피 대상</strong>이 빠지기 쉽습니다. 담당이 바뀌거나 방문 시간이 어긋나면 같은 질문이 카톡으로 반복됩니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/pet-sitter-handoff/why-handoff.jpg\" alt=\"왜 구두보다 5블록 문서일까 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>왜 구두보다 5블록 문서일까 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>인수인계의 목표는 완벽한 매뉴얼이 아니라 <strong>같은 실수를 반복하지 않게 하는 것</strong>입니다. A4 한 장에 5블록만 고정해 두면, 방문 횟수가 2회든 3회든 순서가 같아집니다. 외출 3일 전에 초안을 쓰는 편이 전날 밤에 쓰는 것보다 빠뜨린 항목이 적습니다.</p><aside class=\"honey-tip-box\"><strong>꿀팁!</strong> 사료 그릇·약 봉투·목줄 걸이 위치 사진 3장을 인수인계 한 장에 붙이면, '어디 있죠?' 메시지가 줄어듭니다.</aside>"
+      },
+      {
+        "id": "five-blocks",
+        "heading": "h2",
+        "title": "인수인계 5블록",
+        "content": "<p>아래 5블록을 메모 앱 한 페이지·클립보드 한 장에 모으세요. 숫자·시간·이름을 <strong>문장이 아니라 표</strong>로 쓰는 편이 빠뜨리기 어렵습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/pet-sitter-handoff/five-blocks.jpg\" alt=\"인수인계 5블록 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>인수인계 5블록 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ol><li><strong>급여</strong>: 브랜드·하루 그램·시간(아침 7시/저녁 7시)·그릇 위치·간식 규칙(하루 2개까지 등)</li><li><strong>약</strong>: 이름·용량·시간·먹이는 방법(간식에 섞기·빈 속 금지)·남은 일수</li><li><strong>산책·배변</strong>: 회수·분당 시간·목줄 종류·피할 대상(큰 개·오토바이)·패드·화장실 위치</li><li><strong>비상</strong>: 주 수의사·24시 병원·보험·집주인·보호자 2차 연락처·열쇠·비밀번호</li><li><strong>행동</strong>: 낯선 사람 반응·문 소리·혼자 있을 때(짖음·은신 위치)·절대 하지 말 것(소파·침대·간식 추가 금지)</li></ol><p>고양이는 산책 대신 <strong>화장실·물그릇·캣타워</strong> 위치를 3블록에 넣습니다. 다견 가정은 그릇·산책을 마리별로 나눠 적으세요. 일상 루틴 전체는 <a href=\"daily-routine-design.html\">하루 루틴 설계</a> 글, 관찰 항목은 <a href=\"home-observation-habits.html\">집에서 보는 관찰</a> 글을 참고해 5블록에 옮기면 됩니다.</p>"
+      },
+      {
+        "id": "trial-visit",
+        "heading": "h2",
+        "title": "사전 방문 30분",
+        "content": "<p>외출 3~7일 전, 펫시터가 <strong>실제 방문 30분</strong>을 한 번 합니다. 급여·산책 전체를 시연할 필요는 없고, 반려동물이 낯선 사람·문 소리·현관 출입에 어떻게 반응하는지 보는 시간입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/pet-sitter-handoff/trial-visit.jpg\" alt=\"사전 방문 30분 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>사전 방문 30분 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>사전 방문에서 확인할 것: 사료 그릇·약 위치를 펫시터가 혼자 찾는지, 목줄·이동장 착용 시 반응, 배변 패드·화장실 위치 인지 여부. 거부·짖음이 심하면 <strong>방문 횟수를 늘리거나 위탁</strong>을 검토하는 집도 있습니다. 첫 외출 연습이 안 된 개체는 <a href=\"alone-time-practice.html\">혼자 있는 시간 연습</a>을 먼저 한 뒤 사전 방문을 잡으세요.</p><p>사전 방문 후 5블록 초안을 펫시터와 함께 읽으며 빠진 항목을 그자리에서 추가합니다. '나중에 카톡으로 보낼게요'보다 당일 수정이 실수를 줄입니다.</p>"
+      },
+      {
+        "id": "visit-schedule",
+        "heading": "h2",
+        "title": "방문 시간표 붙이기",
+        "content": "<p>5블록 옆에 <strong>날짜별 방문 시간표</strong>를 붙입니다. 예: 7/12 아침 7시·저녁 7시, 7/13 아침 7시·오후 2시·저녁 7시. 약 시간에 반드시 사람이 들어와야 하면 표에 빨간색으로 표시하세요.</p><p>소형견·고령견·약 복용 개체는 하루 <strong>3회 방문</strong>을 검토하는 집이 많습니다. 고양이는 하루 2회 방문+자동급식기 조합이 흔하지만, 약·배변 관리가 필요하면 3회를 고려하세요. 밤 시간 공백이 길면 집에 두기만으로는 부족할 수 있습니다.</p><p>외출 전날 산책·급여 시간을 2시간 이상 바꾸지 마세요. 루틴이 흔들리면 돌아온 뒤 '평소와 다른지' 판단이 어려워집니다. 가족 분담이 안 맞으면 <a href=\"family-agreement-before-adoption.html\">가족 합의</a> 글의 표를 돌봄 담당에 맞게 바꿔 쓰세요.</p>"
+      },
+      {
+        "id": "during-absence",
+        "heading": "h2",
+        "title": "외출 중 소통 규칙",
+        "content": "<p>인수인계에 <strong>사진·연락 규칙</strong>을 한 줄로 적습니다. 예: '식사·산책 후 사진 1장, 이상 시 즉시 전화'. 사진이 없으면 돌아와서 추측하게 됩니다.</p><p>이상 신호 기준도 미리 씁니다. 식욕 50% 이하·구토 1회·배변 사고 2회 연속·4시간 이상 은신·호흡 이상—이 중 하나면 보호자에게 연락. 경미한 변화는 메모만 남기고 다음 방문에 확인해도 됩니다.</p><p>열쇠·비밀번호·비상 연락처는 5블록과 별도로 가족 단톡방에도 올려 두세요. 담당 펫시터가 바뀌어도 같은 정보를 볼 수 있습니다. 병원 기록·최근 검진 메모가 있으면 <a href=\"first-vet-visit-prep.html\">첫 병원 방문 준비</a> 글처럼 7일 관찰 요약을 한 줄로 붙이면 상담이 빨라집니다.</p>"
+      },
+      {
+        "id": "practice-notes",
+        "heading": "h2",
+        "title": "이번 주 적용하기",
+        "content": "<p>펫시터 인수인계는 '완벽한 설명'보다 <strong>5블록+시간표+사진 규칙</strong>이 먼저입니다. 외출이 없어도 초안을 써 두면 급한 날 재사용할 수 있습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/pet-sitter-handoff/practice-notes.jpg\" alt=\"이번 주 적용하기 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>이번 주 적용하기 — 펫시터 맡기기 전, 인수인계 5블록으로 정리하기<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>약을 먹는 개체는 '집에 두기만'은 위험할 수 있습니다. 약 시간에 반드시 방문이 들어오는지 시간표에서 먼저 확인하세요.</p><p>첫 1박은 가까운 일정으로 시험해 보세요. 멀리 떠나기 전에 '인수인계가 통하는지' 확인하는 주가 있습니다.</p><p>이번 주 펫시터 인수인계 체크리스트입니다. 항목 3개만 골라 쓰세요.</p><ul><li>외출 3일 전 5블록 초안을 작성했습니다.</li><li>사전 방문 30분 일정을 잡고 그릇·약 위치를 확인했습니다.</li><li>날짜별 방문 시간표를 5블록 옆에 붙였습니다.</li><li>식사·산책 후 사진 1장 규칙을 공유했습니다.</li><li>이상 신호(식욕·구토·배변·은신) 연락 기준을 한 줄로 적었습니다.</li><li>외출 전날 산책·급여 시간을 2시간 이상 바꾸지 않았습니다.</li><li>돌아온 뒤 30분 안에 식욕·배변·수면을 확인했습니다.</li></ul><p>5블록이 익숙해지면 지인 돌봄·위탁에도 같은 형식을 쓸 수 있습니다. <a href=\"overnight-absence-checklist.html\">1박 이상 외출 체크리스트</a>와 함께 보면 돌봄 방식 선택이 수월합니다.</p>"
+      },
+      {
+        "id": "editor-note",
+        "heading": "h2",
+        "title": "정리하며",
+        "content": "<p>펫시터 비용을 아끼려다 약 시간을 빠뜨린 집을 봤습니다. 인수인계 5블록은 비용이 아니라 사고 예방입니다.</p><p>오늘 밤 한 가지만 해도 됩니다. 급여·약·산책·비상·행동 중 가장 자주 빠지는 블록 하나를 표로 적어 보세요.</p><p>이 글은 전문 치료·응급 처치를 대체하지 않습니다. 반복되는 식욕 급감·배변 이상은 메모를 들고 상담을 검토하세요.</p>"
+      }
+    ],
+    "summary": "펫시터 인수인계는 급여·약·산책·비상·행동 5블록을 한 장에 모으고, 사전 방문 30분·방문 시간표·식사 후 사진 규칙을 함께 정하세요. 외출 3일 전 초안 작성, 돌아온 뒤 30분 관찰이 기본입니다.",
+    "commonMistakes": [
+      "구두로만 설명하고 약·간식 규칙 누락",
+      "외출 전날 밤에만 인수인계 작성",
+      "사전 방문 없이 첫 방문부터 맡김",
+      "방문 시간표 없이 '하루 2번'만 전달",
+      "돌아온 뒤 식욕·배변 변화 무시"
+    ],
+    "checklist": [
+      "5블록 초안(외출 3일 전)",
+      "사전 방문 30분",
+      "날짜별 방문 시간표",
+      "식사·산책 후 사진 규칙",
+      "돌아온 뒤 30분 관찰"
+    ],
+    "relatedSlugs": [
+      "overnight-absence-checklist",
+      "alone-time-practice",
+      "daily-routine-design",
+      "family-agreement-before-adoption",
+      "first-vet-visit-prep"
+    ],
+    "faq": [
+      {
+        "q": "overnight-absence-checklist 글과 무엇이 다른가요?",
+        "a": "1박 이상 외출 글은 지인·펫시터·집에 두기·위탁을 비교합니다. 이 글은 펫시터를 맡기기로 한 뒤 인수인계 5블록·사전 방문·방문 시간표·소통 규칙에 집중합니다. 방식을 고른 뒤 이 글 순서가 자연스럽습니다."
+      },
+      {
+        "q": "지인에게 부탁할 때도 5블록을 쓰나요?",
+        "a": "네. 지인이라도 우리 집 루틴을 모르는 경우가 많아, 같은 5블록과 사전 방문 1회가 실수를 줄이는 데 도움이 됩니다."
+      },
+      {
+        "q": "사전 방문 없이 가능한가요?",
+        "a": "급한 일정이면 짧은 화상 통화+사진 3장으로 대체하는 집도 있습니다. 다만 반려동물이 낯선 사람을 싫어하면 첫 실제 방문에서 문제가 드러나기 쉬워, 가능하면 30분 사전 방문을 권합니다."
       }
     ]
   }

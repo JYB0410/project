@@ -684,6 +684,33 @@
         "scene": "grooming",
         "pexels": "https://www.pexels.com/photo/1576151/"
       }
+    },
+    "pet-sitter-handoff": {
+      "opening-case": {
+        "photoId": 13705506,
+        "scene": "litter",
+        "pexels": "https://www.pexels.com/photo/13705506/"
+      },
+      "why-handoff": {
+        "photoId": 16395151,
+        "scene": "feeding",
+        "pexels": "https://www.pexels.com/photo/16395151/"
+      },
+      "five-blocks": {
+        "photoId": 208984,
+        "scene": "cat",
+        "pexels": "https://www.pexels.com/photo/208984/"
+      },
+      "trial-visit": {
+        "photoId": 35406086,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/35406086/"
+      },
+      "practice-notes": {
+        "photoId": 34071784,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/34071784/"
+      }
     }
   }
 }
