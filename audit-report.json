@@ -4,11 +4,9 @@
   "columns": 11,
   "uniqueUpdatedDates": 35,
   "june23Count": 2,
-  "issues": 1,
+  "issues": 0,
   "warnings": 0,
-  "errors": [
-    "글 paw-care-after-walk: 1969자 (목표 2000자 미달)"
-  ],
+  "errors": [],
   "warns": [],
-  "ok": false
+  "ok": true
 }
