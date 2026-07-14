@@ -711,6 +711,38 @@
         "scene": "general",
         "pexels": "https://www.pexels.com/photo/34071784/"
       }
+    },
+    "summer-indoor-care": {
+      "opening-case": {
+        "photoId": 14610317,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/14610317/"
+      },
+      "why-indoor": {
+        "photoId": 208984,
+        "scene": "cat",
+        "pexels": "https://www.pexels.com/photo/208984/"
+      },
+      "five-signals": {
+        "photoId": 3299901,
+        "scene": "sleep",
+        "pexels": "https://www.pexels.com/photo/3299901/"
+      },
+      "cool-down-10min": {
+        "photoId": 35826718,
+        "scene": "walk",
+        "pexels": "https://www.pexels.com/photo/35826718/"
+      },
+      "rest-spots": {
+        "photoId": 34071784,
+        "scene": "general",
+        "pexels": "https://www.pexels.com/photo/34071784/"
+      },
+      "practice-notes": {
+        "photoId": 2027884,
+        "scene": "dog",
+        "pexels": "https://www.pexels.com/photo/2027884/"
+      }
     }
   }
 }

@@ -730,7 +730,7 @@ window.POSTS_DATA = [
     "category": "living-environment",
     "author": "정지석",
     "publishedAt": "2026-03-05",
-    "updatedAt": "2026-06-18",
+    "updatedAt": "2026-07-12",
     "featured": true,
     "status": "published",
     "excerpt": "봄·가을 환절기에 10분 점검으로 에어컨 필터·방충망·침구 두께를 바꾸면, 여름 헐떡임·겨울 건조 불편이 줄어듭니다. 산책 시간도 30분 앞당기거나 미루세요.",
@@ -745,7 +745,7 @@ window.POSTS_DATA = [
         "id": "spring-summer",
         "heading": "h2",
         "title": "봄·여름",
-        "content": "<p>환기를 하루 2회→3회, 각 10분으로 늘리되 직풍은 피합니다. 에어컨 필터(2~4주 1회 세척), 방충망 찢김, 습도 60% 넘으면 제습·건조 주기를 2일로 줄입니다.</p><p>산책은 오전 7~9시·저녁 7시 이후로 옮기고, 아스팔트 50℃ 이상 날은 5분 발바닥 테스트(손등 5초) 후 결정합니다.</p><aside class=\"honey-tip-box\"><strong>꿀팁!</strong> 얼음 물그릇(하루 2회 교체)과 서늘한 타일 구역을 마련하면, 에어컨 없는 집도 낮잠 시간이 20% 정도 늘는 경우가 있습니다.</aside>"
+        "content": "<p>환기를 하루 2회→3회, 각 10분으로 늘리되 직풍은 피합니다. 에어컨 필터(2~4주 1회 세척), 방충망 찢김, 습도 60% 넘으면 제습·건조 주기를 2일로 줄입니다.</p><p>산책은 오전 7~9시·저녁 7시 이후로 옮기고, 아스팔트 50℃ 이상 날은 5분 발바닥 테스트(손등 5초) 후 결정합니다. 산책 후 집 안 호흡·휴식은 <a href=\"summer-indoor-care.html\">여름 실내 관찰</a> 글의 10분 식히기와 함께 보세요.</p><aside class=\"honey-tip-box\"><strong>꿀팁!</strong> 얼음 물그릇(하루 2회 교체)과 서늘한 타일 구역을 마련하면, 에어컨 없는 집도 낮잠 시간이 20% 정도 늘는 경우가 있습니다.</aside>"
       },
       {
         "id": "autumn-winter",
@@ -2516,7 +2516,7 @@ window.POSTS_DATA = [
     "category": "bonding-time",
     "author": "정지석",
     "publishedAt": "2026-06-30",
-    "updatedAt": "2026-06-30",
+    "updatedAt": "2026-07-12",
     "featured": false,
     "status": "published",
     "excerpt": "아스팔트 손등 5초 테스트, 체감 28℃ 넘으면 시간을 반으로 줄이세요. 비·폭염·한파 날은 10분 실내 놀이 2회로 대체해도 하루 리듬이 유지되는 경우가 많습니다.",
@@ -2525,13 +2525,13 @@ window.POSTS_DATA = [
         "id": "opening-case",
         "heading": "h2",
         "title": "더운 날 산책 후 발을 들지 않음",
-        "content": "<p>7월 오후 2시, 평소 15분 산책을 마친 소형견이 현관 앞에서 발을 들고 서 있었습니다. 그날은 평소와 같은 코스·같은 시간이었고, 보호자는 '오늘도 잘 걸었다'고 생각했습니다. 발바닥을 보니 붉은기가 있었고, 집에 들어온 뒤 30분 헥헥거림이 이어졌습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/weather-walk-adjustments/opening-case.jpg\" alt=\"더운 날 산책 후 발을 들지 않음 — 더위·한파·비 오는 날, 산책·실내 전환 기준\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>더운 날 산책 후 발을 들지 않음 — 더위·한파·비 오는 날, 산책·실내 전환 기준<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 더위·한파·비 날 <strong>산책을 갈지·줄일지·실내로 바꿀지</strong> 정하는 기준을 다룹니다. 집 안 온도·환기는 <a href=\"seasonal-home-check.html\">계절 점검</a> 글, 산책 기본 패턴은 <a href=\"walk-routine-for-beginners.html\">산책 루틴</a> 글을 먼저 보세요.</p>"
+        "content": "<p>7월 오후 2시, 평소 15분 산책을 마친 소형견이 현관 앞에서 발을 들고 서 있었습니다. 그날은 평소와 같은 코스·같은 시간이었고, 보호자는 '오늘도 잘 걸었다'고 생각했습니다. 발바닥을 보니 붉은기가 있었고, 집에 들어온 뒤 30분 헥헥거림이 이어졌습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/weather-walk-adjustments/opening-case.jpg\" alt=\"더운 날 산책 후 발을 들지 않음 — 더위·한파·비 오는 날, 산책·실내 전환 기준\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>더운 날 산책 후 발을 들지 않음 — 더위·한파·비 오는 날, 산책·실내 전환 기준<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 더위·한파·비 날 <strong>산책을 갈지·줄일지·실내로 바꿀지</strong> 정하는 기준을 다룹니다. 집에 들어온 뒤 호흡·휴식은 <a href=\"summer-indoor-care.html\">여름 실내 관찰</a> 글, 집 안 온도·환기는 <a href=\"seasonal-home-check.html\">계절 점검</a> 글, 산책 기본 패턴은 <a href=\"walk-routine-for-beginners.html\">산책 루틴</a> 글을 먼저 보세요.</p>"
       },
       {
         "id": "hot-weather",
         "heading": "h2",
         "title": "더위·폭염일 때",
-        "content": "<p><strong>아스팔트 테스트</strong>: 손등을 바닥에 5초 대었을 때 뜨겁으면 산책을 미루거나 5분 이내로 줄입니다. 개 발바닥은 우리 신발보다 훨씬 민감합니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/weather-walk-adjustments/hot-weather.jpg\" alt=\"더위·폭염일 때 — 더위·한파·비 오는 날, 산책·실내 전환 기준\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>더위·폭염일 때 — 더위·한파·비 오는 날, 산책·실내 전환 기준<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p><strong>시간대</strong>: 여름은 오전 7~9시·저녁 7시 이후를 우선합니다. 한낮 12~3시는 그늘만 있어도 열사병 위험이 큽니다.</p><p><strong>호흡·헥헥</strong>: 산책 중 헥헥거림이 평소보다 빠르거나 혀가 길게 늘어지면 즉시 그늘로 이동하고, 2분 안에 가라앉지 않으면 집으로 돌아옵니다.</p><p>짧은 코·평소 호흡이 무거운 개체, 노견·어린 개체는 평소보다 5분 일찍 돌아오는 기준을 씁니다. 물은 산책 전·중(그늘에서 1~2모금)·후에 준비하세요.</p><aside class=\"honey-tip-box\"><strong>꿀팁!</strong> 더운 날 산책 시간을 30분 앞당기면, 급여·취침도 ±30분만 같이 옮기세요. 루틴이 한꺼번에 밀리면 다음 날 피로가 커지는 경우가 있습니다.</aside>"
+        "content": "<p><strong>아스팔트 테스트</strong>: 손등을 바닥에 5초 대었을 때 뜨겁으면 산책을 미루거나 5분 이내로 줄입니다. 개 발바닥은 우리 신발보다 훨씬 민감합니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/weather-walk-adjustments/hot-weather.jpg\" alt=\"더위·폭염일 때 — 더위·한파·비 오는 날, 산책·실내 전환 기준\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>더위·폭염일 때 — 더위·한파·비 오는 날, 산책·실내 전환 기준<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p><strong>시간대</strong>: 여름은 오전 7~9시·저녁 7시 이후를 우선합니다. 한낮 12~3시는 그늘만 있어도 열사병 위험이 큽니다.</p><p><strong>호흡·헥헥</strong>: 산책 중 헥헥거림이 평소보다 빠르거나 혀가 길게 늘어지면 즉시 그늘로 이동하고, 2분 안에 가라앉지 않으면 집으로 돌아옵니다. 집에 들어온 뒤에도 헥헥이 길면 <a href=\"summer-indoor-care.html\">여름 실내 관찰</a> 글의 귀가 후 10분 식히기를 먼저 하세요.</p><p>짧은 코·평소 호흡이 무거운 개체, 노견·어린 개체는 평소보다 5분 일찍 돌아오는 기준을 씁니다. 물은 산책 전·중(그늘에서 1~2모금)·후에 준비하세요.</p><aside class=\"honey-tip-box\"><strong>꿀팁!</strong> 더운 날 산책 시간을 30분 앞당기면, 급여·취침도 ±30분만 같이 옮기세요. 루틴이 한꺼번에 밀리면 다음 날 피로가 커지는 경우가 있습니다.</aside>"
       },
       {
         "id": "cold-weather",
@@ -2580,15 +2580,19 @@ window.POSTS_DATA = [
       "날씨·분 일지 기록"
     ],
     "relatedSlugs": [
+      "summer-indoor-care",
       "walk-routine-for-beginners",
       "paw-care-after-walk",
-      "indoor-play-ideas",
-      "seasonal-home-check"
+      "indoor-play-ideas"
     ],
     "faq": [
       {
         "q": "seasonal-home-check 글과 무엇이 다른가요?",
         "a": "계절 점검은 집 안 온도·환기·필터·침구를 다룹니다. 이 글은 실외 산책을 갈지·줄일지·실내로 바꿀지에 대한 판단 기준을 다룹니다."
+      },
+      {
+        "q": "summer-indoor-care 글은 언제 보면 되나요?",
+        "a": "산책 시간을 줄였는데도 집에 들어온 뒤 헥헥이 길 때 보세요. 이 글은 실외 판단이 아니라 귀가 후 10분 식히기·실내 5가지 관찰에 집중합니다."
       },
       {
         "q": "실내 전환만 3일 연속해도 괜찮나요?",
@@ -2992,6 +2996,104 @@ window.POSTS_DATA = [
       {
         "q": "사전 방문 없이 가능한가요?",
         "a": "급한 일정이면 짧은 화상 통화+사진 3장으로 대체하는 집도 있습니다. 다만 반려동물이 낯선 사람을 싫어하면 첫 실제 방문에서 문제가 드러나기 쉬워, 가능하면 30분 사전 방문을 권합니다."
+      }
+    ]
+  },
+  {
+    "slug": "summer-indoor-care",
+    "title": "여름 집 안에서 보는 호흡·체온·휴식 신호",
+    "subtitle": "산책 후 10분 식히기와 실내 5가지 관찰",
+    "category": "health-hygiene",
+    "author": "정지석",
+    "publishedAt": "2026-07-12",
+    "updatedAt": "2026-07-12",
+    "featured": false,
+    "status": "published",
+    "excerpt": "더운 날 산책 후 에어컨 직풍 아래 눕지 말고, 통풍 좋은 곳에서 10분 식히세요. 호흡·활동·식욕·수면·발·귀 온도 5가지를 하루 2회 3분만 보면 '오늘 쉬는 날' 판단이 쉬워집니다.",
+    "sections": [
+      {
+        "id": "opening-case",
+        "heading": "h2",
+        "title": "산책 후 에어컨 앞에서 40분 헥헥",
+        "content": "<p>7월 저녁, 10분으로 줄인 산책을 마치고 집에 들어온 소형견이 곧바로 에어컨 출구 아래 매트에 누웠습니다. 보호자는 '시원해서 다행'이라고 생각했지만, 40분 뒤에도 헥헥거림이 가라앉지 않았고, 물그릇은 그대로였습니다. 메모를 보면 산책 시간은 줄였지만, <strong>귀가 후 식히기·휴식 자리</strong>는 정해져 있지 않았습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/summer-indoor-care/opening-case.jpg\" alt=\"산책 후 에어컨 앞에서 40분 헥헥 — 여름 집 안에서 보는 호흡·체온·휴식 신호\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>산책 후 에어컨 앞에서 40분 헥헥 — 여름 집 안에서 보는 호흡·체온·휴식 신호<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 열사병 진단이나 응급 처치를 다루지 않습니다. <strong>여름 집 안에서 호흡·체온·휴식을 관찰하고, 산책 후 10분 식히기 루틴</strong>을 정리합니다. 산책을 줄일지는 <a href=\"weather-walk-adjustments.html\">날씨 산책 조절</a> 글, 물그릇·음수는 <a href=\"water-intake-tips.html\">물 섭취</a> 글을 먼저 보세요.</p>"
+      },
+      {
+        "id": "why-indoor",
+        "heading": "h2",
+        "title": "실외만 줄이면 끝이 아닌 이유",
+        "content": "<p>여름 건강은 '산책 5분 줄이기'만으로 끝나지 않는 경우가 많습니다. 집에 들어온 뒤 <strong>에어컨 직풍·뜨거운 바닥·습한 털</strong>이 겹치면, 실외에서 덜 뛰었어도 실내에서 호흡이 무거워질 수 있습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/summer-indoor-care/why-indoor.jpg\" alt=\"실외만 줄이면 끝이 아닌 이유 — 여름 집 안에서 보는 호흡·체온·휴식 신호\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실외만 줄이면 끝이 아닌 이유 — 여름 집 안에서 보는 호흡·체온·휴식 신호<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>짧은 코·노견·심장·호흡이 평소 무거운 개체, 장마처럼 습도가 높은 날은 실내 관찰 비중을 더 늘리는 편이 안전합니다. 고양이는 헥헥거림이 적어도 <strong>숨은 곳에 오래 머무름·식욕 감소·화장실 패턴 변화</strong>로 더위 스트레스가 드러나는 경우가 있습니다.</p><aside class=\"honey-tip-box\"><strong>꿀팁!</strong> 여름 주간에는 현관에 '귀가 후 10분' 순서(발 닦기→그늘 휴식→물)를 스티커로 붙여 두면, 에어컨 앞으로 바로 뛰어가는 습관을 줄이기 쉽습니다.</aside>"
+      },
+      {
+        "id": "five-signals",
+        "heading": "h2",
+        "title": "집에서 볼 5가지 신호",
+        "content": "<p>아래 5가지를 아침·저녁 각 3분, 총 하루 6분이면 충분한 출발점입니다. 숫자보다 <strong>평소 대비 변화</strong>를 메모하세요.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/summer-indoor-care/five-signals.jpg\" alt=\"집에서 볼 5가지 신호 — 여름 집 안에서 보는 호흡·체온·휴식 신호\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>집에서 볼 5가지 신호 — 여름 집 안에서 보는 호흡·체온·휴식 신호<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ol><li><strong>호흡</strong>: 헥헥 속도·혀 길이·30분 이상 지속 여부. 실내에서도 가라앉지 않으면 휴식·물·환기부터 조정</li><li><strong>활동·식욕</strong>: 산책·놀이 후 회복 시간(평소 10분→30분 이상), 그릇에 남긴 양(%). 더운 날 식욕이 20% 줄면 흔하지만 48시간 50% 미만은 메모</li><li><strong>수면·휴식</strong>: 에어컨 직풍 아래만 눕는지, 타일·그늘을 찾는지. 낮잠이 2시간 넘게 이어지면 활동량과 함께 기록</li><li><strong>발·귀·코</strong>: 발바닥·귀 끝·코가 평소보다 뜨거운지(손등으로 가볍게). 붉은기·절뚝임은 <a href=\"paw-care-after-walk.html\">산책 후 발 관리</a>와 함께 봄</li><li><strong>실내 환경</strong>: 에어컨 직풍 여부, 바닥 온도, 습도 60% 넘음. 환기·제습은 <a href=\"odor-and-ventilation.html\">환기·습도</a>·<a href=\"seasonal-home-check.html\">계절 점검</a> 글 참고</li></ol><p>관찰 메모 형식은 <a href=\"home-observation-habits.html\">집에서 관찰</a> 글과 같습니다. '7/12 저녁 헥헥 25분, 물 2모금, 그늘 매트' 한 줄이면 충분합니다.</p>"
+      },
+      {
+        "id": "cool-down-10min",
+        "heading": "h2",
+        "title": "귀가 후 10분 식히기",
+        "content": "<p>산책·실내 놀이 후에는 바로 에어컨·식사·목욕으로 넘어가지 않습니다. 순서를 고정하면 가족이 번갈아 해도 빠뜨리기 어렵습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/summer-indoor-care/cool-down-10min.jpg\" alt=\"귀가 후 10분 식히기 — 여름 집 안에서 보는 호흡·체온·휴식 신호\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>귀가 후 10분 식히기 — 여름 집 안에서 보는 호흡·체온·휴식 신호<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ol><li><strong>2분</strong>: 현관에서 발·배 털 닦기(미지근한 물·수건). 뜨거운 보도 후에는 <a href=\"paw-care-after-walk.html\">발 2~3분</a> 우선</li><li><strong>3분</strong>: 에어컨 직풍이 아닌 <strong>통풍 좋은 그늘</strong>에서 앉거나 눕기. 타일·서늘한 매트가 있으면 그 위</li><li><strong>2분</strong>: 미지근한 물 2~3모금(억지로 많이 마시게 하지 않음). 그릇 위치는 <a href=\"water-intake-tips.html\">물 섭취</a> 글처럼 고정</li><li><strong>3분</strong>: 호흡이 평소 속도로 돌아왔는지 확인. 여전히 빠르면 활동·급여를 30분 미룸</li></ol><p>장마·습도 높은 날은 건조까지 포함해 <a href=\"rainy-season-hygiene.html\">장마철 위생</a> 글의 10분 루틴과 맞춰도 됩니다. 전신 목욕은 식힌 뒤 별도 시간에.</p>"
+      },
+      {
+        "id": "rest-spots",
+        "heading": "h2",
+        "title": "휴식 자리·에어컨·바닥",
+        "content": "<p>여름 휴식은 '시원한 곳'이 아니라 <strong>직풍 없이 서늘한 곳</strong>이 기준입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/summer-indoor-care/rest-spots.jpg\" alt=\"휴식 자리·에어컨·바닥 — 여름 집 안에서 보는 호흡·체온·휴식 신호\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>휴식 자리·에어컨·바닥 — 여름 집 안에서 보는 호흡·체온·휴식 신호<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ul><li><strong>에어컨</strong>: 출구 1m 이내 휴식 매트는 옮기거나 바람막이(수건·가구)로 직풍 차단</li><li><strong>바닥</strong>: 남향·베란다 연결 공간은 오후에 뜨거워질 수 있음. 타일·서늘한 복도 구석을 대안으로</li><li><strong>낮잠</strong>: 더운 날 낮잠이 30~60분 늘 수 있음. 수면 패턴은 <a href=\"rest-and-sleep-routine.html\">수면 루틴</a> 글과 함께 기록</li><li><strong>고양이</strong>: 캣타워 최상단·창가 햇빛은 오후에 뜨거울 수 있어, 화장실 근처·침대 아래 등 그늘을 하나 더 열어 둠</li></ul><p>차 안·현관·베란다에 잠깐 두는 것도 실내 열사병 위험에 포함됩니다. '잠깐'도 직사광선·밀폐 공간은 피하세요.</p>"
+      },
+      {
+        "id": "when-to-check",
+        "heading": "h2",
+        "title": "병원 검토를 생각할 때",
+        "content": "<p>이 글은 상담 시점을 대신 정하지 않습니다. 다만 아래 패턴이 <strong>48시간 이상</strong>이면 메모와 함께 검진을 검토하는 집이 많습니다.</p><ul><li>실내에서도 헥헥·호흡 곤란이 30분 넘게 지속</li><li>식욕 50% 미만이 2일 연속, 또는 구토·설사가 하루 2회 이상 반복</li><li>활동 거의 없음+은신 위치만 고집(고양이 포함)</li><li>발바닥·귀가 뜨겁고 무기력함이 함께 있음</li></ul><p>응급으로 느껴지면 검색보다 연락처를 먼저 꺼내세요. 평소 관찰 메모가 있으면 '언제부터인지' 설명이 짧아집니다.</p>"
+      },
+      {
+        "id": "practice-notes",
+        "heading": "h2",
+        "title": "이번 주 적용하기",
+        "content": "<p>여름 실내 관리는 '완벽한 온도'보다 <strong>귀가 후 10분+하루 2회 3분 관찰</strong>이 먼저입니다. 산책을 줄인 날도 실내 루틴은 유지하세요.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/summer-indoor-care/practice-notes.jpg\" alt=\"이번 주 적용하기 — 여름 집 안에서 보는 호흡·체온·휴식 신호\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>이번 주 적용하기 — 여름 집 안에서 보는 호흡·체온·휴식 신호<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>폭염 주간에는 오전·저녁 산책 후 같은 10분 순서를 쓰고, 한낮은 실내 놀이만 하는 집도 많습니다.</p><p>에어컨을 켠 직후 바로 밖에서 들어오면 체온 차로 헥헥이 길어질 수 있습니다. 현관에서 2분 서 있게 하거나 발 닦기부터 시작하세요.</p><p>이번 주 여름 실내 체크리스트입니다. 항목 3개만 골라 쓰세요.</p><ul><li>귀가 후 발 닦기→그늘 3분→물 2모금 순서를 지켰습니다.</li><li>에어컨 직풍 아래 휴식 매트를 옮기거나 바람을 막았습니다.</li><li>호흡·식욕·수면·발·귀·실내 환경 5가지를 하루 2회 적었습니다.</li><li>헥헥이 30분 넘으면 급여·놀이를 30분 미뤘습니다.</li><li>물그릇을 2곳 이상·같은 자리에 두었습니다.</li><li>차·베란다·현관 직사광선에 장시간 두지 않았습니다.</li><li>48시간 같은 패턴이면 메모와 함께 검진을 검토했습니다.</li></ul><p>더운 날 '오늘은 실내 휴식 성공'도 기록입니다. 내일 산책 분을 조절하면 됩니다.</p>"
+      },
+      {
+        "id": "editor-note",
+        "heading": "h2",
+        "title": "정리하며",
+        "content": "<p>산책을 10분 줄였는데도 헥헥이 길었던 집은, 실내에서 에어컨 직풍 아래로 바로 누운 경우가 많았습니다.</p><p>오늘은 귀가 후 10분 순서 하나만 정해 보세요. 발 닦기→그늘→물이면 충분한 출발점입니다.</p><p>이 글은 수의사 진단·응급 처치를 대체하지 않습니다. 불안할 때는 메모를 들고 상담을 검토하세요.</p>"
+      }
+    ],
+    "summary": "여름에는 산책 후 10분 식히기(발 닦기→그늘→물)와 호흡·활동·식욕·수면·발·귀·실내 환경 5가지 관찰을 하루 2회 하세요. 에어컨 직풍 휴식은 피하고, 48시간 같은 이상은 메모와 함께 검진을 검토합니다.",
+    "commonMistakes": [
+      "산책 후 바로 에어컨 직풍 아래 눕히기",
+      "호흡이 길어져도 물·휴식 없이 놀이·급여 진행",
+      "실외만 줄이고 실내 바닥·습도는 점검 안 함",
+      "헥헥만 보고 식욕·수면 변화는 기록 안 함",
+      "차·베란다 잠깐 방치를 실내 관리로 착각"
+    ],
+    "checklist": [
+      "귀가 후 10분 식히기 순서",
+      "에어컨 직풍 차단",
+      "5가지 신호 하루 2회 메모",
+      "물그릇 2곳·같은 자리",
+      "48시간 패턴 시 검진 검토"
+    ],
+    "relatedSlugs": [
+      "weather-walk-adjustments",
+      "water-intake-tips",
+      "paw-care-after-walk",
+      "home-observation-habits",
+      "rest-and-sleep-routine"
+    ],
+    "faq": [
+      {
+        "q": "weather-walk-adjustments 글과 무엇이 다른가요?",
+        "a": "날씨 산책 글은 실외에서 갈지·줄일지·실내 놀이로 바꿀지를 다룹니다. 이 글은 집에 들어온 뒤 10분 식히기·실내 5가지 관찰·휴식 자리에 집중합니다. 산책 조절 후 이 글 순서가 자연스럽습니다."
+      },
+      {
+        "q": "에어컨 없는 집은 어떻게 하나요?",
+        "a": "통풍 좋은 그늘·타일·서늘한 복도·얼음 물그릇(2시간마다 교체)을 활용하세요. 선풍기는 직풍보다 간접 바람이 낫고, 습도가 높으면 제습·환기를 함께 봅니다."
+      },
+      {
+        "q": "고양이도 헥헥을 보나요?",
+        "a": "개보다 드물지만 더위 스트레스 시 호흡이 빨라질 수 있습니다. 헥헥이 없어도 숨은 곳 고집·식욕 감소·화장실 패턴 변화를 5가지 신호에 포함해 보세요."
       }
     ]
   }
