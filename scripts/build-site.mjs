@@ -27,21 +27,7 @@ function renderAdSenseHeadScript() {
   return "";
 }
 
-const BOILERPLATE_PATTERNS = [
-  /<p>정지석이 상담할 때 자주 확인하는 질문은[\s\S]*?<\/p>/g,
-  /<p>입양 준비는 하루 만에 끝나지 않습니다[\s\S]*?<\/p>/g,
-  /<p>집에서 하는 5분 관리는[\s\S]*?<\/p>/g,
-  /<p>서울·수도권 아파트는 환기[\s\S]*?<\/p>/g,
-  /<p>사료 2~4만 원\/2kg[\s\S]*?<\/p>/g,
-  /<p>산책 15분·실내 놀이 10분 뒤에는[\s\S]*?<\/p>/g,
-  /<p>안전 점검은 한 번으로 끝나지 않습니다[\s\S]*?<\/p>/g,
-  /<p>건강 관리는 '매일 완벽하게'[\s\S]*?<\/p>/g,
-  /<p>조용히 같은 공간에 있는 10분도[\s\S]*?<\/p>/g,
-  /<p>아파트·원룸에서는 출퇴근[\s\S]*?<\/p>/g,
-  /<p>한국 아파트·원룸에서는 출퇴근[\s\S]*?<\/p>/g,
-  /<p>글을 읽으며 '우리 집은 어디까지 하고 있지\?'[\s\S]*?<\/p>/g,
-  /<p>사료·간식 변경은 7~10일에 걸쳐 천천히 하는 편이 소화 부담이 적습니다[\s\S]*?<\/p>/g
-];
+const BOILERPLATE_PATTERNS = [];
 
 function formatKoDate(dateStr) {
   if (!dateStr) return "";
@@ -213,7 +199,7 @@ function renderPostArticle(post) {
     ${checklist}
     ${faq}
     ${related}
-    <p class="article-note">이 글은 초보자 기준으로 이해하기 쉽게 정리되었으며, 내용은 운영 과정에서 순차적으로 보완될 수 있습니다. 수의사 등 전문가의 진단·처치를 대체하지 않습니다.</p>
+    <p class="article-note">이 글은 운영자의 직접 경험을 바탕으로 작성되었으며, 오븐·재료·환경에 따라 결과는 달라질 수 있습니다. 식품 위생·알레르기 등 건강 관련 판단을 대체하지 않습니다.</p>
   </div>
 </article>`;
 }
@@ -271,7 +257,14 @@ fs.writeFileSync(cfgPath, cfgText);
 console.log(`✓ siteUrl → ${SITE_URL}`);
 
 // 3) Prerender posts
-const postTemplate = fs.readFileSync(path.join(ROOT, "posts", "first-week-checklist.html"), "utf8");
+const postsDir = path.join(ROOT, "posts");
+if (!fs.existsSync(postsDir)) fs.mkdirSync(postsDir, { recursive: true });
+const existingPostHtml = fs.readdirSync(postsDir).filter((f) => f.endsWith(".html"));
+const postSlugs = new Set(posts.map((p) => p.slug));
+for (const file of existingPostHtml) {
+  const slug = file.replace(/\.html$/, "");
+  if (!postSlugs.has(slug)) fs.unlinkSync(path.join(postsDir, file));
+}
 for (const post of posts) {
   const cat = getCategory(post.category);
   const canonical = `${SITE_URL}/posts/${post.slug}.html`;
@@ -282,7 +275,7 @@ for (const post of posts) {
     jsonLdScript(buildArticleJsonLd(post)),
     buildBreadcrumbJsonLd([
       { name: "홈", url: "/" },
-      { name: "카테고리", url: "/categories/" },
+      { name: "가이드", url: "/categories/" },
       { name: cat?.name || "", url: `/categories/?cat=${post.category}` },
       { name: post.title, url: `/posts/${post.slug}.html` }
     ]),
@@ -315,7 +308,7 @@ for (const post of posts) {
   <main class="container page-main">
     <nav class="breadcrumb" aria-label="breadcrumb"><ol>
       <li><a href="../index.html">홈</a></li>
-      <li><a href="../categories/index.html">카테고리</a></li>
+      <li><a href="../categories/index.html">가이드</a></li>
       <li><a href="../categories/index.html?cat=${post.category}">${escapeHtml(cat?.name || "")}</a></li>
       <li aria-current="page">${escapeHtml(post.title)}</li>
     </ol></nav>
@@ -344,6 +337,15 @@ for (const post of posts) {
 console.log(`✓ ${posts.length}개 글 HTML 프리렌더`);
 
 // 4) Prerender columns
+const columnsDir = path.join(ROOT, "columns");
+if (fs.existsSync(columnsDir)) {
+  for (const file of fs.readdirSync(columnsDir)) {
+    if (file.endsWith(".html") && file !== "index.html") {
+      const slug = file.replace(/\.html$/, "");
+      if (!columns.some((c) => c.slug === slug)) fs.unlinkSync(path.join(columnsDir, file));
+    }
+  }
+}
 for (const col of columns) {
   const canonical = `${SITE_URL}/columns/${col.slug}.html`;
   const title = `${col.title} | ${config.name}`;

@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "pethamkke_cms_data";
+  const STORAGE_KEY = "breadblog_cms_data";
 
   function getDefaults() {
     return {

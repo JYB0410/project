@@ -4,7 +4,7 @@
 
   window.SiteSEO.setPageMeta({
     title: `${config.name} | ${config.tagline}`,
-    description: `${config.topic}. ${config.targetAudience}을 위한 반려생활 정보 사이트입니다.`,
+    description: `${config.tagline}. ${config.topic}.`,
     canonical: `${config.siteUrl}/`
   });
   window.SiteSEO.websiteJsonLd(config);
@@ -36,11 +36,17 @@
   document.getElementById("featured-posts").innerHTML = window.SiteLayout.renderPostCards(
     window.DataStore.getFeaturedPosts(4)
   );
-  document.getElementById("column-preview").innerHTML = window.SiteLayout.renderColumnCards(
-    window.DataStore.getColumns()
-      .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
-      .slice(0, 3)
-  );
+  const columnSection = document.getElementById("column-section");
+  const columns = window.DataStore.getColumns();
+  if (columnSection) {
+    if (columns.length) {
+      document.getElementById("column-preview").innerHTML = window.SiteLayout.renderColumnCards(
+        columns.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)).slice(0, 3)
+      );
+    } else {
+      columnSection.hidden = true;
+    }
+  }
 
   const principles = document.getElementById("principles-list");
   principles.innerHTML = config.editorialPrinciples
@@ -53,7 +59,7 @@
       <p class="editor-label">편집·운영</p>
       <h3>${window.SiteLayout.ownerLink(config, "owner-link")}</h3>
       <p>${window.SiteUtils.escapeHtml(config.ownerBio)}</p>
-      <a href="${window.SiteUtils.resolvePath("author/")}" class="text-link">칼럼 허브 보기 →</a>
+      <a href="${window.SiteUtils.resolvePath("author/")}" class="text-link">운영자 소개 보기 →</a>
     </div>`;
 
   document.getElementById("contact-email-cta").href = `mailto:${config.contactEmail}`;

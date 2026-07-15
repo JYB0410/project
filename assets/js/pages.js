@@ -12,7 +12,6 @@
       canonical: `${config.siteUrl}/about/`
     });
     document.getElementById("about-purpose").textContent = config.sitePurpose;
-    document.getElementById("about-topic").textContent = config.topic;
     document.getElementById("about-audience").textContent = config.targetAudience;
     document.getElementById("principles-list").innerHTML = config.editorialPrinciples
       .map((p) => `<li>${window.SiteUtils.escapeHtml(p)}</li>`)
@@ -59,7 +58,7 @@
         document.getElementById("author-visitor-msg").classList.add("hidden");
       } else {
         document.getElementById("author-visitor-msg").textContent =
-          "운영자가 정리한 칼럼을 읽어보세요. 편집 원칙과 최신 글도 함께 확인할 수 있습니다.";
+          "제빵기능사 합격 경험과 빵 연구 기록을 운영합니다. 편집 원칙과 최신 글도 함께 확인할 수 있습니다.";
       }
     });
 
@@ -133,12 +132,12 @@
     } else {
       window.SiteSEO.setPageMeta({
         title: `카테고리 | ${config.name}`,
-        description: "반려생활 정보를 주제별로 찾아볼 수 있습니다.",
+        description: "제빵기능사 시리즈와 빵 R&D 일지를 주제별로 찾아볼 수 있습니다.",
         canonical: `${config.siteUrl}/categories/`
       });
-      document.getElementById("page-title").textContent = "카테고리";
+      document.getElementById("page-title").textContent = "가이드";
       document.getElementById("page-desc").textContent =
-        "주제별로 정리된 글 목록입니다. 관심 있는 카테고리를 선택해 읽어보세요.";
+        "제빵기능사 시리즈와 빵 R&D 일지를 주제별로 읽을 수 있습니다.";
       document.getElementById("category-posts").innerHTML = `<div class="category-grid">${categories
         .map((c) => {
           const count = window.DataStore.getPostsByCategory(c.slug).length;

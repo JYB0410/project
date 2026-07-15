@@ -11,9 +11,8 @@
     const categories = window.DataStore.getCategories();
     const navItems = [
       { href: "index.html", label: "홈", key: "home" },
-      { href: "categories/", label: "카테고리", key: "categories" },
-      { href: "columns/", label: "칼럼", key: "columns" },
       { href: "about/", label: "소개", key: "about" },
+      { href: "categories/", label: "가이드", key: "categories" },
       { href: "contact/", label: "문의", key: "contact" }
     ];
 
@@ -28,7 +27,7 @@
     <header class="site-header" role="banner">
       <div class="container header-inner">
         <a href="${resolvePath("index.html")}" class="logo" aria-label="${escapeHtml(config.name)} 홈">
-          <span class="logo-mark" aria-hidden="true">🐾</span>
+          <span class="logo-mark" aria-hidden="true">🍞</span>
           <span class="logo-text"><strong>${escapeHtml(config.name)}</strong></span>
         </a>
         <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" type="button">
@@ -48,7 +47,7 @@
       </div>
       <div class="site-subnav" aria-label="카테고리 바로가기">
         <div class="container subnav-inner">
-          <span class="subnav-label">카테고리</span>
+          <span class="subnav-label">주제</span>
           <ul class="subnav-list">${catLinks}</ul>
         </div>
       </div>
@@ -69,9 +68,9 @@
         <section>
           <h3>바로가기</h3>
           <ul class="footer-links">
-            <li><a href="${resolvePath("about/")}">사이트 소개</a></li>
-            <li><a href="${resolvePath("author/")}">운영자 소개</a></li>
-            <li><a href="${resolvePath("columns/")}">칼럼</a></li>
+            <li><a href="${resolvePath("about/")}">소개</a></li>
+            <li><a href="${resolvePath("categories/")}">가이드</a></li>
+            <li><a href="${resolvePath("author/")}">운영자</a></li>
             <li><a href="${resolvePath("contact/")}">문의하기</a></li>
             <li><a href="${resolvePath("sitemap/")}">사이트맵</a></li>
           </ul>
