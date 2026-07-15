@@ -71,15 +71,13 @@ function insertFigure(content, figure) {
 }
 
 function shouldHaveImage(sec, index, total) {
-  if (sec.id === "editor-note") return false;
-  const slots = new Set(
-    [0, Math.floor(total / 2), total - 2].filter((i) => i >= 0 && i < total)
-  );
-  return (
-    slots.has(index) ||
-    /why|start|opening|problem|hot|cold|rain|mix|warning|bring|snack|feed|groom|vet|carrier|walk|play|sleep|litter|suppl|safe|odor|season/.test(
-      sec.id
-    )
+  if (sec.id === "editor-note" || sec.id === "practice-notes") return false;
+  // 글당 최소 1장: 첫 본문 섹션
+  if (index === 0) return true;
+  // 긴 글은 중간 섹션에 1장 추가
+  if (total >= 8 && index === Math.floor(total / 2)) return true;
+  return /intro|goal|series-purpose|childhood|exam-structure|failures|pass-moment|night-bread/.test(
+    sec.id
   );
 }
 
@@ -92,17 +90,27 @@ console.log(`Pexels 사진 재배정 (${force ? "강제 덮어쓰기" : "누락�
 for (const post of posts) {
   const total = post.sections.length;
   manifest[post.slug] = {};
+  let coverSet = false;
 
   for (const [index, sec] of post.sections.entries()) {
     sec.content = stripFigures(sec.content);
     if (!shouldHaveImage(sec, index, total)) continue;
 
     const { src, photoId, scene } = await downloadPhoto(post.slug, sec.id, sec.title, usedIds);
-    const caption = `${sec.title} — ${post.title}`;
+    const caption = `${sec.title}`;
     sec.content = insertFigure(sec.content, figureHtml(src, caption));
-    manifest[post.slug][sec.id] = { photoId, scene, pexels: `https://www.pexels.com/photo/${photoId}/` };
+    manifest[post.slug][sec.id] = {
+      photoId,
+      scene,
+      pexels: `https://www.pexels.com/photo/${photoId}/`
+    };
+    if (!coverSet) {
+      post.coverImage = src;
+      post.coverCaption = caption;
+      coverSet = true;
+    }
   }
-  console.log(`✓ ${post.slug}`);
+  console.log(`✓ ${post.slug}${post.coverImage ? " (cover)" : ""}`);
 }
 
 fs.writeFileSync(postsPath, `window.POSTS_DATA = ${JSON.stringify(posts, null, 2)};\n`, "utf8");

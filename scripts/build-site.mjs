@@ -35,18 +35,33 @@ function formatKoDate(dateStr) {
   return d.toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric" });
 }
 
+function postCoverForBuild(post, prefix = "") {
+  if (post.coverImage) return prefix + post.coverImage.replace(/^\.\.\//, "");
+  const sec = (post.sections || []).find((s) => s.content?.includes("article-figure"));
+  if (!sec) return "";
+  const m = sec.content.match(/src="([^"]+)"/);
+  return m ? prefix + m[1].replace(/^\.\.\//, "") : "";
+}
+
 function renderHomePostCards(homePosts) {
   if (!homePosts.length) return '<p class="empty-msg">표시할 글이 없습니다.</p>';
   return `<div class="card-grid">${homePosts
     .map((post) => {
       const cat = categories.find((c) => c.slug === post.category);
+      const cover = postCoverForBuild(post);
+      const media = cover
+        ? `<img src="${cover}" alt="" class="card-media" loading="lazy" width="640" height="360">`
+        : "";
       return `
         <article class="post-card">
           <a href="posts/${post.slug}.html" class="card-link">
-            <span class="card-category">${escapeHtml(cat?.name || "")}</span>
-            <h3>${escapeHtml(post.title)}</h3>
-            <p>${escapeHtml(post.excerpt)}</p>
-            <time datetime="${post.updatedAt}">수정 ${formatKoDate(post.updatedAt)}</time>
+            ${media}
+            <div class="card-body">
+              <span class="card-category">${escapeHtml(cat?.name || "")}</span>
+              <h3>${escapeHtml(post.title)}</h3>
+              <p>${escapeHtml(post.excerpt)}</p>
+              <time datetime="${post.updatedAt}">수정 ${formatKoDate(post.updatedAt)}</time>
+            </div>
           </a>
         </article>`;
     })
@@ -180,6 +195,11 @@ function renderPostArticle(post) {
         .join("")}</ul></section>`
     : "";
 
+  const coverSrc = postCoverForBuild(post, "../");
+  const coverHtml = coverSrc
+    ? `<figure class="article-cover"><img src="${coverSrc}" alt="${escapeHtml(post.coverCaption || post.title)}" loading="eager" width="1200" height="675"><figcaption>${escapeHtml(post.coverCaption || post.title)}</figcaption></figure>`
+    : "";
+
   return `<article class="article-main">
   <header class="article-header">
     <p class="article-category"><a href="../categories/index.html?cat=${post.category}">${escapeHtml(cat?.name || "")}</a></p>
@@ -191,6 +211,7 @@ function renderPostArticle(post) {
       <span>수정 <time datetime="${post.updatedAt}">${formatDate(post.updatedAt)}</time></span>
     </div>
   </header>
+  ${coverHtml}
   ${renderToc(post.sections)}
   <div class="article-body">
     ${renderSections(post.sections)}
@@ -271,6 +292,9 @@ for (const post of posts) {
   const title = `${post.title} | ${config.name}`;
   const description = post.excerpt;
   const articleHtml = renderPostArticle(post);
+  const ogImage = postCoverForBuild(post)
+    ? `${SITE_URL}/${postCoverForBuild(post)}`
+    : `${SITE_URL}/assets/images/og-default.svg`;
   const postJsonLd = [
     jsonLdScript(buildArticleJsonLd(post)),
     buildBreadcrumbJsonLd([
@@ -293,7 +317,7 @@ for (const post of posts) {
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${SITE_URL}/assets/images/og-default.svg">
+  <meta property="og:image" content="${ogImage}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="${canonical}">
   <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">

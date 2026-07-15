@@ -40,5 +40,14 @@
     return (sections || []).map((s) => ({ id: s.id, title: s.title }));
   }
 
-  window.SiteUtils = { escapeHtml, formatDate, basePath, resolvePath, slugify, buildToc };
+  function postCoverSrc(post, base = "") {
+    if (!post) return "";
+    if (post.coverImage) return resolvePath(base + post.coverImage.replace(/^\.\.\//, ""));
+    const sec = (post.sections || []).find((s) => s.content && s.content.includes("article-figure"));
+    if (!sec) return "";
+    const m = sec.content.match(/src="([^"]+photos\/[^"]+)"/);
+    return m ? resolvePath(base + m[1].replace(/^\.\.\//, "")) : "";
+  }
+
+  window.SiteUtils = { escapeHtml, formatDate, basePath, resolvePath, slugify, buildToc, postCoverSrc };
 })();

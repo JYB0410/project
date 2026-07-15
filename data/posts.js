@@ -15,7 +15,7 @@ window.POSTS_DATA = [
         "id": "childhood-bread",
         "heading": "h2",
         "title": "사라지지 않던 한 가지 맛",
-        "content": "<p>어릴 때 동네 작은 빵집에서 사 먹던 <strong>밤식빵</strong>이 있습니다. 유리 진열장 안에 놓인 식빵 위에 밤 토핑이 겹겹이 올라가 있었고, 겉은 고소하고 속은 촉촉했습니다. 학교 끝나고 집에 가는 길에 들렀던 그 빵집은 문을 닫은 지 오래됐지만, 맛의 기억만은 선명하게 남아 있습니다.</p><p>나이가 들어 여러 빵집을 가 봐도 그때 그 맛을 넘어서는 곳을 찾지 못했습니다. '비슷한' 밤식빵은 있었지만, <strong>그날의 기억과 겹치는 맛</strong>은 없었습니다. 가격이나 트렌드가 아니라, 한 조각을 먹었을 때 떠오르는 감정이 달랐습니다.</p><p>그래서 '좋은 빵집을 찾자'는 생각에서 한 걸음 더 나아가, <strong>내가 만들 수 있을까</strong>는 질문으로 바뀌었습니다. 처음부터 답이 있었던 것은 아닙니다. 다만 그 질문이 퇴사 무렵 다시 표면으로 올라왔습니다.</p>"
+        "content": "<p>어릴 때 동네 작은 빵집에서 사 먹던 <strong>밤식빵</strong>이 있습니다. 유리 진열장 안에 놓인 식빵 위에 밤 토핑이 겹겹이 올라가 있었고, 겉은 고소하고 속은 촉촉했습니다. 학교 끝나고 집에 가는 길에 들렀던 그 빵집은 문을 닫은 지 오래됐지만, 맛의 기억만은 선명하게 남아 있습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/why-baker-certification/childhood-bread.jpg\" alt=\"사라지지 않던 한 가지 맛\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>사라지지 않던 한 가지 맛<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>나이가 들어 여러 빵집을 가 봐도 그때 그 맛을 넘어서는 곳을 찾지 못했습니다. '비슷한' 밤식빵은 있었지만, <strong>그날의 기억과 겹치는 맛</strong>은 없었습니다. 가격이나 트렌드가 아니라, 한 조각을 먹었을 때 떠오르는 감정이 달랐습니다.</p><p>그래서 '좋은 빵집을 찾자'는 생각에서 한 걸음 더 나아가, <strong>내가 만들 수 있을까</strong>는 질문으로 바뀌었습니다. 처음부터 답이 있었던 것은 아닙니다. 다만 그 질문이 퇴사 무렵 다시 표면으로 올라왔습니다.</p>"
       },
       {
         "id": "quit-day",
@@ -39,7 +39,7 @@ window.POSTS_DATA = [
         "id": "after-pass",
         "heading": "h2",
         "title": "합격이 끝이 아닌 이유",
-        "content": "<p>2025년 5월 합격 후에도 제가 찾는 그 밤식빵은 <strong>아직 연구 중</strong>입니다. 기능사 시험용 반죽과, 기억 속 맛을 재현하는 반죽은 같은 '빵'이어도 접근이 다릅니다. 시험에서는 정해진 규격과 시간 안에 결과를 내야 하고, 추억의 맛은 향과 식감의 기억을 맞추는 작업에 가깝습니다.</p><p>그래서 이 블로그의 본문은 두 갈래로 쌓습니다.</p><ol><li><strong>제빵기능사 시리즈</strong> — 준비·시험·합격까지의 경험 (6편)</li><li><strong>빵 R&D 일지</strong> — 합격 이후, 실패와 수정, 나만의 노하우</li></ol><p>이 글은 시리즈 1편입니다. 전체 순서는 <a href=\"baker-cert-series-roadmap.html\">6편 목차</a>에서 확인할 수 있고, 다음 본편은 <a href=\"baker-cert-8month-roadmap.html\">시험 구조와 8개월 준비 로드맵</a>입니다.</p>"
+        "content": "<p>2025년 5월 합격 후에도 제가 찾는 그 밤식빵은 <strong>아직 연구 중</strong>입니다. 기능사 시험용 반죽과, 기억 속 맛을 재현하는 반죽은 같은 '빵'이어도 접근이 다릅니다. 시험에서는 정해진 규격과 시간 안에 결과를 내야 하고, 추억의 맛은 향과 식감의 기억을 맞추는 작업에 가깝습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/why-baker-certification/after-pass.jpg\" alt=\"합격이 끝이 아닌 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>합격이 끝이 아닌 이유<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>그래서 이 블로그의 본문은 두 갈래로 쌓습니다.</p><ol><li><strong>제빵기능사 시리즈</strong> — 준비·시험·합격까지의 경험 (6편)</li><li><strong>빵 R&D 일지</strong> — 합격 이후, 실패와 수정, 나만의 노하우</li></ol><p>이 글은 시리즈 1편입니다. 전체 순서는 <a href=\"baker-cert-series-roadmap.html\">6편 목차</a>에서 확인할 수 있고, 다음 본편은 <a href=\"baker-cert-8month-roadmap.html\">시험 구조와 8개월 준비 로드맵</a>입니다.</p>"
       },
       {
         "id": "for-readers",
@@ -91,7 +91,9 @@ window.POSTS_DATA = [
         "q": "기능사 없이 집에서만 연습해도 되나요?",
         "a": "가능합니다. 다만 저는 기본기 순서를 잡기 위해 기능사 루트를 선택했습니다. 목표가 '가족과 나눌 한 가지 빵'이라면 학원·독학 비율은 달라져도 됩니다."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/why-baker-certification/childhood-bread.jpg",
+    "coverCaption": "사라지지 않던 한 가지 맛"
   },
   {
     "slug": "baker-cert-series-roadmap",
@@ -109,7 +111,7 @@ window.POSTS_DATA = [
         "id": "series-purpose",
         "heading": "h2",
         "title": "이 시리즈를 만든 이유",
-        "content": "<p>기능사 정보는 검색하면 많습니다. 시험 과목, 합격률, 추천 교재 목록은 이미 정리된 글이 넘쳐납니다. 그런데 저는 준비 초반에 <strong>퇴사 후 8개월간 무엇을 어떤 순서로 했는지</strong>를 한눈에 보여 주는 글을 찾기 어려웠습니다.</p><p>어디서 망했는지, 무엇을 먼저 고쳤는지, 필기와 실기를 어떻게 겹쳐 갔는지 — 이런 <strong>경험 순서</strong>가 있어야 일정을 세우기 수월했습니다. 이 시리즈는 제가 실제로 걸었던 길을 6편으로 나눠 기록합니다.</p><p>합격 후기 한 편으로 끝내지 않는 이유도 같습니다. 합격은 중간 지점이고, 이 블로그의 최종 목표는 <strong>추억의 밤식빵에 가깝게 가는 것</strong>이기 때문입니다. 시리즈 마지막 편은 R&D 일지로 넘어가는 다리 역할을 합니다.</p>"
+        "content": "<p>기능사 정보는 검색하면 많습니다. 시험 과목, 합격률, 추천 교재 목록은 이미 정리된 글이 넘쳐납니다. 그런데 저는 준비 초반에 <strong>퇴사 후 8개월간 무엇을 어떤 순서로 했는지</strong>를 한눈에 보여 주는 글을 찾기 어려웠습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-series-roadmap/series-purpose.jpg\" alt=\"이 시리즈를 만든 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>이 시리즈를 만든 이유<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>어디서 망했는지, 무엇을 먼저 고쳤는지, 필기와 실기를 어떻게 겹쳐 갔는지 — 이런 <strong>경험 순서</strong>가 있어야 일정을 세우기 수월했습니다. 이 시리즈는 제가 실제로 걸었던 길을 6편으로 나눠 기록합니다.</p><p>합격 후기 한 편으로 끝내지 않는 이유도 같습니다. 합격은 중간 지점이고, 이 블로그의 최종 목표는 <strong>추억의 밤식빵에 가깝게 가는 것</strong>이기 때문입니다. 시리즈 마지막 편은 R&D 일지로 넘어가는 다리 역할을 합니다.</p>"
       },
       {
         "id": "who-for",
@@ -133,7 +135,7 @@ window.POSTS_DATA = [
         "id": "how-to-read",
         "heading": "h2",
         "title": "읽는 순서 제안",
-        "content": "<p><strong>처음 오신 분</strong>: 1편 → 2편 → (준비 중이면 3·4편 예정분까지 기다리며 2편 로드맵만 참고) → 소개 페이지</p><p><strong>일정이 급한 분</strong>: 2편 로드맵만 먼저 읽고, 3·4편에서 실기·필기 세부를 보완</p><p><strong>합격 후 연구가 궁금한 분</strong>: 1편·6편(예정) → <strong>빵 R&D 일지</strong> 카테고리</p><p>각 편 맨 아래 <strong>핵심 요약·관련 글</strong>을 붙여 두었습니다. 한 번에 다 읽기보다, 한 편 읽고 일정에 반영한 뒤 다음 편으로 넘기는 편이 저에게는 더 잘 맞았습니다.</p>"
+        "content": "<p><strong>처음 오신 분</strong>: 1편 → 2편 → (준비 중이면 3·4편 예정분까지 기다리며 2편 로드맵만 참고) → 소개 페이지</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-series-roadmap/how-to-read.jpg\" alt=\"읽는 순서 제안\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>읽는 순서 제안<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p><strong>일정이 급한 분</strong>: 2편 로드맵만 먼저 읽고, 3·4편에서 실기·필기 세부를 보완</p><p><strong>합격 후 연구가 궁금한 분</strong>: 1편·6편(예정) → <strong>빵 R&D 일지</strong> 카테고리</p><p>각 편 맨 아래 <strong>핵심 요약·관련 글</strong>을 붙여 두었습니다. 한 번에 다 읽기보다, 한 편 읽고 일정에 반영한 뒤 다음 편으로 넘기는 편이 저에게는 더 잘 맞았습니다.</p>"
       },
       {
         "id": "after-series",
@@ -145,7 +147,7 @@ window.POSTS_DATA = [
         "id": "writing-standard",
         "heading": "h2",
         "title": "이 시리즈 글쓰기 기준",
-        "content": "<p>안내 글이라도 제가 실제로 쓸 때 지키는 기준을 남깁니다. E-E-A-T를 의식해서 문장을 늘리기보다, <strong>경험·전문성·신뢰</strong>가 드러나도록 구성합니다.</p><ul><li><strong>Experience</strong>: '망했다/고쳤다'를 구체 현상으로 적기 (온도, 시간, 식감)</li><li><strong>Expertise</strong>: 시험 구조·품목·준비 순서는 제가 본 회차 기준으로만</li><li><strong>Trust</strong>: 추정과 확인 구분, 수정일 표기, 과장 표현 지양</li></ul><p>남의 합격 후기를 요약하지 않습니다. 검색 상위 글과 다른 결론이 나올 수 있는데, 그건 <strong>환경 차이</strong> 때문일 수 있어요. 댓글·문의로 다른 경험을 알려 주시면 확인 후 반영합니다.</p>"
+        "content": "<p>안내 글이라도 제가 실제로 쓸 때 지키는 기준을 남깁니다. 글자 수를 늘리기보다, <strong>직접 겪은 일</strong>이 읽히게 씁니다.</p><ul><li>망한 날은 온도·시간·식감까지 구체적으로 적기</li><li>시험 이야기는 제가 본 2024~2025 회차 안에서만 쓰기</li><li>추정은 '추정', 확인한 것은 '확인'으로 구분하고, 바뀌면 수정일 남기기</li><li>남의 합격 후기를 요약해 붙이지 않기</li></ul><p>검색 상위 글과 다른 결론이 나올 수 있는데, 그건 <strong>오븐·학원·준비 기간</strong>이 달라서일 때가 많습니다. 다른 경험이 있으면 <a href=\"../contact/\">문의</a>로 알려 주시면 확인 후 반영합니다.</p>"
       },
       {
         "id": "practice-notes",
@@ -178,7 +180,9 @@ window.POSTS_DATA = [
         "q": "시험 일정은 매년 같은가요?",
         "a": "아닙니다. 이 시리즈의 날짜는 2024~2025년 제 경험 기준이며, 최신 접수·시험 일정은 공식 공고를 확인하세요."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/baker-cert-series-roadmap/series-purpose.jpg",
+    "coverCaption": "이 시리즈를 만든 이유"
   },
   {
     "slug": "baker-cert-8month-roadmap",
@@ -196,7 +200,7 @@ window.POSTS_DATA = [
         "id": "exam-structure",
         "heading": "h2",
         "title": "시험 구조, 먼저 한 장으로",
-        "content": "<p>제빵기능사는 <strong>필기</strong>와 <strong>실기</strong>로 나뉩니다. 저는 준비 초반 이 구분을 느슨하게 알고 시작했다가, 일정을 두 번 고쳤습니다. 필기만 붙잡다 실기 연습량이 부족해지거나, 실기만 하다 필기를 시험 직전에 몰아쓰는 패턴을 피하려면 구조를 먼저 적어 두는 편이 낫습니다.</p><p>필기는 재료·공정·위생·기구 등 이론 범위를 묻습니다. 실기는 정해진 시간 안에 지정 반죽·제품을 완성해야 합니다. <strong>둘 다 합격</strong>해야 최종 합격입니다. 어느 한쪽만 강해도 끝까지 가기 어렵습니다.</p><aside class=\"honey-tip-box\"><strong>주의</strong> 과목명·배점·시험 시간은 연도별로 바뀔 수 있습니다. 이 글은 제가 본 2024~2025 회차 기준 경험이며, 최신 요강은 반드시 확인하세요.</aside>"
+        "content": "<p>제빵기능사는 <strong>필기</strong>와 <strong>실기</strong>로 나뉩니다. 저는 준비 초반 이 구분을 느슨하게 알고 시작했다가, 일정을 두 번 고쳤습니다. 필기만 붙잡다 실기 연습량이 부족해지거나, 실기만 하다 필기를 시험 직전에 몰아쓰는 패턴을 피하려면 구조를 먼저 적어 두는 편이 낫습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-8month-roadmap/exam-structure.jpg\" alt=\"시험 구조, 먼저 한 장으로\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>시험 구조, 먼저 한 장으로<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>필기는 재료·공정·위생·기구 등 이론 범위를 묻습니다. 실기는 정해진 시간 안에 지정 반죽·제품을 완성해야 합니다. <strong>둘 다 합격</strong>해야 최종 합격입니다. 어느 한쪽만 강해도 끝까지 가기 어렵습니다.</p><aside class=\"honey-tip-box\"><strong>주의</strong> 과목명·배점·시험 시간은 연도별로 바뀔 수 있습니다. 이 글은 제가 본 2024~2025 회차 기준 경험이며, 최신 요강은 반드시 확인하세요.</aside>"
       },
       {
         "id": "month-0-1",
@@ -226,7 +230,7 @@ window.POSTS_DATA = [
         "id": "if-again",
         "heading": "h2",
         "title": "다시 한다면 바꾸고 싶은 것",
-        "content": "<p>합격 후 돌아보면 이렇게 조정하고 싶습니다.</p><ul><li><strong>더 일찍</strong>: 시험 품목별 '최소 통과선' 체크리스트 작성</li><li><strong>더 줄이기</strong>: 시험과 무관한 빵 연습 (호기심 제품)</li><li><strong>더 꾸준히</strong>: 필기 오답 노트를 실기처럼 매일 열기</li></ul><p>완벽한 일정은 없었습니다. 다만 <strong>메모한 날과 안 한 날의 차이</strong>는 분명했습니다. 반죽 온도·시간을 같은 형식으로 적은 날은 다음 수업에서 수정이 빨랐습니다.</p>"
+        "content": "<p>합격 후 돌아보면 이렇게 조정하고 싶습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-8month-roadmap/if-again.jpg\" alt=\"다시 한다면 바꾸고 싶은 것\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>다시 한다면 바꾸고 싶은 것<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ul><li><strong>더 일찍</strong>: 시험 품목별 '최소 통과선' 체크리스트 작성</li><li><strong>더 줄이기</strong>: 시험과 무관한 빵 연습 (호기심 제품)</li><li><strong>더 꾸준히</strong>: 필기 오답 노트를 실기처럼 매일 열기</li></ul><p>완벽한 일정은 없었습니다. 다만 <strong>메모한 날과 안 한 날의 차이</strong>는 분명했습니다. 반죽 온도·시간을 같은 형식으로 적은 날은 다음 수업에서 수정이 빨랐습니다.</p>"
       },
       {
         "id": "for-readers",
@@ -284,7 +288,9 @@ window.POSTS_DATA = [
         "q": "퇴사 후 바로 시작해야 하나요?",
         "a": "아닙니다. 저는 퇴사와 동시에 시작했을 뿐입니다. 재직 중 준비하시는 분은 주말·퇴근 후 비율을 따로 잡으시면 됩니다. 기간이 짧아지면 시험 품목 수를 먼저 줄이는 편이 낫습니다."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/baker-cert-8month-roadmap/exam-structure.jpg",
+    "coverCaption": "시험 구조, 먼저 한 장으로"
   },
   {
     "slug": "baker-cert-practical-mistakes",
@@ -302,37 +308,37 @@ window.POSTS_DATA = [
         "id": "intro",
         "heading": "h2",
         "title": "실기가 가장 오래 걸린 이유",
-        "content": "<p>제빵기능사 준비에서 저에게 가장 길었던 구간은 <strong>실기</strong>였습니다. 필기는 교재와 기출로 밀도를 올릴 수 있었지만, 실기는 손이 따라줘야 했습니다. 2024년 10월 첫 학원 수업에서 만든 식빵은 겉은 그을리고 속은 아직 덜 익은 상태였고, 강사님이 말씀하신 '반죽 종료 온도'가 왜 중요한지 그날 처음 체감했습니다.</p><p>이 글은 시험 품목을 나열하는 요약이 아닙니다. 제가 <strong>처음 망했던 순간</strong>과, 같은 실수를 줄이기 위해 반복한 연습 방식을 품목 구분 없이 공정 순서대로 적습니다. 시험 범위·품목명은 매년 바뀔 수 있으니, 최신 요강은 반드시 확인하세요. 저는 2024~2025 회차 기준으로 기록합니다.</p>"
+        "content": "<p>제빵기능사 준비에서 저에게 가장 길었던 구간은 <strong>실기</strong>였습니다. 필기는 교재와 기출로 밀도를 올릴 수 있었지만, 실기는 손이 따라줘야 했습니다. 2024년 10월 첫 학원 수업에서 만든 식빵은 겉은 그을리고 속은 아직 덜 익은 상태였고, 강사님이 말씀하신 '반죽 종료 온도'가 왜 중요한지 그날 처음 체감했습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-practical-mistakes/intro.jpg\" alt=\"실기가 가장 오래 걸린 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실기가 가장 오래 걸린 이유<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 시험 품목을 나열하는 요약이 아닙니다. 제가 <strong>처음 망했던 순간</strong>과, 같은 실수를 줄이기 위해 반복한 연습 방식을 품목 구분 없이 공정 순서대로 적습니다. 시험 범위·품목명은 매년 바뀔 수 있으니, 최신 요강은 반드시 확인하세요. 저는 2024~2025 회차 기준으로 기록합니다.</p>"
       },
       {
         "id": "dough-failures",
         "heading": "h2",
         "title": "반죽 — 계량은 맞는데 결과가 다른 날",
-        "content": "<p>초반 가장 많이 망한 구간은 <strong>반죽 종료 시점</strong>이었습니다. 저울로 재료는 맞췄는데, 반죽 온도가 날마다 달랐습니다. 겨울철(2024년 11~12월)에는 반죽이 차가워져 발효가 늦어지고, 봄(2025년 3월)에는 반대로 온도가 올라가 과반죽처럼 느껴지는 날이 있었습니다.</p><ul><li><strong>망한 현상</strong>: 반죽 표면이 일찍 갈라짐, 성형 후 늘어짐</li><li><strong>당시 원인 추정</strong>: 물 온도·실내 온도를 같이 보지 않음 (확인: 온도계 도입 후 개선)</li><li><strong>고친 것</strong>: 재료 온도 + 실내 온도 + 반죽 종료 온도를 한 줄 메모</li></ul><p>메모 형식은 단순했습니다. '물 12°C / 실내 19°C / 반죽 종료 24°C / 발효 1차 50분'. 숫자가 맞다고 보장되는 공식은 아니지만, <strong>같은 날 두 번째 반죽</strong>을 할 때 수정이 빨랐습니다. 감으로만 하던 날과 비교하면 차이가 분명했습니다.</p>"
+        "content": "<p>초반 가장 많이 망한 구간은 <strong>반죽 종료 시점</strong>이었습니다. 저울로 재료는 맞췄는데, 반죽 온도가 날마다 달랐습니다. 겨울철(2024년 11~12월)에는 반죽이 차가워져 발효가 늦어지고, 봄(2025년 3월)에는 반대로 온도가 올라가 과반죽처럼 느껴지는 날이 있었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-practical-mistakes/dough-failures.jpg\" alt=\"반죽 — 계량은 맞는데 결과가 다른 날\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>반죽 — 계량은 맞는데 결과가 다른 날<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ul><li><strong>망한 현상</strong>: 반죽 표면이 일찍 갈라짐, 성형 후 늘어짐</li><li><strong>당시 원인 추정</strong>: 물 온도·실내 온도를 같이 보지 않음 (확인: 온도계 도입 후 개선)</li><li><strong>고친 것</strong>: 재료 온도 + 실내 온도 + 반죽 종료 온도를 한 줄 메모</li></ul><p>메모 형식은 단순했습니다. '물 12°C / 실내 19°C / 반죽 종료 24°C / 발효 1차 50분'. 숫자가 맞다고 보장되는 공식은 아니지만, <strong>같은 날 두 번째 반죽</strong>을 할 때 수정이 빨랐습니다. 감으로만 하던 날과 비교하면 차이가 분명했습니다.</p>"
       },
       {
         "id": "fermentation-failures",
         "heading": "h2",
         "title": "발효 — 시간만 보고 판단하던 실수",
-        "content": "<p>두 번째로 많이 망한 것은 <strong>발효 판단</strong>이었습니다. 레시피에 '1차 40분'이라고 적혀 있으면 그대로 성형에 들어갔는데, 겨울과 봄에서 같은 40분이 전혀 다른 결과를 냈습니다. 덜 발효된 채 굽으면 조직이 촘촘하고 뻑뻑했고, 과발효면 성형 후 오븐 들어가기 전에 이미 기포가 무너졌습니다.</p><p>학원에서 배운 기준은 '손가락 눌림 테스트'와 '부피 배율'이었습니다. 저는 여기에 <strong>반죽 표면 텐션</strong>을 같이 봤습니다. 표면이 너무 느슨하면 과발효 쪽, 너무 팽팽하고 늘어나지 않으면 덜 발효 쪽으로 조정했습니다.</p><aside class=\"honey-tip-box\"><strong>기록 메모</strong> '몇 분'보다 '그날의 반죽 온도·실내 온도와 함께 몇 분'을 적는 습관이 발효 실수를 줄였습니다. 시간은 결과이지 원인이 아닙니다.</aside>"
+        "content": "<p>두 번째로 많이 망한 것은 <strong>발효 판단</strong>이었습니다. 레시피에 '1차 40분'이라고 적혀 있으면 그대로 성형에 들어갔는데, 겨울과 봄에서 같은 40분이 전혀 다른 결과를 냈습니다. 덜 발효된 채 굽으면 조직이 촘촘하고 뻑뻑했고, 과발효면 성형 후 오븐 들어가기 전에 이미 기포가 무너졌습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-practical-mistakes/fermentation-failures.jpg\" alt=\"발효 — 시간만 보고 판단하던 실수\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>발효 — 시간만 보고 판단하던 실수<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>학원에서 배운 기준은 '손가락 눌림 테스트'와 '부피 배율'이었습니다. 저는 여기에 <strong>반죽 표면 텐션</strong>을 같이 봤습니다. 표면이 너무 느슨하면 과발효 쪽, 너무 팽팽하고 늘어나지 않으면 덜 발효 쪽으로 조정했습니다.</p><aside class=\"honey-tip-box\"><strong>기록 메모</strong> '몇 분'보다 '그날의 반죽 온도·실내 온도와 함께 몇 분'을 적는 습관이 발효 실수를 줄였습니다. 시간은 결과이지 원인이 아닙니다.</aside>"
       },
       {
         "id": "shaping-failures",
         "heading": "h2",
         "title": "성형 — 무게는 맞는데 모양이 흐트러질 때",
-        "content": "<p>시험 실기에서 체감 난이도가 높았던 것은 <strong>성형 후 크기·무게 편차</strong>였습니다. 한 덩어리는 500g에 가깝게 나왔는데, 다음은 470g대로 줄어 있었습니다. 강사님 피드백은 '같은 반죽이라도 성형 시 공기 빼기와 봉합이 다르면 무게가 달라진다'였습니다.</p><ul><li>실패: 봉합이 약해 굽는 중 터짐</li><li>실패: 성형 후 과도한 밀대 사용 → 표면 막 손상</li><li>실패: 판에 놓은 뒤 2차 발효 전 위치를 옮겨 모양 붕괴</li></ul><p>고친 방법은 <strong>성형 직후 저울에 한 번 더 올리기</strong>였습니다. 시험장에서도 가능한 수준의 습관이었고, 편차를 ±5g 안쪽으로 줄이는 데 가장 도움이 됐습니다. 속도가 느려지는 것 같아 불안했지만, 오히려 재작업 시간이 줄었습니다.</p>"
+        "content": "<p>시험 실기에서 체감 난이도가 높았던 것은 <strong>성형 후 크기·무게 편차</strong>였습니다. 한 덩어리는 500g에 가깝게 나왔는데, 다음은 470g대로 줄어 있었습니다. 강사님 피드백은 '같은 반죽이라도 성형 시 공기 빼기와 봉합이 다르면 무게가 달라진다'였습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-practical-mistakes/shaping-failures.jpg\" alt=\"성형 — 무게는 맞는데 모양이 흐트러질 때\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>성형 — 무게는 맞는데 모양이 흐트러질 때<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ul><li>실패: 봉합이 약해 굽는 중 터짐</li><li>실패: 성형 후 과도한 밀대 사용 → 표면 막 손상</li><li>실패: 판에 놓은 뒤 2차 발효 전 위치를 옮겨 모양 붕괴</li></ul><p>고친 방법은 <strong>성형 직후 저울에 한 번 더 올리기</strong>였습니다. 시험장에서도 가능한 수준의 습관이었고, 편차를 ±5g 안쪽으로 줄이는 데 가장 도움이 됐습니다. 속도가 느려지는 것 같아 불안했지만, 오히려 재작업 시간이 줄었습니다.</p>"
       },
       {
         "id": "baking-failures",
         "heading": "h2",
         "title": "굽기 — 예열·스팀·시간, 세 가지가 동시에 어긋날 때",
-        "content": "<p>집 오븐과 학원 오븐의 차이는 <strong>예열 도달 시간</strong>에서 처음 드러났습니다. 집에서는 예열 표시등이 켜졌다고 바로 넣었는데 겉만 빨리 익었고, 학원 오븐은 스팀 분사 타이밍까지 맞춰야 했습니다. 초반에는 '온도만 맞추면 된다'고 생각했는데, 식빵류에서 스팀을 빼거나 늦게 넣은 날은 껍질 두께와 색이 달라졌습니다.</p><p>저는 굽기 구간에서 <strong>3분 간격 체크</strong>를 했습니다. 처음 10분은 색 변화, 중반은 팽창, 후반은 내부 익음 소리(탭 테스트)를 봤습니다. 오븐마다 다르지만, '이 오븐에서 이 품목은 몇 분에 색이 이렇게 변한다'는 기록이 쌓이면서 시험 당일 변동에 덜 흔들렸습니다.</p>"
+        "content": "<p>집 오븐과 학원 오븐의 차이는 <strong>예열 도달 시간</strong>에서 처음 드러났습니다. 집에서는 예열 표시등이 켜졌다고 바로 넣었는데 겉만 빨리 익었고, 학원 오븐은 스팀 분사 타이밍까지 맞춰야 했습니다. 초반에는 '온도만 맞추면 된다'고 생각했는데, 식빵류에서 스팀을 빼거나 늦게 넣은 날은 껍질 두께와 색이 달라졌습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-practical-mistakes/baking-failures.jpg\" alt=\"굽기 — 예열·스팀·시간, 세 가지가 동시에 어긋날 때\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>굽기 — 예열·스팀·시간, 세 가지가 동시에 어긋날 때<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>저는 굽기 구간에서 <strong>3분 간격 체크</strong>를 했습니다. 처음 10분은 색 변화, 중반은 팽창, 후반은 내부 익음 소리(탭 테스트)를 봤습니다. 오븐마다 다르지만, '이 오븐에서 이 품목은 몇 분에 색이 이렇게 변한다'는 기록이 쌓이면서 시험 당일 변동에 덜 흔들렸습니다.</p>"
       },
       {
         "id": "time-practice",
         "heading": "h2",
         "title": "시간 재기 — 맛보다 먼저 맞춘 것",
-        "content": "<p>2025년 3월부터는 맛·조직보다 <strong>제한 시간 안에 끝내기</strong>를 주 1회 의식적으로 연습했습니다. 타이머를 켜고 반죽 시작부터 완성까지 기록했습니다. 처음에는 10분 이상 초과했고, 약한 구간이 '성형 세부'와 '정리'에 몰려 있었습니다.</p><p>시간을 맞추려다 품질이 떨어지는 날도 있었습니다. 그때 배운 것은 <strong>단순화</strong>였습니다. 시험 범위 품목 중 가장 익숙한 루트만 고정하고, 장식·부가 단계에서 욕심을 뺐습니다. 합격 후 돌아보면 '예쁘게'보다 '끝내기'가 먼저였어야 했습니다.</p>"
+        "content": "<p>2025년 3월부터는 맛·조직보다 <strong>제한 시간 안에 끝내기</strong>를 주 1회 의식적으로 연습했습니다. 타이머를 켜고 반죽 시작부터 완성까지 기록했습니다. 처음에는 10분 이상 초과했고, 약한 구간이 '성형 세부'와 '정리'에 몰려 있었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-practical-mistakes/time-practice.jpg\" alt=\"시간 재기 — 맛보다 먼저 맞춘 것\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>시간 재기 — 맛보다 먼저 맞춘 것<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>시간을 맞추려다 품질이 떨어지는 날도 있었습니다. 그때 배운 것은 <strong>단순화</strong>였습니다. 시험 범위 품목 중 가장 익숙한 루트만 고정하고, 장식·부가 단계에서 욕심을 뺐습니다. 합격 후 돌아보면 '예쁘게'보다 '끝내기'가 먼저였어야 했습니다.</p>"
       },
       {
         "id": "repeat-method",
@@ -386,7 +392,9 @@ window.POSTS_DATA = [
         "q": "망한 빵도 기록해야 하나요?",
         "a": "저는 망한 날을 더 자세히 적었습니다. '왜'를 찾을 수 있는 날이 많았기 때문입니다. 사진 한 장과 메모 한 줄이면 충분합니다."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/baker-cert-practical-mistakes/intro.jpg",
+    "coverCaption": "실기가 가장 오래 걸린 이유"
   },
   {
     "slug": "baker-cert-written-tips",
@@ -404,7 +412,7 @@ window.POSTS_DATA = [
         "id": "intro",
         "heading": "h2",
         "title": "필기를 '나중에' 미루면 생기는 일",
-        "content": "<p>저는 준비 초반에 실기를 우선했습니다. 필기는 '교재 한 번 훑으면 된다'고 가볍게 봤는데, 2025년 2월 모의고사에서 60점대가 나왔을 때 위험을 느꼈습니다. 암기량이 부족해서라기보다, <strong>비슷한 개념을 헷갈리는 문제</strong>에서 점수가 새고 있었습니다.</p><p>이 글은 필기 전 범위 요약이 아닙니다. 제가 실제로 틀렸던 유형과, 그걸 줄이기 위해 쓴 <strong>오답 노트·비교 정리·루틴</strong>을 중심으로 적습니다. 시험 과목·문항 수는 연도별로 바뀔 수 있으니 최신 요강을 확인하세요.</p>"
+        "content": "<p>저는 준비 초반에 실기를 우선했습니다. 필기는 '교재 한 번 훑으면 된다'고 가볍게 봤는데, 2025년 2월 모의고사에서 60점대가 나왔을 때 위험을 느꼈습니다. 암기량이 부족해서라기보다, <strong>비슷한 개념을 헷갈리는 문제</strong>에서 점수가 새고 있었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-written-tips/intro.jpg\" alt=\"필기를 '나중에' 미루면 생기는 일\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>필기를 '나중에' 미루면 생기는 일<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 필기 전 범위 요약이 아닙니다. 제가 실제로 틀렸던 유형과, 그걸 줄이기 위해 쓴 <strong>오답 노트·비교 정리·루틴</strong>을 중심으로 적습니다. 시험 과목·문항 수는 연도별로 바뀔 수 있으니 최신 요강을 확인하세요.</p>"
       },
       {
         "id": "confusion-types",
@@ -440,7 +448,7 @@ window.POSTS_DATA = [
         "id": "materials-nutrition",
         "heading": "h2",
         "title": "재료·영양 — 이름이 비슷한 재료끼리 묶기",
-        "content": "<p>밀가루·이스트·유제품 파트에서 틀린 문제는 대부분 <strong>용도 혼동</strong>이었습니다. 강력분·중력분·박력분을 외울 때 단백질 함량 숫자만 적지 않고, '시험에 자주 나오는 제품' 한 줄을 붙였습니다. 예: 식빵 반죽에 자주 쓰이는 분류, 과자 반죽에 쓰이는 분류 — 완벽한 산업 지식이 아니라 시험 선택지를 거르기 위한 최소 묶음이었습니다.</p><p>영양소·칼로리 계산 문제는 공식을 외우기보다 <strong>단위를 먼저 확인</strong>하는 습관이 실수를 줄였습니다. g과 mg, 100g 기준과 1회 제공량 기준이 섞여 있으면 같은 공식도 답이 달라집니다. 연습 때 단위를 밑줄 친 문제만 따로 모아 두었습니다.</p>"
+        "content": "<p>밀가루·이스트·유제품 파트에서 틀린 문제는 대부분 <strong>용도 혼동</strong>이었습니다. 강력분·중력분·박력분을 외울 때 단백질 함량 숫자만 적지 않고, '시험에 자주 나오는 제품' 한 줄을 붙였습니다. 예: 식빵 반죽에 자주 쓰이는 분류, 과자 반죽에 쓰이는 분류 — 완벽한 산업 지식이 아니라 시험 선택지를 거르기 위한 최소 묶음이었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-written-tips/materials-nutrition.jpg\" alt=\"재료·영양 — 이름이 비슷한 재료끼리 묶기\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>재료·영양 — 이름이 비슷한 재료끼리 묶기<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>영양소·칼로리 계산 문제는 공식을 외우기보다 <strong>단위를 먼저 확인</strong>하는 습관이 실수를 줄였습니다. g과 mg, 100g 기준과 1회 제공량 기준이 섞여 있으면 같은 공식도 답이 달라집니다. 연습 때 단위를 밑줄 친 문제만 따로 모아 두었습니다.</p>"
       },
       {
         "id": "past-exam-strategy",
@@ -500,7 +508,9 @@ window.POSTS_DATA = [
         "q": "몇 점 이상이면 안심해도 되나요?",
         "a": "회차·난이도마다 다릅니다. 저는 모의 80점대가 나온 뒤 오답만 반복했습니다. 합격선은 최신 공고 기준으로 확인하세요."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/baker-cert-written-tips/intro.jpg",
+    "coverCaption": "필기를 '나중에' 미루면 생기는 일"
   },
   {
     "slug": "baker-cert-exam-day-pass",
@@ -518,7 +528,7 @@ window.POSTS_DATA = [
         "id": "intro",
         "heading": "h2",
         "title": "시험 당일을 글로 남기는 이유",
-        "content": "<p>합격 후기에서 빠지기 쉬운 것은 <strong>당일의 사소한 선택</strong>입니다. 무엇을 챙겼는지, 필기 후 무엇을 하지 않았는지, 손목을 어떻게 쉬게 했는지 — 이런 것이 다음 준비자에게는 체크리스트가 됩니다. 저는 2025년 5월 시험 전후를 메모해 두었고, 이 글은 그 기록을 정리한 것입니다.</p><p>시험장 이름·정확한 일정은 개인 정보와 연도 차이가 있을 수 있어 최소화했습니다. <strong>행동과 판단 기준</strong> 위주로 적습니다.</p>"
+        "content": "<p>합격 후기에서 빠지기 쉬운 것은 <strong>당일의 사소한 선택</strong>입니다. 무엇을 챙겼는지, 필기 후 무엇을 하지 않았는지, 손목을 어떻게 쉬게 했는지 — 이런 것이 다음 준비자에게는 체크리스트가 됩니다. 저는 2025년 5월 시험 전후를 메모해 두었고, 이 글은 그 기록을 정리한 것입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-exam-day-pass/intro.jpg\" alt=\"시험 당일을 글로 남기는 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>시험 당일을 글로 남기는 이유<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>시험장 이름·정확한 일정은 개인 정보와 연도 차이가 있을 수 있어 최소화했습니다. <strong>행동과 판단 기준</strong> 위주로 적습니다.</p>"
       },
       {
         "id": "day-before",
@@ -548,13 +558,13 @@ window.POSTS_DATA = [
         "id": "pass-moment",
         "heading": "h2",
         "title": "합격 확인 — 기쁨보다 먼저 온 것",
-        "content": "<p>결과는 합격이었습니다. 솔직히 첫 감정은 환호라기보다 <strong>안도</strong>에 가까웠습니다. 8개월간 반복한 반죽 메모가 헛되지 않았다는 확인이었습니다. 곧이어 든 생각은 '이제 밤식빵을 본격적으로 연구할 수 있겠다'였습니다. 기능사가 목적이었지만, 최종 목표는 여전히 추억의 맛이었습니다.</p>"
+        "content": "<p>결과는 합격이었습니다. 솔직히 첫 감정은 환호라기보다 <strong>안도</strong>에 가까웠습니다. 8개월간 반복한 반죽 메모가 헛되지 않았다는 확인이었습니다. 곧이어 든 생각은 '이제 밤식빵을 본격적으로 연구할 수 있겠다'였습니다. 기능사가 목적이었지만, 최종 목표는 여전히 추억의 맛이었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-exam-day-pass/pass-moment.jpg\" alt=\"합격 확인 — 기쁨보다 먼저 온 것\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>합격 확인 — 기쁨보다 먼저 온 것<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure>"
       },
       {
         "id": "after-pass-immediate",
         "heading": "h2",
         "title": "합격 직후 바로 한 정리",
-        "content": "<p>합격 당일 저녁, 다음을 적었습니다.</p><ol><li>시험장에서 달랐던 점 (오븐 예열 속도, 습도 체감)</li><li>실기에서 지연된 공정과 원인</li><li>필기에서 헷갈렸던 유형 3개</li><li>다시 한다면 전날·당일 루틴에서 유지할 것</li></ol><p>이 메모는 6편 <strong>빵 R&D로 넘어가는 방식</strong>에도 쓰였습니다. 시험용 반죽과 연구용 반죽의 차이를 구분하는 데 도움이 됐습니다.</p>"
+        "content": "<p>합격 당일 저녁, 다음을 적었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-exam-day-pass/after-pass-immediate.jpg\" alt=\"합격 직후 바로 한 정리\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>합격 직후 바로 한 정리<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><ol><li>시험장에서 달랐던 점 (오븐 예열 속도, 습도 체감)</li><li>실기에서 지연된 공정과 원인</li><li>필기에서 헷갈렸던 유형 3개</li><li>다시 한다면 전날·당일 루틴에서 유지할 것</li></ol><p>이 메모는 6편 <strong>빵 R&D로 넘어가는 방식</strong>에도 쓰였습니다. 시험용 반죽과 연구용 반죽의 차이를 구분하는 데 도움이 됐습니다.</p>"
       },
       {
         "id": "oven-env",
@@ -620,7 +630,9 @@ window.POSTS_DATA = [
         "q": "불합격 후 바로 재도전하려면?",
         "a": "당일 메모의 '지연 공정'부터 보면 다음 일정이 잡힙니다. 2편 로드맵에서 약한 구간만 짧게 재배치하는 방식을 참고할 수 있습니다."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/baker-cert-exam-day-pass/intro.jpg",
+    "coverCaption": "시험 당일을 글로 남기는 이유"
   },
   {
     "slug": "baker-cert-to-bread-rd",
@@ -638,7 +650,7 @@ window.POSTS_DATA = [
         "id": "intro",
         "heading": "h2",
         "title": "합격 다음 날, 바로 시작하지 않은 이유",
-        "content": "<p>2025년 5월 합격 직후, '이제 밤식빵이다!'라고 바로 달려들지 않았습니다. 시험용 손가락 감각과, 기억 속 맛을 쫓는 감각이 <strong>같은 손이어도 질문이 달랐기</strong> 때문입니다. 시험에서는 규격과 시간, R&D에서는 향·식감·가족 반응이 기준이었습니다.</p><p>이 글은 시리즈 6편, 마지막입니다. 기능사 준비 이야기를 마치고, <strong>지금 이 블로그에서 계속하는 빵 연구</strong>로 어떻게 넘어갔는지 적습니다.</p>"
+        "content": "<p>2025년 5월 합격 직후, '이제 밤식빵이다!'라고 바로 달려들지 않았습니다. 시험용 손가락 감각과, 기억 속 맛을 쫓는 감각이 <strong>같은 손이어도 질문이 달랐기</strong> 때문입니다. 시험에서는 규격과 시간, R&D에서는 향·식감·가족 반응이 기준이었습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-to-bread-rd/intro.jpg\" alt=\"합격 다음 날, 바로 시작하지 않은 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>합격 다음 날, 바로 시작하지 않은 이유<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>이 글은 시리즈 6편, 마지막입니다. 기능사 준비 이야기를 마치고, <strong>지금 이 블로그에서 계속하는 빵 연구</strong>로 어떻게 넘어갔는지 적습니다.</p>"
       },
       {
         "id": "exam-vs-rd",
@@ -656,7 +668,7 @@ window.POSTS_DATA = [
         "id": "night-bread-bridge",
         "heading": "h2",
         "title": "밤식빵 프로젝트 — 시리즈가 향한 곳",
-        "content": "<p>1편에서 나온 <strong>어릴 적 동네 빵집의 밤식빵</strong>이 대표 프로젝트입니다. 기능사 과정에서 익힌 식빵 반죽을 바탕으로, 밤 토핑·시럽·굽기 전후 처리를 바꿔 가고 있습니다. 아직 '완성'이라고 말하지 않습니다. 가족이 '비슷하다'고 한 적은 있지만, 제 기억과 완전히 겹치지는 않았습니다.</p><p>첫 R&D 글은 <a href=\"bread-rd-night-bread-v1.html\">밤식빵 1차 시도</a>에서 이어집니다. 시리즈를 읽으신 분이 R&D로 넘어가기 좋은 순서입니다.</p>"
+        "content": "<p>1편에서 나온 <strong>어릴 적 동네 빵집의 밤식빵</strong>이 대표 프로젝트입니다. 기능사 과정에서 익힌 식빵 반죽을 바탕으로, 밤 토핑·시럽·굽기 전후 처리를 바꿔 가고 있습니다. 아직 '완성'이라고 말하지 않습니다. 가족이 '비슷하다'고 한 적은 있지만, 제 기억과 완전히 겹치지는 않았습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-to-bread-rd/night-bread-bridge.jpg\" alt=\"밤식빵 프로젝트 — 시리즈가 향한 곳\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>밤식빵 프로젝트 — 시리즈가 향한 곳<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>첫 R&D 글은 <a href=\"bread-rd-night-bread-v1.html\">밤식빵 1차 시도</a>에서 이어집니다. 시리즈를 읽으신 분이 R&D로 넘어가기 좋은 순서입니다.</p>"
       },
       {
         "id": "weekly-rd-rhythm",
@@ -665,16 +677,16 @@ window.POSTS_DATA = [
         "content": "<p>합격 후 매일 빵을 굽지 않았습니다. 주 2~3회 실험, 나머지는 메모 정리·시장에서 재료 비교·이전 단면 사진 복기였습니다. 매일 구우면 '오늘 뭐가 달랐지?'가 흐려졌습니다. 간격을 두면 차이가 선명해졌습니다.</p><p>실험 없는 날에도 주방 온도·습도를 메모해 두었습니다. 여름과 겨울에 같은 반죽이 다르게 나온다는 3편 실기 메모가 R&D에서도 그대로 적용됐습니다. <strong>날씨도 변수</strong>입니다.</p>"
       },
       {
-        "id": "eeat-how",
+        "id": "writing-principles",
         "heading": "h2",
-        "title": "글을 쓸 때 지키는 것 (E-E-A-T)",
-        "content": "<p>이 블로그 글은 검색용 문장을 채우지 않습니다. 대신 다음을 지킵니다.</p><ul><li><strong>경험</strong>: 직접 구운 날·망한 날만 본문에 넣기</li><li><strong>전문성</strong>: 기능사·시험 이야기는 제가 본 회차 범위 안에서</li><li><strong>신뢰</strong>: 추정은 '추정', 확인은 '확인'으로 표기</li><li><strong>권위</strong>: 남의 합격 후기 요약 대신 제 실험 수치·메모 인용</li></ul><p>수정이 생기면 수정일을 갱신합니다. site.config에 적어 둔 <strong>편집 원칙</strong>과 같습니다.</p><p>의료·영양 처방, '이 레시피로 반드시 성공' 같은 표현은 쓰지 않습니다. 빵은 날씨·재료·오븐에 따라 달라지고, 저도 아직 밤식빵을 완성하지 못했기 때문입니다.</p>"
+        "title": "기록에 남기는 원칙",
+        "content": "<p>이 블로그에는 <strong>제가 직접 구운 날</strong>만 본문에 넣습니다. 기능사·시험 이야기는 2024~2025년에 제가 경험한 범위 안에서만 씁니다. R&D에서는 추정과 확인을 섞지 않고, 수치·재료가 바뀌면 수정일을 함께 적습니다.</p><p>남의 레시피나 합격 후기를 요약해 붙이지 않습니다. 대신 제 반죽 메모·실패 사진·가족 반응을 근거로 삼습니다. '이 레시피로 반드시 성공' 같은 말도 하지 않습니다. 빵은 날씨·재료·오븐에 따라 달라지고, 저도 아직 밤식빵을 완성하지 못했기 때문입니다.</p><p>소개 페이지에 적어 둔 <a href=\"../about/\">편집 원칙</a>과 같은 방향입니다. 읽는 분이 제 주방에서 옆에 서 있는 느낌이 들도록, 과장 없이 쓰는 것이 목표입니다.</p>"
       },
       {
         "id": "tools-and-log",
         "heading": "h2",
         "title": "연구에 쓰는 도구와 기록 습관",
-        "content": "<p>R&D에서도 기능사 때와 같은 도구를 씁니다. 저울, 오븐 온도계, 타이머. 추가로 <strong>단면 사진</strong>과 <strong>다음 날 아침 식감 메모</strong>가 있습니다. 밤식빵은 식은 뒤·다음 날이 기준이라, 당일만 평가하면 잘못된 결론을 내기 쉽습니다.</p><p>노트 앱보다 종이 메모를 썼습니다. 주방에서 손이 젖은 채로 키보드를 쓰기 어렵고, 메모 한 장을 냉장고에 붙여 두면 가족이 '이건 실험 빵'이라는 것을 알 수 있었습니다. 작은 일이지만 실험 빵과 일상 빵을 섞지 않게 해 줬습니다.</p>"
+        "content": "<p>R&D에서도 기능사 때와 같은 도구를 씁니다. 저울, 오븐 온도계, 타이머. 추가로 <strong>단면 사진</strong>과 <strong>다음 날 아침 식감 메모</strong>가 있습니다. 밤식빵은 식은 뒤·다음 날이 기준이라, 당일만 평가하면 잘못된 결론을 내기 쉽습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/baker-cert-to-bread-rd/tools-and-log.jpg\" alt=\"연구에 쓰는 도구와 기록 습관\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>연구에 쓰는 도구와 기록 습관<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>노트 앱보다 종이 메모를 썼습니다. 주방에서 손이 젖은 채로 키보드를 쓰기 어렵고, 메모 한 장을 냉장고에 붙여 두면 가족이 '이건 실험 빵'이라는 것을 알 수 있었습니다. 작은 일이지만 실험 빵과 일상 빵을 섞지 않게 해 줬습니다.</p>"
       },
       {
         "id": "what-not-to-do",
@@ -707,7 +719,7 @@ window.POSTS_DATA = [
         "content": "<p>퇴사 → 기능사 → 빵 연구로 이어지는 길을 6편에 담았습니다. 밤식빵은 아직 진행 중입니다. 기능사를 준비하는 분께는 시리즈가 일정표가 되길, 이미 합격하신 분께는 R&D 일지가 실험 노트가 되길 바랍니다. 시리즈 전체 목차는 <a href=\"baker-cert-series-roadmap.html\">안내 글</a>에서 한눈에 볼 수 있습니다. 질문·다른 경험은 <a href=\"../contact/\">문의</a>로 남겨 주세요. 확인 후 수정일과 함께 반영합니다.</p>"
       }
     ],
-    "summary": "합격 후 시험 반죽과 연구 반죽을 구분하고, R&D 일지 포맷·변수 하나 실험·E-E-A-T 기준으로 빵 R&D 카테고리에 연결하는 방식을 정리했습니다.",
+    "summary": "합격 후 시험 반죽과 연구 반죽을 구분하고, R&D 일지 포맷·변수 하나 실험·솔직한 기록 원칙으로 빵 R&D 카테고리에 연결하는 방식을 정리했습니다.",
     "commonMistakes": [
       "합격 직후 시험 연습과 R&D를 같은 기준으로 평가하기",
       "실패 기록 없이 성공만 남기기",
@@ -734,7 +746,9 @@ window.POSTS_DATA = [
         "q": "밤식빵 레시피는 언제 공개하나요?",
         "a": "완성 레시피 한 방보다, 시도·실패·수정 과정을 일지로 남깁니다. 재현 가능한 단계가 모이면 그때 정리합니다."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/baker-cert-to-bread-rd/intro.jpg",
+    "coverCaption": "합격 다음 날, 바로 시작하지 않은 이유"
   },
   {
     "slug": "bread-rd-night-bread-v1",
@@ -752,13 +766,13 @@ window.POSTS_DATA = [
         "id": "goal",
         "heading": "h2",
         "title": "만들려던 빵 / 목표",
-        "content": "<p><strong>목표</strong>: 어릴 적 동네 빵집에서 먹던 밤식빵에 가깝게 — 특히 <strong>속 촉촉함</strong>과 <strong>밤 토핑이 빵과 한 덩어리처럼 느껴지는 식감</strong>. 1편 <a href=\"../posts/why-baker-certification.html\">동기</a>에서 적었듯, 그 빵집은 문을 닫았고, 제 기억만이 기준입니다.</p><p>2025년 6월, 합격 후 약 3주 뒤 첫 실험입니다. 변수는 <strong>밤 시럽 농도</strong> 하나만 바꿨습니다. 반죽·발효·굽기 온도는 기능사 때 익숙한 식빵 루트를 유지했습니다.</p>"
+        "content": "<p><strong>목표</strong>: 어릴 적 동네 빵집에서 먹던 밤식빵에 가깝게 — 특히 <strong>속 촉촉함</strong>과 <strong>밤 토핑이 빵과 한 덩어리처럼 느껴지는 식감</strong>. 1편 <a href=\"../posts/why-baker-certification.html\">동기</a>에서 적었듯, 그 빵집은 문을 닫았고, 제 기억만이 기준입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>2025년 6월, 합격 후 약 3주 뒤 첫 실험입니다. 변수는 <strong>밤 시럽 농도</strong> 하나만 바꿨습니다. 반죽·발효·굽기 온도는 기능사 때 익숙한 식빵 루트를 유지했습니다.</p>"
       },
       {
         "id": "failures",
         "heading": "h2",
         "title": "실패 1~3 — 눈에 보인 현상",
-        "content": "<ol><li><strong>밤 토핑이 겉에서 미끄러짐</strong> — 굽기 중 일부가 팬 가장자리로 흘러감</li><li><strong>속은 촉촉한데 밤 알맹이가 따로 노는 느낌</strong> — 한 입에 넣었을 때 빵과 밤의 결합이 약함</li><li><strong>다음 날 아침 식감</strong> — 기억 속 '촉촉함'보다 건조에 가까움 (실온 보관 12시간 후)</li></ol><p>겉 색과 높이는 '식빵 사진'으로는 무난했습니다. 가족은 '맛있는 식빵'이라고 했지, '그때 그 밤식빵'이라고 하지는 않았습니다. 그 반응이 <strong>1차 실패의 기준</strong>이 됐습니다.</p>"
+        "content": "<ol><li><strong>밤 토핑이 겉에서 미끄러짐</strong> — 굽기 중 일부가 팬 가장자리로 흘러감</li><li><strong>속은 촉촉한데 밤 알맹이가 따로 노는 느낌</strong> — 한 입에 넣었을 때 빵과 밤의 결합이 약함</li><li><strong>다음 날 아침 식감</strong> — 기억 속 '촉촉함'보다 건조에 가까움 (실온 보관 12시간 후)</li></ol><p>겉 색과 높이는 '식빵 사진'으로는 무난했습니다. 가족은 '맛있는 식빵'이라고 했지, '그때 그 밤식빵'이라고 하지는 않았습니다. 그 반응이 <strong>1차 실패의 기준</strong>이 됐습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/failures.jpg\" alt=\"실패 1~3 — 눈에 보인 현상\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실패 1~3 — 눈에 보인 현상<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure>"
       },
       {
         "id": "cause",
@@ -788,7 +802,7 @@ window.POSTS_DATA = [
         "id": "ingredient-note",
         "heading": "h2",
         "title": "재료 선택 — 밤 통조림과 시럽",
-        "content": "<p>1차 실험에는 통조림 밤을 사용했습니다. 신선 밤 시즌이 아니었고, 변수를 줄이기 위해 가공 상태를 고정했습니다. 시럽은 통조림 시럽을 일부 활용하고 설탕을 추가해 졸였습니다. 브랜드를 특정하지 않습니다. 같은 그램수라도 브랜드마다 당도·수분이 달라 다음 실험 때 혼선이 생길 수 있기 때문입니다.</p><p>재료는 바뀔 수 있습니다. 바뀌면 수정일과 함께 일지에 명시하겠습니다. E-E-A-T에서 <strong>신뢰</strong>는 '완벽한 레시피'보다 '언제 무엇을 썼는지'를 남기는 데 있다고 봅니다.</p>"
+        "content": "<p>1차 실험에는 통조림 밤을 사용했습니다. 신선 밤 시즌이 아니었고, 변수를 줄이기 위해 가공 상태를 고정했습니다. 시럽은 통조림 시럽을 일부 활용하고 설탕을 추가해 졸였습니다. 브랜드를 특정하지 않습니다. 같은 그램수라도 브랜드마다 당도·수분이 달라 다음 실험 때 혼선이 생길 수 있기 때문입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/ingredient-note.jpg\" alt=\"재료 선택 — 밤 통조림과 시럽\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>재료 선택 — 밤 통조림과 시럽<span class=\"photo-credit\"> · Photo: Pexels</span></figcaption></figure><p>재료는 바뀔 수 있습니다. 바뀌면 수정일과 함께 일지에 명시하겠습니다. 완성 레시피를 미리 약속하기보다, <strong>그날 무엇을 썼는지</strong> 남기는 편이 나중에 비교할 때 훨씬 도움이 됩니다.</p>"
       },
       {
         "id": "family-note",
@@ -853,6 +867,8 @@ window.POSTS_DATA = [
         "q": "실험일과 발행일이 다른 이유는?",
         "a": "실험은 2025년부터 이어졌고, 블로그 발행은 2026년 5월부터입니다. R&D 글에는 실험 시점을 본문에 명시합니다."
       }
-    ]
+    ],
+    "coverImage": "../assets/images/photos/bread-rd-night-bread-v1/goal.jpg",
+    "coverCaption": "만들려던 빵 / 목표"
   }
 ];

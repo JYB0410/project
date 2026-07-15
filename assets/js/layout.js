@@ -130,13 +130,20 @@
     return `<div class="card-grid">${posts
       .map((post) => {
         const cat = window.DataStore.getCategory(post.category);
+        const cover = window.SiteUtils.postCoverSrc(post);
+        const media = cover
+          ? `<img src="${cover}" alt="" class="card-media" loading="lazy" width="640" height="360">`
+          : "";
         return `
         <article class="post-card">
           <a href="${resolvePath(base + post.slug + ".html")}" class="card-link">
-            <span class="card-category">${escapeHtml(cat ? cat.name : "")}</span>
-            <h3>${escapeHtml(post.title)}</h3>
-            <p>${escapeHtml(post.excerpt)}</p>
-            <time datetime="${post.updatedAt}">수정 ${formatDate(post.updatedAt)}</time>
+            ${media}
+            <div class="card-body">
+              <span class="card-category">${escapeHtml(cat ? cat.name : "")}</span>
+              <h3>${escapeHtml(post.title)}</h3>
+              <p>${escapeHtml(post.excerpt)}</p>
+              <time datetime="${post.updatedAt}">수정 ${formatDate(post.updatedAt)}</time>
+            </div>
           </a>
         </article>`;
       })
@@ -179,7 +186,16 @@
     });
   }
 
+  function applyTheme() {
+    const config = window.DataStore?.getConfig?.();
+    if (!config) return;
+    const root = document.documentElement;
+    if (config.mainColor) root.style.setProperty("--color-main", config.mainColor);
+    if (config.subColor) root.style.setProperty("--color-sub", config.subColor);
+  }
+
   function mountLayout(active) {
+    applyTheme();
     const headerEl = document.getElementById("site-header");
     const footerEl = document.getElementById("site-footer");
     if (headerEl) headerEl.innerHTML = renderHeader(active);

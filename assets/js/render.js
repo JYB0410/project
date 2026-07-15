@@ -81,7 +81,18 @@
 
   function renderArticleFooterNote() {
     return `
-    <p class="article-note">이 글은 초보자 기준으로 이해하기 쉽게 정리되었으며, 내용은 운영 과정에서 순차적으로 보완될 수 있습니다.</p>`;
+    <p class="article-note">이 글은 운영자의 직접 경험을 바탕으로 작성되었습니다. 오븐·재료·환경에 따라 결과는 달라질 수 있으며, 수정·보완 시 날짜를 갱신합니다.</p>`;
+  }
+
+  function renderArticleCover(post) {
+    const src = window.SiteUtils.postCoverSrc(post);
+    if (!src) return "";
+    const cap = post.coverCaption || post.title;
+    return `
+    <figure class="article-cover">
+      <img src="${src}" alt="${escapeHtml(cap)}" loading="eager" width="1200" height="675">
+      <figcaption>${escapeHtml(cap)}</figcaption>
+    </figure>`;
   }
 
   function renderPostArticle(post, config) {
@@ -98,6 +109,7 @@
           <span>수정 <time datetime="${post.updatedAt}">${formatDate(post.updatedAt)}</time></span>
         </div>
       </header>
+      ${renderArticleCover(post)}
       ${renderToc(post.sections)}
       <div class="article-body">
         ${renderSections(post.sections)}
