@@ -1,5 +1,5 @@
 /**
- * 전체 글 사진 — Pexels · Unsplash · Burst · Flickr(CC) 혼합, 사이트 전역 중복 방지
+ * 전체 글 사진 — Pexels · Unsplash · Flickr(CC) 혼합, 사이트 전역 중복 방지
  * 사용: node scripts/refresh-post-photos.mjs [--force] [--slug=name]
  */
 import fs from "fs";
@@ -11,7 +11,8 @@ import {
   creditLabel,
   sourcePageUrl,
   assetKey,
-  FETCH_HEADERS
+  FETCH_HEADERS,
+  isValidImageBuffer
 } from "./photo-library.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -34,9 +35,13 @@ async function downloadPhoto(slug, sectionId, title, usedKeys) {
   const filename = `${sectionId}.jpg`;
   const filePath = path.join(dir, filename);
 
-  if (!force && fs.existsSync(filePath) && fs.statSync(filePath).size >= 10000) {
-    console.log(`  · ${slug}/${filename} (skip, use --force to replace)`);
-    return { src: `../assets/images/photos/${slug}/${filename}`, asset: null };
+  if (!force && fs.existsSync(filePath)) {
+    const existing = fs.readFileSync(filePath);
+    if (isValidImageBuffer(existing)) {
+      console.log(`  · ${slug}/${filename} (skip, use --force to replace)`);
+      return { src: `../assets/images/photos/${slug}/${filename}`, asset: null };
+    }
+    console.warn(`  ! ${slug}/${filename} 손상됨, 재다운로드...`);
   }
 
   const candidates = photoCandidates(slug, sectionId, title, usedKeys);
@@ -47,9 +52,14 @@ async function downloadPhoto(slug, sectionId, title, usedKeys) {
       console.warn(`  ! ${asset.provider}:${asset.id} ${res.status}, 다음 후보...`);
       continue;
     }
+    const ct = res.headers.get("content-type") || "";
+    if (ct.includes("text/html")) {
+      console.warn(`  ! ${asset.provider}:${asset.id} HTML 응답, 다음 후보...`);
+      continue;
+    }
     const buf = Buffer.from(await res.arrayBuffer());
-    if (buf.length < 8000) {
-      console.warn(`  ! ${asset.provider}:${asset.id} too small, 다음 후보...`);
+    if (!isValidImageBuffer(buf)) {
+      console.warn(`  ! ${asset.provider}:${asset.id} 유효하지 않은 이미지 (${buf.length}B), 다음 후보...`);
       continue;
     }
     fs.writeFileSync(filePath, buf);
@@ -83,7 +93,7 @@ function shouldHaveImage(sec, index, total) {
   if (sec.id === "editor-note" || sec.id === "practice-notes") return false;
   if (index === 0) return true;
   if (total >= 8 && index === Math.floor(total / 2)) return true;
-  return /intro|goal|series-purpose|childhood|exam-structure|failures|pass-moment|night-bread|one-variable|storage|mid-review/.test(
+  return /intro|goal|series-purpose|childhood|exam-structure|failures|pass-moment|night-bread|one-variable|next|storage|mid-review/.test(
     sec.id
   );
 }
@@ -96,7 +106,7 @@ const manifest = fs.existsSync(manifestPath)
   ? JSON.parse(fs.readFileSync(manifestPath, "utf8")).assignments || {}
   : {};
 
-console.log(`사진 재배정 — Pexels · Unsplash · Burst · Flickr (${force ? "강제" : "누락만"})...`);
+console.log(`사진 재배정 — Pexels · Unsplash · Flickr (${force ? "강제" : "누락·손상만"})...`);
 
 for (const post of posts) {
   const total = post.sections.length;
@@ -145,7 +155,7 @@ fs.writeFileSync(
   JSON.stringify(
     {
       updatedAt: new Date().toISOString(),
-      sources: ["pexels", "unsplash", "burst", "flickr"],
+      sources: ["pexels", "unsplash", "flickr"],
       usedCount: usedKeys.size,
       assignments: manifest
     },
@@ -154,4 +164,4 @@ fs.writeFileSync(
   ) + "\n"
 );
 
-console.log(`\n완료 — ${posts.length}개 글, ${usedKeys.size}개 고유 이미지 (4개 소스 혼합)`);
+console.log(`\n완료 — ${posts.length}개 글, ${usedKeys.size}개 고유 이미지 (3개 소스 혼합)`);

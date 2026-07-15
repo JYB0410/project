@@ -1,4 +1,4 @@
-/** 멀티 소스 실사 사진 — Pexels · Unsplash · Burst · Flickr(CC), 사이트 전역 중복 방지 */
+/** 멀티 소스 실사 사진 — Pexels · Unsplash · Flickr(CC), 사이트 전역 중복 방지 */
 
 export function hash(str) {
   let h = 0;
@@ -10,21 +10,20 @@ export function assetKey(asset) {
   return `${asset.provider}:${asset.id}`;
 }
 
-/** @typedef {{ provider: 'pexels'|'unsplash'|'burst'|'flickr', id: string|number, scene?: string }} PhotoAsset */
+/** @typedef {{ provider: 'pexels'|'unsplash'|'flickr', id: string|number, scene?: string }} PhotoAsset */
 
 export const PHOTO_POOL = {
   loaf: [
     { provider: "pexels", id: 209206 },
     { provider: "unsplash", id: "photo-1509440159596-0249088772ff" },
-    { provider: "burst", id: "fresh-baked-bread-on-wooden-table" },
     { provider: "flickr", id: "https://live.staticflickr.com/2355/2104039823_b47da37172_b.jpg" },
+    { provider: "pexels", id: 1279330 },
     { provider: "pexels", id: 1351238 },
     { provider: "unsplash", id: "photo-1608198093002-ad4e005484ec" },
-    { provider: "burst", id: "bread-loaf-on-wooden-cutting-board" },
     { provider: "pexels", id: 1775049 },
+    { provider: "pexels", id: 2147491 },
     { provider: "flickr", id: "https://live.staticflickr.com/8062/8224279272_2e2c4f1fab_b.jpg" },
     { provider: "unsplash", id: "photo-1447933601403-0c6688de566e" },
-    { provider: "burst", id: "assorted-bread-on-wooden-table" },
     { provider: "pexels", id: 30350363 },
     { provider: "pexels", id: 4020258 },
     { provider: "pexels", id: 4029410 },
@@ -32,11 +31,10 @@ export const PHOTO_POOL = {
   ],
   dough: [
     { provider: "pexels", id: 3825137 },
-    { provider: "burst", id: "person-kneading-dough" },
     { provider: "unsplash", id: "photo-1558961363-fa8fdf82db35" },
+    { provider: "pexels", id: 13989981 },
     { provider: "flickr", id: "https://live.staticflickr.com/5068/5625929260_30ac2592cf_b.jpg" },
     { provider: "pexels", id: 2433286 },
-    { provider: "burst", id: "baker-kneading-dough" },
     { provider: "pexels", id: 2434277 },
     { provider: "flickr", id: "https://live.staticflickr.com/4136/4885975867_6ce119a598_b.jpg" },
     { provider: "pexels", id: 5766515 },
@@ -46,8 +44,8 @@ export const PHOTO_POOL = {
   ],
   oven: [
     { provider: "pexels", id: 4253127 },
-    { provider: "burst", id: "oven-with-bread" },
     { provider: "unsplash", id: "photo-1578985545062-69928b1d9587" },
+    { provider: "pexels", id: 4027439 },
     { provider: "flickr", id: "https://live.staticflickr.com/5615/14911108243_9e4deaf8f4_b.jpg" },
     { provider: "pexels", id: 6749790 },
     { provider: "flickr", id: "https://live.staticflickr.com/3786/13201200753_966b02869e_b.jpg" },
@@ -57,11 +55,9 @@ export const PHOTO_POOL = {
   ],
   bakery: [
     { provider: "pexels", id: 206756 },
-    { provider: "burst", id: "baker-holding-freshly-baked-bread" },
     { provider: "unsplash", id: "photo-1549931319-a545dcf3bc73" },
-    { provider: "burst", id: "fresh-bread-in-bakery" },
     { provider: "pexels", id: 1775048 },
-    { provider: "burst", id: "bread-and-pastries-in-bakery" },
+    { provider: "pexels", id: 4031619 },
     { provider: "pexels", id: 7518163 },
     { provider: "pexels", id: 6155642 },
     { provider: "pexels", id: 4021869 },
@@ -93,8 +89,8 @@ export const PHOTO_POOL = {
   ],
   tools: [
     { provider: "pexels", id: 7937458 },
-    { provider: "burst", id: "wooden-spoon-and-whisk-on-table" },
     { provider: "unsplash", id: "photo-1558961363-fa8fdf82db35" },
+    { provider: "pexels", id: 4025949 },
     { provider: "pexels", id: 4491283 },
     { provider: "pexels", id: 4025949 },
     { provider: "pexels", id: 4037528 }
@@ -148,7 +144,8 @@ export function pickScene(slug, sectionId, title = "") {
   if (/oven|굽기|baking|steam|예열/.test(t)) return "oven";
   if (/exam-day|시험|합격|pass-moment|day-before|practical-day/.test(t)) return "exam";
   if (/practical|실기|time-practice|roadmap|month-|weekly/.test(t)) return "bakery";
-  if (/rd-format|failures|one-variable|compare|weekly-rd|goal/.test(t)) return "loaf";
+  if (/rd-format|failures|one-variable|compare|weekly-rd|goal|^next$/.test(t)) return "loaf";
+  if (/다음 시도|이후에 올|6차 이후/.test(t)) return "storage";
   if (/tools|scale|저울|메모|log/.test(t)) return "tools";
   if (/childhood|why-baker|intro|series-purpose|night-bread-bridge/.test(t)) return "loaf";
   if (/kitchen|집|home/.test(t)) return "kitchen";
@@ -172,12 +169,12 @@ const SCENE_FALLBACK_ORDER = {
 };
 
 const PROVIDER_ROTATION = [
-  ["burst", "flickr", "unsplash", "pexels"],
-  ["flickr", "pexels", "burst", "unsplash"],
-  ["unsplash", "burst", "pexels", "flickr"],
-  ["pexels", "unsplash", "flickr", "burst"],
-  ["flickr", "unsplash", "burst", "pexels"],
-  ["burst", "pexels", "flickr", "unsplash"]
+  ["flickr", "unsplash", "pexels"],
+  ["pexels", "flickr", "unsplash"],
+  ["unsplash", "pexels", "flickr"],
+  ["flickr", "pexels", "unsplash"],
+  ["unsplash", "flickr", "pexels"],
+  ["pexels", "unsplash", "flickr"]
 ];
 
 function providerOrder(slug, sectionId) {
@@ -239,15 +236,21 @@ export function photoCandidates(slug, sectionId, title = "", usedKeys = new Set(
 
 const FETCH_HEADERS = { "User-Agent": "Mozilla/5.0 (compatible; bcstarts-blog/1.0)" };
 
+export function isValidImageBuffer(buf) {
+  if (!buf || buf.length < 15000) return false;
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return true;
+  if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47) return true;
+  if (buf[0] === 0x47 && buf[1] === 0x49 && buf[2] === 0x46) return true;
+  if (/<!DOCTYPE|<html/i.test(buf.slice(0, 200).toString("utf8"))) return false;
+  return false;
+}
+
 export function downloadUrl(asset, { width = 1200, height = 675 } = {}) {
   if (asset.provider === "pexels") {
     return `https://images.pexels.com/photos/${asset.id}/pexels-photo-${asset.id}.jpeg?auto=compress&cs=tinysrgb&w=${width}&h=${height}&fit=crop`;
   }
   if (asset.provider === "unsplash") {
     return `https://images.unsplash.com/${asset.id}?auto=format&fit=crop&w=${width}&h=${height}&q=85`;
-  }
-  if (asset.provider === "burst") {
-    return `https://burst.shopifycdn.com/photos/${asset.id}.jpg?width=${width}`;
   }
   if (asset.provider === "flickr") {
     const base = String(asset.id);
@@ -268,7 +271,6 @@ export function downloadUrl(asset, { width = 1200, height = 675 } = {}) {
 export function creditLabel(asset) {
   if (asset.provider === "pexels") return "Pexels";
   if (asset.provider === "unsplash") return "Unsplash";
-  if (asset.provider === "burst") return "Burst";
   if (asset.provider === "flickr") {
     return String(asset.id).includes("wikimedia.org") ? "Wikimedia" : "Flickr CC";
   }
@@ -278,7 +280,6 @@ export function creditLabel(asset) {
 export function sourcePageUrl(asset) {
   if (asset.provider === "pexels") return `https://www.pexels.com/photo/${asset.id}/`;
   if (asset.provider === "unsplash") return `https://unsplash.com/photos/${String(asset.id).replace(/^photo-/, "")}`;
-  if (asset.provider === "burst") return `https://burst.shopify.com/photos/${asset.id}`;
   if (asset.provider === "flickr") return String(asset.id);
   return "";
 }
