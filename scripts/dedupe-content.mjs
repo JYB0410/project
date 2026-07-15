@@ -9,16 +9,34 @@ export const BOILERPLATE_PATTERNS = [
   /<p>이번 주에는[^<]*중 하나만 골라 같은 요일에 반복해 보세요\. 기록이 쌓이면 다음 조정이 쉬워집니다\.<\/p>/g
 ];
 
+function plainText(html) {
+  return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+}
+
+function overlapRatio(a, b) {
+  if (!a || !b) return 0;
+  const short = a.length <= b.length ? a : b;
+  const long = a.length > b.length ? a : b;
+  if (short.length < 30) return 0;
+  if (long.includes(short)) return short.length / long.length;
+  const wordsA = new Set(short.split(" ").filter((w) => w.length > 1));
+  const wordsB = new Set(long.split(" ").filter((w) => w.length > 1));
+  if (!wordsA.size) return 0;
+  let shared = 0;
+  for (const w of wordsA) if (wordsB.has(w)) shared++;
+  return shared / wordsA.size;
+}
+
 export function dedupeParagraphs(html) {
   if (!html) return html;
   let out = html;
   for (const re of BOILERPLATE_PATTERNS) out = out.replace(re, "");
-  const seen = new Set();
+  const keptTexts = [];
   out = out.replace(/<p>([\s\S]*?)<\/p>/g, (full, inner) => {
-    const key = inner.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
-    if (key.length < 30) return full;
-    if (seen.has(key)) return "";
-    seen.add(key);
+    const text = plainText(inner);
+    if (text.length < 30) return full;
+    if (keptTexts.some((t) => t === text || overlapRatio(t, text) >= 0.82)) return "";
+    keptTexts.push(text);
     return full;
   });
   return out.replace(/(<\/p>)\s*(<p>)/g, "$1$2");

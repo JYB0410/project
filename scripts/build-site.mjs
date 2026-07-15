@@ -159,6 +159,77 @@ function renderColumnsIndexCards(allColumns) {
     .join("")}</div>`;
 }
 
+function getPublishedPosts() {
+  return posts.filter((p) => p.status !== "draft");
+}
+
+function renderPostCardsForCategories(catPosts) {
+  if (!catPosts.length) return '<p class="empty-msg">표시할 글이 없습니다.</p>';
+  return `<div class="card-grid">${catPosts
+    .map((post) => {
+      const cat = getCategory(post.category);
+      const cover = postCoverForBuild(post, "../");
+      const media = cover
+        ? `<img src="${cover}" alt="" class="card-media" loading="lazy" width="640" height="360">`
+        : "";
+      return `
+        <article class="post-card">
+          <a href="../posts/${post.slug}.html" class="card-link">
+            ${media}
+            <div class="card-body">
+              <span class="card-category">${escapeHtml(cat?.name || "")}</span>
+              <h3>${escapeHtml(post.title)}</h3>
+              <p>${escapeHtml(post.excerpt)}</p>
+              <time datetime="${post.updatedAt}">수정 ${formatKoDate(post.updatedAt)}</time>
+            </div>
+          </a>
+        </article>`;
+    })
+    .join("")}</div>`;
+}
+
+function renderCategoriesIndexGrid() {
+  const pub = getPublishedPosts();
+  return `<div class="category-grid">${categories
+    .map((c) => {
+      const count = pub.filter((p) => p.category === c.slug).length;
+      return `
+          <a href="?cat=${c.slug}" class="category-card">
+            <h3>${escapeHtml(c.name)}</h3>
+            <p>${escapeHtml(c.description)}</p>
+            <span class="category-count">글 ${count}편</span>
+          </a>`;
+    })
+    .join("")}</div>`;
+}
+
+function renderCategoriesNav() {
+  return categories
+    .map(
+      (c) =>
+        `<a href="?cat=${c.slug}" class="btn btn-secondary">${escapeHtml(c.name)}</a>`
+    )
+    .join(" ");
+}
+
+function renderCategoriesNoscript() {
+  const pub = getPublishedPosts();
+  const blocks = categories
+    .map((c) => {
+      const items = pub
+        .filter((p) => p.category === c.slug)
+        .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+        .map(
+          (p) =>
+            `<li><a href="../posts/${p.slug}.html">${escapeHtml(p.title)}</a></li>`
+        )
+        .join("");
+      return `<section><h2>${escapeHtml(c.name)}</h2><ul>${items}</ul></section>`;
+    })
+    .join("");
+  return `<noscript class="categories-noscript">${blocks}</noscript>`;
+}
+
 function getCategory(slug) {
   return categories.find((c) => c.slug === slug);
 }
@@ -519,6 +590,39 @@ if (fs.existsSync(columnsIndexPath)) {
     fs.writeFileSync(columnsIndexPath, columnsIndexHtml);
   }
   console.log(`✓ 칼럼 목록 프리렌더 (${sortedColumns.length}편)`);
+}
+
+const categoriesIndexPath = path.join(ROOT, "categories", "index.html");
+if (fs.existsSync(categoriesIndexPath)) {
+  let categoriesHtml = fs.readFileSync(categoriesIndexPath, "utf8");
+  const defaultDesc =
+    "제빵기능사 시리즈와 빵 R&D 일지를 주제별로 읽을 수 있습니다.";
+  if (categoriesHtml.includes('id="page-desc"')) {
+    categoriesHtml = categoriesHtml.replace(
+      /<p id="page-desc" class="hero-lead">[\s\S]*?<\/p>/,
+      `<p id="page-desc" class="hero-lead">${defaultDesc}</p>`
+    );
+  }
+  if (categoriesHtml.includes('id="all-cats-nav"')) {
+    categoriesHtml = categoriesHtml.replace(
+      /<nav id="all-cats-nav"[^>]*>[\s\S]*?<\/nav>/,
+      `<nav id="all-cats-nav" class="hero-actions" style="margin-bottom:1.5rem" aria-label="카테고리 필터">${renderCategoriesNav()}</nav>`
+    );
+  }
+  if (categoriesHtml.includes('id="category-posts"')) {
+    categoriesHtml = categoriesHtml.replace(
+      /<div id="category-posts">[\s\S]*?<\/div>/,
+      `<div id="category-posts">${renderCategoriesIndexGrid()}</div>`
+    );
+  }
+  if (!categoriesHtml.includes("categories-noscript")) {
+    categoriesHtml = categoriesHtml.replace(
+      "</main>",
+      `    ${renderCategoriesNoscript()}\n  </main>`
+    );
+  }
+  fs.writeFileSync(categoriesIndexPath, categoriesHtml);
+  console.log(`✓ 가이드 목록 프리렌더 (${categories.length}개 카테고리, ${getPublishedPosts().length}편)`);
 }
 
 function walkHtmlFiles(dir) {

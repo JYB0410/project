@@ -108,7 +108,8 @@
     if (catSlug) {
       const cat = window.DataStore.getCategory(catSlug);
       if (!cat) {
-        document.getElementById("page-content").innerHTML = "<p>카테고리를 찾을 수 없습니다.</p>";
+        document.getElementById("category-posts").innerHTML =
+          "<p class=\"empty-msg\">카테고리를 찾을 수 없습니다.</p>";
         return;
       }
       window.SiteSEO.setPageMeta({
