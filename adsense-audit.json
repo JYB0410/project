@@ -30,7 +30,7 @@
     "글 20편",
     "전 글 2000자 이상",
     "전 글 FAQ 있음",
-    "칼럼 4편",
+    "칼럼 6편",
     "운영자·편집 원칙 설정",
     "주요 페이지 consent-mode.js head 삽입",
     "주요 페이지 adsense.js 로드",
@@ -38,7 +38,7 @@
     "terms: 쿠키·동의 조항",
     "about: 광고·수익화 안내",
     "AdSense 로더 스크립트(승인 후 활성화)",
-    "head pagead 소유권 확인 (29개 페이지, client=ca-pub-6909907004622412)",
+    "head pagead 소유권 확인 (31개 페이지, client=ca-pub-6909907004622412)",
     "승인 대기: pub ID만 설정, adsenseEnabled=false"
   ],
   "ok": true
