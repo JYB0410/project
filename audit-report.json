@@ -1,16 +1,12 @@
 {
   "cycle": 0,
-  "posts": 8,
-  "columns": 0,
-  "uniqueUpdatedDates": 8,
+  "posts": 20,
+  "columns": 4,
+  "uniqueUpdatedDates": 23,
   "june23Count": 0,
-  "issues": 3,
+  "issues": 0,
   "warnings": 0,
-  "errors": [
-    "privacy/index.html 최종 수정일이 config.privacyLastUpdated(2026-07-15)와 불일치",
-    "terms/index.html 최종 수정일이 config.termsLastUpdated(2026-07-15)와 불일치",
-    "index.html 필수 섹션 누락: #column-preview"
-  ],
+  "errors": [],
   "warns": [],
-  "ok": false
+  "ok": true
 }

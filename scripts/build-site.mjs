@@ -6,6 +6,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { dedupeParagraphs, cleanItemSections } from "./dedupe-content.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -19,15 +20,13 @@ function loadJsExport(file, varName) {
 const config = loadJsExport("data/site.config.js", "SITE_CONFIG");
 const categories = loadJsExport("data/categories.js", "CATEGORIES_DATA");
 let posts = loadJsExport("data/posts.js", "POSTS_DATA");
-const columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
+let columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
 
 const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://bcstarts.org").replace(/\/$/, "");
 /** head에 pagead 직접 삽입 금지 — 동의 후 assets/js/adsense.js 가 로드 */
 function renderAdSenseHeadScript() {
   return "";
 }
-
-const BOILERPLATE_PATTERNS = [];
 
 function formatKoDate(dateStr) {
   if (!dateStr) return "";
@@ -131,18 +130,21 @@ function buildBreadcrumbJsonLd(items) {
   });
 }
 
-function dedupeParagraphs(html) {
-  let out = html;
-  for (const re of BOILERPLATE_PATTERNS) out = out.replace(re, "");
-  const seen = new Set();
-  out = out.replace(/<p>([\s\S]*?)<\/p>/g, (full, inner) => {
-    const key = inner.replace(/<[^>]+>/g, "").trim();
-    if (key.length < 40) return full;
-    if (seen.has(key)) return "";
-    seen.add(key);
-    return full;
-  });
-  return out.replace(/\n{3,}/g, "\n");
+function renderHomeColumnCards(homeColumns) {
+  if (!homeColumns.length) return '<p class="empty-msg">표시할 칼럼이 없습니다.</p>';
+  return `<div class="card-grid column-grid">${homeColumns
+    .map(
+      (col) => `
+        <article class="post-card column-card">
+          <a href="columns/${col.slug}.html" class="card-link">
+            <span class="card-badge">운영자 칼럼</span>
+            <h3>${escapeHtml(col.title)}</h3>
+            <p>${escapeHtml(col.excerpt)}</p>
+            <time datetime="${col.updatedAt}">${formatKoDate(col.updatedAt)}</time>
+          </a>
+        </article>`
+    )
+    .join("")}</div>`;
 }
 
 function getCategory(slug) {
@@ -255,20 +257,20 @@ function renderColumnArticle(col) {
 </article>`;
 }
 
-// 1) Clean posts
+// 1) Clean posts + columns (중복 문단·보일러플레이트 제거)
 let cleaned = 0;
 posts = posts.map((post) => {
-  post.sections = post.sections.map((sec) => {
-    if (sec.id === "practice-notes") return sec;
+  for (const sec of post.sections) {
     const before = sec.content;
     sec.content = dedupeParagraphs(sec.content);
     if (sec.content !== before) cleaned++;
-    return sec;
-  });
+  }
   return post;
 });
+columns = columns.map((col) => cleanItemSections(col));
 fs.writeFileSync(path.join(ROOT, "data/posts.js"), `window.POSTS_DATA = ${JSON.stringify(posts, null, 2)};\n`);
-console.log(`✓ posts.js 정리 (${cleaned}개 섹션 보일러플레이트 제거)`);
+fs.writeFileSync(path.join(ROOT, "data/columns.js"), `window.COLUMNS_DATA = ${JSON.stringify(columns, null, 2)};\n`);
+console.log(`✓ posts.js·columns.js 정리 (${cleaned}개 섹션 중복/보일러플레이트 제거)`);
 
 // 2) Update site.config siteUrl
 const cfgPath = path.join(ROOT, "data/site.config.js");
@@ -471,6 +473,15 @@ indexHtml = indexHtml.replace(
   /<div id="featured-posts">[\s\S]*?<\/div>(?=\s*<\/section>)/,
   `<div id="featured-posts">${renderHomePostCards(featuredPosts)}</div>`
 );
+const homeColumns = [...columns]
+  .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+  .slice(0, 3);
+if (indexHtml.includes('id="column-preview"')) {
+  indexHtml = indexHtml.replace(
+    /<div id="column-preview">[\s\S]*?<\/div>(?=\s*<\/section>)/,
+    `<div id="column-preview">${renderHomeColumnCards(homeColumns)}</div>`
+  );
+}
 for (const file of dataFiles) {
   const pattern = new RegExp(`(src="data/${file})(?:\\?v=[^"]*)?(")`, "g");
   indexHtml = indexHtml.replace(pattern, `$1?v=${dataVersion}$2`);

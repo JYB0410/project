@@ -1,13 +1,11 @@
 {
   "cycle": 0,
   "source": "Google AdSense Help 7299563, 9724, 48182, 23921 + GitHub Pages community",
-  "passed": 32,
+  "passed": 33,
   "issues": 0,
-  "warnings": 1,
+  "warnings": 0,
   "errors": [],
-  "warns": [
-    "칼럼 3편 — 운영자 관점 콘텐츠 보강 권장"
-  ],
+  "warns": [],
   "checks": [
     "필수 페이지 존재: 사이트 소개",
     "필수 페이지 존재: 운영자 소개",
@@ -32,6 +30,7 @@
     "글 20편",
     "전 글 2000자 이상",
     "전 글 FAQ 있음",
+    "칼럼 4편",
     "운영자·편집 원칙 설정",
     "주요 페이지 consent-mode.js head 삽입",
     "주요 페이지 adsense.js 로드",

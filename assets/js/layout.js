@@ -13,6 +13,7 @@
       { href: "index.html", label: "홈", key: "home" },
       { href: "about/", label: "소개", key: "about" },
       { href: "categories/", label: "가이드", key: "categories" },
+      { href: "columns/", label: "칼럼", key: "columns" },
       { href: "contact/", label: "문의", key: "contact" }
     ];
 
@@ -70,6 +71,7 @@
           <ul class="footer-links">
             <li><a href="${resolvePath("about/")}">소개</a></li>
             <li><a href="${resolvePath("categories/")}">가이드</a></li>
+            <li><a href="${resolvePath("columns/")}">칼럼</a></li>
             <li><a href="${resolvePath("author/")}">운영자</a></li>
             <li><a href="${resolvePath("contact/")}">문의하기</a></li>
             <li><a href="${resolvePath("sitemap/")}">사이트맵</a></li>

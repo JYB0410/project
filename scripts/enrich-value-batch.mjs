@@ -170,21 +170,17 @@ const COLUMN_PADS = {
   ]
 };
 
-const GENERIC_PAD =
-  "<p>이번 주에는 위 내용 중 하나만 골라 같은 요일에 반복해 보세요. 기록이 쌓이면 다음 조정이 쉬워집니다.</p>";
-
 function padItem(item, pools, countFn) {
-  const pads = [...(pools[item.slug] || [])];
+  const pads = pools[item.slug] || [];
   let i = 0;
-  let guard = 0;
-  while (countFn(item) < MIN_CHARS && guard < 30) {
-    const pad = pads[i] || GENERIC_PAD.replace("위 내용", item.title || "위 내용");
+  while (countFn(item) < MIN_CHARS && i < pads.length) {
+    const pad = pads[i];
+    const key = snippet(pad);
     const last = item.sections[item.sections.length - 1];
-    if (last && !last.content.includes(pad.replace(/<[^>]+>/g, "").slice(0, 20))) {
+    if (last && key && !last.content.includes(key)) {
       last.content += pad;
     }
     i++;
-    guard++;
   }
 }
 
