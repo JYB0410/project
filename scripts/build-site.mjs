@@ -23,9 +23,12 @@ let posts = loadJsExport("data/posts.js", "POSTS_DATA");
 let columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
 
 const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://bcstarts.org").replace(/\/$/, "");
-/** head에 pagead 직접 삽입 금지 — 동의 후 assets/js/adsense.js 가 로드 */
+/** 소유권 확인·승인 후: head pagead. 그 외는 adsense.js(동의 후)만 */
 function renderAdSenseHeadScript() {
-  return "";
+  const pubId = config.adsensePublisherId;
+  if (!pubId || (!config.adsenseSiteVerification && !config.adsenseEnabled)) return "";
+  return `  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(pubId)}"
+     crossorigin="anonymous"></script>`;
 }
 
 function formatKoDate(dateStr) {

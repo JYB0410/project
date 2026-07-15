@@ -20,6 +20,7 @@ window.SITE_CONFIG = {
   ],
   contactEmail: "onhopetoj@gmail.com",
   adsenseEnabled: false,
+  adsenseSiteVerification: true,
   adsensePublisherId: "ca-pub-6909907004622412",
   termsLastUpdated: "2026-07-15",
   disclaimerLastUpdated: "2026-07-15",

@@ -190,8 +190,11 @@ if (!config.adsensePublisherId && !config.adsenseEnabled) {
   warn("AdSense 미설정(정상) — 승인 후 site.config adsensePublisherId·adsenseEnabled 설정");
 }
 
-// --- head pagead 직접 삽입 금지 (동의 전 로드·404 등 정책 위반 방지) ---
+// --- head pagead: 소유권 확인(adsenseSiteVerification) 또는 승인 후(adsenseEnabled) ---
 const ADSENSE_EXCLUDE_HEAD = new Set(["admin", "404.html", "sitemap", "privacy", "terms", "disclaimer", "contact"]);
+const needsHeadPagead = Boolean(
+  config.adsensePublisherId && (config.adsenseSiteVerification || config.adsenseEnabled)
+);
 let headPageadCount = 0;
 let headPageadOnExcluded = 0;
 function walkHtml(dir, files = []) {
@@ -209,13 +212,20 @@ for (const rel of walkHtml(".")) {
   const top = rel.split("/")[0];
   if (rel === "404.html" || ADSENSE_EXCLUDE_HEAD.has(top)) headPageadOnExcluded++;
 }
-if (headPageadCount) {
-  fail(`head에 pagead 스크립트 ${headPageadCount}개 — 제거 필요 (node scripts/patch-adsense-head.mjs)`);
-}
 if (headPageadOnExcluded) {
   fail(`정책 제외 페이지에 pagead ${headPageadOnExcluded}개 (404·privacy 등)`);
-} else if (!headPageadCount) {
-  ok("head pagead 직접 삽입 없음 (adsense.js 동의 후 로드)");
+} else if (needsHeadPagead) {
+  if (!read("index.html").includes("pagead2.googlesyndication.com")) {
+    fail("index.html head에 AdSense 소유권 확인 스크립트 없음");
+  } else if (!read("index.html").includes(config.adsensePublisherId)) {
+    fail("index.html pagead client ID 불일치");
+  } else {
+    ok(`head pagead 소유권 확인 (${headPageadCount}개 페이지, client=${config.adsensePublisherId})`);
+  }
+} else if (headPageadCount) {
+  fail(`head에 pagead 스크립트 ${headPageadCount}개 — 제거 필요 (node scripts/patch-adsense-head.mjs)`);
+} else {
+  ok("head pagead 없음 (adsense.js 동의 후 로드)");
 }
 
 if (config.adsenseEnabled && !config.adsensePublisherId) {
