@@ -23,6 +23,7 @@ let posts = loadJsExport("data/posts.js", "POSTS_DATA");
 let columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
 
 const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://bcstarts.org").replace(/\/$/, "");
+const buildStamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
 /** 소유권 확인·승인 후: head pagead. 그 외는 adsense.js(동의 후)만 */
 function renderAdSenseHeadScript() {
   const pubId = config.adsensePublisherId;
@@ -340,12 +341,16 @@ function renderColumnArticle(col) {
 </article>`;
 }
 
+function stripPhotoCredits(html) {
+  return html.replace(/<span class="photo-credit">[^<]*<\/span>/g, "");
+}
+
 // 1) Clean posts + columns (중복 문단·보일러플레이트 제거)
 let cleaned = 0;
 posts = posts.map((post) => {
   for (const sec of post.sections) {
     const before = sec.content;
-    sec.content = dedupeParagraphs(sec.content);
+    sec.content = stripPhotoCredits(dedupeParagraphs(sec.content));
     if (sec.content !== before) cleaned++;
   }
   return post;
@@ -395,6 +400,7 @@ for (const post of posts) {
   const html = `<!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- build: ${buildStamp} -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${escapeHtml(description)}">
@@ -474,6 +480,7 @@ for (const col of columns) {
   const html = `<!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- build: ${buildStamp} -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${escapeHtml(col.excerpt)}">
@@ -534,7 +541,7 @@ const featuredPosts = [
 ].slice(0, 4);
 
 const buildDate = new Date().toISOString().slice(0, 10);
-const dataVersion = `${publishedPosts.length}-${columns.length}-${latestPosts[0]?.updatedAt || buildDate}`;
+const dataVersion = `${publishedPosts.length}-${columns.length}-${buildStamp}`;
 const dataFiles = ["site.config.js", "categories.js", "posts.js", "columns.js"];
 const assetJsFiles = ["layout.js", "pages.js", "main.js", "column-page.js", "post-page.js"];
 
