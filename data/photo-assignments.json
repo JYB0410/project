@@ -1,9 +1,7 @@
 {
-  "updatedAt": "2026-07-15T06:39:44.957Z",
+  "updatedAt": "2026-07-15T08:47:18.615Z",
   "sources": [
-    "pexels",
-    "unsplash",
-    "flickr"
+    "own"
   ],
   "usedCount": 4,
   "assignments": {
@@ -467,5 +465,6 @@
         "source": "https://www.pexels.com/photo/1435907/"
       }
     }
-  }
+  },
+  "note": "Operator-generated images from incoming-photos"
 }
