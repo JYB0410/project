@@ -1,136 +1,405 @@
 {
-  "updatedAt": "2026-07-15T05:39:11.000Z",
-  "usedCount": 23,
+  "updatedAt": "2026-07-15T06:24:10.717Z",
+  "sources": [
+    "pexels",
+    "unsplash",
+    "burst",
+    "flickr"
+  ],
+  "usedCount": 60,
   "assignments": {
     "why-baker-certification": {
       "childhood-bread": {
-        "photoId": 1351238,
+        "provider": "pexels",
+        "id": 1351238,
         "scene": "loaf",
-        "pexels": "https://www.pexels.com/photo/1351238/"
+        "source": "https://www.pexels.com/photo/1351238/"
       },
       "after-pass": {
-        "photoId": 1775048,
+        "provider": "unsplash",
+        "id": "photo-1549931319-a545dcf3bc73",
         "scene": "exam",
-        "pexels": "https://www.pexels.com/photo/1775048/"
+        "source": "https://unsplash.com/photos/1549931319-a545dcf3bc73"
       }
     },
     "baker-cert-series-roadmap": {
       "series-purpose": {
-        "photoId": 7937458,
+        "provider": "burst",
+        "id": "fresh-bread-in-bakery",
         "scene": "bakery",
-        "pexels": "https://www.pexels.com/photo/7937458/"
+        "source": "https://burst.shopify.com/photos/fresh-bread-in-bakery"
       },
       "how-to-read": {
-        "photoId": 8063609,
+        "provider": "burst",
+        "id": "baker-holding-freshly-baked-bread",
         "scene": "bakery",
-        "pexels": "https://www.pexels.com/photo/8063609/"
+        "source": "https://burst.shopify.com/photos/baker-holding-freshly-baked-bread"
       }
     },
     "baker-cert-8month-roadmap": {
       "exam-structure": {
-        "photoId": 206756,
+        "provider": "pexels",
+        "id": 768833,
         "scene": "exam",
-        "pexels": "https://www.pexels.com/photo/206756/"
+        "source": "https://www.pexels.com/photo/768833/"
       },
       "if-again": {
-        "photoId": 6155642,
+        "provider": "pexels",
+        "id": 4021869,
         "scene": "bakery",
-        "pexels": "https://www.pexels.com/photo/6155642/"
+        "source": "https://www.pexels.com/photo/4021869/"
       }
     },
     "baker-cert-practical-mistakes": {
       "intro": {
-        "photoId": 7045746,
+        "provider": "pexels",
+        "id": 206756,
         "scene": "bakery",
-        "pexels": "https://www.pexels.com/photo/7045746/"
+        "source": "https://www.pexels.com/photo/206756/"
       },
       "dough-failures": {
-        "photoId": 2147491,
+        "provider": "unsplash",
+        "id": "photo-1558961363-fa8fdf82db35",
         "scene": "dough",
-        "pexels": "https://www.pexels.com/photo/2147491/"
+        "source": "https://unsplash.com/photos/1558961363-fa8fdf82db35"
       },
       "fermentation-failures": {
-        "photoId": 2433286,
+        "provider": "burst",
+        "id": "person-kneading-dough",
         "scene": "dough",
-        "pexels": "https://www.pexels.com/photo/2433286/"
+        "source": "https://burst.shopify.com/photos/person-kneading-dough"
       },
       "shaping-failures": {
-        "photoId": 3829226,
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/4136/4885975867_6ce119a598_b.jpg",
         "scene": "dough",
-        "pexels": "https://www.pexels.com/photo/3829226/"
+        "source": "https://live.staticflickr.com/4136/4885975867_6ce119a598_b.jpg"
       },
       "baking-failures": {
-        "photoId": 5412160,
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/5615/14911108243_9e4deaf8f4_b.jpg",
         "scene": "oven",
-        "pexels": "https://www.pexels.com/photo/5412160/"
+        "source": "https://live.staticflickr.com/5615/14911108243_9e4deaf8f4_b.jpg"
       },
       "time-practice": {
-        "photoId": 3271359,
+        "provider": "burst",
+        "id": "bread-and-pastries-in-bakery",
         "scene": "bakery",
-        "pexels": "https://www.pexels.com/photo/3271359/"
+        "source": "https://burst.shopify.com/photos/bread-and-pastries-in-bakery"
       }
     },
     "baker-cert-written-tips": {
       "intro": {
-        "photoId": 143133,
+        "provider": "unsplash",
+        "id": "photo-1509440159596-0249088772ff",
         "scene": "study",
-        "pexels": "https://www.pexels.com/photo/143133/"
+        "source": "https://unsplash.com/photos/1509440159596-0249088772ff"
       },
       "materials-nutrition": {
-        "photoId": 1300975,
+        "provider": "pexels",
+        "id": 374016,
         "scene": "study",
-        "pexels": "https://www.pexels.com/photo/1300975/"
+        "source": "https://www.pexels.com/photo/374016/"
       }
     },
     "baker-cert-exam-day-pass": {
       "intro": {
-        "photoId": 768833,
+        "provider": "pexels",
+        "id": 8063609,
         "scene": "exam",
-        "pexels": "https://www.pexels.com/photo/768833/"
+        "source": "https://www.pexels.com/photo/8063609/"
       },
       "pass-moment": {
-        "photoId": 7518163,
+        "provider": "pexels",
+        "id": 5412160,
         "scene": "exam",
-        "pexels": "https://www.pexels.com/photo/7518163/"
+        "source": "https://www.pexels.com/photo/5412160/"
       },
       "after-pass-immediate": {
-        "photoId": 768875,
-        "scene": "exam",
-        "pexels": "https://www.pexels.com/photo/768875/"
+        "provider": "pexels",
+        "id": 1775048,
+        "scene": "bakery",
+        "source": "https://www.pexels.com/photo/1775048/"
       }
     },
     "baker-cert-to-bread-rd": {
       "intro": {
-        "photoId": 1457847,
-        "scene": "exam",
-        "pexels": "https://www.pexels.com/photo/1457847/"
+        "provider": "pexels",
+        "id": 4036557,
+        "scene": "storage",
+        "source": "https://www.pexels.com/photo/4036557/"
       },
       "night-bread-bridge": {
-        "photoId": 1435907,
+        "provider": "unsplash",
+        "id": "photo-1608198093002-ad4e005484ec",
         "scene": "chestnut",
-        "pexels": "https://www.pexels.com/photo/1435907/"
+        "source": "https://unsplash.com/photos/1608198093002-ad4e005484ec"
       },
       "tools-and-log": {
-        "photoId": 4491283,
+        "provider": "pexels",
+        "id": 4491283,
         "scene": "tools",
-        "pexels": "https://www.pexels.com/photo/4491283/"
+        "source": "https://www.pexels.com/photo/4491283/"
       }
     },
     "bread-rd-night-bread-v1": {
       "goal": {
-        "photoId": 172289,
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/65535/53905337338_58bcaa2032_b.jpg",
         "scene": "chestnut",
-        "pexels": "https://www.pexels.com/photo/172289/"
+        "source": "https://live.staticflickr.com/65535/53905337338_58bcaa2032_b.jpg"
       },
       "failures": {
-        "photoId": 318429,
+        "provider": "pexels",
+        "id": 318429,
         "scene": "chestnut",
-        "pexels": "https://www.pexels.com/photo/318429/"
+        "source": "https://www.pexels.com/photo/318429/"
       },
       "ingredient-note": {
-        "photoId": 590022,
+        "provider": "pexels",
+        "id": 4022207,
         "scene": "chestnut",
-        "pexels": "https://www.pexels.com/photo/590022/"
+        "source": "https://www.pexels.com/photo/4022207/"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 172289,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/172289/"
+      }
+    },
+    "bread-rd-series-guide": {
+      "goal": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/8533/8639203494_9fb4221076_b.jpg",
+        "scene": "study",
+        "source": "https://live.staticflickr.com/8533/8639203494_9fb4221076_b.jpg"
+      },
+      "failures": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/2916/13681294573_e1cc6c5d3b_b.jpg",
+        "scene": "study",
+        "source": "https://live.staticflickr.com/2916/13681294573_e1cc6c5d3b_b.jpg"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 143133,
+        "scene": "study",
+        "source": "https://www.pexels.com/photo/143133/"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 768875,
+        "scene": "study",
+        "source": "https://www.pexels.com/photo/768875/"
+      }
+    },
+    "bread-rd-night-bread-v2": {
+      "goal": {
+        "provider": "pexels",
+        "id": 2894215,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/2894215/"
+      },
+      "failures": {
+        "provider": "pexels",
+        "id": 1435907,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/1435907/"
+      },
+      "one-variable": {
+        "provider": "unsplash",
+        "id": "photo-1447933601403-0c6688de566e",
+        "scene": "loaf",
+        "source": "https://unsplash.com/photos/1447933601403-0c6688de566e"
+      },
+      "next": {
+        "provider": "burst",
+        "id": "fresh-baked-bread-on-wooden-table",
+        "scene": "loaf",
+        "source": "https://burst.shopify.com/photos/fresh-baked-bread-on-wooden-table"
+      }
+    },
+    "bread-rd-night-bread-v3": {
+      "goal": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/2355/2104039823_b47da37172_b.jpg",
+        "scene": "loaf",
+        "source": "https://live.staticflickr.com/2355/2104039823_b47da37172_b.jpg"
+      },
+      "failures": {
+        "provider": "burst",
+        "id": "assorted-bread-on-wooden-table",
+        "scene": "loaf",
+        "source": "https://burst.shopify.com/photos/assorted-bread-on-wooden-table"
+      },
+      "one-variable": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/8062/8224279272_2e2c4f1fab_b.jpg",
+        "scene": "loaf",
+        "source": "https://live.staticflickr.com/8062/8224279272_2e2c4f1fab_b.jpg"
+      },
+      "next": {
+        "provider": "burst",
+        "id": "bread-loaf-on-wooden-cutting-board",
+        "scene": "loaf",
+        "source": "https://burst.shopify.com/photos/bread-loaf-on-wooden-cutting-board"
+      }
+    },
+    "bread-rd-night-bread-v4": {
+      "goal": {
+        "provider": "pexels",
+        "id": 1775049,
+        "scene": "loaf",
+        "source": "https://www.pexels.com/photo/1775049/"
+      },
+      "failures": {
+        "provider": "pexels",
+        "id": 30350363,
+        "scene": "loaf",
+        "source": "https://www.pexels.com/photo/30350363/"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 4029410,
+        "scene": "loaf",
+        "source": "https://www.pexels.com/photo/4029410/"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 4020258,
+        "scene": "loaf",
+        "source": "https://www.pexels.com/photo/4020258/"
+      }
+    },
+    "bread-rd-night-bread-v5": {
+      "goal": {
+        "provider": "pexels",
+        "id": 4037555,
+        "scene": "loaf",
+        "source": "https://www.pexels.com/photo/4037555/"
+      },
+      "failures": {
+        "provider": "pexels",
+        "id": 209206,
+        "scene": "loaf",
+        "source": "https://www.pexels.com/photo/209206/"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 1129446,
+        "scene": "pastry",
+        "source": "https://www.pexels.com/photo/1129446/"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 4020325,
+        "scene": "pastry",
+        "source": "https://www.pexels.com/photo/4020325/"
+      }
+    },
+    "bread-rd-night-bread-mid-review": {
+      "goal": {
+        "provider": "pexels",
+        "id": 4034485,
+        "scene": "pastry",
+        "source": "https://www.pexels.com/photo/4034485/"
+      },
+      "failures": {
+        "provider": "pexels",
+        "id": 3829226,
+        "scene": "pastry",
+        "source": "https://www.pexels.com/photo/3829226/"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 1279330,
+        "scene": "general",
+        "source": "https://www.pexels.com/photo/1279330/"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 4037556,
+        "scene": "general",
+        "source": "https://www.pexels.com/photo/4037556/"
+      }
+    },
+    "bread-rd-night-bread-v6": {
+      "goal": {
+        "provider": "pexels",
+        "id": 2147491,
+        "scene": "general",
+        "source": "https://www.pexels.com/photo/2147491/"
+      },
+      "failures": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/3786/13201200753_966b02869e_b.jpg",
+        "scene": "chestnut",
+        "source": "https://live.staticflickr.com/3786/13201200753_966b02869e_b.jpg"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 3825137,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/3825137/"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 7518163,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/7518163/"
+      }
+    },
+    "bread-rd-night-bread-v7": {
+      "goal": {
+        "provider": "pexels",
+        "id": 6749790,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/6749790/"
+      },
+      "failures": {
+        "provider": "pexels",
+        "id": 7937458,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/7937458/"
+      },
+      "one-variable": {
+        "provider": "burst",
+        "id": "wooden-spoon-and-whisk-on-table",
+        "scene": "chestnut",
+        "source": "https://burst.shopify.com/photos/wooden-spoon-and-whisk-on-table"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 4025949,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/4025949/"
+      }
+    },
+    "bread-rd-night-bread-v8": {
+      "goal": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/5068/5625929260_30ac2592cf_b.jpg",
+        "scene": "chestnut",
+        "source": "https://live.staticflickr.com/5068/5625929260_30ac2592cf_b.jpg"
+      },
+      "failures": {
+        "provider": "pexels",
+        "id": 2433286,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/2433286/"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 6155642,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/6155642/"
+      },
+      "next": {
+        "provider": "burst",
+        "id": "oven-with-bread",
+        "scene": "chestnut",
+        "source": "https://burst.shopify.com/photos/oven-with-bread"
       }
     }
   }
