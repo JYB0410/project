@@ -74,14 +74,6 @@ for (const flatName of expected) {
   copied++;
 }
 
-const postsPath = path.join(ROOT, "data/posts.js");
-let postsJs = fs.readFileSync(postsPath, "utf8");
-postsJs = postsJs.replace(
-  /<span class="photo-credit"> · Photo: (?:Stock|Pexels|Unsplash|Flickr CC)<\/span>/g,
-  '<span class="photo-credit"> · Photo: 직접 촬영</span>'
-);
-fs.writeFileSync(postsPath, postsJs);
-
 const assignPath = path.join(ROOT, "data/photo-assignments.json");
 if (fs.existsSync(assignPath)) {
   const assign = JSON.parse(fs.readFileSync(assignPath, "utf8"));
@@ -92,4 +84,3 @@ if (fs.existsSync(assignPath)) {
 }
 
 console.log(`✓ ${copied}장 배포 완료 → assets/images/photos/`);
-console.log("✓ posts.js photo-credit → 직접 촬영");

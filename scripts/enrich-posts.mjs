@@ -12,7 +12,7 @@ function figureImg(slug, sectionId, title, postTitle) {
   const src = `../assets/images/photos/${slug}/${sectionId}.jpg`;
   const caption = `${title} — ${postTitle}`;
   const alt = caption.replace(/"/g, "'");
-  return `<figure class="article-figure"><img src="${src}" alt="${alt}" loading="lazy" class="article-img" width="1200" height="675"><figcaption>${caption}<span class="photo-credit"> · Photo: Pexels</span></figcaption></figure>`;
+  return `<figure class="article-figure"><img src="${src}" alt="${alt}" loading="lazy" class="article-img" width="1200" height="675"><figcaption>${caption}</figcaption></figure>`;
 }
 
 function stripFigures(html) {

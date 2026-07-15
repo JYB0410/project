@@ -8,7 +8,6 @@ import { fileURLToPath } from "url";
 import {
   photoCandidates,
   downloadUrl,
-  creditLabel,
   sourcePageUrl,
   assetKey,
   FETCH_HEADERS,
@@ -77,10 +76,9 @@ function stripFigures(html) {
   return html.replace(/<figure class="article-figure">[\s\S]*?<\/figure>/g, "");
 }
 
-function figureHtml(src, caption, asset) {
+function figureHtml(src, caption) {
   const alt = caption.replace(/"/g, "'");
-  const credit = asset ? creditLabel(asset) : "Stock";
-  return `<figure class="article-figure"><img src="${src}" alt="${alt}" loading="lazy" class="article-img" width="1200" height="675"><figcaption>${caption}<span class="photo-credit"> · Photo: ${credit}</span></figcaption></figure>`;
+  return `<figure class="article-figure"><img src="${src}" alt="${alt}" loading="lazy" class="article-img" width="1200" height="675"><figcaption>${caption}</figcaption></figure>`;
 }
 
 function insertFigure(content, figure) {
@@ -119,7 +117,7 @@ for (const post of posts) {
 
     const { src, asset } = await downloadPhoto(post.slug, sec.id, sec.title, usedKeys);
     const caption = `${sec.title}`;
-    sec.content = insertFigure(sec.content, figureHtml(src, caption, asset));
+    sec.content = insertFigure(sec.content, figureHtml(src, caption));
     if (asset) {
       manifest[post.slug][sec.id] = {
         provider: asset.provider,
