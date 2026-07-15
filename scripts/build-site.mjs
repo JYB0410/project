@@ -133,20 +133,29 @@ function buildBreadcrumbJsonLd(items) {
   });
 }
 
-function renderHomeColumnCards(homeColumns) {
-  if (!homeColumns.length) return '<p class="empty-msg">표시할 칼럼이 없습니다.</p>';
-  return `<div class="card-grid column-grid">${homeColumns
-    .map(
-      (col) => `
+function renderColumnCardHtml(col, hrefPrefix) {
+  return `
         <article class="post-card column-card">
-          <a href="columns/${col.slug}.html" class="card-link">
+          <a href="${hrefPrefix}${col.slug}.html" class="card-link">
             <span class="card-badge">운영자 칼럼</span>
             <h3>${escapeHtml(col.title)}</h3>
             <p>${escapeHtml(col.excerpt)}</p>
             <time datetime="${col.updatedAt}">${formatKoDate(col.updatedAt)}</time>
           </a>
-        </article>`
-    )
+        </article>`;
+}
+
+function renderHomeColumnCards(homeColumns) {
+  if (!homeColumns.length) return '<p class="empty-msg">표시할 칼럼이 없습니다.</p>';
+  return `<div class="card-grid column-grid">${homeColumns
+    .map((col) => renderColumnCardHtml(col, "columns/"))
+    .join("")}</div>`;
+}
+
+function renderColumnsIndexCards(allColumns) {
+  if (!allColumns.length) return '<p class="empty-msg">표시할 칼럼이 없습니다.</p>';
+  return `<div class="card-grid column-grid">${allColumns
+    .map((col) => renderColumnCardHtml(col, ""))
     .join("")}</div>`;
 }
 
@@ -454,13 +463,18 @@ const featuredPosts = [
 ].slice(0, 4);
 
 const buildDate = new Date().toISOString().slice(0, 10);
-const dataVersion = `${publishedPosts.length}-${latestPosts[0]?.updatedAt || buildDate}`;
+const dataVersion = `${publishedPosts.length}-${columns.length}-${latestPosts[0]?.updatedAt || buildDate}`;
 const dataFiles = ["site.config.js", "categories.js", "posts.js", "columns.js"];
+const assetJsFiles = ["layout.js", "pages.js", "main.js", "column-page.js", "post-page.js"];
 
-function patchDataScriptTags(filePath) {
+function patchScriptCacheTags(filePath) {
   let html = fs.readFileSync(filePath, "utf8");
   for (const file of dataFiles) {
     const pattern = new RegExp(`(src="(?:\\.\\./)?data/${file})(?:\\?v=[^"]*)?(")`, "g");
+    html = html.replace(pattern, `$1?v=${dataVersion}$2`);
+  }
+  for (const file of assetJsFiles) {
+    const pattern = new RegExp(`(src="(?:\\.\\./)?assets/js/${file})(?:\\?v=[^"]*)?(")`, "g");
     html = html.replace(pattern, `$1?v=${dataVersion}$2`);
   }
   fs.writeFileSync(filePath, html);
@@ -491,6 +505,22 @@ for (const file of dataFiles) {
 }
 fs.writeFileSync(indexPath, indexHtml);
 
+const sortedColumns = [...columns]
+  .filter((c) => c.status !== "draft")
+  .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+const columnsIndexPath = path.join(ROOT, "columns", "index.html");
+if (fs.existsSync(columnsIndexPath)) {
+  let columnsIndexHtml = fs.readFileSync(columnsIndexPath, "utf8");
+  if (columnsIndexHtml.includes('id="columns-list"')) {
+    columnsIndexHtml = columnsIndexHtml.replace(
+      /<div id="columns-list">[\s\S]*?<\/div>/,
+      `<div id="columns-list">${renderColumnsIndexCards(sortedColumns)}</div>`
+    );
+    fs.writeFileSync(columnsIndexPath, columnsIndexHtml);
+  }
+  console.log(`✓ 칼럼 목록 프리렌더 (${sortedColumns.length}편)`);
+}
+
 function walkHtmlFiles(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -498,12 +528,12 @@ function walkHtmlFiles(dir) {
       if (entry.name === "node_modules" || entry.name === ".git") continue;
       walkHtmlFiles(full);
     } else if (entry.name.endsWith(".html")) {
-      patchDataScriptTags(full);
+      patchScriptCacheTags(full);
     }
   }
 }
 walkHtmlFiles(ROOT);
-console.log(`✓ 홈 최신글 프리렌더 (${latestPosts[0]?.slug || "none"}) + data ?v=${dataVersion}`);
+console.log(`✓ 홈 최신글 프리렌더 (${latestPosts[0]?.slug || "none"}) + cache ?v=${dataVersion}`);
 
 // 6) Sitemap + robots
 const today = new Date().toISOString().slice(0, 10);
