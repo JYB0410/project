@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-07-15T06:29:27.248Z",
+  "updatedAt": "2026-07-15T06:39:44.957Z",
   "sources": [
     "pexels",
     "unsplash",
     "flickr"
   ],
-  "usedCount": 10,
+  "usedCount": 4,
   "assignments": {
     "why-baker-certification": {
       "childhood-bread": {
@@ -405,6 +405,66 @@
         "id": "photo-1608198093002-ad4e005484ec",
         "scene": "chestnut",
         "source": "https://unsplash.com/photos/1608198093002-ad4e005484ec"
+      }
+    },
+    "bread-rd-night-bread-practical-guide": {
+      "goal": {
+        "provider": "unsplash",
+        "id": "photo-1608198093002-ad4e005484ec",
+        "scene": "chestnut",
+        "source": "https://unsplash.com/photos/1608198093002-ad4e005484ec"
+      },
+      "memo-template": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/65535/53905337338_58bcaa2032_b.jpg",
+        "scene": "chestnut",
+        "source": "https://live.staticflickr.com/65535/53905337338_58bcaa2032_b.jpg"
+      }
+    },
+    "baker-cert-one-page-cheatsheet": {
+      "goal": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/2355/2104039823_b47da37172_b.jpg",
+        "scene": "loaf",
+        "source": "https://live.staticflickr.com/2355/2104039823_b47da37172_b.jpg"
+      },
+      "exam-structure": {
+        "provider": "unsplash",
+        "id": "photo-1549931319-a545dcf3bc73",
+        "scene": "exam",
+        "source": "https://unsplash.com/photos/1549931319-a545dcf3bc73"
+      },
+      "exam-day": {
+        "provider": "pexels",
+        "id": 8063609,
+        "scene": "exam",
+        "source": "https://www.pexels.com/photo/8063609/"
+      }
+    },
+    "bread-rd-night-bread-v9": {
+      "goal": {
+        "provider": "pexels",
+        "id": 172289,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/172289/"
+      },
+      "failures": {
+        "provider": "flickr",
+        "id": "https://live.staticflickr.com/65535/53905337338_58bcaa2032_b.jpg",
+        "scene": "chestnut",
+        "source": "https://live.staticflickr.com/65535/53905337338_58bcaa2032_b.jpg"
+      },
+      "one-variable": {
+        "provider": "pexels",
+        "id": 4022207,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/4022207/"
+      },
+      "next": {
+        "provider": "pexels",
+        "id": 1435907,
+        "scene": "chestnut",
+        "source": "https://www.pexels.com/photo/1435907/"
       }
     }
   }
