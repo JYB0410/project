@@ -788,7 +788,7 @@ window.POSTS_DATA = [
         "id": "next",
         "heading": "h2",
         "title": "다음 시도 계획",
-        "content": "<ul><li>2차: 시럽 농도 유지 + <strong>밤 올리는 시점</strong>만 앞당기기</li><li>3차: 반죽 수분만 소폭 상향 (시험용 대비)</li><li>공통: 다음 날 아침 식감까지 기록, 단면 사진</li></ul><p>완성 레시피를 한 번에 내지 않습니다. 6편 <a href=\"baker-cert-to-bread-rd.html\">R&D 방식</a>대로 일지를 이어갑니다. 전체 순서는 <a href=\"bread-rd-series-guide.html\">R&D 일지 안내</a>를 참고하세요. 전체 순서는 <a href=\"bread-rd-series-guide.html\">R&D 일지 안내</a>를 참고하세요.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/next.jpg\" alt=\"다음 시도 계획\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>다음 시도 계획</figcaption></figure>"
+        "content": "<ul><li>2차: 시럽 농도 유지 + <strong>밤 올리는 시점</strong>만 앞당기기</li><li>3차: 반죽 수분만 소폭 상향 (시험용 대비)</li><li>공통: 다음 날 아침 식감까지 기록, 단면 사진</li></ul><p>완성 레시피를 한 번에 내지 않습니다. 6편 <a href=\"baker-cert-to-bread-rd.html\">R&D 방식</a>대로 일지를 이어갑니다. 전체 순서는 <a href=\"bread-rd-series-guide.html\">R&D 일지 안내</a>를 참고하세요.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/next.jpg\" alt=\"다음 시도 계획\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>다음 시도 계획</figcaption></figure>"
       },
       {
         "id": "context",

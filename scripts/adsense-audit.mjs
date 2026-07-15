@@ -118,6 +118,35 @@ for (const link of ["privacy/", "terms/", "disclaimer/", "about/", "contact/"]) 
 }
 ok("푸터 정책·문의 링크");
 
+// --- 이미지 캡션·스톡 출처 (승인 품질) ---
+const stockCaptionRe = /photo-credit|Photo:\s*(?:Pexels|Unsplash|Stock|Flickr)/i;
+let stockCaptionHits = 0;
+for (const p of posts) {
+  const all = p.sections.map((s) => s.content).join(" ");
+  if (stockCaptionRe.test(all)) {
+    fail(`글 ${p.slug}: 스톡 이미지 캡션 잔존`);
+    stockCaptionHits++;
+  }
+}
+for (const c of columns) {
+  const all = c.sections.map((s) => s.content).join(" ");
+  if (stockCaptionRe.test(all)) {
+    fail(`칼럼 ${c.slug}: 스톡 이미지 캡션·출처 문구 잔존`);
+    stockCaptionHits++;
+  }
+}
+if (!stockCaptionHits) ok("스톡 이미지 캡션 없음 (posts·columns)");
+
+const postsHtmlDir = path.join(ROOT, "posts");
+if (fs.existsSync(postsHtmlDir)) {
+  let htmlStock = 0;
+  for (const file of fs.readdirSync(postsHtmlDir).filter((f) => f.endsWith(".html"))) {
+    if (stockCaptionRe.test(read(path.join("posts", file)))) htmlStock++;
+  }
+  if (htmlStock) fail(`프리렌더 HTML ${htmlStock}개에 스톡 캡션 잔존`);
+  else ok("프리렌더 글 HTML 스톡 캡션 없음");
+}
+
 // --- 콘텐츠 품질 (low-value content 방지) ---
 const published = posts.filter((p) => p.status !== "draft");
 if (published.length < 15) warn(`글 ${published.length}편 — AdSense는 15~25편 이상 권장`);
