@@ -20,15 +20,38 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"퇴사 후 빵 터졌음!","description":"제빵기능사 합격 경험과 빵 연구·실패·노하우를 기록하는 블로그","url":"https://bcstarts.org/","publisher":{"@type":"Person","name":"정지석","url":"https://bcstarts.org/author/"}}</script>
 </head>
 <body>
-  <div id="site-header"></div>
+  <div id="site-header">
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="퇴사 후 빵 터졌음! 홈">
+          <span class="logo-mark" aria-hidden="true">🍞</span>
+          <span class="logo-text"><strong>퇴사 후 빵 터졌음!</strong></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" type="button">
+          <span class="sr-only">메뉴 열기</span>
+          <span aria-hidden="true"></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="주요 메뉴">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">홈</a></li><li><a href="about/" class="nav-link ">소개</a></li><li><a href="categories/" class="nav-link ">가이드</a></li><li><a href="columns/" class="nav-link ">칼럼</a></li><li><a href="contact/" class="nav-link ">문의</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-subnav" aria-label="카테고리 바로가기">
+        <div class="container subnav-inner">
+          <span class="subnav-label">주제</span>
+          <ul class="subnav-list"><li><a href="categories/index.html?cat=baker-cert" class="subnav-chip">제빵기능사 시리즈</a></li><li><a href="categories/index.html?cat=bread-rd" class="subnav-chip">빵 R&amp;D 일지</a></li><li><a href="columns/" class="subnav-chip subnav-chip-column">운영자 칼럼</a></li></ul>
+        </div>
+      </div>
+    </header></div>
   <main>
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <h1 id="hero-title">퇴사 후 빵 터졌음!</h1>
-          <p class="hero-lead" id="hero-lead"></p>
-          <p id="hero-topic"></p>
-          <p id="hero-audience" style="color:var(--color-muted);font-size:0.95rem"></p>
+          <p class="hero-lead" id="hero-lead">퇴사 후 제빵기능사에 도전하고, 지금은 빵을 연구하며 기록하는 블로그</p>
+          <p id="hero-topic">제빵기능사 합격 경험과 빵 연구·실패·노하우</p>
+          <p id="hero-audience" style="color:var(--color-muted);font-size:0.95rem">대상 독자: 제빵기능사를 준비하거나, 퇴사 후 새로운 기술에 도전하는 분</p>
           <div class="hero-actions">
             <a href="about/" class="btn btn-primary">소개 읽기</a>
             <a href="categories/" class="btn btn-secondary">가이드 보기</a>
@@ -58,7 +81,17 @@
           </div>
           <a href="categories/" class="text-link">전체 보기 →</a>
         </div>
-        <div id="category-grid" class="category-grid"></div>
+        <div id="category-grid" class="category-grid">
+      <a href="categories/index.html?cat=baker-cert" class="category-card">
+        <h3>제빵기능사 시리즈</h3>
+        <p>2024년 9월 퇴사 후 2025년 5월 합격까지의 준비 과정, 시험 구조, 실기·필기 경험을 6편 시리즈로 정리합니다.</p>
+        <span class="category-count">글 8편</span>
+      </a>
+      <a href="categories/index.html?cat=bread-rd" class="category-card">
+        <h3>빵 R&amp;D 일지</h3>
+        <p>기능사 합격 이후, 빵을 연구·개발할 때의 실패, 변수 수정, 나만의 노하우를 기록합니다. 추억의 밤식빵 프로젝트가 대표 주제입니다.</p>
+        <span class="category-count">글 12편</span>
+      </a></div>
       </section>
 
       <section class="section" aria-labelledby="latest-heading">
@@ -228,17 +261,24 @@
 
       <section class="section" aria-labelledby="purpose-heading">
         <h2 id="purpose-heading">운영 목적</h2>
-        <p id="site-purpose-text" class="prose"></p>
+        <p id="site-purpose-text" class="prose">퇴사 후 빵 터졌음!은 2024년 9월 퇴사 후 제빵기능사에 도전해 2025년 5월 합격한 경험과, 합격 이후 빵을 연구하며 쌓는 실패·노하우를 기록하는 블로그입니다. 퇴사 이야기는 소개에 담고, 본문은 제빵 기능사와 빵 R&amp;D에 집중합니다.</p>
       </section>
 
       <section class="section" aria-labelledby="principles-heading">
         <h2 id="principles-heading">편집 원칙</h2>
-        <ul id="principles-list" class="principles-list"></ul>
+        <ul id="principles-list" class="principles-list"><li>의료·영양 처방, 투자·수익 보장처럼 전문 자문이 필요한 영역은 다루지 않습니다.</li><li>직접 만들고 망한 경험을 우선하며, 검증하지 않은 정보는 '추정'과 '확인'을 구분해 씁니다.</li><li>글은 발행 후에도 수정하며, 변경이 있으면 수정일을 기록합니다.</li><li>실패도 기록합니다. 합격·성공만 골라 쓰지 않습니다.</li></ul>
       </section>
 
       <section class="section" aria-labelledby="editor-heading">
         <h2 id="editor-heading">운영자</h2>
-        <div id="editor-mini" class="editor-mini"></div>
+        <div id="editor-mini" class="editor-mini">
+    <div class="editor-avatar" aria-hidden="true">정</div>
+    <div>
+      <p class="editor-label">편집·운영</p>
+      <h3><a href="author/" class="owner-link">정지석</a></h3>
+      <p>2024년 9월 퇴사 후 제빵기능사를 준비해 2025년 5월 합격했습니다. 어릴 적 동네 빵집의 밤식빵 맛을 다시 만들기 위해, 기능사 이후에도 빵을 연구하며 실패와 수정 과정을 기록합니다.</p>
+      <a href="author/" class="text-link">운영자 소개 보기 →</a>
+    </div></div>
       </section>
 
       <section class="section cta-box" aria-labelledby="cta-heading">
@@ -248,19 +288,57 @@
       </section>
     </div>
   </main>
-  <div id="site-footer"></div>
+  <div id="site-footer">
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <section class="footer-brand">
+          <h2>퇴사 후 빵 터졌음!</h2>
+          <p>퇴사 후 제빵기능사에 도전하고, 지금은 빵을 연구하며 기록하는 블로그</p>
+          <p class="footer-topic">주제: 제빵기능사 합격 경험과 빵 연구·실패·노하우</p>
+        </section>
+        <section>
+          <h3>바로가기</h3>
+          <ul class="footer-links">
+            <li><a href="about/">소개</a></li>
+            <li><a href="categories/">가이드</a></li>
+            <li><a href="columns/">칼럼</a></li>
+            <li><a href="author/">운영자</a></li>
+            <li><a href="contact/">문의하기</a></li>
+            <li><a href="sitemap/">사이트맵</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>정책</h3>
+          <ul class="footer-links">
+            <li><a href="privacy/">개인정보처리방침</a></li>
+            <li><a href="terms/">이용약관</a></li>
+            <li><a href="disclaimer/">면책고지</a></li>
+            <li><button type="button" class="footer-cookie-btn" id="footer-cookie-settings">쿠키 설정</button></li>
+          </ul>
+        </section>
+        <section>
+          <h3>운영</h3>
+          <p>운영자: <a href="author/" class="owner-link">정지석</a></p>
+          <p>문의: <a href="mailto:onhopetoj@gmail.com">onhopetoj@gmail.com</a></p>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 퇴사 후 빵 터졌음!. 일반 정보 제공 목적의 사이트입니다.</p>
+        <p class="footer-note">본 사이트의 내용은 일반 정보 제공 목적이며, 식품 위생·알레르기 등 개인 건강 관련 판단을 대체하지 않습니다.</p>
+      </div>
+    </footer></div>
 
-  <script src="data/site.config.js?v=20-6-2026-07-15T09-24-46"></script>
-  <script src="data/categories.js?v=20-6-2026-07-15T09-24-46"></script>
-  <script src="data/posts.js?v=20-6-2026-07-15T09-24-46"></script>
-  <script src="data/columns.js?v=20-6-2026-07-15T09-24-46"></script>
+  <script src="data/site.config.js?v=20-6-2026-07-15T12-40-39"></script>
+  <script src="data/categories.js?v=20-6-2026-07-15T12-40-39"></script>
+  <script src="data/posts.js?v=20-6-2026-07-15T12-40-39"></script>
+  <script src="data/columns.js?v=20-6-2026-07-15T12-40-39"></script>
   <script src="assets/js/data-store.js"></script>
   <script src="assets/js/auth.js"></script>
   <script src="assets/js/utils.js"></script>
   <script src="assets/js/seo.js"></script>
-  <script src="assets/js/layout.js?v=20-6-2026-07-15T09-24-46"></script>
+  <script src="assets/js/layout.js?v=20-6-2026-07-15T12-40-39"></script>
   <script src="assets/js/render.js"></script>
-  <script src="assets/js/main.js?v=20-6-2026-07-15T09-24-46"></script>
+  <script src="assets/js/main.js?v=20-6-2026-07-15T12-40-39"></script>
   <script src="assets/js/consent.js" defer></script>
   <script src="assets/js/adsense.js" defer></script>
 </body>

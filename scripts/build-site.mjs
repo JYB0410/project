@@ -153,6 +153,130 @@ function renderHomeColumnCards(homeColumns) {
     .join("")}</div>`;
 }
 
+function renderHomeCategoryGrid() {
+  const pub = getPublishedPosts();
+  return categories
+    .map((c) => {
+      const count = pub.filter((p) => p.category === c.slug).length;
+      return `
+      <a href="categories/index.html?cat=${c.slug}" class="category-card">
+        <h3>${escapeHtml(c.name)}</h3>
+        <p>${escapeHtml(c.description)}</p>
+        <span class="category-count">글 ${count}편</span>
+      </a>`;
+    })
+    .join("");
+}
+
+function renderHomeEditorMini() {
+  const initial = (config.ownerName || "?").charAt(0);
+  return `
+    <div class="editor-avatar" aria-hidden="true">${escapeHtml(initial)}</div>
+    <div>
+      <p class="editor-label">편집·운영</p>
+      <h3><a href="author/" class="owner-link">${escapeHtml(config.ownerName)}</a></h3>
+      <p>${escapeHtml(config.ownerBio)}</p>
+      <a href="author/" class="text-link">운영자 소개 보기 →</a>
+    </div>`;
+}
+
+function renderHomePrinciplesList() {
+  const items = config.editorialPrinciples || [];
+  if (!items.length) return "";
+  return items.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
+}
+
+function renderSiteHeader(active = "") {
+  const navItems = [
+    { href: "index.html", label: "홈", key: "home" },
+    { href: "about/", label: "소개", key: "about" },
+    { href: "categories/", label: "가이드", key: "categories" },
+    { href: "columns/", label: "칼럼", key: "columns" },
+    { href: "contact/", label: "문의", key: "contact" }
+  ];
+  const catLinks =
+    categories
+      .map(
+        (c) =>
+          `<li><a href="categories/index.html?cat=${c.slug}" class="subnav-chip">${escapeHtml(c.name)}</a></li>`
+      )
+      .join("") +
+    `<li><a href="columns/" class="subnav-chip subnav-chip-column">운영자 칼럼</a></li>`;
+
+  return `
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="${escapeHtml(config.name)} 홈">
+          <span class="logo-mark" aria-hidden="true">🍞</span>
+          <span class="logo-text"><strong>${escapeHtml(config.name)}</strong></span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" type="button">
+          <span class="sr-only">메뉴 열기</span>
+          <span aria-hidden="true"></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="주요 메뉴">
+          <ul class="nav-list">
+            ${navItems
+              .map(
+                (n) =>
+                  `<li><a href="${n.href}" class="nav-link ${active === n.key ? "active" : ""}">${n.label}</a></li>`
+              )
+              .join("")}
+          </ul>
+        </nav>
+      </div>
+      <div class="site-subnav" aria-label="카테고리 바로가기">
+        <div class="container subnav-inner">
+          <span class="subnav-label">주제</span>
+          <ul class="subnav-list">${catLinks}</ul>
+        </div>
+      </div>
+    </header>`;
+}
+
+function renderSiteFooter() {
+  const year = new Date().getFullYear();
+  return `
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <section class="footer-brand">
+          <h2>${escapeHtml(config.name)}</h2>
+          <p>${escapeHtml(config.tagline)}</p>
+          <p class="footer-topic">주제: ${escapeHtml(config.topic)}</p>
+        </section>
+        <section>
+          <h3>바로가기</h3>
+          <ul class="footer-links">
+            <li><a href="about/">소개</a></li>
+            <li><a href="categories/">가이드</a></li>
+            <li><a href="columns/">칼럼</a></li>
+            <li><a href="author/">운영자</a></li>
+            <li><a href="contact/">문의하기</a></li>
+            <li><a href="sitemap/">사이트맵</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>정책</h3>
+          <ul class="footer-links">
+            <li><a href="privacy/">개인정보처리방침</a></li>
+            <li><a href="terms/">이용약관</a></li>
+            <li><a href="disclaimer/">면책고지</a></li>
+            <li><button type="button" class="footer-cookie-btn" id="footer-cookie-settings">쿠키 설정</button></li>
+          </ul>
+        </section>
+        <section>
+          <h3>운영</h3>
+          <p>운영자: <a href="author/" class="owner-link">${escapeHtml(config.ownerName)}</a></p>
+          <p>문의: <a href="mailto:${escapeHtml(config.contactEmail)}">${escapeHtml(config.contactEmail)}</a></p>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p>© ${year} ${escapeHtml(config.name)}. 일반 정보 제공 목적의 사이트입니다.</p>
+        <p class="footer-note">${escapeHtml(config.disclaimerShort)}</p>
+      </div>
+    </footer>`;
+}
+
 function renderColumnsIndexCards(allColumns) {
   if (!allColumns.length) return '<p class="empty-msg">표시할 칼럼이 없습니다.</p>';
   return `<div class="card-grid column-grid">${allColumns
@@ -577,11 +701,52 @@ if (indexHtml.includes('id="column-preview"')) {
     `<div id="column-preview">${renderHomeColumnCards(homeColumns)}</div>`
   );
 }
+indexHtml = indexHtml.replace(
+  /<div id="site-header">[\s\S]*?<\/div>\s*<main>/,
+  `<div id="site-header">${renderSiteHeader("home")}</div>\n  <main>`
+);
+indexHtml = indexHtml.replace(
+  /<p class="hero-lead" id="hero-lead">[\s\S]*?<\/p>/,
+  `<p class="hero-lead" id="hero-lead">${escapeHtml(config.tagline)}</p>`
+);
+indexHtml = indexHtml.replace(
+  /<p id="hero-topic">[\s\S]*?<\/p>/,
+  `<p id="hero-topic">${escapeHtml(config.topic)}</p>`
+);
+indexHtml = indexHtml.replace(
+  /<p id="hero-audience"[^>]*>[\s\S]*?<\/p>/,
+  `<p id="hero-audience" style="color:var(--color-muted);font-size:0.95rem">대상 독자: ${escapeHtml(config.targetAudience)}</p>`
+);
+indexHtml = indexHtml.replace(
+  /<div id="category-grid" class="category-grid">[\s\S]*?<\/div>/,
+  `<div id="category-grid" class="category-grid">${renderHomeCategoryGrid()}</div>`
+);
+indexHtml = indexHtml.replace(
+  /<p id="site-purpose-text" class="prose">[\s\S]*?<\/p>/,
+  `<p id="site-purpose-text" class="prose">${escapeHtml(config.sitePurpose)}</p>`
+);
+indexHtml = indexHtml.replace(
+  /<ul id="principles-list" class="principles-list">[\s\S]*?<\/ul>/,
+  `<ul id="principles-list" class="principles-list">${renderHomePrinciplesList()}</ul>`
+);
+indexHtml = indexHtml.replace(
+  /<div id="editor-mini" class="editor-mini">[\s\S]*?<\/div>\s*<\/section>\s*<section class="section cta-box"/,
+  `<div id="editor-mini" class="editor-mini">${renderHomeEditorMini()}</div>\n      </section>\n\n      <section class="section cta-box"`
+);
+indexHtml = indexHtml.replace(
+  /<div id="site-footer">[\s\S]*?<\/div>\s*<script/,
+  `<div id="site-footer">${renderSiteFooter()}</div>\n\n  <script`
+);
+indexHtml = indexHtml.replace(
+  /<a id="contact-email-cta" href="mailto:[^"]*">[\s\S]*?<\/a>/,
+  `<a id="contact-email-cta" href="mailto:${escapeHtml(config.contactEmail)}" class="btn btn-primary">${escapeHtml(config.contactEmail)}</a>`
+);
 for (const file of dataFiles) {
   const pattern = new RegExp(`(src="data/${file})(?:\\?v=[^"]*)?(")`, "g");
   indexHtml = indexHtml.replace(pattern, `$1?v=${dataVersion}$2`);
 }
 fs.writeFileSync(indexPath, indexHtml);
+console.log("✓ 홈 하단·헤더·푸터 프리렌더");
 
 const sortedColumns = [...columns]
   .filter((c) => c.status !== "draft")

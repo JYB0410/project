@@ -171,6 +171,22 @@ const indexHtml = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
 for (const id of ["hero-title", "latest-posts", "featured-posts", "column-preview", "category-grid", "principles-list"]) {
   if (!indexHtml.includes(`id="${id}"`)) issue(`index.html 필수 섹션 누락: #${id}`);
 }
+const homePrerenderIds = [
+  { id: "hero-lead", minLen: 20 },
+  { id: "site-purpose-text", minLen: 40 },
+  { id: "principles-list", minLen: 40, tag: "ul" },
+  { id: "editor-mini", minLen: 30 },
+  { id: "site-footer", minLen: 80 }
+];
+for (const { id, minLen, tag } of homePrerenderIds) {
+  const re = tag
+    ? new RegExp(`<${tag}[^>]*id="${id}"[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i")
+    : new RegExp(`<[^>]+id="${id}"[^>]*>([\\s\\S]*?)<\\/[^>]+>`, "i");
+  const m = indexHtml.match(re);
+  const inner = m?.[1]?.replace(/<!--[\s\S]*?-->/g, "").trim() || "";
+  if (inner.length < minLen) issue(`index.html #${id} 프리렌더 비어 있음 (빌드 필요)`);
+}
+if (!indexHtml.includes('class="site-footer"')) issue("index.html site-footer 프리렌더 없음");
 if (!fs.existsSync(path.join(ROOT, "assets/css/main.css"))) issue("main.css 없음");
 
 // --- AdSense 준비 ---
