@@ -18,6 +18,7 @@ window.SITE_CONFIG = {
     "정보 과잉 속에서 우리 집에 맞는 선택 기준 정리"
   ],
   contactEmail: "onhopetoj@gmail.com",
+  /** 승인 후에만 true — false일 때 head 광고 스크립트 없음(재심사 권장) */
   adsenseEnabled: false,
   adsensePublisherId: "ca-pub-6909907004622412",
   termsLastUpdated: "2026-06-05",

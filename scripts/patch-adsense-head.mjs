@@ -1,5 +1,6 @@
 /**
- * 모든 HTML에 consent-mode.js(head), AdSense 소유권 확인(head), adsense.js(body) 삽입
+ * AdSense head 정리: consent-mode 삽입, pagead 스크립트는 adsenseEnabled일 때만·허용 페이지만
+ * 사용: node scripts/patch-adsense-head.mjs
  */
 import fs from "fs";
 import path from "path";
@@ -7,17 +8,25 @@ import { fileURLToPath } from "url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 
+const PAGEAD_RE =
+  /\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^"]*" crossorigin="anonymous"><\/script>\s*/g;
+
+/** 광고·검증 스크립트를 넣지 않는 페이지 */
+const ADSENSE_EXCLUDE = new Set([
+  "admin",
+  "404.html",
+  "sitemap",
+  "privacy",
+  "terms",
+  "disclaimer",
+  "contact"
+]);
+
 function loadConfig() {
   const code = fs.readFileSync(path.join(ROOT, "data/site.config.js"), "utf8");
   const expr = code.replace("window.SITE_CONFIG = ", "").replace(/;\s*$/, "");
   return Function(`return (${expr})`)();
 }
-
-const config = loadConfig();
-const pubId = config.adsensePublisherId || "";
-const adsenseVerify =
-  pubId &&
-  `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${pubId}" crossorigin="anonymous"></script>`;
 
 function walk(dir, files = []) {
   for (const name of fs.readdirSync(dir)) {
@@ -33,12 +42,32 @@ function relScript(from, target) {
   return path.relative(fromDir, path.join(ROOT, target)).replace(/\\/g, "/");
 }
 
+function isExcluded(file) {
+  const rel = path.relative(ROOT, file).replace(/\\/g, "/");
+  if (rel === "404.html") return true;
+  const top = rel.split("/")[0];
+  return ADSENSE_EXCLUDE.has(top);
+}
+
+const config = loadConfig();
+const pubId = config.adsensePublisherId || "";
+const enabled = Boolean(config.adsenseEnabled && pubId);
+
 let consentPatched = 0;
-let adsensePatched = 0;
+let stripped = 0;
+let adsenseKept = 0;
 
 for (const file of walk(ROOT)) {
   if (file.includes(`${path.sep}admin${path.sep}`)) continue;
+
   let html = fs.readFileSync(file, "utf8");
+  const before = html;
+
+  if (PAGEAD_RE.test(html)) {
+    html = html.replace(PAGEAD_RE, "\n");
+    stripped++;
+  }
+
   const consentModeSrc = relScript(file, "assets/js/consent-mode.js");
   const adsenseSrc = relScript(file, "assets/js/adsense.js");
 
@@ -47,9 +76,10 @@ for (const file of walk(ROOT)) {
     consentPatched++;
   }
 
-  if (adsenseVerify && !html.includes("pagead2.googlesyndication.com")) {
-    html = html.replace("</head>", `  ${adsenseVerify}\n</head>`);
-    adsensePatched++;
+  // head 직접 삽입 금지 — 동의 후 adsense.js가 로드 (Consent Mode v2)
+  if (enabled && !isExcluded(file)) {
+    // intentionally empty: no head pagead injection
+    adsenseKept++;
   }
 
   if (!html.includes("adsense.js") && html.includes("consent.js")) {
@@ -61,8 +91,13 @@ for (const file of walk(ROOT)) {
     html = html.replace("</body>", `  <script src="${adsenseSrc}" defer></script>\n</body>`);
   }
 
-  fs.writeFileSync(file, html);
+  if (html !== before) fs.writeFileSync(file, html);
 }
 
-console.log(`✓ consent-mode: ${consentPatched}개 추가`);
-console.log(`✓ AdSense 소유권 확인 스크립트: ${adsensePatched}개 head 삽입`);
+console.log(`✓ pagead head 스크립트 제거: ${stripped}개 파일`);
+console.log(`✓ consent-mode 추가: ${consentPatched}개`);
+console.log(
+  enabled
+    ? `✓ adsenseEnabled=true — 광고는 adsense.js(동의 후)로만 로드, 허용 페이지 ${adsenseKept}개`
+    : "✓ adsenseEnabled=false — head 광고 스크립트 없음 (재심사 전 권장 상태)"
+);

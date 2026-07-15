@@ -1,13 +1,11 @@
 {
   "cycle": 0,
   "source": "Google AdSense Help 7299563, 9724, 48182, 23921 + GitHub Pages community",
-  "passed": 31,
+  "passed": 33,
   "issues": 0,
-  "warnings": 1,
+  "warnings": 0,
   "errors": [],
-  "warns": [
-    "AdSense 미설정(정상) — 승인 후 site.config adsensePublisherId·adsenseEnabled 설정"
-  ],
+  "warns": [],
   "checks": [
     "필수 페이지 존재: 사이트 소개",
     "필수 페이지 존재: 운영자 소개",
@@ -29,17 +27,19 @@
     "robots.txt + sitemap",
     "sitemap.xml 존재",
     "푸터 정책·문의 링크",
-    "글 27편",
+    "글 36편",
     "전 글 2000자 이상",
     "전 글 FAQ 있음",
-    "칼럼 10편",
+    "칼럼 11편",
     "운영자·편집 원칙 설정",
     "주요 페이지 consent-mode.js head 삽입",
     "주요 페이지 adsense.js 로드",
     "푸터 쿠키 설정 재선택",
     "terms: 쿠키·동의 조항",
     "about: 광고·수익화 안내",
-    "AdSense 로더 스크립트(승인 후 활성화)"
+    "AdSense 로더 스크립트(승인 후 활성화)",
+    "head pagead 직접 삽입 없음 (adsense.js 동의 후 로드)",
+    "승인 대기: pub ID만 설정, adsenseEnabled=false"
   ],
   "ok": true
 }

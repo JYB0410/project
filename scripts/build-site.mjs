@@ -22,11 +22,9 @@ let posts = loadJsExport("data/posts.js", "POSTS_DATA");
 const columns = loadJsExport("data/columns.js", "COLUMNS_DATA");
 
 const SITE_URL = (process.env.SITE_URL || config.siteUrl || "https://bcstarts.org").replace(/\/$/, "");
-const ADSENSE_PUB_ID = config.adsensePublisherId || "";
-
+/** head에 pagead 직접 삽입 금지 — 동의 후 assets/js/adsense.js 가 로드 */
 function renderAdSenseHeadScript() {
-  if (!ADSENSE_PUB_ID) return "";
-  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB_ID}" crossorigin="anonymous"></script>`;
+  return "";
 }
 
 const BOILERPLATE_PATTERNS = [
