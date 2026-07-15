@@ -27,17 +27,32 @@ function overlapRatio(a, b) {
   return shared / wordsA.size;
 }
 
+function dedupeSentencesInParagraph(inner) {
+  const parts = inner.split(/(?<=[.!?])\s+(?=[가-힣A-Za-z0-9「『"])/);
+  if (parts.length < 2) return inner;
+  const kept = [];
+  for (const part of parts) {
+    const text = plainText(part);
+    if (!text) continue;
+    const prev = kept.length ? plainText(kept[kept.length - 1]) : "";
+    if (prev && overlapRatio(prev, text) >= 0.68) continue;
+    kept.push(part);
+  }
+  return kept.join(" ");
+}
+
 export function dedupeParagraphs(html) {
   if (!html) return html;
   let out = html;
   for (const re of BOILERPLATE_PATTERNS) out = out.replace(re, "");
   const keptTexts = [];
   out = out.replace(/<p>([\s\S]*?)<\/p>/g, (full, inner) => {
-    const text = plainText(inner);
-    if (text.length < 30) return full;
-    if (keptTexts.some((t) => t === text || overlapRatio(t, text) >= 0.82)) return "";
+    const cleanedInner = dedupeSentencesInParagraph(inner);
+    const text = plainText(cleanedInner);
+    if (text.length < 30) return `<p>${cleanedInner}</p>`;
+    if (keptTexts.some((t) => t === text || overlapRatio(t, text) >= 0.72)) return "";
     keptTexts.push(text);
-    return full;
+    return `<p>${cleanedInner}</p>`;
   });
   return out.replace(/(<\/p>)\s*(<p>)/g, "$1$2");
 }

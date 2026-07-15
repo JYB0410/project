@@ -7,6 +7,20 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { postCharCount, postBaseCharCount } from "./content-char-count.mjs";
 
+function overlapRatio(a, b) {
+  if (!a || !b) return 0;
+  const short = a.length <= b.length ? a : b;
+  const long = a.length > b.length ? a : b;
+  if (short.length < 20) return 0;
+  if (long.includes(short)) return short.length / long.length;
+  const wordsA = new Set(short.split(" ").filter((w) => w.length > 1));
+  const wordsB = new Set(long.split(" ").filter((w) => w.length > 1));
+  if (!wordsA.size) return 0;
+  let shared = 0;
+  for (const w of wordsA) if (wordsB.has(w)) shared++;
+  return shared / wordsA.size;
+}
+
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const postsPath = path.join(ROOT, "data/posts.js");
 
@@ -150,7 +164,7 @@ const EDITOR_CLOSINGS = {
   "bread-rd-night-bread-v4": "5차에서 시럽 졸임 시간을 열 예정입니다.",
   "bread-rd-night-bread-v5": "<a href=\"bread-rd-night-bread-mid-review.html\">중간 정리</a>에서 1~5차를 묶어 보겠습니다.",
   "bread-rd-night-bread-v6": "7차에서 신선 밤을 써 보겠습니다.",
-  "bread-rd-night-bread-v7": "8차에서 굽기 후 브러싱을 시험합니다.",
+
   "bread-rd-night-bread-v8": "겨울 재현 결과가 나오면 같은 형식으로 이어 쓰겠습니다."
 };
 
@@ -170,7 +184,15 @@ for (const post of posts) {
   const closing = EDITOR_CLOSINGS[post.slug];
   if (closing) {
     const ed = post.sections.find((s) => s.id === "editor-note");
-    if (ed && !ed.content.includes(closing.slice(0, 12))) {
+    const closingPlain = closing.replace(/<[^>]+>/g, "");
+    const alreadySaid = ed && (
+      ed.content.includes(closingPlain.slice(0, 12)) ||
+      [...(ed.content.matchAll(/<p>([\s\S]*?)<\/p>/g) || [])].some((m) => {
+        const t = m[1].replace(/<[^>]+>/g, "");
+        return overlapRatio(t, closingPlain) >= 0.55;
+      })
+    );
+    if (ed && !alreadySaid) {
       ed.content = ed.content.replace(/<\/p>\s*$/, ` ${closing}</p>`);
     }
   }

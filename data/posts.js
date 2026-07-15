@@ -836,7 +836,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>1차 실험은 '비슷한 식빵'에 그쳤습니다. 그 간격을 줄이는 것이 이 프로젝트의 목표입니다. 2차 일지는 <a href=\"bread-rd-night-bread-v2.html\">토핑 시점을 앞당긴 날</a>에서 확인할 수 있습니다. R&D 방식은 <a href=\"baker-cert-to-bread-rd.html\">6편</a>에서 먼저 정리해 두었습니다. 같은 밤식빵을 연구 중이신 분은 <a href=\"../contact/\">문의</a>로 경험을 나눠 주세요. 제 기억과 다른 지역의 맛도 비교해 보겠습니다.  다음은 <a href=\"bread-rd-night-bread-v2.html\">2차</a>에서 토핑 시점을 바꿔 본 기록입니다.</p>"
+        "content": "<p>1차 실험은 '비슷한 식빵'에 그쳤습니다. 그 간격을 줄이는 것이 이 프로젝트의 목표입니다. 2차 일지는 <a href=\"bread-rd-night-bread-v2.html\">토핑 시점을 앞당긴 날</a>에서 확인할 수 있습니다. R&D 방식은 <a href=\"baker-cert-to-bread-rd.html\">6편</a>에서 먼저 정리해 두었습니다. 같은 밤식빵을 연구 중이신 분은 <a href=\"../contact/\">문의</a>로 경험을 나눠 주세요. 제 기억과 다른 지역의 맛도 비교해 보겠습니다. 다음은 <a href=\"bread-rd-night-bread-v2.html\">2차</a>에서 토핑 시점을 바꿔 본 기록입니다.</p>"
       }
     ],
     "summary": "합격 후 첫 밤식빵 실험 — 시럽 농도만 변경. 토핑 흘러내림·밤 식감 분리·다음 날 건조가 기억과의 차이였고, 다음은 토핑 시점과 반죽 수분을 검토합니다.",
@@ -1132,7 +1132,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>3차는 눈에 띄는 성공 사진보다 <strong>다음 날 아침 메모</strong>에 의미가 있었습니다. 수분 +2%만으로 촉촉함이 소폭 나아졌고, 토핑·보관 변수는 그대로 남았습니다. 4차에서는 식힌 뒤 어떻게 두느냐를 비교합니다. <a href=\"../posts/why-baker-certification.html\">동기</a>에서 시작한 밤식빵 프로젝트가 조금씩 숫자를 쌓고 있습니다.  4차에서 식힌 뒤 보관만 비교합니다.</p>"
+        "content": "<p>3차는 눈에 띄는 성공 사진보다 <strong>다음 날 아침 메모</strong>에 의미가 있었습니다. 수분 +2%만으로 촉촉함이 소폭 나아졌고, 토핑·보관 변수는 그대로 남았습니다. 4차에서는 식힌 뒤 어떻게 두느냐를 비교합니다. <a href=\"../posts/why-baker-certification.html\">동기</a>에서 시작한 밤식빵 프로젝트가 조금씩 숫자를 쌓고 있습니다. 4차에서 식힌 뒤 보관만 비교합니다.</p>"
       }
     ],
     "summary": "2차 토핑 시점 유지, 반죽 수분만 +2%p. 당일 차이는 작았지만 다음 날 촉촉함이 소폭 개선. 보관 비교는 4차로 넘깁니다.",
@@ -1231,7 +1231,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>4차는 화려한 레시피가 아니라 <strong>식힌 뒤 어떻게 두느냐</strong>를 기록한 날입니다. 루즈 백이 실온 개방보다 다음 날 촉촉함에 유리했고, 그 차이는 작지만 재현 가능했습니다. 5차에서는 시럽 졸임 시간을 2분 늘리고, 지금까지 나은 조건을 묶어 봅니다. <a href=\"baker-cert-to-bread-rd.html\">R&D로 넘어온 방식</a>대로 변수를 하나씩 쌓고 있습니다.  5차에서 시럽 졸임 시간을 열 예정입니다.</p>"
+        "content": "<p>4차는 화려한 레시피가 아니라 <strong>식힌 뒤 어떻게 두느냐</strong>를 기록한 날입니다. 루즈 백이 실온 개방보다 다음 날 촉촉함에 유리했고, 그 차이는 작지만 재현 가능했습니다. 5차에서는 시럽 졸임 시간을 2분 늘리고, 지금까지 나은 조건을 묶어 봅니다. <a href=\"baker-cert-to-bread-rd.html\">R&D로 넘어온 방식</a>대로 변수를 하나씩 쌓고 있습니다. 5차에서 시럽 졸임 시간을 열 예정입니다.</p>"
       }
     ],
     "summary": "3차와 같은 반죽으로 보관만 비교. 실온 개방보다 루즈 백이 다음 날 촉촉함에 유리했으나 완성에는 미달. 5차에서 시럽 졸임을 검토합니다.",
@@ -1529,7 +1529,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>6차는 5차 고정값 위에서 <strong>설탕만 10% 줄인 날</strong>이었습니다. 단맛은 기억 쪽으로 한 걸음, 밀착은 소폭 뒤로 물러났습니다. 다음은 <a href=\"bread-rd-night-bread-v7.html\">7차</a>에서 가을 신선 밤을 써 보겠습니다. <a href=\"../posts/why-baker-certification.html\">한 조각</a>에서 시작한 프로젝트가 가을에도 이어지고 있습니다.  7차에서 신선 밤을 써 보겠습니다.</p>"
+        "content": "<p>6차는 5차 고정값 위에서 <strong>설탕만 10% 줄인 날</strong>이었습니다. 단맛은 기억 쪽으로 한 걸음, 밀착은 소폭 뒤로 물러났습니다. 다음은 <a href=\"bread-rd-night-bread-v7.html\">7차</a>에서 가을 신선 밤을 써 보겠습니다. <a href=\"../posts/why-baker-certification.html\">한 조각</a>에서 시작한 프로젝트가 가을에도 이어지고 있습니다. 7차에서 신선 밤을 써 보겠습니다.</p>"
       }
     ],
     "summary": "5차 고정값 유지, 시럽 설탕만 10% 감소. 단맛은 기억에 가까워졌으나 밀착이 소폭 약해져 트레이드오프가 다시 드러났습니다.",
@@ -1628,7 +1628,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>7차는 <strong>통조림에서 신선 밤으로</strong> 재료만 바꾼 날이었습니다. 향과 고소함은 기억 쪽으로 가까워졌고, 크기 편차와 덩어리감은 과제로 남았습니다. 다음 <a href=\"bread-rd-night-bread-v8.html\">8차</a>에서는 굽기 후 시럽 브러싱을 시험합니다.  8차에서 굽기 후 브러싱을 시험합니다.</p>"
+        "content": "<p>7차는 <strong>통조림에서 신선 밤으로</strong> 재료만 바꾼 날이었습니다. 향과 고소함은 기억 쪽으로 가까워졌고, 크기 편차와 덩어리감은 과제로 남았습니다. 다음 <a href=\"bread-rd-night-bread-v8.html\">8차</a>에서는 굽기 후 시럽 브러싱을 시험합니다.</p>"
       }
     ],
     "summary": "6차 고정값 유지, 밤만 통조림에서 신선 밤으로 교체. 향·식감은 개선됐으나 조각 크기 편차로 덩어리감은 들쭉날쭉했습니다.",
@@ -1685,7 +1685,7 @@ window.POSTS_DATA = [
         "id": "failures",
         "heading": "h2",
         "title": "실패 1~3 — 눈에 보인 현상",
-        "content": "<ol><li><strong>윤기·밀착</strong> — 6·7차 대비 소폭 개선. 밤 조각 가장자리가 빵에 더 붙어 보임</li><li><strong>단맛</strong> — 6차와 비슷. 브러싱 후 달아졌다는 반응 없음</li><li><strong>껍질</strong> — 브러싱 직후 10분은 윤기 있으나, 다음 날 아침 겉이 4차 루즈 백 보관과 맞물려 약간 눅눅</li></ol><p>가족은 '지금까지 중 향이 가장 좋다'고 했습니다. 7차 신선 밤 + 8차 브러싱 조합입니다. 제 기준으로 <strong>8차는 부분적으로 맞았다</strong>이었고, 아직 '그때 그 빵'이라고 말하지 않습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v8/failures.jpg\" alt=\"실패 1~3 — 눈에 보인 현상\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실패 1~3 — 눈에 보인 현상</figcaption></figure><p>실패 목록에 '다음 날 겉 눅눅함'을 넣었습니다. 브러싱이 윤기를 주지만 보관과 맞물리면 껍질 쪽 트레이드오프가 생깁니다. 4차에서 이미 본 패턴의 변형입니다.</p><p>굽기 직후 사진에서 표면 반짝임이 7차보다 분명했습니다. 단면은 비슷했지만, 밤 가장자리 결합이 사진으로도 조금 나아졌습니다.</p><p>브러싱 직후 10분은 윤기가 났지만, 루즈 백에 넣고 자니 겉이 다시 눅눅해졌습니다. 4차 보관 메모와 같은 패턴이었습니다. 속 촉촉함은 유지됐습니다.</p>"
+        "content": "<ol><li><strong>윤기·밀착</strong> — 6·7차 대비 소폭 개선. 밤 조각 가장자리가 빵에 더 붙어 보임</li><li><strong>단맛</strong> — 6차와 비슷. 브러싱 후 달아졌다는 반응 없음</li><li><strong>껍질</strong> — 브러싱 직후 10분은 윤기 있으나, 다음 날 아침 겉이 4차 루즈 백 보관과 맞물려 약간 눅눅</li></ol><p>가족은 '지금까지 중 향이 가장 좋다'고 했습니다. 7차 신선 밤 + 8차 브러싱 조합입니다. 제 기준으로 <strong>8차는 부분적으로 맞았다</strong>이었고, 아직 '그때 그 빵'이라고 말하지 않습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v8/failures.jpg\" alt=\"실패 1~3 — 눈에 보인 현상\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실패 1~3 — 눈에 보인 현상</figcaption></figure><p>실패 목록에 '다음 날 겉 눅눅함'을 넣었습니다. 브러싱이 윤기를 주지만 보관과 맞물리면 껍질 쪽 트레이드오프가 생깁니다. 4차에서 이미 본 패턴의 변형입니다.</p><p>굽기 직후 사진에서 표면 반짝임이 7차보다 분명했습니다. 단면은 비슷했지만, 밤 가장자리 결합이 사진으로도 조금 나아졌습니다.</p>"
       },
       {
         "id": "cause",
@@ -1727,7 +1727,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>8차는 7차 조건에 <strong>굽기 직후 얇은 시럽 브러싱</strong>만 더한 날이었습니다. 윤기와 밀착은 6·7차보다 나아졌고, 단맛은 6차 수준을 유지했습니다. 밤식빵 프로젝트는 아직 끝나지 않았지만, 6~8차로 가을 사이클을 한 번 닫았습니다. <a href=\"bread-rd-series-guide.html\">읽기 순서 안내</a>에서 1~8차 흐름을 확인할 수 있습니다. 다른 기억의 밤식빵 이야기도 <a href=\"../contact/\">문의</a>로 나눠 주세요.  겨울 재현 결과가 나오면 같은 형식으로 이어 쓰겠습니다.</p>"
+        "content": "<p>8차는 7차 조건에 <strong>굽기 직후 얇은 시럽 브러싱</strong>만 더한 날이었습니다. 윤기와 밀착은 6·7차보다 나아졌고, 단맛은 6차 수준을 유지했습니다. 밤식빵 프로젝트는 아직 끝나지 않았지만, 6~8차로 가을 사이클을 한 번 닫았습니다. <a href=\"bread-rd-series-guide.html\">읽기 순서 안내</a>에서 1~8차 흐름을 확인할 수 있습니다. 다른 기억의 밤식빵 이야기도 <a href=\"../contact/\">문의</a>로 나눠 주세요. 겨울 재현 결과가 나오면 같은 형식으로 이어 쓰겠습니다.</p>"
       }
     ],
     "summary": "7차 신선 밤·6차 시럽 고정, 굽기 직후 물 희석 시럽을 얇게 브러싱. 윤기·밀착이 소폭 개선됐고 단맛은 6차 수준 유지. 다음 날 겉 눅눅함은 보관 변수로 남았습니다.",
@@ -1981,37 +1981,37 @@ window.POSTS_DATA = [
         "id": "goal",
         "heading": "h2",
         "title": "만들려던 빵 / 목표",
-        "content": "<p><a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 적은 8차 고정값을 <strong>겨울 실내</strong>에서 그대로 굽어 볼 차례였습니다. 여름·가을 일지 숫자를 겨울에 복사하면 발효가 어긋난다는 말을 글로만 남기지 않으려고 했습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>11월 초겨울 기록과 1월 난방 실내는 체감이 달랐습니다. 창문을 닫고 난방을 켠 뒤 주방 습도계가 35% 전후로 떨어졌고, 같은 55분 발효로는 8차보다 눌림이 약했습니다.</p><p>2026년 1월 12일 9차 실험입니다. <a href=\"bread-rd-night-bread-v8.html\">8차</a>와 같은 반죽·시럽·신선 밤·브러싱·루즈 백 보관. 바꾼 것은 <strong>1차 발효 시간</strong>뿐 — 실내 19°C(난방)에서 8차의 55분 대신 <strong>58분</strong>, 손가락 눌림 기준 동일.</p>"
+        "content": "<p><a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 적은 8차 고정값을 <strong>겨울 실내</strong>에서 그대로 굽어 볼 차례였습니다. 여름·가을 일지 숫자를 겨울에 복사하면 발효가 어긋난다는 말을 글로만 남기지 않으려고 했습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>11월에는 난방 없이 실험했고, 1월에는 난방 후 습도가 눈에 띄게 내려갔습니다. 같은 '겨울'이라도 실내 환경을 메모에 따로 적기로 했습니다.</p><p>11월 초겨울 기록과 1월 난방 실내는 체감이 달랐습니다. 창문을 닫고 난방을 켠 뒤 주방 습도계가 35% 전후로 떨어졌고, 같은 55분 발효로는 8차보다 눌림이 약했습니다.</p><p>2026년 1월 12일 9차 실험입니다. <a href=\"bread-rd-night-bread-v8.html\">8차</a>와 같은 반죽·시럽·신선 밤·브러싱·루즈 백 보관. 바꾼 것은 <strong>1차 발효 시간</strong>뿐 — 실내 19°C(난방)에서 8차의 55분 대신 <strong>58분</strong>, 손가락 눌림 기준 동일.</p>"
       },
       {
         "id": "failures",
         "heading": "h2",
         "title": "실패 1~3 — 눈에 보인 현상",
-        "content": "<ol><li><strong>향·밀착</strong> — 8차와 비슷. 브러싱·신선 밤 효과는 겨울에도 유지</li><li><strong>다음 날 속 촉촉함</strong> — 8차와 거의 동일. 루즈 백 보관 효과는 계절과 무관하게 재현</li><li><strong>겉 건조</strong> — 난방 건조로 껍질이 8차보다 약간 더 딱딱. 실내 습도 35% 전후</li></ol><p>가족은 '여름이랑 비슷하다'고 했습니다. 제 기준으로 <strong>겨울 재현은 부분 성공</strong> — 속은 맞았고 겉 건조만 과제로 남았습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/failures.jpg\" alt=\"실패 1~3 — 눈에 보인 현상\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실패 1~3 — 눈에 보인 현상</figcaption></figure><p>겉 건조는 식은 뒤에야 눈에 띄는 경우가 많았습니다. 9차는 당일 윤기는 8차와 비슷했는데, 다음 날 아침 껍질이 조금 더 딱딱했습니다. 가족은 속 식감 위주로 말해 줘서, 겉 건조는 제 메모에만 남겼습니다.</p>"
+        "content": "<ol><li><strong>향·밀착</strong> — 8차와 비슷. 브러싱·신선 밤 효과는 겨울에도 유지</li><li><strong>다음 날 속 촉촉함</strong> — 8차와 거의 동일. 루즈 백 보관 효과는 계절과 무관하게 재현</li><li><strong>겉 건조</strong> — 난방 건조로 껍질이 8차보다 약간 더 딱딱. 실내 습도 35% 전후</li></ol><p>가족은 '여름이랑 비슷하다'고 했습니다. 제 기준으로 <strong>겨울 재현은 부분 성공</strong> — 속은 맞았고 겉 건조만 과제로 남았습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/failures.jpg\" alt=\"실패 1~3 — 눈에 보인 현상\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실패 1~3 — 눈에 보인 현상</figcaption></figure><p>겉 건조는 식은 뒤에야 눈에 띄는 경우가 많았습니다. 9차는 당일 윤기는 8차와 비슷했는데, 다음 날 아침 껍질이 조금 더 딱딱했습니다. 가족은 속 식감 위주로 말해 줘서, 겉 건조는 제 메모에만 남겼습니다.</p><p>껍질을 손가락으로 눌렀을 때 8차보다 소리가 조금 더 딱딱하게 났습니다. 속은 칼로 잘랐을 때 기공은 비슷했습니다.</p>"
       },
       {
         "id": "cause",
         "heading": "h2",
         "title": "원인 추정 (추정 vs 확인)",
-        "content": "<p><strong>발효 58분 보정</strong> — 부분 확인. 55분으로는 8차보다 발효 부족, 60분은 과발효 느낌. 58분에서 8차와 비슷한 눌림</p><p>58분은 55분과 60분 사이에서 고른 값입니다. 57분은 아직 부족, 59분은 상단이 과하게 부풀는 느낌이었습니다. 환경이 다르면 3분이 아니라 5분 차이일 수 있어, 손가락 눌림 사진을 여름 8차와 나란히 두었습니다.</p><p><strong>겉 건조</strong> — 추정. 난방·저습도. 보관 전 1시간 개방은 오히려 건조 가속</p><p><strong>속 촉촉함 유지</strong> — 3차 수분 + 4차 보관 + 8차 브러싱 조합. 9차 단독이 아님</p>"
+        "content": "<p><strong>발효 58분 보정</strong> — 부분 확인. 55분으로는 8차보다 발효 부족, 60분은 과발효 느낌. 58분에서 8차와 비슷한 눌림</p><p>58분은 55분과 60분 사이에서 고른 값입니다. 57분은 아직 부족, 59분은 상단이 과하게 부풀는 느낌이었습니다. 환경이 다르면 3분이 아니라 5분 차이일 수 있어, 손가락 눌림 사진을 여름 8차와 나란히 두었습니다.</p><p>본 실험 전날 57분·59분을 각각 소량 반죽으로 시험해 보고, 58분 단일 배치만 굽기로 정했습니다. 같은 날 여러 분을 본굽에 넣으면 오븐 문 열림·시간 차로 비교가 흐려집니다.</p><p><strong>겉 건조</strong> — 추정. 난방·저습도. 보관 전 1시간 개방은 오히려 건조 가속</p><p><strong>속 촉촉함 유지</strong> — 3차 수분 + 4차 보관 + 8차 브러싱 조합. 9차 단독이 아님</p>"
       },
       {
         "id": "one-variable",
         "heading": "h2",
         "title": "바꾼 변수 하나",
-        "content": "<p>고정: <a href=\"bread-rd-night-bread-practical-guide.html\">8차 고정값 전체</a>. 바꾼 것: <strong>1차 발효 58분</strong>(8차 55분·여름 대비 +3분, 겨울 난방 실내 19°C).</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/one-variable.jpg\" alt=\"바꾼 변수 하나\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>바꾼 변수 하나</figcaption></figure><p>9차 당일 반죽 위치는 여름과 같이 식탁에서 오븐까지 3m 거리를 유지했습니다. 난방 바람이 직접 닿는 자리는 피했습니다. 발효만 바꿨다고 해도 위치가 바뀌면 비교가 흐려집니다.</p><p>반죽 종료 24°C, 굽기 200/190°C 32분, 브러싱·보관 동일. 실험일 2026-01-12, 발행 2026-06-27.</p>"
+        "content": "<p>고정: <a href=\"bread-rd-night-bread-practical-guide.html\">8차 고정값 전체</a>. 바꾼 것: <strong>1차 발효 58분</strong>(8차 55분·여름 대비 +3분, 겨울 난방 실내 19°C).</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/one-variable.jpg\" alt=\"바꾼 변수 하나\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>바꾼 변수 하나</figcaption></figure><p>9차 당일 반죽 위치는 여름과 같이 식탁에서 오븐까지 3m 거리를 유지했습니다. 난방 바람이 직접 닿는 자리는 피했습니다. 발효만 바꿨다고 해도 위치가 바뀌면 비교가 흐려집니다.</p><p>반죽 종료 24°C, 굽기 200/190°C 32분, 브러싱·보관 동일. 실험일 2026-01-12, 발행 2026-06-27.</p><p>발효 타이머는 휴대폰 대신 주방 타이머로 고정했습니다. 겨울 실험마다 알람 소리가 달라지면 집중이 흐트러졌습니다.</p>"
       },
       {
         "id": "next",
         "heading": "h2",
         "title": "다음 시도 계획",
-        "content": "<ul><li>10차 후보: 겨울 한정 <strong>보관 전 30분 개방</strong> vs 바로 루즈 백</li><li>실내 습도 40% 이상일 때 9차 재현 반복</li><li>실전 정리 글에 겨울 발효 보정 한 줄 갱신</li></ul><p>10차에서는 보관 전 1시간 개방이 건조를 키웠는지 확인할 예정입니다. 9차는 식힌 뒤 40분 개방 후 루즈 백에 넣었고, 그 시간도 메모에 남겼습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/next.jpg\" alt=\"다음 시도 계획\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>다음 시도 계획</figcaption></figure>"
+        "content": "<ul><li>10차 후보: 겨울 한정 <strong>보관 전 30분 개방</strong> vs 바로 루즈 백</li><li>실내 습도 40% 이상일 때 9차 재현 반복</li><li>실전 정리 글에 겨울 발효 보정 한 줄 갱신</li></ul><p>10차에서는 보관 전 1시간 개방이 건조를 키웠는지 확인할 예정입니다. 9차는 식힌 뒤 40분 개방 후 루즈 백에 넣었고, 그 시간도 메모에 남겼습니다.</p><p>58분 재현은 습도 40% 이상인 날을 먼저 골라 확인할 예정입니다. 보관 변수는 발효가 안정된 뒤에 열겠습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v9/next.jpg\" alt=\"다음 시도 계획\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>다음 시도 계획</figcaption></figure>"
       },
       {
         "id": "context",
         "heading": "h2",
         "title": "왜 겨울 재현을 따로 열었나",
-        "content": "<p><a href=\"bread-rd-night-bread-mid-review.html\">중간 정리</a> 후보에 '겨울 고정값 재현'이 있었고, <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에도 계절 주의를 적었습니다. 일지 없이 주의만 적으면 설득력이 약해, 9차로 숫자를 남깁니다.</p><p>실전 정리 글에 '계절마다 발효를 조정하라'고만 적으면 추상적입니다. 9차는 그 주의를 숫자 하나(58분)로 바꾸기 위한 일지입니다.</p><p>1~8차는 2025년 여름·가을·초겨울(11월) 기록입니다. 1월 난방 실내는 11월과도 다릅니다.</p>"
+        "content": "<p><a href=\"bread-rd-night-bread-mid-review.html\">중간 정리</a> 후보에 '겨울 고정값 재현'이 있었고, <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에도 계절 주의를 적었습니다. 주의만 남기면 추상적이라, 9차는 발효 <strong>58분</strong>이라는 숫자로 바꾸기 위한 일지입니다.</p><p>1~8차는 2025년 여름·가을·초겨울(11월) 기록입니다. 1월 난방 실내는 11월과도 다릅니다.</p><p>보관·습도 변수는 10차로 넘기고, 9차에서는 발효 분 하나만 고정했습니다. 변수를 한 번에 두 개 열면 겨울 재현인지 보관 실험인지 구분이 어렵습니다.</p>"
       },
       {
         "id": "for-readers",
@@ -2023,13 +2023,13 @@ window.POSTS_DATA = [
         "id": "practice-notes",
         "heading": "h2",
         "title": "실전 적용 노트",
-        "content": "<p>겨울 재현 시 메모: 실내 온도·습도, 1차 발효 분, 손가락 눌림 사진. 여름 8차 메모와 나란히 두면 보정 폭이 보입니다.</p><p>겨울 재현 시 여름 8차 메모와 나란히 놓을 항목: 실내 온도·습도, 1차 발효 분, 손가락 눌림, 다음 날 겉·속 한 줄. 네 줄이면 10차 방향이 잡힙니다.</p><p>난방을 켠 직후 오븐 주변 온도가 올라가 발효가 빨라질 수 있어, 반죽 위치를 겨울에도 고정했습니다.</p>"
+        "content": "<p>겨울 재현할 때는 여름 8차 메모와 나란히 두면 보정 폭이 보입니다. 실내 온도·습도, 1차 발효 분, 손가락 눌림 사진, 다음 날 겉·속 한 줄 — 네 가지만 적어도 10차 방향이 잡힙니다.</p><p>메모 맨 위에 '난방 ON · 창문 닫음' 칸을 새로 만들었습니다. 여름 메모와 항목이 달라 비교할 때 헷갈리지 않습니다.</p><p>난방을 켠 직후 오븐 주변 온도가 올라가 발효가 빨라질 수 있어, 반죽 위치를 겨울에도 고정했습니다.</p>"
       },
       {
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>9차는 <strong>8차 고정값의 겨울 재현</strong>이었습니다. 속 식감은 비슷했고 겉 건조만 남았습니다. 10차에서 보관·습도를 열 예정이며, <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>도 갱신하겠습니다.</p><p>실전 정리의 고정값 초안에 '겨울 난방 실내 1차 발효 58분(8차 55분 대비 +3분)'을 반영했습니다. 10차 후 보관·습도 결과가 나오면 같이 수정하겠습니다.</p><p>9차 굽기 전, 주방 창문을 닫은 뒤 30분 뒤 습도계를 다시 봤습니다. 35% 전후가 유지됐고, 그날은 발효만 58분으로 맞췄습니다. 다른 날은 습도가 40%를 넘기도 해서, 겨울이라도 날마다 숫자가 같지는 않습니다.</p><p>다음 날 아침 비교에서 8차 사진과 9차 사진을 나란히 두었을 때, 속 기공은 거의 같았고 겉만 9차가 살짝 더 건조해 보였습니다. 가족 시식은 속 위주였고, 겉 건조는 제 메모에만 남겼습니다.</p><p>10차 전에 습도 40% 이상인 날을 골라 9차를 한 번 더 반복할 예정입니다. 58분이 재현되면 실전 정리에 '겨울 기본 보정'으로 올릴지 검토합니다.</p><p>겨울 재현 메모에는 실내 온도·습도·발효 분·손가락 눌림 사진을 네 줄로 고정했습니다. 여름 8차 메모와 나란히 두면 보정 폭이 한눈에 보입니다.</p><p>난방을 켠 직후 오븐 주변 온도가 올라가 발효가 빨라질 수 있어, 반죽 위치를 여름과 같이 고정했습니다. 위치가 바뀌면 발효 분 보정만으로는 비교가 어렵습니다.</p>"
+        "content": "<p>9차는 <strong>8차 고정값의 겨울 재현</strong>이었습니다. 속 식감은 비슷했고 겉 건조만 남았습니다. 10차에서 보관·습도를 열 예정이며, <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>도 갱신하겠습니다.</p><p>실전 정리의 고정값 초안에 '겨울 난방 실내 1차 발효 58분(8차 55분 대비 +3분)'을 반영했습니다. 10차 후 보관·습도 결과가 나오면 같이 수정하겠습니다.</p><p>9차 굽기 전, 주방 창문을 닫은 뒤 30분 뒤 습도계를 다시 봤습니다. 35% 전후가 유지됐고, 그날은 발효만 58분으로 맞췄습니다. 겨울이라도 날마다 습도가 같지는 않습니다.</p>"
       }
     ],
     "summary": "8차 고정값을 겨울 난방 실내에서 재현. 1차 발효만 58분으로 보정. 속 촉촉함은 유사, 겉 건조는 소폭 악화.",
