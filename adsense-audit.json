@@ -1,7 +1,7 @@
 {
   "cycle": 0,
   "source": "Google AdSense Help 7299563, 9724, 48182, 23921 + GitHub Pages community",
-  "passed": 33,
+  "passed": 35,
   "issues": 0,
   "warnings": 0,
   "errors": [],
@@ -27,6 +27,8 @@
     "robots.txt + sitemap",
     "sitemap.xml 존재",
     "푸터 정책·문의 링크",
+    "스톡 이미지 캡션 없음 (posts·columns)",
+    "프리렌더 글 HTML 스톡 캡션 없음",
     "글 20편",
     "전 글 2000자 이상",
     "전 글 FAQ 있음",
