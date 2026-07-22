@@ -319,6 +319,14 @@ a:hover { color: var(--color-main-dark); text-decoration: underline; }
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .info-box h3 { margin-top: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.02em; }
+.section-lead {
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  border-left: 3px solid var(--color-main);
+  padding: 0.35rem 0 0.35rem 0.85rem;
+  margin: 0 0 1rem;
+  line-height: 1.55;
+}
 .principles-list { list-style: none; padding: 0; margin: 0; }
 .principles-list li {
   padding: 0.85rem 0; border-bottom: 1px solid var(--color-border);

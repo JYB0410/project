@@ -40,6 +40,10 @@
         .map((item) => `<li>${window.SiteUtils.escapeHtml(item)}</li>`)
         .join("");
     }
+    const methodEl = document.getElementById("author-method");
+    if (methodEl && config.ownerMethod) {
+      methodEl.textContent = config.ownerMethod;
+    }
     const updateEl = document.getElementById("author-update-policy");
     if (updateEl) updateEl.textContent = config.contentUpdatePolicy || "";
     const emailEl = document.getElementById("author-email");
