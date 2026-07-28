@@ -494,6 +494,20 @@ a:hover { color: var(--color-main-dark); text-decoration: underline; }
   box-shadow: 0 0 0 3px rgba(154, 91, 46, 0.15);
 }
 .form-note { font-size: 0.82rem; color: var(--color-muted); }
+.contact-meta { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+.contact-meta li {
+  padding: 0.55rem 0; border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem; color: var(--color-muted);
+}
+.contact-meta li:last-child { border-bottom: none; }
+.contact-meta strong { color: var(--color-text); margin-right: 0.35rem; }
+.footer-hours { font-size: 0.8rem; color: #a1a1a6; margin-top: 0.35rem; }
+.footer-policy-row {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 0.85rem;
+  margin: 0 0 0.85rem; font-size: 0.78rem;
+}
+.footer-policy-row a { color: #a1a1a6; }
+.footer-policy-row a:hover { color: #f5f5f7; }
 .admin-banner {
   background: rgba(255, 149, 0, 0.08); border: none;
   padding: 0.85rem 1.15rem; border-radius: var(--radius-sm);

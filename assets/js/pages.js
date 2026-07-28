@@ -85,7 +85,7 @@
   if (page === "contact") {
     window.SiteSEO.setPageMeta({
       title: `문의하기 | ${config.name}`,
-      description: `${config.name}에 대한 문의는 이메일로 연락해 주세요.`,
+      description: `${config.name} 오류 제보·콘텐츠 제안·일반 문의. 평일 10–18시 확인.`,
       canonical: `${config.siteUrl}/contact/`
     });
     document.getElementById("contact-email").href = `mailto:${config.contactEmail}`;
@@ -94,11 +94,15 @@
     if (form) {
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+        const topic = (form.topic?.value || "일반 문의").trim();
         const name = form.name.value.trim();
         const email = form.email.value.trim();
+        const pageurl = (form.pageurl?.value || "").trim();
         const msg = form.message.value.trim();
-        const subject = encodeURIComponent(`[${config.name}] 문의`);
-        const body = encodeURIComponent(`이름: ${name}\n이메일: ${email}\n\n${msg}`);
+        const subject = encodeURIComponent(`[${config.name}] ${topic}`);
+        const body = encodeURIComponent(
+          `문의 종류: ${topic}\n이름: ${name}\n이메일: ${email}\n관련 URL: ${pageurl || "(없음)"}\n\n${msg}`
+        );
         window.location.href = `mailto:${config.contactEmail}?subject=${subject}&body=${body}`;
       });
     }
@@ -194,6 +198,7 @@
         <li><a href="${base}privacy/">개인정보처리방침</a></li>
         <li><a href="${base}terms/">이용약관</a></li>
         <li><a href="${base}disclaimer/">면책고지</a></li>
+        <li><a href="${base}youth-policy/">청소년보호정책</a></li>
       </ul>
       <h2>카테고리</h2>
       <ul>${cats.map((c) => `<li><a href="${base}categories/?cat=${c.slug}">${window.SiteUtils.escapeHtml(c.name)}</a></li>`).join("")}</ul>

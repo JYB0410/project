@@ -85,6 +85,7 @@
             <li><a href="${resolvePath("privacy/")}">개인정보처리방침</a></li>
             <li><a href="${resolvePath("terms/")}">이용약관</a></li>
             <li><a href="${resolvePath("disclaimer/")}">면책고지</a></li>
+            <li><a href="${resolvePath("youth-policy/")}">청소년보호정책</a></li>
             <li><button type="button" class="footer-cookie-btn" id="footer-cookie-settings">쿠키 설정</button></li>
           </ul>
         </section>
@@ -92,9 +93,19 @@
           <h3>운영</h3>
           <p>운영자: ${ownerLink(config)}</p>
           <p>문의: <a href="mailto:${escapeHtml(config.contactEmail)}">${escapeHtml(config.contactEmail)}</a></p>
+          <p class="footer-hours">확인 시간: 평일 10:00–18:00 (KST)</p>
         </section>
       </div>
       <div class="container footer-bottom">
+        <p class="footer-policy-row">
+          <a href="${resolvePath("about/")}">소개</a>
+          <a href="${resolvePath("author/")}">운영자</a>
+          <a href="${resolvePath("contact/")}">문의</a>
+          <a href="${resolvePath("privacy/")}">개인정보</a>
+          <a href="${resolvePath("terms/")}">이용약관</a>
+          <a href="${resolvePath("disclaimer/")}">면책</a>
+          <a href="${resolvePath("youth-policy/")}">청소년보호</a>
+        </p>
         <p>© ${year} ${escapeHtml(config.name)}. 일반 정보 제공 목적의 사이트입니다.</p>
         <p class="footer-note">${escapeHtml(config.disclaimerShort)}</p>
       </div>

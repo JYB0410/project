@@ -261,6 +261,7 @@ function renderSiteFooter() {
             <li><a href="privacy/">개인정보처리방침</a></li>
             <li><a href="terms/">이용약관</a></li>
             <li><a href="disclaimer/">면책고지</a></li>
+            <li><a href="youth-policy/">청소년보호정책</a></li>
             <li><button type="button" class="footer-cookie-btn" id="footer-cookie-settings">쿠키 설정</button></li>
           </ul>
         </section>
@@ -268,9 +269,19 @@ function renderSiteFooter() {
           <h3>운영</h3>
           <p>운영자: <a href="author/" class="owner-link">${escapeHtml(config.ownerName)}</a></p>
           <p>문의: <a href="mailto:${escapeHtml(config.contactEmail)}">${escapeHtml(config.contactEmail)}</a></p>
+          <p class="footer-hours">확인 시간: 평일 10:00–18:00 (KST)</p>
         </section>
       </div>
       <div class="container footer-bottom">
+        <p class="footer-policy-row">
+          <a href="about/">소개</a>
+          <a href="author/">운영자</a>
+          <a href="contact/">문의</a>
+          <a href="privacy/">개인정보</a>
+          <a href="terms/">이용약관</a>
+          <a href="disclaimer/">면책</a>
+          <a href="youth-policy/">청소년보호</a>
+        </p>
         <p>© ${year} ${escapeHtml(config.name)}. 일반 정보 제공 목적의 사이트입니다.</p>
         <p class="footer-note">${escapeHtml(config.disclaimerShort)}</p>
       </div>
@@ -823,6 +834,7 @@ const staticPages = [
   { loc: "/privacy/", priority: "0.4", changefreq: "yearly", lastmod: config.privacyLastUpdated || today },
   { loc: "/terms/", priority: "0.4", changefreq: "yearly", lastmod: config.termsLastUpdated || config.privacyLastUpdated || today },
   { loc: "/disclaimer/", priority: "0.4", changefreq: "yearly", lastmod: config.disclaimerLastUpdated || config.privacyLastUpdated || today },
+  { loc: "/youth-policy/", priority: "0.4", changefreq: "yearly", lastmod: config.youthPolicyLastUpdated || config.privacyLastUpdated || today },
   { loc: "/sitemap/", priority: "0.5", changefreq: "monthly", lastmod: today }
 ];
 

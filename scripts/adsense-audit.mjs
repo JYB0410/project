@@ -47,7 +47,8 @@ const requiredPages = [
   { path: "contact/index.html", label: "문의" },
   { path: "privacy/index.html", label: "개인정보처리방침" },
   { path: "terms/index.html", label: "이용약관" },
-  { path: "disclaimer/index.html", label: "면책고지" }
+  { path: "disclaimer/index.html", label: "면책고지" },
+  { path: "youth-policy/index.html", label: "청소년보호정책" }
 ];
 
 for (const p of requiredPages) {
@@ -62,6 +63,14 @@ else ok("운영자 이메일 설정됨");
 const contactHtml = read("contact/index.html");
 if (!contactHtml.includes(config.contactEmail)) fail("contact 페이지에 이메일 미노출");
 else ok("문의 페이지 이메일 노출");
+if (!contactHtml.includes("확인 시간") && !contactHtml.includes("업무")) warn("contact: 확인·업무 시간 문구 권장");
+else ok("문의 페이지 확인 시간");
+if (!contactHtml.includes("오류 제보") || !contactHtml.includes("문의 종류")) warn("contact: 문의 종류 구분 권장");
+else ok("문의 페이지 종류 구분");
+
+const youth = read("youth-policy/index.html");
+if (!youth.includes("청소년") || !youth.includes(config.contactEmail)) fail("youth-policy: 보호 원칙·문의 창구 확인");
+else ok("청소년보호정책 내용");
 
 // --- 개인정보·AdSense 정책 문구 ---
 const privacy = read("privacy/index.html");
@@ -105,7 +114,7 @@ else ok("robots.txt + sitemap");
 if (!fs.existsSync(path.join(ROOT, "sitemap.xml"))) fail("sitemap.xml 없음");
 else {
   const sm = read("sitemap.xml");
-  for (const p of ["/privacy/", "/terms/", "/disclaimer/", "/about/", "/contact/"]) {
+  for (const p of ["/privacy/", "/terms/", "/disclaimer/", "/about/", "/contact/", "/youth-policy/"]) {
     if (!sm.includes(p)) warn(`sitemap.xml: ${p} 누락 가능`);
   }
   ok("sitemap.xml 존재");
@@ -113,9 +122,11 @@ else {
 
 // --- 내비게이션·푸터 정책 링크 ---
 const layout = read("assets/js/layout.js");
-for (const link of ["privacy/", "terms/", "disclaimer/", "about/", "contact/"]) {
+for (const link of ["privacy/", "terms/", "disclaimer/", "about/", "contact/", "youth-policy/"]) {
   if (!layout.includes(link)) fail(`layout 푸터/내비: ${link} 누락`);
 }
+if (!layout.includes("footer-policy-row")) warn("layout: 푸터 정책 한 줄 링크 권장");
+else ok("푸터 정책 한 줄 링크");
 ok("푸터 정책·문의 링크");
 
 // --- 이미지 캡션·스톡 출처 (승인 품질) ---
@@ -220,7 +231,16 @@ if (!config.adsensePublisherId && !config.adsenseEnabled) {
 }
 
 // --- head pagead: 소유권 확인(adsenseSiteVerification) 또는 승인 후(adsenseEnabled) ---
-const ADSENSE_EXCLUDE_HEAD = new Set(["admin", "404.html", "sitemap", "privacy", "terms", "disclaimer", "contact"]);
+const ADSENSE_EXCLUDE_HEAD = new Set([
+  "admin",
+  "404.html",
+  "sitemap",
+  "privacy",
+  "terms",
+  "disclaimer",
+  "contact",
+  "youth-policy"
+]);
 const needsHeadPagead = Boolean(
   config.adsensePublisherId && (config.adsenseSiteVerification || config.adsenseEnabled)
 );

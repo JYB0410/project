@@ -29,6 +29,7 @@ window.SITE_CONFIG = {
   customDomain: "bcstarts.org",
   siteUrl: "https://bcstarts.org",
   privacyLastUpdated: "2026-07-15",
+  youthPolicyLastUpdated: "2026-07-28",
   editorialPrinciples: [
     "의료·영양 처방, 투자·수익 보장처럼 전문 자문이 필요한 영역은 다루지 않습니다.",
     "직접 만들고 망한 경험을 우선하며, 검증하지 않은 정보는 '추정'과 '확인'을 구분해 씁니다.",

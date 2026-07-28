@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="퇴사 후 빵 터졌음! 문의 — onhopetoj@gmail.com">
+  <meta name="description" content="퇴사 후 빵 터졌음! 문의 — 오류 제보, 콘텐츠 제안, 일반 문의. onhopetoj@gmail.com">
+  <meta property="og:title" content="문의하기 | 퇴사 후 빵 터졌음!">
+  <meta property="og:description" content="콘텐츠 오류 제보·제안·일반 문의는 이메일로 받습니다.">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="https://bcstarts.org/assets/images/og-default.svg">
   <link rel="canonical" href="https://bcstarts.org/contact/">
   <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
@@ -16,39 +19,73 @@
   <main class="container page-main">
     <header class="page-hero">
       <h1>문의하기</h1>
-      <p class="hero-lead">문의는 이메일로 받고 있습니다.</p>
+      <p class="hero-lead">오류 제보, 콘텐츠 제안, 일반 문의는 이메일로 받고 있습니다.</p>
     </header>
-    <div class="page-content">
-      <p>콘텐츠 오류 제보, 제안, 일반 문의는 아래 이메일로 연락해 주세요.</p>
-      <p><strong>이메일:</strong> <a id="contact-email" href="mailto:onhopetoj@gmail.com">onhopetoj@gmail.com</a></p>
+    <div class="page-content prose">
+      <h2>연락처</h2>
+      <ul class="contact-meta">
+        <li><strong>사이트</strong> — 퇴사 후 빵 터졌음! (<a href="https://bcstarts.org/">bcstarts.org</a>)</li>
+        <li><strong>운영자</strong> — <a href="../author/">정지석</a></li>
+        <li><strong>이메일</strong> — <a id="contact-email" href="mailto:onhopetoj@gmail.com">onhopetoj@gmail.com</a></li>
+        <li><strong>확인 시간</strong> — 평일 기준 오전 10시 ~ 오후 6시 (한국 시간). 주말·공휴일은 다음 영업일에 확인합니다.</li>
+        <li><strong>회신 목표</strong> — 영업일 기준 2~3일 이내 (복잡한 오류 제보는 더 걸릴 수 있음)</li>
+      </ul>
+
+      <h2>어떤 문의를 받나요</h2>
+      <ul>
+        <li><strong>오류 제보</strong> — 잘못된 숫자·링크·오타, 페이지 표시 오류</li>
+        <li><strong>콘텐츠 제안</strong> — 다뤘으면 하는 주제, 일지 보완 아이디어</li>
+        <li><strong>실험·경험 공유</strong> — 비슷한 빵·발효 환경 경험 (글 반영 여부는 운영자 판단)</li>
+        <li><strong>일반 문의</strong> — 사이트 이용, 인용, 기타</li>
+      </ul>
+      <p>의료·영양 처방, 투자·수익, 광고 대행 스팸 메일은 답변하지 않을 수 있습니다. 식품 위생·알레르기 관련 판단은 전문가와 상담해 주세요. (<a href="../disclaimer/">면책고지</a>)</p>
+
+      <h2>메일로 보낼 때</h2>
+      <p>제목에 문의 종류를 넣어 주시면 처리가 빠릅니다. 예: <code>[오류 제보] 9차 발효 분 표기</code>, <code>[제안] 보관 방법</code></p>
+      <p>본문에는 <strong>해당 글 URL</strong>과 <strong>어떤 부분이 문제인지</strong>를 적어 주세요. 오류 제보는 스크린샷을 첨부해 주셔도 됩니다.</p>
 
       <h2>문의 양식</h2>
-      <p class="form-note">아래 양식은 메일 앱을 여는 용도입니다. 서버로 직접 전송되지 않습니다.</p>
+      <p class="form-note">아래 양식은 메일 앱을 여는 용도입니다. 서버로 직접 전송되지 않으며, 작성 내용은 기기에 저장되지 않습니다. 개인정보 처리는 <a href="../privacy/">개인정보처리방침</a>을 따릅니다.</p>
       <form id="contact-form" class="contact-form">
-        <label>이름
-          <input type="text" name="name" required autocomplete="name">
+        <label>문의 종류
+          <select name="topic" required>
+            <option value="">선택해 주세요</option>
+            <option value="오류 제보">오류 제보</option>
+            <option value="콘텐츠 제안">콘텐츠 제안</option>
+            <option value="실험·경험 공유">실험·경험 공유</option>
+            <option value="일반 문의">일반 문의</option>
+            <option value="기타">기타</option>
+          </select>
         </label>
-        <label>이메일
+        <label>이름
+          <input type="text" name="name" required autocomplete="name" placeholder="호칭 또는 이름">
+        </label>
+        <label>회신 이메일
           <input type="email" name="email" required autocomplete="email">
         </label>
+        <label>관련 글 URL (선택)
+          <input type="url" name="pageurl" autocomplete="off" placeholder="https://bcstarts.org/posts/...">
+        </label>
         <label>문의 내용
-          <textarea name="message" rows="6" required></textarea>
+          <textarea name="message" rows="7" required placeholder="문제 위치, 재현 방법, 제안 내용을 구체적으로 적어 주세요."></textarea>
         </label>
         <button type="submit" class="btn btn-primary">메일 앱으로 보내기</button>
       </form>
+
+      <p class="form-note">메일 앱이 열리지 않으면 위 주소로 직접 메일을 보내 주세요. 운영자 소개는 <a href="../author/">운영자 페이지</a>에 있습니다.</p>
     </div>
   </main>
   <div id="site-footer"></div>
-  <script src="../data/site.config.js?v=24-6-2026-07-28T04-30-23"></script>
-  <script src="../data/categories.js?v=24-6-2026-07-28T04-30-23"></script>
-  <script src="../data/posts.js?v=24-6-2026-07-28T04-30-23"></script>
-  <script src="../data/columns.js?v=24-6-2026-07-28T04-30-23"></script>
+  <script src="../data/site.config.js?v=24-6-2026-07-28T06-26-55"></script>
+  <script src="../data/categories.js?v=24-6-2026-07-28T06-26-55"></script>
+  <script src="../data/posts.js?v=24-6-2026-07-28T06-26-55"></script>
+  <script src="../data/columns.js?v=24-6-2026-07-28T06-26-55"></script>
   <script src="../assets/js/data-store.js"></script>
   <script src="../assets/js/auth.js"></script>
   <script src="../assets/js/utils.js"></script>
   <script src="../assets/js/seo.js"></script>
-  <script src="../assets/js/layout.js?v=24-6-2026-07-28T04-30-23"></script>
-  <script src="../assets/js/pages.js?v=24-6-2026-07-28T04-30-23"></script>
+  <script src="../assets/js/layout.js?v=24-6-2026-07-28T06-26-55"></script>
+  <script src="../assets/js/pages.js?v=24-6-2026-07-28T06-26-55"></script>
   <script src="../assets/js/consent.js" defer></script>
   <script src="../assets/js/adsense.js" defer></script>
 </body>
