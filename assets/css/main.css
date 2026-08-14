@@ -637,3 +637,23 @@ a:hover { color: var(--color-main-dark); text-decoration: underline; }
   border: 1px solid var(--color-border); padding: 0.55rem 0.65rem; text-align: left; vertical-align: top;
 }
 .data-table th { background: rgba(154, 91, 46, 0.08); font-weight: 600; }
+
+.diff-box {
+  background: rgba(154, 91, 46, 0.06);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.15rem 0.85rem;
+  margin: 0 0 1.35rem;
+}
+.diff-box > p { margin: 0 0 0.65rem; }
+.diff-box ul { margin: 0; padding-left: 1.15rem; }
+.diff-box li { margin-bottom: 0.45rem; font-size: 0.93rem; line-height: 1.55; color: var(--color-muted); }
+.diff-box li strong { color: var(--color-text); }
+.uniq-note {
+  background: rgba(232, 184, 109, 0.15);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}

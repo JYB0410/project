@@ -6,7 +6,7 @@ window.POSTS_DATA = [
     "category": "baker-cert",
     "author": "정지석",
     "publishedAt": "2026-05-02",
-    "updatedAt": "2026-08-12",
+    "updatedAt": "2026-08-14",
     "featured": true,
     "status": "published",
     "excerpt": "어릴 적 동네 빵집의 밤식빵은 나이 들어서도 가끔 떠올랐습니다. 2024년 9월 퇴사한 날, 가족과 먹은 빵에서 그 맛이 다시 떠올라 제빵기능사에 도전했고 2025년 5월 합격했습니다.",
@@ -46,6 +46,12 @@ window.POSTS_DATA = [
         "heading": "h2",
         "title": "이 글을 읽는 분께",
         "content": "<p>기능사를 준비 중이거나, 퇴사 후 새로운 기술을 배우는 분이라면 이 시리즈가 <strong>시간표와 실수 포인트</strong>를 잡는 데 도움이 되길 바랍니다. 저는 '완벽한 루트'를 제시하기보다, 제가 실제로 걸었던 길을 남기는 쪽을 택했습니다.</p><p>학원·독학 비율, 하루 연습 시간은 사람마다 다릅니다. 그래서 글에서는 가능한 한 <strong>순서와 판단 기준</strong>을 적고, 숫자는 제 경험 범위 안에서만 씁니다. 다른 환경이라면 그대로 복사하기보다, 무엇을 먼저 맞출지 참고해 주세요.</p>"
+      },
+      {
+        "id": "why-this-blog",
+        "heading": "h2",
+        "title": "그래서 이 블로그에 남기는 것",
+        "content": "\n<aside class=\"value-box\"><p><strong>독창성</strong> — 남의 합격 비법 요약이 아니라, <strong>2024.9 퇴사 → 2025.5 기능사 → 밤식빵을 다시 만드는 실패 기록</strong>입니다.</p></aside>\n<p>시중 레시피 글과 달리, 여기서는 ‘이 그램으로 하면 됩니다’보다 <strong>그날 무엇을 바꿨고 무엇이 남았는지</strong>를 적습니다. 독자에게 도움이 되는 지점은 두 가지입니다.</p>\n<ul>\n<li>기능사 준비 중: 제가 실제로 망한 구간(온도·발효·오븐 차이)을 참고</li>\n<li>합격 후·홈베이킹: 변수 하나·다음 날 식감·추정/확인 구분으로 자기 실험을 설계</li>\n</ul>\n<p>바로 구울 판단 기준만 필요하면 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>로 가면 됩니다.</p>"
       },
       {
         "id": "practice-notes",
@@ -639,7 +645,7 @@ window.POSTS_DATA = [
     "category": "baker-cert",
     "author": "정지석",
     "publishedAt": "2026-05-20",
-    "updatedAt": "2026-05-20",
+    "updatedAt": "2026-08-14",
     "featured": false,
     "status": "published",
     "excerpt": "2025년 5월 합격 후 시험용 연습과 밤식빵 연구를 분리한 이유, R&D 일지 포맷, 변수 하나만 바꾸는 실험 방식을 정리했습니다. 시리즈 마지막 편이자 빵 R&D 카테고리로의 연결점입니다.",
@@ -661,6 +667,12 @@ window.POSTS_DATA = [
         "heading": "h2",
         "title": "R&D 일지 포맷 — 매 실험마다 같은 질문",
         "content": "<p>빵 R&D 일지 글은 아래 순서를 고정합니다.</p><ol><li><strong>만들려던 빵 / 목표</strong> — 한 문장</li><li><strong>실패 1~3</strong> — 눈에 보이는 현상</li><li><strong>원인 추정</strong> — 추정과 확인 구분</li><li><strong>바꾼 변수 하나</strong></li><li><strong>다음 시도</strong></li></ol><p>이 포맷은 기능사 준비 때 쓰던 <strong>반죽 메모</strong>를 확장한 것입니다. 3편에서 '바꾼 변수는 하나'라고 적었던 원칙이 그대로입니다. 일지를 쓰기 전에 맛을 평가하는 시간을 10분 두었습니다. 뜨거울 때와 식었을 때, 다음 날 아침까지 — 밤식빵은 특히 다음 날 식감이 기준이었습니다.</p><p>첫 R&D 메모는 날짜 한 줄과 실패 세 가지 bullet뿐이었습니다. 사진은 나중에 붙였습니다. 글을 쓰기 전에도 같은 양식으로 두 달치를 쌓아 두니, 블로그로 옮길 때 순서가 흐트러지지 않았습니다.</p>"
+      },
+      {
+        "id": "why-different",
+        "heading": "h2",
+        "title": "일반 베이킹 후기와 다른, 이 블로그의 R&D 방식",
+        "content": "\n<aside class=\"value-box\"><p><strong>차별점 한 줄</strong> — 합격 후기를 모아 쓴 글이 아니라, <strong>제가 망한 현상 → 추정/확인 → 변수 하나</strong>를 고정 포맷으로 쌓는 실험 일지입니다.</p></aside>\n\n<aside class=\"diff-box\" aria-label=\"이 사이트가 다른 점\">\n<p><strong>레시피 블로그와 다른 점 (짧게)</strong></p>\n<ul>\n<li><strong>완성 그램 표를 주지 않습니다.</strong> 제 오븐·반죽량 숫자를 그대로 옮기면 어긋날 수 있어서, 대신 <em>무엇을 어떤 순서로 검증할지</em>를 남깁니다.</li>\n<li><strong>변수는 한 번에 하나만</strong> 바꿉니다. 기능사 실기 때 익힌 습관이고, 실패 원인을 추적할 수 있게 하려는 방식입니다.</li>\n<li><strong>실패 1~3가지를 본문에 먼저</strong> 적습니다. 성공 후기만 모은 글이 아닙니다.</li>\n<li><strong>추정과 확인을 구분</strong>합니다. 아직 모르는 것은 ‘추정’으로 남기고, 다음 실험에서만 ‘확인’으로 올립니다.</li>\n<li><strong>다음 날 아침 식감</strong>까지 기준으로 삼습니다. 당일 맛만으로 끝내지 않습니다.</li>\n<li><strong>실험일(구운 날)과 발행일(올린 날)을 구분</strong>합니다. 여름 숫자를 겨울에 복사하지 말라는 주의가 그래서 있습니다.</li>\n<li><strong>퇴사 → 기능사 합격(2025.5) → 밤식빵 R&amp;D</strong>로 이어진 <em>한 사람의 연속 기록</em>입니다. 여러 소스 요약이 아닙니다.</li>\n</ul>\n</aside>\n<p>기능사 시리즈 6편은 ‘시험까지’, 이 편 이후 밤식빵 일지는 ‘합격 후에도 아직 부족한 빵’을 다룹니다. 그 연결이 이 사이트의 중심 스토리입니다.</p>"
       },
       {
         "id": "night-bread-bridge",
@@ -764,7 +776,7 @@ window.POSTS_DATA = [
         "id": "goal",
         "heading": "h2",
         "title": "첫 밤식빵 실험에서 맞추려던 것",
-        "content": "<aside class=\"role-banner\" aria-label=\"이 글의 역할\"><p><strong>이 글의 역할</strong> — 실전 정리의 ‘변수는 하나만’ 원칙 — 첫 실패 목록의 근거</p><p class=\"role-banner-link\"><a href=\"bread-rd-night-bread-practical-guide.html\">바로 적용하려면 실전 정리</a>를 먼저 보세요. 이 일지는 그 판단의 <strong>실험 근거</strong>입니다.</p></aside><aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 첫 실험에서 확인한 것: 시럽 농도만 바꿔도 실패 목록이 생기고, 다음 변수는 '하나만' 열어야 한다.</p></aside><p><strong>목표</strong>: 어릴 적 동네 빵집에서 먹던 밤식빵에 가깝게 — 특히 <strong>속 촉촉함</strong>과 <strong>밤 토핑이 빵과 한 덩어리처럼 느껴지는 식감</strong>. 1편 <a href=\"../posts/why-baker-certification.html\">동기</a>에서 적었듯, 그 빵집은 문을 닫았고, 제 기억만이 기준입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>2025년 6월, 합격 후 약 3주 뒤 첫 실험입니다. 변수는 <strong>밤 시럽 농도</strong> 하나만 바꿨습니다. 반죽·발효·굽기 온도는 기능사 때 익숙한 식빵 루트를 유지했습니다.</p>"
+        "content": "<aside class=\"role-banner\" aria-label=\"이 글의 역할\"><p><strong>이 글의 역할</strong> — 실전 정리의 ‘변수는 하나만’ 원칙 — 첫 실패 목록의 근거</p><p class=\"role-banner-link\"><a href=\"bread-rd-night-bread-practical-guide.html\">바로 적용하려면 실전 정리</a>를 먼저 보세요. 이 일지는 그 판단의 <strong>실험 근거</strong>입니다.</p></aside><p class=\"uniq-note\"><strong>이 실험만의 포인트</strong> — 기능사 반죽을 그대로 쓴 첫 밤식빵이라, ‘시험 합격 = 그 빵 완성’이 아님을 숫자로 확인한 날입니다.</p><aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 첫 실험에서 확인한 것: 시럽 농도만 바꿔도 실패 목록이 생기고, 다음 변수는 '하나만' 열어야 한다.</p></aside><p><strong>목표</strong>: 어릴 적 동네 빵집에서 먹던 밤식빵에 가깝게 — 특히 <strong>속 촉촉함</strong>과 <strong>밤 토핑이 빵과 한 덩어리처럼 느껴지는 식감</strong>. 1편 <a href=\"../posts/why-baker-certification.html\">동기</a>에서 적었듯, 그 빵집은 문을 닫았고, 제 기억만이 기준입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v1/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>2025년 6월, 합격 후 약 3주 뒤 첫 실험입니다. 변수는 <strong>밤 시럽 농도</strong> 하나만 바꿨습니다. 반죽·발효·굽기 온도는 기능사 때 익숙한 식빵 루트를 유지했습니다.</p>"
       },
       {
         "id": "failures",
@@ -887,6 +899,12 @@ window.POSTS_DATA = [
         "heading": "h2",
         "title": "대부분 사람은 실전 정리만 보면 됩니다",
         "content": "\n<aside class=\"value-box\"><p><strong>이 글에서 가져갈 점</strong> — 읽기 순서입니다. 새 실험 결과가 아닙니다. <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a> → 관심 일지 1~2편.</p></aside>\n<p>R&amp;D 카테고리에 일지가 쌓이면, 처음부터 읽으려다 지치기 쉽습니다. 이 사이트는 의도적으로 <strong>허브(실전 정리)</strong>와 <strong>근거(일지)</strong>를 나눴습니다.</p>\n<figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-series-guide/goal.jpg\" alt=\"실전 정리 먼저\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>실전 정리 먼저</figcaption></figure>\n<p>일지 한 편은 변수 하나의 실험 로그입니다. 여러 편을 한꺼번에 읽으면 ‘무엇을 시도했나’는 보이지만 ‘지금 뭘 하면 되나’는 늦습니다. 그래서 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 결론을 모았습니다.</p><p>실험일과 발행일은 본문에 구분해 두었습니다. 기능사 동기 글은 <a href=\"../posts/why-baker-certification.html\">제빵기능사를 선택한 이유</a>에 있습니다.</p>"
+      },
+      {
+        "id": "why-different",
+        "heading": "h2",
+        "title": "이 시리즈만의 읽기 가치",
+        "content": "\n<aside class=\"value-box\"><p><strong>도움 되는 점</strong> — 레시피를 모은 목록이 아니라, <strong>실패가 쌓이는 순서</strong>를 보여 줍니다. 같은 실패를 두 번 하지 않게 하려는 읽기 안내입니다.</p></aside>\n<p>일반적인 ‘베스트 레시피 모음’과 달리, 여기 일지는 <strong>한 번에 변수 하나</strong>만 바꿉니다. 그래서 글 수가 많아 보여도, 독자가 가져갈 것은 글 15개가 아니라 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리 한 편 + 막히는 항목 일지 1~2편</a>입니다.</p><p>실험일·발행일을 구분해 둔 것도 차별점입니다. ‘올해 올린 글 = 올해 구운 빵’이 아닙니다.</p>"
       },
       {
         "id": "failures",
@@ -1679,7 +1697,7 @@ window.POSTS_DATA = [
         "id": "goal",
         "heading": "h2",
         "title": "오븐 밖 변수 — 브러싱을 연 날",
-        "content": "<aside class=\"role-banner\" aria-label=\"이 글의 역할\"><p><strong>이 글의 역할</strong> — 실전 정리 ⑦ 굽기 후 브러싱의 근거</p><p class=\"role-banner-link\"><a href=\"bread-rd-night-bread-practical-guide.html\">바로 적용하려면 실전 정리</a>를 먼저 보세요. 이 일지는 그 판단의 <strong>실험 근거</strong>입니다.</p></aside><aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 굽기 직후 물 희석 시럽을 얇게 브러싱하면 윤기·밀착 보정에 도움이 됐다(설탕 추가 금지).</p></aside><p><strong>목표</strong>는 기억 속 밤식빵의 겉 윤기·밀착·속 촉촉함을 한꺼번에 맞추는 것이 아니라, <strong>남은 간격을 하나씩 줄이는 것</strong>입니다. <a href=\"bread-rd-night-bread-v6.html\">6차</a>에서 단맛은 맞췄지만 밀착이 소폭 약해졌고, <a href=\"bread-rd-night-bread-v7.html\">7차</a>에서 신선 밤으로 향은 나아졌습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v8/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>2025년 11월 5일 8차 실험입니다. 7차의 신선 밤·6차 시럽·5차 이하 고정값을 유지하고, <strong>굽기 직후 얇은 시럽 브러싱</strong>만 추가했습니다. 오븐 안 토핑·시럽·반죽은 7차와 동일합니다.</p><p>중간 정리 후보에 있던 '굽기 후 시럽 브러싱'을 실행한 날입니다. 6차에서 졸임을 더 늘리지 않고 밀착을 보정할 방법을 찾다가, 식빵을 꺼낸 직후 표면이 뜨거울 때 얇게 발라 보기로 했습니다.</p><p>브러싱용 시럽은 6차 졸인 시럽에 <strong>물 한 스푼(약 15ml)</strong>만 섞었습니다. 설탕을 더 넣지 않았습니다. 단맛 상승을 막기 위해서입니다.</p>"
+        "content": "<aside class=\"role-banner\" aria-label=\"이 글의 역할\"><p><strong>이 글의 역할</strong> — 실전 정리 ⑦ 굽기 후 브러싱의 근거</p><p class=\"role-banner-link\"><a href=\"bread-rd-night-bread-practical-guide.html\">바로 적용하려면 실전 정리</a>를 먼저 보세요. 이 일지는 그 판단의 <strong>실험 근거</strong>입니다.</p></aside><p class=\"uniq-note\"><strong>이 실험만의 포인트</strong> — 오븐 안 레시피가 아니라 <em>꺼낸 직후 2분</em>이라는 오븐 밖 변수만 열었습니다. 집에서 바로 시도하기 쉬운 보정입니다.</p><aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 굽기 직후 물 희석 시럽을 얇게 브러싱하면 윤기·밀착 보정에 도움이 됐다(설탕 추가 금지).</p></aside><p><strong>목표</strong>는 기억 속 밤식빵의 겉 윤기·밀착·속 촉촉함을 한꺼번에 맞추는 것이 아니라, <strong>남은 간격을 하나씩 줄이는 것</strong>입니다. <a href=\"bread-rd-night-bread-v6.html\">6차</a>에서 단맛은 맞췄지만 밀착이 소폭 약해졌고, <a href=\"bread-rd-night-bread-v7.html\">7차</a>에서 신선 밤으로 향은 나아졌습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v8/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>2025년 11월 5일 8차 실험입니다. 7차의 신선 밤·6차 시럽·5차 이하 고정값을 유지하고, <strong>굽기 직후 얇은 시럽 브러싱</strong>만 추가했습니다. 오븐 안 토핑·시럽·반죽은 7차와 동일합니다.</p><p>중간 정리 후보에 있던 '굽기 후 시럽 브러싱'을 실행한 날입니다. 6차에서 졸임을 더 늘리지 않고 밀착을 보정할 방법을 찾다가, 식빵을 꺼낸 직후 표면이 뜨거울 때 얇게 발라 보기로 했습니다.</p><p>브러싱용 시럽은 6차 졸인 시럽에 <strong>물 한 스푼(약 15ml)</strong>만 섞었습니다. 설탕을 더 넣지 않았습니다. 단맛 상승을 막기 위해서입니다.</p>"
       },
       {
         "id": "failures",
@@ -1780,6 +1798,12 @@ window.POSTS_DATA = [
         "content": "\n<aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 집에서 바로 쓸 <strong>판단 순서와 숫자 후보</strong>입니다. 일지 전체를 읽지 않아도 시작할 수 있습니다. 그램 완성 레시피는 없습니다.</p></aside>\n<p>이 사이트의 밤식빵 글은 두 종류입니다.</p>\n<ul>\n<li><strong>실전 정리(이 글)</strong> — 가져갈 기준. 우선 읽기.</li>\n<li><strong>R&amp;D 일지 1~15차</strong> — 변수 하나를 바꾼 <strong>실험 근거</strong>. 필요할 때만 열어보기.</li>\n</ul>\n<p>일지를 처음부터 따라가면 ‘그래서 뭘 하면 되지?’가 늦게 잡힙니다. 그래서 원칙·고정값 초안·겨울 보정·재료 선별·메모 양식만 한 편에 모았습니다. 각 숫자의 근거가 궁금할 때만 해당 차수 일지로 내려가면 됩니다.</p>\n<figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-practical-guide/goal.jpg\" alt=\"일지 대신 실전 정리부터\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>일지 대신 실전 정리부터</figcaption></figure>\n<p>실험 기간은 2025년 6월~2026년 초, 블로그 발행은 2026년입니다. <strong>실험일과 발행일을 구분</strong>해 두었으니, 여름 숫자를 겨울에 복사하지 마세요.</p><p>전체 목차는 <a href=\"bread-rd-series-guide.html\">읽기 순서 안내</a>에 있습니다. 시간이 없으면 <strong>이 글 → 관심 일지 1~2편</strong>이면 충분합니다.</p>"
       },
       {
+        "id": "why-different",
+        "heading": "h2",
+        "title": "이 글·이 사이트가 레시피 사이트와 다른 점",
+        "content": "\n\n<aside class=\"diff-box\" aria-label=\"이 사이트가 다른 점\">\n<p><strong>레시피 블로그와 다른 점 (짧게)</strong></p>\n<ul>\n<li><strong>완성 그램 표를 주지 않습니다.</strong> 제 오븐·반죽량 숫자를 그대로 옮기면 어긋날 수 있어서, 대신 <em>무엇을 어떤 순서로 검증할지</em>를 남깁니다.</li>\n<li><strong>변수는 한 번에 하나만</strong> 바꿉니다. 기능사 실기 때 익힌 습관이고, 실패 원인을 추적할 수 있게 하려는 방식입니다.</li>\n<li><strong>실패 1~3가지를 본문에 먼저</strong> 적습니다. 성공 후기만 모은 글이 아닙니다.</li>\n<li><strong>추정과 확인을 구분</strong>합니다. 아직 모르는 것은 ‘추정’으로 남기고, 다음 실험에서만 ‘확인’으로 올립니다.</li>\n<li><strong>다음 날 아침 식감</strong>까지 기준으로 삼습니다. 당일 맛만으로 끝내지 않습니다.</li>\n<li><strong>실험일(구운 날)과 발행일(올린 날)을 구분</strong>합니다. 여름 숫자를 겨울에 복사하지 말라는 주의가 그래서 있습니다.</li>\n<li><strong>퇴사 → 기능사 합격(2025.5) → 밤식빵 R&amp;D</strong>로 이어진 <em>한 사람의 연속 기록</em>입니다. 여러 소스 요약이 아닙니다.</li>\n</ul>\n</aside>\n<p>그래서 이 정리 글에도 <strong>그램 완성표 대신 판단 기준</strong>만 있습니다. ‘복사해서 성공’이 아니라, 집 오븐에서 <strong>한 가지만 바꿔 확인</strong>하는 데 쓰라고 쓴 글입니다.</p><p>더 자세한 동기와 방식은 <a href=\"baker-cert-to-bread-rd.html\">기능사 이후 R&amp;D 방식</a>, <a href=\"../columns/why-no-complete-recipe.html\">완성 레시피를 올리지 않는 이유</a>에 있습니다.</p>"
+      },
+      {
         "id": "takeaway-seven",
         "heading": "h2",
         "title": "바로 쓸 일곱 가지 판단 (일지 결론만)",
@@ -1825,7 +1849,7 @@ window.POSTS_DATA = [
         "id": "for-readers",
         "heading": "h2",
         "title": "비슷한 빵을 찾는 분께",
-        "content": "<p>이 정리가 맞지 않는 오븐·재료 조합도 많습니다. 다른 통조림·다른 밀가루·다른 팬 크기면 최적점이 달라집니다. 그래도 <strong>순서와 메모 양식</strong>은 그대로 쓸 수 있습니다.</p><p>통조림 밤과 신선 밤, 가을 수홍과 봄 통조림은 향·수분이 달라 7가지 중 '재료' 항목만 크게 어긋날 수 있습니다. 그때는 <a href=\"bread-rd-night-bread-v7.html\">7차</a> 일지를 같이 보세요.</p><p>비슷한 추억의 빵이나, 이 7가지 중 어디가 가장 와닿았는지 <a href=\"../contact/\">문의</a>로 알려 주시면 다음 정리·일지에 반영하겠습니다.</p>"
+        "content": "<p><strong>이 블로그만의 쓸모</strong>는 ‘완벽한 밤식빵 레시피’가 아니라, <strong>망한 이유를 한 줄로 남기고 다음 변수를 고르는 습관</strong>입니다. 오븐·밀가루·밤 브랜드가 달라도 그 습관은 가져갈 수 있습니다.</p><p>이 정리가 맞지 않는 오븐·재료 조합도 많습니다. 다른 통조림·다른 밀가루·다른 팬 크기면 최적점이 달라집니다. 그래도 <strong>순서와 메모 양식</strong>은 그대로 쓸 수 있습니다.</p><p>통조림 밤과 신선 밤, 가을 수홍과 봄 통조림은 향·수분이 달라 7가지 중 '재료' 항목만 크게 어긋날 수 있습니다. 그때는 <a href=\"bread-rd-night-bread-v7.html\">7차</a> 일지를 같이 보세요.</p><p>비슷한 추억의 빵이나, 이 7가지 중 어디가 가장 와닿았는지 <a href=\"../contact/\">문의</a>로 알려 주시면 다음 정리·일지에 반영하겠습니다.</p>"
       },
       {
         "id": "practice-notes",
@@ -2290,7 +2314,7 @@ window.POSTS_DATA = [
         "id": "goal",
         "heading": "h2",
         "title": "고습에서 56분으로 맞춘 날",
-        "content": "<aside class=\"role-banner\" aria-label=\"이 글의 역할\"><p><strong>이 글의 역할</strong> — 실전 정리 겨울 표 — 고습 56분 1순위의 근거</p><p class=\"role-banner-link\"><a href=\"bread-rd-night-bread-practical-guide.html\">바로 적용하려면 실전 정리</a>를 먼저 보세요. 이 일지는 그 판단의 <strong>실험 근거</strong>입니다.</p></aside><aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 습도 42%대 고습 보정 1순위는 1차 발효 56분(손가락 눌림 우선).</p></aside><p><a href=\"bread-rd-night-bread-v11.html\">11차</a>에서 습도 42%·1차 발효 58분을 그대로 밀어 보니, 손가락 눌림이 9차(35%·58분)보다 느슨했습니다. 메모에 <strong>55~56분 후보</strong>를 남겼고, 12차는 그 숫자를 단일 배치로 확인하는 날입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v12/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>목표는 레시피·보관·재료를 건드리지 않고, <strong>습도 40%대에서 발효 분만 56분</strong>으로 맞추는 것이었습니다. 11차가 '58분을 맹신하지 말 것'이라면, 12차는 '그럼 몇 분이 눌림에 가깝나'를 한 점 찍는 일지입니다.</p><p>2026년 2월 16일 실험입니다. 실내 19°C, 습도 <strong>42%</strong>(시작) → 41%(종료). 난방 ON. 반죽·시럽·신선 밤·브러싱·바로 루즈 백은 11차와 동일. 바꾼 것은 1차 발효 타이머 <strong>56분</strong>뿐입니다.</p><p>55분과 56분 사이는 소량 시험 없이 본굽 한 번으로 갔습니다. 같은 날 두 분을 넣으면 오븐 문이 열리고 비교가 흐려집니다. 11차 메모의 중간값 56분을 골랐습니다.</p><p>겨울 시리즈를 한 줄로 다시 적으면, 9차는 저습에서 분을 늘린 날, 10차는 보관을 줄인 날, 11차는 고습에서 분을 그대로 둔 날, 12차는 고습에서 분을 줄인 날입니다. 순서를 건너뛰면 56분만 남고 맥락이 사라집니다.</p>"
+        "content": "<aside class=\"role-banner\" aria-label=\"이 글의 역할\"><p><strong>이 글의 역할</strong> — 실전 정리 겨울 표 — 고습 56분 1순위의 근거</p><p class=\"role-banner-link\"><a href=\"bread-rd-night-bread-practical-guide.html\">바로 적용하려면 실전 정리</a>를 먼저 보세요. 이 일지는 그 판단의 <strong>실험 근거</strong>입니다.</p></aside><p class=\"uniq-note\"><strong>이 실험만의 포인트</strong> — ‘겨울이면 무조건 58분’이 아니라, <em>습도 42%에서 56분</em>이라는 제 환경 후보를 남긴 날입니다. 타이머 복사가 아니라 눌림 우선입니다.</p><aside class=\"value-box\" aria-label=\"이 글에서 가져갈 점\"><p><strong>이 글에서 가져갈 점</strong> — 습도 42%대 고습 보정 1순위는 1차 발효 56분(손가락 눌림 우선).</p></aside><p><a href=\"bread-rd-night-bread-v11.html\">11차</a>에서 습도 42%·1차 발효 58분을 그대로 밀어 보니, 손가락 눌림이 9차(35%·58분)보다 느슨했습니다. 메모에 <strong>55~56분 후보</strong>를 남겼고, 12차는 그 숫자를 단일 배치로 확인하는 날입니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/bread-rd-night-bread-v12/goal.jpg\" alt=\"만들려던 빵 / 목표\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>만들려던 빵 / 목표</figcaption></figure><p>목표는 레시피·보관·재료를 건드리지 않고, <strong>습도 40%대에서 발효 분만 56분</strong>으로 맞추는 것이었습니다. 11차가 '58분을 맹신하지 말 것'이라면, 12차는 '그럼 몇 분이 눌림에 가깝나'를 한 점 찍는 일지입니다.</p><p>2026년 2월 16일 실험입니다. 실내 19°C, 습도 <strong>42%</strong>(시작) → 41%(종료). 난방 ON. 반죽·시럽·신선 밤·브러싱·바로 루즈 백은 11차와 동일. 바꾼 것은 1차 발효 타이머 <strong>56분</strong>뿐입니다.</p><p>55분과 56분 사이는 소량 시험 없이 본굽 한 번으로 갔습니다. 같은 날 두 분을 넣으면 오븐 문이 열리고 비교가 흐려집니다. 11차 메모의 중간값 56분을 골랐습니다.</p><p>겨울 시리즈를 한 줄로 다시 적으면, 9차는 저습에서 분을 늘린 날, 10차는 보관을 줄인 날, 11차는 고습에서 분을 그대로 둔 날, 12차는 고습에서 분을 줄인 날입니다. 순서를 건너뛰면 56분만 남고 맥락이 사라집니다.</p>"
       },
       {
         "id": "failures",
