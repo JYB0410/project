@@ -607,3 +607,13 @@ a:hover { color: var(--color-main-dark); text-decoration: underline; }
   .subnav-inner { padding: 0.5rem 0; }
   .section-header { flex-direction: column; align-items: start; }
 }
+/* Reader value callout — AdSense helpful-content signal */
+.value-box {
+  background: rgba(154, 91, 46, 0.08);
+  border-left: 4px solid var(--color-main);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 1.25rem;
+}
+.value-box p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--color-text); }
+.value-box strong { color: var(--color-main); }
