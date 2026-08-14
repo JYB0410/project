@@ -1,7 +1,24 @@
 {
   "ok": 20,
-  "warns": 0,
+  "warns": 16,
   "issues": 0,
-  "warnList": [],
+  "warnList": [
+    "bread-rd-night-bread-v1: no faq",
+    "bread-rd-night-bread-v2: no faq",
+    "bread-rd-night-bread-v3: no faq",
+    "bread-rd-night-bread-v4: no faq",
+    "bread-rd-night-bread-v5: no faq",
+    "bread-rd-night-bread-mid-review: no faq",
+    "bread-rd-night-bread-v6: no faq",
+    "bread-rd-night-bread-v7: no faq",
+    "bread-rd-night-bread-v8: no faq",
+    "bread-rd-night-bread-v9: no faq",
+    "bread-rd-night-bread-v10: no faq",
+    "bread-rd-night-bread-v11: no faq",
+    "bread-rd-night-bread-v12: no faq",
+    "bread-rd-night-bread-v13: no faq",
+    "bread-rd-night-bread-v14: no faq",
+    "bread-rd-night-bread-v15: no faq"
+  ],
   "issueList": []
 }
