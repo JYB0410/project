@@ -396,17 +396,30 @@ function renderSections(sections) {
     .join("");
 }
 
+/** R&D 실험 일지: SEO 템플릿 껍질(요약·실수·체크·FAQ) 생략 — 가이드·시리즈 글만 유지 */
+function isDiaryChrome(post) {
+  if (post.articleChrome === "diary") return true;
+  return (
+    post.category === "bread-rd" &&
+    /bread-rd-night-bread-v\d+|bread-rd-night-bread-mid-review/.test(post.slug || "")
+  );
+}
+
 function renderPostArticle(post) {
   const cat = getCategory(post.category);
-  const mistakes = post.commonMistakes?.length
-    ? `<section class="mistakes-box"><h2>초보자가 자주 실수하는 포인트</h2><ul>${post.commonMistakes.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul></section>`
-    : "";
-  const checklist = post.checklist?.length
-    ? `<section class="checklist-box"><h2>체크리스트</h2><ul class="check-list">${post.checklist.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul></section>`
-    : "";
-  const faq = post.faq?.length
-    ? `<section class="faq-section"><h2>자주 묻는 질문</h2><dl>${post.faq.map((f) => `<dt>${escapeHtml(f.q)}</dt><dd>${escapeHtml(f.a)}</dd>`).join("")}</dl></section>`
-    : "";
+  const diary = isDiaryChrome(post);
+  const mistakes =
+    !diary && post.commonMistakes?.length
+      ? `<section class="mistakes-box"><h2>초보자가 자주 실수하는 포인트</h2><ul>${post.commonMistakes.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul></section>`
+      : "";
+  const checklist =
+    !diary && post.checklist?.length
+      ? `<section class="checklist-box"><h2>체크리스트</h2><ul class="check-list">${post.checklist.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul></section>`
+      : "";
+  const faq =
+    !diary && post.faq?.length
+      ? `<section class="faq-section"><h2>자주 묻는 질문</h2><dl>${post.faq.map((f) => `<dt>${escapeHtml(f.q)}</dt><dd>${escapeHtml(f.a)}</dd>`).join("")}</dl></section>`
+      : "";
   const related = post.relatedSlugs?.length
     ? `<section class="related-posts"><h2>관련 글</h2><ul>${post.relatedSlugs
         .map((slug) => {
@@ -421,7 +434,12 @@ function renderPostArticle(post) {
     ? `<figure class="article-cover"><img src="${coverSrc}" alt="${escapeHtml(post.coverCaption || post.title)}" loading="eager" width="1200" height="675"><figcaption>${escapeHtml(post.coverCaption || post.title)}</figcaption></figure>`
     : "";
 
-  return `<article class="article-main">
+  const summaryHtml = diary
+    ? ""
+    : `<aside class="summary-box" aria-label="핵심 요약"><h2>핵심 요약</h2><p>${escapeHtml(post.summary)}</p></aside>`;
+  const tocHtml = diary ? "" : renderToc(post.sections);
+
+  return `<article class="article-main${diary ? " article-diary" : ""}">
   <header class="article-header">
     <p class="article-category"><a href="../categories/index.html?cat=${post.category}">${escapeHtml(cat?.name || "")}</a></p>
     <h1>${escapeHtml(post.title)}</h1>
@@ -433,10 +451,10 @@ function renderPostArticle(post) {
     </div>
   </header>
   ${coverHtml}
-  ${renderToc(post.sections)}
+  ${tocHtml}
   <div class="article-body">
     ${renderSections(post.sections)}
-    <aside class="summary-box" aria-label="핵심 요약"><h2>핵심 요약</h2><p>${escapeHtml(post.summary)}</p></aside>
+    ${summaryHtml}
     ${mistakes}
     ${checklist}
     ${faq}

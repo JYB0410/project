@@ -95,10 +95,19 @@
     </figure>`;
   }
 
+  function isDiaryChrome(post) {
+    if (post.articleChrome === "diary") return true;
+    return (
+      post.category === "bread-rd" &&
+      /bread-rd-night-bread-v\d+|bread-rd-night-bread-mid-review/.test(post.slug || "")
+    );
+  }
+
   function renderPostArticle(post, config) {
     const cat = window.DataStore.getCategory(post.category);
+    const diary = isDiaryChrome(post);
     return `
-    <article class="article-main">
+    <article class="article-main${diary ? " article-diary" : ""}">
       <header class="article-header">
         <p class="article-category"><a href="${resolvePath("categories/index.html")}?cat=${post.category}">${escapeHtml(cat ? cat.name : "")}</a></p>
         <h1>${escapeHtml(post.title)}</h1>
@@ -110,13 +119,13 @@
         </div>
       </header>
       ${renderArticleCover(post)}
-      ${renderToc(post.sections)}
+      ${diary ? "" : renderToc(post.sections)}
       <div class="article-body">
         ${renderSections(post.sections)}
-        ${renderSummaryBox(post.summary)}
-        ${renderMistakesList(post.commonMistakes)}
-        ${renderChecklist(post.checklist)}
-        ${renderFaq(post.faq)}
+        ${diary ? "" : renderSummaryBox(post.summary)}
+        ${diary ? "" : renderMistakesList(post.commonMistakes)}
+        ${diary ? "" : renderChecklist(post.checklist)}
+        ${diary ? "" : renderFaq(post.faq)}
         ${renderRelatedPosts(post.relatedSlugs)}
         ${renderArticleFooterNote()}
       </div>

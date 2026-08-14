@@ -144,8 +144,7 @@ const editor = guide.sections.find((s) => s.id === "editor-note");
 if (editor) {
   editor.content = `
 <p>이 글은 일지를 대체하는 <strong>독자용 허브</strong>입니다. 차수가 늘면 표와 일곱 가지만 고치고, 실험 서사는 각 일지에 남깁니다. 비슷한 설명을 15번 반복하지 않으려는 편집입니다.</p>
-<p>애드센스·검색 품질 관점에서도 “한 주제에 깊은 한 장”이 “비슷한 장 여러 개”보다 낫습니다. 그래서 겨울·재료 결론을 여기로 모았습니다.</p>
-<p>오류·보완은 <a href="../contact/">문의</a>로 받습니다. 수정 시 날짜를 갱신합니다.</p>`;
+<p>겨울·재료 결론을 여기로 모았습니다. 오류·보완은 <a href="../contact/">문의</a>로 받습니다. 본문이 바뀌면 수정일을 갱신합니다.</p>`;
 }
 
 console.log("✓ practical guide hub rebuilt");

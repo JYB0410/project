@@ -1,12 +1,14 @@
 {
   "cycle": 0,
-  "posts": 20,
+  "posts": 23,
   "columns": 6,
-  "uniqueUpdatedDates": 25,
+  "uniqueUpdatedDates": 24,
   "june23Count": 0,
   "issues": 0,
-  "warnings": 0,
+  "warnings": 1,
   "errors": [],
-  "warns": [],
+  "warns": [
+    "같은 updatedAt 최대 4편 — 더 분산 가능"
+  ],
   "ok": true
 }
