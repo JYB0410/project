@@ -39,7 +39,7 @@ window.POSTS_DATA = [
         "id": "after-pass",
         "heading": "h2",
         "title": "합격이 끝이 아닌 이유",
-        "content": "<p>2025년 5월 합격 후에도 제가 찾는 그 밤식빵은 <strong>아직 연구 중</strong>입니다. 기능사 시험용 반죽과, 기억 속 맛을 재현하는 반죽은 같은 '빵'이어도 접근이 다릅니다. 시험에서는 정해진 규격과 시간 안에 결과를 내야 하고, 추억의 맛은 향과 식감의 기억을 맞추는 작업에 가깝습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/why-baker-certification/after-pass.jpg\" alt=\"합격이 끝이 아닌 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>합격이 끝이 아닌 이유</figcaption></figure><p>그래서 이 블로그의 본문은 두 갈래로 쌓습니다.</p><ol><li><strong>제빵기능사 시리즈</strong> — 준비·시험·합격까지의 경험 (6편)</li><li><strong>빵 R&D 일지</strong> — 합격 이후, 실패와 수정, 나만의 노하우</li></ol><p>이 글은 시리즈 1편입니다. 전체 순서는 <a href=\"baker-cert-series-roadmap.html\">6편 목차</a>에서 확인할 수 있고, 다음 본편은 <a href=\"baker-cert-8month-roadmap.html\">시험 구조와 8개월 준비 로드맵</a>입니다.</p><p>합격 통지를 받은 날 오후, 학원 선배가 '이제 끝이냐'고 물었을 때 저는 '아직'이라고 답했습니다. 시험장에서 만든 식빵과 동네 빵집 기억 사이에 거리가 있었기 때문입니다.</p>"
+        "content": "<p>2025년 5월 합격 후에도 제가 찾는 그 밤식빵은 <strong>아직 연구 중</strong>입니다. 기능사 시험용 반죽과, 기억 속 맛을 재현하는 반죽은 같은 '빵'이어도 접근이 다릅니다. 시험에서는 정해진 규격과 시간 안에 결과를 내야 하고, 추억의 맛은 향과 식감의 기억을 맞추는 작업에 가깝습니다.</p><figure class=\"article-figure\"><img src=\"../assets/images/photos/why-baker-certification/after-pass.jpg\" alt=\"합격이 끝이 아닌 이유\" loading=\"lazy\" class=\"article-img\" width=\"1200\" height=\"675\"><figcaption>합격이 끝이 아닌 이유</figcaption></figure><p>그래서 이 블로그의 본문은 두 갈래로 쌓습니다.</p><ol><li><strong>제빵기능사 시리즈</strong> — 준비·시험·합격까지의 경험 (6편)</li><li><strong>빵 R&D 일지</strong> — 합격 이후, 실패와 수정, 나만의 노하우</li></ol><p>실기 품목이 막힐 때는 시리즈와 별도로 <a href=\"exam-item-white-bread-fail-points.html\">식빵 접근 노트</a>·<a href=\"exam-item-sweet-roll-approach.html\">단과자 계열 접근 노트</a>를 참고하세요. 완성 레시피가 아니라 실패 지점과 연습 순서만 담았습니다.</p><p>이 글은 시리즈 1편입니다. 전체 순서는 <a href=\"baker-cert-series-roadmap.html\">6편 목차</a>에서 확인할 수 있고, 다음 본편은 <a href=\"baker-cert-8month-roadmap.html\">시험 구조와 8개월 준비 로드맵</a>입니다.</p><p>합격 통지를 받은 날 오후, 학원 선배가 '이제 끝이냐'고 물었을 때 저는 '아직'이라고 답했습니다. 시험장에서 만든 식빵과 동네 빵집 기억 사이에 거리가 있었기 때문입니다.</p>"
       },
       {
         "id": "for-readers",
@@ -82,7 +82,9 @@ window.POSTS_DATA = [
     "relatedSlugs": [
       "baker-cert-series-roadmap",
       "baker-cert-8month-roadmap",
-      "baker-cert-to-bread-rd"
+      "baker-cert-to-bread-rd",
+      "exam-item-white-bread-fail-points",
+      "exam-item-sweet-roll-approach"
     ],
     "faq": [
       {
@@ -141,13 +143,13 @@ window.POSTS_DATA = [
         "id": "how-to-read",
         "heading": "h2",
         "title": "읽는 순서 제안",
-        "content": "<p><strong>처음 오신 분</strong>: 1편 → 2편 → (준비 중이면 3·4편 예정분까지 기다리며 2편 로드맵만 참고) → 소개 페이지</p><p><strong>한눈에만 보기</strong>: <a href=\"baker-cert-one-page-cheatsheet.html\">제빵기능사 한 장 요약</a></p><p><strong>일정이 급한 분</strong>: 2편 로드맵만 먼저 읽고, 3·4편에서 실기·필기 세부를 보완</p><p><strong>합격 후 연구가 궁금한 분</strong>: 1편·6편 → <strong>빵 R&D 일지</strong> 카테고리</p><p>각 편 맨 아래 <strong>핵심 요약·관련 글</strong>을 붙여 두었습니다. 한 번에 다 읽기보다, 한 편 읽고 일정에 반영한 뒤 다음 편으로 넘기는 편이 저에게는 더 잘 맞았습니다.</p><p>모바일로 읽으실 때는 각 편 맨 아래 '관련 글' 링크가 길어질 수 있습니다. 저는 북마크 폴더에 1~6편만 순서대로 넣어 두고, 한 편 읽을 때마다 다음 링크로 넘겼습니다.</p>"
+        "content": "<p><strong>처음 오신 분</strong>: 1편 → 2편 → → 3·4편(실기·필기) → 소개 페이지</p><p><strong>한눈에만 보기</strong>: <a href=\"baker-cert-one-page-cheatsheet.html\">제빵기능사 한 장 요약</a></p><p><strong>일정이 급한 분</strong>: 2편 로드맵만 먼저 읽고, 3·4편에서 실기·필기 세부를 보완</p><p><strong>합격 후 연구가 궁금한 분</strong>: 1편·6편 → <strong>빵 R&D 일지</strong> 카테고리</p><p>각 편 맨 아래 <strong>핵심 요약·관련 글</strong>을 붙여 두었습니다. 한 번에 다 읽기보다, 한 편 읽고 일정에 반영한 뒤 다음 편으로 넘기는 편이 저에게는 더 잘 맞았습니다.</p><p>모바일로 읽으실 때는 각 편 맨 아래 '관련 글' 링크가 길어질 수 있습니다. 저는 북마크 폴더에 1~6편만 순서대로 넣어 두고, 한 편 읽을 때마다 다음 링크로 넘겼습니다.</p>"
       },
       {
         "id": "after-series",
         "heading": "h2",
         "title": "시리즈 이후: 빵 R&D 일지",
-        "content": "<p>6편 이후 본문의 주력은 <strong>빵 R&D 일지</strong> 카테고리입니다. 포맷은 대략 다음과 같이 고정할 예정입니다.</p><ul><li>만들려던 빵 / 목표</li><li>실패 1~3가지 (구체적 현상)</li><li>원인 추정 (추정 vs 확인 구분)</li><li>바꾼 변수 하나</li><li>다음 시도 계획</li></ul><p>대표 프로젝트는 <strong>추억의 밤식빵</strong>에 가깝게 가는 과정입니다. 기능사 합격 후에도 이 빵은 아직 연구 중이며, '합격 = 완성'이 아님을 기록으로 남기겠습니다.</p>"
+        "content": "<p>6편 이후 본문의 주력은 <strong>빵 R&D 일지</strong> 카테고리입니다. 포맷은 대략 다음과 같이 고정할 예정입니다.</p><ul><li>만들려던 빵 / 목표</li><li>실패 1~3가지 (구체적 현상)</li><li>원인 추정 (추정 vs 확인 구분)</li><li>바꾼 변수 하나</li><li>다음 시도 계획</li></ul><p>대표 프로젝트는 <strong>추억의 밤식빵</strong>에 가깝게 가는 과정입니다. 기능사 합격 후에도 이 빵은 아직 연구 중이며, '합격 = 완성'이 아님을 기록으로 남기겠습니다.</p><p>시리즈와 병행해 읽을 수 있는 글: <a href=\"exam-item-white-bread-fail-points.html\">식빵 접근 노트</a>, <a href=\"exam-item-sweet-roll-approach.html\">단과자 계열 접근 노트</a>, 모의 루틴 <a href=\"baker-cert-mock-three-weeks.html\">실기 모의 3주</a>. R&amp;D는 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>를 먼저 보세요.</p>"
       },
       {
         "id": "writing-standard",
@@ -171,9 +173,10 @@ window.POSTS_DATA = [
     "summary": "제빵기능사 경험 6편 시리즈의 목차·대상 독자·읽는 순서를 정리했습니다. 6편 모두 발행. 이후 빵 R&D 일지로 이어집니다.",
     "relatedSlugs": [
       "baker-cert-one-page-cheatsheet",
-      "why-baker-certification",
-      "baker-cert-8month-roadmap",
-      "baker-cert-to-bread-rd"
+      "exam-item-white-bread-fail-points",
+      "exam-item-sweet-roll-approach",
+      "baker-cert-mock-three-weeks",
+      "bread-rd-night-bread-practical-guide"
     ],
     "faq": [
       {
@@ -354,7 +357,7 @@ window.POSTS_DATA = [
         "id": "for-readers",
         "heading": "h2",
         "title": "실기 준비 중이라면",
-        "content": "<p>품목을 많이 만져 보고 싶은 마음은 이해됩니다. 저도 초반에 그랬습니다. 다만 시험 일정이 가까우면 <strong>범위 품목 안에서 반복 깊이</strong>가 우선이었습니다. 2편 <a href=\"baker-cert-8month-roadmap.html\">8개월 로드맵</a>의 중반 구간과 이 글을 함께 보면 일정 배치가 잡힙니다.</p><p>학원·집 오븐이 다르면 '같은 레시피'가 아니라 <strong>같은 공정 기록</strong>을 맞추는 쪽이 낫습니다. 다음 편은 <a href=\"baker-cert-written-tips.html\">필기에서 자주 틀리는 포인트</a>입니다.</p>"
+        "content": "<p>품목을 많이 만져 보고 싶은 마음은 이해됩니다. 저도 초반에 그랬습니다. 다만 시험 일정이 가까우면 <strong>범위 품목 안에서 반복 깊이</strong>가 우선이었습니다. 2편 <a href=\"baker-cert-8month-roadmap.html\">8개월 로드맵</a>의 중반 구간과 이 글을 함께 보면 일정 배치가 잡힙니다.</p><p>학원·집 오븐이 다르면 '같은 레시피'가 아니라 <strong>같은 공정 기록</strong>을 맞추는 쪽이 낫습니다. 다음 편은 <a href=\"baker-cert-written-tips.html\">필기에서 자주 틀리는 포인트</a>입니다.</p><p>식빵만 깊게 보고 싶다면 <a href=\"exam-item-white-bread-fail-points.html\">식빵 접근 노트</a>, 손이 많이 가는 품목은 <a href=\"exam-item-sweet-roll-approach.html\">단과자 계열 노트</a>를 이어서 보세요.</p>"
       },
       {
         "id": "practice-notes",
@@ -1024,7 +1027,7 @@ window.POSTS_DATA = [
         "id": "for-readers",
         "heading": "h2",
         "title": "토핑이 흘러내리는 분께",
-        "content": "<p>토핑 시점을 바꿔 보신 경험이 있으시면, 1차 발효 전·후·굽기 직전 중 어디가 가장 잘 붙었는지 <a href=\"../contact/\">문의</a>로 알려 주세요. 오븐·팬 크기·밤 통조림 브랜드에 따라 답이 달라질 수 있습니다.</p><p>시리즈 읽기 순서는 <a href=\"bread-rd-series-guide.html\">안내 글</a>에 정리해 두었습니다. 1차를 아직 안 보셨다면 먼저 읽으시는 편이 비교가 쉽습니다.</p><p>바로 적용할 기준은 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 있습니다.</p>"
+        "content": "<p>토핑 시점을 바꿔 보신 경험이 있으시면, 1차 발효 전·후·굽기 직전 중 어디가 가장 잘 붙었는지 <a href=\"../contact/\">문의</a>로 알려 주세요. 오븐·팬 크기·밤 통조림 브랜드에 따라 답이 달라질 수 있습니다.</p><p>시리즈 읽기 순서는 <a href=\"bread-rd-series-guide.html\">안내 글</a>에 정리해 두었습니다. 1차를 아직 안 보셨다면 먼저 읽으시는 편이 비교가 쉽습니다.</p><p>바로 적용할 기준은 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 있습니다.</p><p>저는 이 기록을 제 주방·제 회차 기준으로만 남깁니다. 환경이 다르면 숫자보다 순서를 가져가 주세요.</p>"
       },
       {
         "id": "practice-notes",
@@ -1186,7 +1189,7 @@ window.POSTS_DATA = [
         "id": "for-readers",
         "heading": "h2",
         "title": "다음 날 식감이 중요한 분께",
-        "content": "<p>집에서 식빵을 하룻밤 두실 때 봉지·개방·냉장 중 어떤 방식이 기억의 밤식빵에 가까우셨는지 <a href=\"../contact/\">문의</a>로 알려 주세요. 지역 습도 차이가 큽니다.</p><p>3차 이전 일지는 <a href=\"bread-rd-night-bread-v1.html\">1차</a>, <a href=\"bread-rd-night-bread-v2.html\">2차</a>에 있습니다.</p><p>바로 적용할 기준은 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 있습니다.</p>"
+        "content": "<p>집에서 식빵을 하룻밤 두실 때 봉지·개방·냉장 중 어떤 방식이 기억의 밤식빵에 가까우셨는지 <a href=\"../contact/\">문의</a>로 알려 주세요. 지역 습도 차이가 큽니다.</p><p>3차 이전 일지는 <a href=\"bread-rd-night-bread-v1.html\">1차</a>, <a href=\"bread-rd-night-bread-v2.html\">2차</a>에 있습니다.</p><p>바로 적용할 기준은 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>에 있습니다.</p><p>저는 이 기록을 제 주방·제 회차 기준으로만 남깁니다. 환경이 다르면 숫자보다 순서를 가져가 주세요.</p>"
       },
       {
         "id": "practice-notes",
@@ -1690,7 +1693,7 @@ window.POSTS_DATA = [
         "id": "for-readers",
         "heading": "h2",
         "title": "비슷한 빵을 찾는 분께",
-        "content": "<p><strong>이 블로그만의 쓸모</strong>는 ‘완벽한 밤식빵 레시피’가 아니라, <strong>망한 이유를 한 줄로 남기고 다음 변수를 고르는 습관</strong>입니다. 오븐·밀가루·밤 브랜드가 달라도 그 습관은 가져갈 수 있습니다.</p><p>이 정리가 맞지 않는 오븐·재료 조합도 많습니다. 다른 통조림·다른 밀가루·다른 팬 크기면 최적점이 달라집니다. 그래도 <strong>순서와 메모 양식</strong>은 그대로 쓸 수 있습니다.</p><p>통조림 밤과 신선 밤, 가을 수홍과 봄 통조림은 향·수분이 달라 7가지 중 '재료' 항목만 크게 어긋날 수 있습니다. 그때는 <a href=\"bread-rd-night-bread-v7.html\">7차</a> 일지를 같이 보세요.</p><p>비슷한 추억의 빵이나, 이 7가지 중 어디가 가장 와닿았는지 <a href=\"../contact/\">문의</a>로 알려 주시면 다음 정리·일지에 반영하겠습니다.</p>"
+        "content": "<p><strong>이 블로그만의 쓸모</strong>는 ‘완벽한 밤식빵 레시피’가 아니라, <strong>망한 이유를 한 줄로 남기고 다음 변수를 고르는 습관</strong>입니다. 오븐·밀가루·밤 브랜드가 달라도 그 습관은 가져갈 수 있습니다.</p><p>이 정리가 맞지 않는 오븐·재료 조합도 많습니다. 다른 통조림·다른 밀가루·다른 팬 크기면 최적점이 달라집니다. 그래도 <strong>순서와 메모 양식</strong>은 그대로 쓸 수 있습니다.</p><p>통조림 밤과 신선 밤, 가을 수홍과 봄 통조림은 향·수분이 달라 7가지 중 '재료' 항목만 크게 어긋날 수 있습니다. 그때는 <a href=\"bread-rd-night-bread-v7.html\">7차</a> 일지를 같이 보세요.</p><p>비슷한 추억의 빵이나, 이 7가지 중 어디가 가장 와닿았는지 <a href=\"../contact/\">문의</a>로 알려 주시면 다음 정리·일지에 반영하겠습니다.</p><p>저는 이 기록을 제 주방·제 회차 기준으로만 남깁니다. 환경이 다르면 숫자보다 순서를 가져가 주세요.</p>"
       },
       {
         "id": "practice-notes",
@@ -1772,7 +1775,7 @@ window.POSTS_DATA = [
         "id": "practical-top",
         "heading": "h2",
         "title": "실기 — 자주 망한 것 TOP",
-        "content": "<ol><li><strong>반죽 종료 온도</strong> — 안 재고 손감만 믿음 → 메모 불가</li><li><strong>발효</strong> — 시간만 고집, 습도·실내 온도 무시</li><li><strong>집 vs 학원 오븐</strong> — 같은 200°C라도 색·시간 다름</li><li><strong>성형 후 무게·봉합</strong> — 규격에서 벗어나면 감점</li><li><strong>시험 당일 서두름</strong> — 타이머·도구 누락</li></ol><p>상세는 <a href=\"baker-cert-practical-mistakes.html\">3편</a>. 실기 메모 양식: 날짜 / 품목 / 물·실내·반죽 종료 온도 / 1·2차 발효 / 성형 후 무게 / 굽기 색·시간 / 망한 점 한 줄.</p><p>실기 메모에 '성형 후 무게'를 빼먹은 날이 있었습니다. 규격에서 벗어났는지 나중에 기억으로는 복구가 안 됐습니다. 시험장 저울과 집 저울 오차도 한 번 재 보세요.</p>"
+        "content": "<ol><li><strong>반죽 종료 온도</strong> — 안 재고 손감만 믿음 → 메모 불가</li><li><strong>발효</strong> — 시간만 고집, 습도·실내 온도 무시</li><li><strong>집 vs 학원 오븐</strong> — 같은 200°C라도 색·시간 다름</li><li><strong>성형 후 무게·봉합</strong> — 규격에서 벗어나면 감점</li><li><strong>시험 당일 서두름</strong> — 타이머·도구 누락</li></ol><p>상세는 <a href=\"baker-cert-practical-mistakes.html\">3편</a>. 실기 메모 양식: 날짜 / 품목 / 물·실내·반죽 종료 온도 / 1·2차 발효 / 성형 후 무게 / 굽기 색·시간 / 망한 점 한 줄.</p><p>실기 메모에 '성형 후 무게'를 빼먹은 날이 있었습니다. 규격에서 벗어났는지 나중에 기억으로는 복구가 안 됐습니다. 시험장 저울과 집 저울 오차도 한 번 재 보세요.</p><p>품목별로는 <a href=\"exam-item-white-bread-fail-points.html\">식빵 세 지점</a>과 <a href=\"exam-item-sweet-roll-approach.html\">단과자 계열 층(1·2·3)</a>을 따로 정리해 두었습니다. 이 한 장 요약과 함께 쓰면 됩니다.</p>"
       },
       {
         "id": "written-top",
@@ -1828,8 +1831,8 @@ window.POSTS_DATA = [
       "baker-cert-series-roadmap",
       "baker-cert-8month-roadmap",
       "baker-cert-exam-day-pass",
-      "why-baker-certification",
-      "baker-cert-mock-three-weeks"
+      "exam-item-white-bread-fail-points",
+      "exam-item-sweet-roll-approach"
     ],
     "faq": [
       {
@@ -2578,7 +2581,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>식빵 실기 접근의 핵심은 레시피 수집이 아니라, <strong>반죽 종료·발효 판단·성형 무게</strong>를 같은 형식으로 남기는 일이었습니다. 그램 표를 사이트에 올리지 않는 이유는, 그 표가 당신의 오븐을 대신하지 못하기 때문입니다.</p><p>이 글은 품목 접근 노트 1편입니다. 합격 보장이 아니며, 최신 요강은 공식 자료를 따르세요.</p>"
+        "content": "<p>식빵 실기 접근의 핵심은 레시피 수집이 아니라, <strong>반죽 종료·발효 판단·성형 무게</strong>를 같은 형식으로 남기는 일이었습니다. 그램 표를 사이트에 올리지 않는 이유는, 그 표가 당신의 오븐을 대신하지 못하기 때문입니다.</p><p>이 글은 품목 접근 노트 1편입니다. 합격 보장이 아니며, 최신 요강은 공식 자료를 따르세요.</p><p>시험 품목·시간·배점은 회차마다 달라질 수 있습니다. 이 글의 순서만 참고하고, 최신 요강은 공식 공고를 확인하세요.</p>"
       }
     ],
     "summary": "제빵기능사 식빵 연습에서 집에서 먼저 무너지던 세 지점(반죽 종료 온도·1차 발효 판단·성형 후 무게)과 주차별 변수 하나 순서, 메모 양식, 함정을 정리했습니다. 완성 그램 레시피는 없습니다.",
@@ -2677,7 +2680,7 @@ window.POSTS_DATA = [
         "id": "editor-note",
         "heading": "h2",
         "title": "정리하며",
-        "content": "<p>단과자빵 계열은 예쁨이 아니라 <strong>같은 크기·시간·색</strong>이 먼저였습니다. 장식은 그 위의 층입니다. 이 글도 그램 레시피가 아니라 접근 순서만 담았습니다.</p><p>품목 접근 노트 2편입니다. 시험 요강은 공식 자료를 따르세요. 식빵 노트와 함께 두면, 실기 손이 ‘큰 빵’과 ‘여러 개 빵’ 두 모드로 정리됩니다.</p>"
+        "content": "<p>단과자빵 계열은 예쁨이 아니라 <strong>같은 크기·시간·색</strong>이 먼저였습니다. 장식은 그 위의 층입니다. 이 글도 그램 레시피가 아니라 접근 순서만 담았습니다.</p><p>품목 접근 노트 2편입니다. 시험 요강은 공식 자료를 따르세요. 식빵 노트와 함께 두면, 실기 손이 ‘큰 빵’과 ‘여러 개 빵’ 두 모드로 정리됩니다.</p><p>시험 품목·시간·배점은 회차마다 달라질 수 있습니다. 이 글의 순서만 참고하고, 최신 요강은 공식 공고를 확인하세요.</p>"
       }
     ],
     "summary": "기능사 실기 단과자빵·소보로 등 손이 많이 가는 계열을 1층(분할·성형)·2층(굽기 색)·3층(표면)으로 나누고, 시간 손실 구간·주간 프레임·메모 칸을 정리했습니다. 완성 레시피는 없습니다.",

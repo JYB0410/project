@@ -1,0 +1,577 @@
+{
+  "posts": [
+    {
+      "kind": "post",
+      "slug": "why-baker-certification",
+      "category": "baker-cert",
+      "chars": 2597,
+      "sections": 9,
+      "figures": 2,
+      "stockJpg": 2,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-series-roadmap",
+      "category": "baker-cert",
+      "chars": 2182,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "medical/guarantee-ish wording"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-8month-roadmap",
+      "category": "baker-cert",
+      "chars": 2128,
+      "sections": 10,
+      "figures": 2,
+      "stockJpg": 2,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-practical-mistakes",
+      "category": "baker-cert",
+      "chars": 2530,
+      "sections": 10,
+      "figures": 6,
+      "stockJpg": 6,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-written-tips",
+      "category": "baker-cert",
+      "chars": 2218,
+      "sections": 12,
+      "figures": 2,
+      "stockJpg": 2,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-exam-day-pass",
+      "category": "baker-cert",
+      "chars": 2387,
+      "sections": 13,
+      "figures": 3,
+      "stockJpg": 3,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-to-bread-rd",
+      "category": "baker-cert",
+      "chars": 2731,
+      "sections": 13,
+      "figures": 3,
+      "stockJpg": 3,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v1",
+      "category": "bread-rd",
+      "chars": 2463,
+      "sections": 13,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-series-guide",
+      "category": "bread-rd",
+      "chars": 2583,
+      "sections": 10,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v2",
+      "category": "bread-rd",
+      "chars": 2432,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v3",
+      "category": "bread-rd",
+      "chars": 2262,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v4",
+      "category": "bread-rd",
+      "chars": 2299,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v5",
+      "category": "bread-rd",
+      "chars": 2146,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-mid-review",
+      "category": "bread-rd",
+      "chars": 2312,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v6",
+      "category": "bread-rd",
+      "chars": 2404,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v7",
+      "category": "bread-rd",
+      "chars": 2445,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v8",
+      "category": "bread-rd",
+      "chars": 2262,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-practical-guide",
+      "category": "bread-rd",
+      "chars": 3915,
+      "sections": 12,
+      "figures": 2,
+      "stockJpg": 2,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-one-page-cheatsheet",
+      "category": "baker-cert",
+      "chars": 2096,
+      "sections": 10,
+      "figures": 3,
+      "stockJpg": 3,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v9",
+      "category": "bread-rd",
+      "chars": 2056,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v10",
+      "category": "bread-rd",
+      "chars": 2263,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v11",
+      "category": "bread-rd",
+      "chars": 2239,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v12",
+      "category": "bread-rd",
+      "chars": 2381,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v13",
+      "category": "bread-rd",
+      "chars": 2274,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v14",
+      "category": "bread-rd",
+      "chars": 2141,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "bread-rd-night-bread-v15",
+      "category": "bread-rd",
+      "chars": 2175,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "baker-cert-mock-three-weeks",
+      "category": "baker-cert",
+      "chars": 2500,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "exam-item-white-bread-fail-points",
+      "category": "exam-item-notes",
+      "chars": 2183,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "post",
+      "slug": "exam-item-sweet-roll-approach",
+      "category": "exam-item-notes",
+      "chars": 2144,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    }
+  ],
+  "columns": [
+    {
+      "kind": "column",
+      "slug": "tools-first-month-keep",
+      "category": "column",
+      "chars": 2254,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? home-oven-temperature-notes",
+        "link target? quit-job-weekly-routine",
+        "link target? why-no-complete-recipe",
+        "link target? home-oven-temperature-notes"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "home-oven-temperature-notes",
+      "category": "column",
+      "chars": 2150,
+      "sections": 11,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? why-no-complete-recipe",
+        "no year anchor"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "month-after-pass-before-rd",
+      "category": "column",
+      "chars": 2139,
+      "sections": 10,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? sharing-failed-bread",
+        "link target? quit-job-weekly-routine",
+        "link target? why-no-complete-recipe",
+        "link target? sharing-failed-bread"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "why-no-complete-recipe",
+      "category": "column",
+      "chars": 2125,
+      "sections": 11,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? lab-notes-to-blog",
+        "link target? lab-notes-to-blog",
+        "no year anchor"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "lab-notes-to-blog",
+      "category": "column",
+      "chars": 2057,
+      "sections": 5,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [],
+      "score": "OK"
+    },
+    {
+      "kind": "column",
+      "slug": "sharing-failed-bread",
+      "category": "column",
+      "chars": 2023,
+      "sections": 5,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "no year anchor"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "quit-job-weekly-routine",
+      "category": "column",
+      "chars": 2038,
+      "sections": 6,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "no year anchor"
+      ],
+      "score": "WARN"
+    }
+  ],
+  "summary": {
+    "fail": 0,
+    "warn": 7,
+    "ok": 29
+  },
+  "siteGaps": [],
+  "fails": [],
+  "warns": [
+    {
+      "kind": "post",
+      "slug": "baker-cert-series-roadmap",
+      "category": "baker-cert",
+      "chars": 2182,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "medical/guarantee-ish wording"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "tools-first-month-keep",
+      "category": "column",
+      "chars": 2254,
+      "sections": 9,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? home-oven-temperature-notes",
+        "link target? quit-job-weekly-routine",
+        "link target? why-no-complete-recipe",
+        "link target? home-oven-temperature-notes"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "home-oven-temperature-notes",
+      "category": "column",
+      "chars": 2150,
+      "sections": 11,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? why-no-complete-recipe",
+        "no year anchor"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "month-after-pass-before-rd",
+      "category": "column",
+      "chars": 2139,
+      "sections": 10,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? sharing-failed-bread",
+        "link target? quit-job-weekly-routine",
+        "link target? why-no-complete-recipe",
+        "link target? sharing-failed-bread"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "why-no-complete-recipe",
+      "category": "column",
+      "chars": 2125,
+      "sections": 11,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "link target? lab-notes-to-blog",
+        "link target? lab-notes-to-blog",
+        "no year anchor"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "sharing-failed-bread",
+      "category": "column",
+      "chars": 2023,
+      "sections": 5,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "no year anchor"
+      ],
+      "score": "WARN"
+    },
+    {
+      "kind": "column",
+      "slug": "quit-job-weekly-routine",
+      "category": "column",
+      "chars": 2038,
+      "sections": 6,
+      "figures": 0,
+      "stockJpg": 0,
+      "issues": [],
+      "warns": [
+        "no year anchor"
+      ],
+      "score": "WARN"
+    }
+  ]
+}
