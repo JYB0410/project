@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="식빵 실기 — 집에서 먼저 무너지는 세 지점">
+  <defs>
+    <linearGradient id="g-exam-item-white-bread-fail-points" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(5,36%,95%)"/>
+      <stop offset="100%" stop-color="hsl(53,40%,84%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g-exam-item-white-bread-fail-points)"/>
+  <rect x="72" y="88" width="1056" height="500" rx="28" fill="#fff" opacity="0.93"/>
+  <rect x="120" y="160" width="14" height="200" rx="7" fill="hsl(5,50%,45%)"/>
+  <text x="170" y="220" font-family="system-ui,sans-serif" font-size="40" font-weight="700" fill="#1d1d1f">식빵 실기 — 집에서 먼저 무너지는 세 지점</text>
+  <text x="170" y="280" font-family="system-ui,sans-serif" font-size="24" fill="#555">완성 그램 표 없이, 발효·성형·굽기만 순서대로</text>
+  <text x="170" y="360" font-family="system-ui,sans-serif" font-size="20" fill="#777">완성 그램 레시피 없음 · 실패 지점·변수 순서</text>
+  <rect x="170" y="400" width="420" height="12" rx="6" fill="hsl(5,35%,82%)"/>
+  <rect x="170" y="432" width="320" height="12" rx="6" fill="hsl(5,28%,88%)"/>
+</svg>

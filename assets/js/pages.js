@@ -134,6 +134,7 @@
             if (p.slug === "bread-rd-series-guide") return 1;
             if (p.slug === "baker-cert-series-roadmap") return 0;
             if (p.slug === "baker-cert-mock-three-weeks") return 1;
+            if (p.category === "exam-item-notes") return 3;
             if (p.featured) return 2;
             if (p.articleChrome === "diary" || /night-bread-v\d+$/.test(p.slug || "")) return 9;
             return 5;
