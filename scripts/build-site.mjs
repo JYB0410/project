@@ -348,13 +348,28 @@ function renderCategoriesNav() {
     .join(" ");
 }
 
+function hubSortPosts(list) {
+  return [...list].sort((a, b) => {
+    const hubRank = (p) => {
+      if (p.slug === "bread-rd-night-bread-practical-guide") return 0;
+      if (p.slug === "bread-rd-series-guide") return 1;
+      if (p.slug === "baker-cert-series-roadmap") return 0;
+      if (p.slug === "baker-cert-mock-three-weeks") return 1;
+      if (p.featured) return 2;
+      if (p.articleChrome === "diary" || /night-bread-v\d+$/.test(p.slug || "")) return 9;
+      return 5;
+    };
+    const d = hubRank(a) - hubRank(b);
+    if (d !== 0) return d;
+    return new Date(b.updatedAt) - new Date(a.updatedAt);
+  });
+}
+
 function renderCategoriesNoscript() {
   const pub = getPublishedPosts();
   const blocks = categories
     .map((c) => {
-      const items = pub
-        .filter((p) => p.category === c.slug)
-        .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+      const items = hubSortPosts(pub.filter((p) => p.category === c.slug))
         .map(
           (p) =>
             `<li><a href="../posts/${p.slug}.html">${escapeHtml(p.title)}</a></li>`
@@ -408,6 +423,7 @@ function isDiaryChrome(post) {
 function renderPostArticle(post) {
   const cat = getCategory(post.category);
   const diary = isDiaryChrome(post);
+  // diary: cover is abstract SVG only; never pull first body figure as cover
   const mistakes =
     !diary && post.commonMistakes?.length
       ? `<section class="mistakes-box"><h2>초보자가 자주 실수하는 포인트</h2><ul>${post.commonMistakes.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul></section>`
@@ -680,16 +696,48 @@ console.log(`✓ ${columns.length}개 칼럼 HTML 프리렌더`);
 
 // 5) 홈 최신·추천 글 프리렌더 + 데이터 JS 캐시 무력화
 const publishedPosts = posts.filter((p) => p.status !== "draft");
-const latestPosts = [...publishedPosts]
-  .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
-  .slice(0, 6);
+
+/** R&D 실험 일지는 홈 최신 목록에서 비중을 낮춤 (허브·기능사 우선) */
+function isHomeDiary(p) {
+  return (
+    p.articleChrome === "diary" ||
+    /bread-rd-night-bread-v\d+$/.test(p.slug || "") ||
+    p.slug === "bread-rd-night-bread-mid-review"
+  );
+}
+
+function pickHomeLatest(list, limit = 6, maxDiaries = 2) {
+  const sorted = [...list].sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+  const hubs = sorted.filter((p) => !isHomeDiary(p));
+  const diaries = sorted.filter((p) => isHomeDiary(p));
+  const out = [];
+  for (const p of hubs) {
+    if (out.length >= limit) break;
+    out.push(p);
+  }
+  let d = 0;
+  for (const p of diaries) {
+    if (out.length >= limit || d >= maxDiaries) break;
+    out.push(p);
+    d++;
+  }
+  if (out.length < limit) {
+    for (const p of sorted) {
+      if (out.length >= limit) break;
+      if (!out.includes(p)) out.push(p);
+    }
+  }
+  return out.slice(0, limit);
+}
+
+const latestPosts = pickHomeLatest(publishedPosts, 6, 2);
 const featuredOnly = publishedPosts
   .filter((p) => p.featured)
   .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 const featuredPosts = [
   ...featuredOnly,
   ...publishedPosts
-    .filter((p) => !p.featured)
+    .filter((p) => !p.featured && !isHomeDiary(p))
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
 ].slice(0, 4);
 

@@ -128,9 +128,20 @@
       document.getElementById("page-title").textContent = cat.name;
       document.getElementById("page-desc").textContent = cat.description;
       document.getElementById("category-posts").innerHTML = window.SiteLayout.renderPostCards(
-        window.DataStore.getPostsByCategory(cat.slug).sort(
-          (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
-        )
+        window.DataStore.getPostsByCategory(cat.slug).sort((a, b) => {
+          const hubRank = (p) => {
+            if (p.slug === "bread-rd-night-bread-practical-guide") return 0;
+            if (p.slug === "bread-rd-series-guide") return 1;
+            if (p.slug === "baker-cert-series-roadmap") return 0;
+            if (p.slug === "baker-cert-mock-three-weeks") return 1;
+            if (p.featured) return 2;
+            if (p.articleChrome === "diary" || /night-bread-v\d+$/.test(p.slug || "")) return 9;
+            return 5;
+          };
+          const d = hubRank(a) - hubRank(b);
+          if (d !== 0) return d;
+          return new Date(b.updatedAt) - new Date(a.updatedAt);
+        })
       );
       document.getElementById("all-cats-nav").innerHTML = categories
         .map(

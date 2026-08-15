@@ -101,18 +101,42 @@
     },
     getAllColumns: () => load().columns,
     getLatestPosts: (limit = 6) => {
-      return load()
-        .posts.filter((p) => p.status !== "draft")
-        .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
-        .slice(0, limit);
+      const isDiary = (p) =>
+        p.articleChrome === "diary" ||
+        /bread-rd-night-bread-v\d+$/.test(p.slug || "") ||
+        p.slug === "bread-rd-night-bread-mid-review";
+      const list = load().posts.filter((p) => p.status !== "draft");
+      const sorted = [...list].sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+      const hubs = sorted.filter((p) => !isDiary(p));
+      const diaries = sorted.filter((p) => isDiary(p));
+      const out = [];
+      for (const p of hubs) {
+        if (out.length >= limit) break;
+        out.push(p);
+      }
+      let d = 0;
+      for (const p of diaries) {
+        if (out.length >= limit || d >= 2) break;
+        out.push(p);
+        d++;
+      }
+      for (const p of sorted) {
+        if (out.length >= limit) break;
+        if (!out.includes(p)) out.push(p);
+      }
+      return out.slice(0, limit);
     },
     getFeaturedPosts: (limit = 4) => {
+      const isDiary = (p) =>
+        p.articleChrome === "diary" ||
+        /bread-rd-night-bread-v\d+$/.test(p.slug || "") ||
+        p.slug === "bread-rd-night-bread-mid-review";
       const featured = load()
         .posts.filter((p) => p.status !== "draft" && p.featured)
         .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       if (featured.length >= limit) return featured.slice(0, limit);
       const rest = load()
-        .posts.filter((p) => p.status !== "draft" && !p.featured)
+        .posts.filter((p) => p.status !== "draft" && !p.featured && !isDiary(p))
         .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       return [...featured, ...rest].slice(0, limit);
     },

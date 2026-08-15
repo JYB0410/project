@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="1차 — 추억과 첫 실험 사이의 간격">
+  <defs>
+    <linearGradient id="g-bread-rd-night-bread-v1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(75,38%,94%)"/>
+      <stop offset="100%" stop-color="hsl(115,42%,86%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g-bread-rd-night-bread-v1)"/>
+  <rect x="80" y="90" width="1040" height="495" rx="28" fill="#fff" opacity="0.92"/>
+  <circle cx="220" cy="280" r="70" fill="hsl(75,55%,48%)" opacity="0.9"/>
+  <text x="220" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" font-weight="700" fill="#fff">MEMO</text>
+  <text x="340" y="250" font-family="system-ui,sans-serif" font-size="42" font-weight="700" fill="#1d1d1f">1차 — 추억과 첫 실험 사이의 간격</text>
+  <text x="340" y="310" font-family="system-ui,sans-serif" font-size="26" fill="#555">기능사 식빵 반죽을 바탕으로, 밤 토핑·시럽만 바꿔 본 날</text>
+  <text x="340" y="380" font-family="system-ui,sans-serif" font-size="20" fill="#777">실험 메모 일러스트 · 스톡 사진 미사용</text>
+  <rect x="340" y="420" width="480" height="12" rx="6" fill="hsl(75,40%,80%)"/>
+  <rect x="340" y="450" width="360" height="12" rx="6" fill="hsl(75,30%,88%)"/>
+  <rect x="340" y="480" width="400" height="12" rx="6" fill="hsl(75,30%,88%)"/>
+</svg>

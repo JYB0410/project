@@ -194,6 +194,26 @@ const dt = g.sections.find((s) => s.id === "decision-tree");
 if (dt && plain(dt.content).length > 100) ok.push("decision-tree present");
 else issues.push("decision-tree weak");
 
+// 18 diary: no stock jpg figures (abstract cover SVG only)
+const diaryJpg = [];
+for (const p of rd) {
+  const all = (p.sections || []).map((s) => s.content || "").join("");
+  if (/article-figure[\s\S]*?photos\/bread-rd-night-bread-v/.test(all) || /photos\/bread-rd-night-bread-v\d+\/[^"']+\.jpg/.test(all)) {
+    diaryJpg.push(p.slug);
+  }
+}
+if (!diaryJpg.length) ok.push("R&D diaries free of stock photo figures");
+else issues.push(`R&D diary stock figures remain: ${diaryJpg.join(", ")}`);
+
+// mid-review too
+const mid = posts.find((p) => p.slug === "bread-rd-night-bread-mid-review");
+if (mid) {
+  const all = (mid.sections || []).map((s) => s.content || "").join("");
+  if (/photos\/bread-rd-night-bread-mid-review\/[^"']+\.jpg/.test(all)) {
+    issues.push("mid-review still has photo figures");
+  } else ok.push("mid-review no photo figures");
+}
+
 console.log("\n=== PASS ===");
 ok.forEach((x) => console.log(" +", x));
 console.log("\n=== WARN ===");
