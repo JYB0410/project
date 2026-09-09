@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="성형 직후 저울">
+  <defs>
+    <linearGradient id="g-exam-item-scale-after-shaping" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(22,36%,95%)"/>
+      <stop offset="100%" stop-color="hsl(70,40%,84%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g-exam-item-scale-after-shaping)"/>
+  <rect x="72" y="88" width="1056" height="500" rx="28" fill="#fff" opacity="0.93"/>
+  <rect x="120" y="160" width="14" height="200" rx="7" fill="hsl(22,50%,45%)"/>
+  <text x="170" y="220" font-family="system-ui,sans-serif" font-size="40" font-weight="700" fill="#1d1d1f">성형 직후 저울</text>
+  <text x="170" y="280" font-family="system-ui,sans-serif" font-size="24" fill="#555">무게를 빼고 굽던 날</text>
+  <text x="170" y="360" font-family="system-ui,sans-serif" font-size="20" fill="#777">완성 그램 레시피 없음 · 실패 지점·변수 순서</text>
+</svg>
