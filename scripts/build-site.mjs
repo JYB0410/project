@@ -521,7 +521,11 @@ let cleaned = 0;
 posts = posts.map((post) => {
   for (const sec of post.sections) {
     const before = sec.content;
-    sec.content = stripPhotoCredits(dedupeParagraphs(sec.content));
+    const body =
+      post.category === "home-kitchen-notes"
+        ? stripPhotoCredits(sec.content)
+        : stripPhotoCredits(dedupeParagraphs(sec.content));
+    sec.content = body;
     if (sec.content !== before) cleaned++;
   }
   return post;
