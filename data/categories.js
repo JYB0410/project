@@ -19,5 +19,12 @@ window.CATEGORIES_DATA = [
     "description": "완성 그램 레시피가 아닙니다. 식빵·단과자 등 실기 품목별로 집에서 무너지는 지점과 변수 순서만 정리합니다. 최신 시험 품목은 공식 공고를 확인하세요.",
     "icon": "notes",
     "order": 3
+  },
+  {
+    "slug": "home-kitchen-notes",
+    "name": "집 주방 노트",
+    "description": "학원·시험장이 아니라 집 오븐·작업대·난방처럼, 손이 머무는 공간을 적습니다. 완성 레시피가 아닙니다. 오븐·도구 칼럼과 함께 읽으면 됩니다.",
+    "icon": "kitchen",
+    "order": 4
   }
 ];
