@@ -1,6 +1,6 @@
 {
   "ok": 22,
-  "warns": 16,
+  "warns": 28,
   "issues": 0,
   "warnList": [
     "bread-rd-night-bread-v1: no faq",
@@ -18,7 +18,19 @@
     "bread-rd-night-bread-v12: no faq",
     "bread-rd-night-bread-v13: no faq",
     "bread-rd-night-bread-v14: no faq",
-    "bread-rd-night-bread-v15: no faq"
+    "bread-rd-night-bread-v15: no faq",
+    "exam-item-fermentation-poke-not-minutes: no faq",
+    "exam-item-scale-after-shaping: no faq",
+    "kitchen-bench-timer-place: no faq",
+    "heating-on-fermentation-home: no faq",
+    "window-vs-inner-table: no faq",
+    "fridge-side-no-proof: no faq",
+    "wet-hands-scale-cloth: no faq",
+    "home-oven-shelf-height: no faq",
+    "cooling-rack-overnight: no faq",
+    "flour-tin-monsoon: no faq",
+    "family-kitchen-tape-zone: no faq",
+    "night-bake-lamp: no faq"
   ],
   "issueList": []
 }
