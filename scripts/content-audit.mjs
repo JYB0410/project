@@ -17,13 +17,14 @@ const plain = (h) => (h || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").tri
 const thin = [];
 for (const p of posts) {
   const n = postCharCount(p);
-  if (n < 2000) thin.push(`${p.slug}:${n}`);
+  const min = p.category === "home-kitchen-notes" ? 280 : 2000;
+  if (n < min) thin.push(`${p.slug}:${n}`);
   if (!p.summary?.trim()) issues.push(`${p.slug}: no summary`);
   if (!p.excerpt?.trim()) issues.push(`${p.slug}: no excerpt`);
   if (!p.faq?.length) warns.push(`${p.slug}: no faq`);
 }
-if (!thin.length) ok.push("all posts 2000+ chars");
-else issues.push(`under 2000: ${thin.join(", ")}`);
+if (!thin.length) ok.push("post length floors ok (kitchen notes shorter on purpose)");
+else issues.push(`under length floor: ${thin.join(", ")}`);
 
 // 2 R&D role + value + unique titles
 const rd = posts.filter((p) => /bread-rd-night-bread-v\d+$/.test(p.slug));
