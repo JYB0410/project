@@ -1,8 +1,27 @@
 {
-  "ok": true,
+  "ok": false,
   "passed": 11,
   "warnings": 0,
-  "issues": 0,
-  "errors": [],
+  "issues": 18,
+  "errors": [
+    "sitemap 누락 post: kitchen-bench-timer-place",
+    "sitemap 누락 post: heating-on-fermentation-home",
+    "sitemap 누락 post: window-vs-inner-table",
+    "sitemap 누락 post: fridge-side-no-proof",
+    "sitemap 누락 post: wet-hands-scale-cloth",
+    "sitemap 누락 post: home-oven-shelf-height",
+    "sitemap 누락 post: cooling-rack-overnight",
+    "sitemap 누락 post: flour-tin-monsoon",
+    "sitemap 누락 post: family-kitchen-tape-zone",
+    "sitemap 누락 post: night-bake-lamp",
+    "sitemap 누락 post: baker-cert-written-exam-desk",
+    "sitemap 누락 post: baker-cert-wrist-pause-at-bench",
+    "sitemap 누락 post: exam-item-oven-door-peek",
+    "sitemap 누락 post: exam-item-second-proof-wait",
+    "sitemap 누락 post: outlet-timer-cord",
+    "sitemap 누락 post: microwave-away-from-dough",
+    "sitemap 누락 post: bread-rd-pan-liner-vs-bare",
+    "sitemap 누락 post: bread-rd-slice-warm-vs-morning"
+  ],
   "warns": []
 }

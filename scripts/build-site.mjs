@@ -721,7 +721,7 @@ for (const col of columns) {
 console.log(`✓ ${columns.length}개 칼럼 HTML 프리렌더`);
 
 // 5) 홈 최신·추천 글 프리렌더 + 데이터 JS 캐시 무력화
-const publishedPosts = posts.filter((p) => p.status !== "draft");
+const publishedPosts = posts.filter((p) => p.status !== "draft" && p.status !== "redirect");
 
 /** R&D 실험 일지는 홈 최신 목록에서 비중을 낮춤 (허브·기능사 우선) */
 function isHomeDiary(p) {
