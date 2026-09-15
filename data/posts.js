@@ -2855,7 +2855,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-01",
     "updatedAt": "2026-08-01",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "학원 작업대에서 익힌 손이 집 식탁에서는 어깨부터 달라졌습니다. 타이머를 시야 밖에 두던 버릇을 고친 기록입니다. 완성 그램 표는 없습니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/kitchen-bench-timer-place.jpg",
     "coverCaption": "1편. 작업대 높이와 타이머 자리 — 손이 멈추던 동선",
@@ -2895,8 +2895,9 @@ window.POSTS_DATA = [
     "relatedSlugs": [
       "baker-cert-practical-mistakes",
       "baker-cert-mock-three-weeks",
-      "heating-on-fermentation-home"
-    ]
+      "home-baking-space-setup"
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "heating-on-fermentation-home",
@@ -2907,7 +2908,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-04",
     "updatedAt": "2026-08-04",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "2024년 겨울, 난방을 켠 집에서 1차 발효가 학원보다 빨랐습니다. 레시피 40분을 그대로 쓰다 표면이 처진 날을 계기로, 보일러와 그릇 자리를 메모에 넣었습니다. 완성 그램 표는 없습니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/heating-on-fermentation-home.jpg",
     "coverCaption": "2편. 난방 켠 날, 집 발효가 빨라진 이유",
@@ -2946,9 +2947,10 @@ window.POSTS_DATA = [
     "summary": "난방을 켠 집에서 1차 40분이 학원과 달라진 경험을 그릇 자리·보일러 메모로 정리했습니다. 완성 그램 표는 없습니다.",
     "relatedSlugs": [
       "exam-item-fermentation-poke-not-minutes",
-      "kitchen-bench-timer-place",
+      "home-baking-space-setup",
       "baker-cert-exam-day-pass"
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "window-vs-inner-table",
@@ -2959,7 +2961,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-09",
     "updatedAt": "2026-08-09",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "같은 주방에 그릇을 두 곳에 나눠 두니, 창가 반죽은 느리고 안쪽 반죽은 빨랐습니다. 방 이름이 같아도 자리는 달랐습니다. 완성 그램 표는 없습니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/window-vs-inner-table.jpg",
     "coverCaption": "3편. 창가와 안쪽 — 같은 방이 아닌 자리",
@@ -2997,10 +2999,10 @@ window.POSTS_DATA = [
     ],
     "summary": "같은 주방을 창가와 안쪽으로 나눠 보니 1차 발효가 갈라졌습니다. 방 이름 대신 좌표를 적는 기록이며 완성 그램 표는 없습니다.",
     "relatedSlugs": [
-      "heating-on-fermentation-home",
-      "kitchen-bench-timer-place",
+      "home-baking-space-setup",
       "exam-item-fermentation-poke-not-minutes"
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "fridge-side-no-proof",
@@ -3011,7 +3013,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-12",
     "updatedAt": "2026-08-12",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "냉장고 옆에 둔 반죽은 학원보다 느렸습니다. 문이 열릴 때마다 찬 공기가 스쳤습니다. 그 자리를 발효 금지로 표시한 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/fridge-side-no-proof.jpg",
     "coverCaption": "4편. 냉장고 옆을 발효 금지로 둔 이유",
@@ -3049,10 +3051,9 @@ window.POSTS_DATA = [
     ],
     "summary": "냉장고 문에서 새는 찬 공기 때문에 1차가 늦어진 날을 계기로, 그 자리를 발효 금지로 표시한 집 기록입니다.",
     "relatedSlugs": [
-      "window-vs-inner-table",
-      "heating-on-fermentation-home",
-      "kitchen-bench-timer-place"
-    ]
+      "home-baking-space-setup"
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "wet-hands-scale-cloth",
@@ -3063,7 +3064,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-15",
     "updatedAt": "2026-08-15",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "손을 안 닦고 저울을 누르면 숫자가 뛰었습니다. 행주를 저울 옆에 두니 물기가 옮었습니다. 성형 직후 무게 습관과 이어지는 집 자리 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/wet-hands-scale-cloth.jpg",
     "coverCaption": "5편. 젖은 손·저울·행주가 한자리에 있을 때",
@@ -3096,9 +3097,10 @@ window.POSTS_DATA = [
     "summary": "젖은 손과 행주 자리가 집 저울 숫자를 뛰게 한 날을 동선으로 정리했습니다. 완성 그램 표는 없습니다.",
     "relatedSlugs": [
       "exam-item-scale-after-shaping",
-      "kitchen-bench-timer-place",
+      "home-baking-space-setup",
       "exam-item-white-bread-fail-points"
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "home-oven-shelf-height",
@@ -3109,7 +3111,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-19",
     "updatedAt": "2026-08-19",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "집 오븐 위 단에 넣으니 겉만 빨리 색이 났습니다. 학원은 중간 단에 가깝습니다. 다이얼 숫자 전에 선반 칸을 메모에 넣은 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/home-oven-shelf-height.jpg",
     "coverCaption": "6편. 집 오븐 선반 단 — 학원과 달랐던 높이",
@@ -3142,9 +3144,10 @@ window.POSTS_DATA = [
     "summary": "집 오븐 위 단에서 겉색만 빨리 나던 날을 계기로, 다이얼 전에 선반 칸을 적게 된 기록입니다.",
     "relatedSlugs": [
       "baker-cert-practical-mistakes",
-      "kitchen-bench-timer-place",
+      "home-baking-space-setup",
       "baker-cert-exam-day-pass"
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "cooling-rack-overnight",
@@ -3155,7 +3158,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-23",
     "updatedAt": "2026-08-23",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "밤식빵은 다음 날 식감이 기준입니다. 식힘 망을 밀폐 용기 옆에 두니 아직 김이 남았고, 창가에 두니 겉이 빨리 굳었습니다. 자리 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/cooling-rack-overnight.jpg",
     "coverCaption": "7편. 식힘 망 자리 — 다음 날 식감을 가른 곳",
@@ -3188,9 +3191,9 @@ window.POSTS_DATA = [
     "summary": "식힘 망을 어디에 두었느냐가 다음 날 식감을 가른 집 기록입니다. 완성 레시피가 아닙니다.",
     "relatedSlugs": [
       "bread-rd-night-bread-practical-guide",
-      "heating-on-fermentation-home",
-      "window-vs-inner-table"
-    ]
+      "home-baking-space-setup"
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "flour-tin-monsoon",
@@ -3201,7 +3204,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-26",
     "updatedAt": "2026-08-26",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "장마철에 밀가루 통 뚜껑을 열어 두니 반죽 감이 달라졌습니다. 계량 전 개봉 시간과 뚜껑 자리를 메모에 넣은 기록입니다. 완성 배합표는 없습니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/flour-tin-monsoon.jpg",
     "coverCaption": "8편. 가루 통과 장마 — 뚜껑이 동선이던 주",
@@ -3234,9 +3237,10 @@ window.POSTS_DATA = [
     "summary": "장마철에 밀가루 통을 열어 두어 반죽 감이 달라진 날을 뚜껑 동선으로 정리했습니다. 완성 배합표는 없습니다.",
     "relatedSlugs": [
       "baker-cert-practical-mistakes",
-      "wet-hands-scale-cloth",
+      "home-baking-space-setup",
       "exam-item-scale-after-shaping"
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "family-kitchen-tape-zone",
@@ -3247,7 +3251,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-08-29",
     "updatedAt": "2026-08-29",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "식탁 한쪽을 테이프로 나눠 실험 칸을 만들었습니다. 식사 접시와 반죽 그릇이 겹치면 자리가 흔들렸습니다. 실패 빵을 나누는 약속과 이어지는 공간 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/family-kitchen-tape-zone.jpg",
     "coverCaption": "9편. 가족이 쓰는 주방 — 테이프로 나눈 실험 칸",
@@ -3279,10 +3283,10 @@ window.POSTS_DATA = [
     ],
     "summary": "가족이 함께 쓰는 식탁에서 실험 칸을 테이프로 나눈 이유를 적었습니다. 완성 레시피가 아닙니다.",
     "relatedSlugs": [
-      "kitchen-bench-timer-place",
-      "baker-cert-8month-roadmap",
-      "window-vs-inner-table"
-    ]
+      "home-baking-space-setup",
+      "baker-cert-8month-roadmap"
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "night-bake-lamp",
@@ -3293,7 +3297,7 @@ window.POSTS_DATA = [
     "publishedAt": "2026-09-01",
     "updatedAt": "2026-09-01",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "퇴근 후 밤에만 구우니 노란 조명에서 겉색을 밝게 착각했습니다. 낮에 한 번 색을 본 뒤에야 밤 배치의 메모가 맞았습니다. 주방 조명 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/night-bake-lamp.jpg",
     "coverCaption": "10편. 밤에만 굽던 이유와 조명",
@@ -3325,10 +3329,10 @@ window.POSTS_DATA = [
     ],
     "summary": "밤 노란 조명에서 겉색을 오판한 경험을 낮 재확인 습관으로 정리했습니다. 완성 레시피가 아닙니다.",
     "relatedSlugs": [
-      "home-oven-shelf-height",
-      "kitchen-bench-timer-place",
+      "home-baking-space-setup",
       "baker-cert-exam-day-pass"
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "baker-cert-written-exam-desk",
@@ -3336,8 +3340,8 @@ window.POSTS_DATA = [
     "subtitle": "오답 노트가 아니라, 책상 위에 둔 것",
     "category": "baker-cert",
     "author": "정지석",
-    "publishedAt": "2026-09-17",
-    "updatedAt": "2026-09-17",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
     "status": "published",
     "excerpt": "필기 당일, 오답 노트를 가방에 넣고 책상에는 연필 두 자루와 물만 올렸습니다. 4편의 공부 습관이 아니라 시험장 자리 기록입니다.",
@@ -3440,8 +3444,8 @@ window.POSTS_DATA = [
     "subtitle": "단과자 색이 들쭉날쭉했던 집 오븐",
     "category": "exam-item-notes",
     "author": "정지석",
-    "publishedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
     "status": "published",
     "excerpt": "단과자 굽기 중 색을 보겠다고 문을 자주 열었습니다. 온도가 떨어지고 색이 더 들쭉날쭉했습니다. 확인 시점을 한두 번으로 줄인 기록입니다.",
@@ -3450,7 +3454,7 @@ window.POSTS_DATA = [
     "relatedSlugs": [
       "exam-item-sweet-roll-approach",
       "baker-cert-practical-mistakes",
-      "home-oven-shelf-height"
+      "home-baking-space-setup"
     ],
     "summary": "굽기 중 오븐 문을 자주 열어 색이 흔들린 날을 계기로, 확인 시점을 한두 번으로 줄인 습관을 적었습니다.",
     "sections": [
@@ -3492,8 +3496,8 @@ window.POSTS_DATA = [
     "subtitle": "식빵 2차를 타이머만 보고 기다리다 무너진 기억",
     "category": "exam-item-notes",
     "author": "정지석",
-    "publishedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
     "status": "published",
     "excerpt": "식빵 2차에서 분이 남았는데 표면이 이미 처진 날이 있었습니다. 1차 눌림 노트에 이어, 2차는 분과 표면을 같이 본 기록입니다. 완성 그램 표는 없습니다.",
@@ -3544,16 +3548,15 @@ window.POSTS_DATA = [
     "subtitle": "줄이 볼을 스치면 손이 멈춘다",
     "category": "home-kitchen-notes",
     "author": "정지석",
-    "publishedAt": "2026-09-26",
-    "updatedAt": "2026-09-26",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "타이머 줄이 반죽 볼 위로 늘어져 손이 멈춘 적이 있습니다. 콘센트 쪽 벽에 줄을 고정한 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/outlet-timer-cord.jpg",
     "coverCaption": "12편. 콘센트와 타이머 줄 — 반죽 위로 늘어진 날",
     "relatedSlugs": [
-      "kitchen-bench-timer-place",
-      "wet-hands-scale-cloth",
+      "home-baking-space-setup",
       "baker-cert-mock-three-weeks"
     ],
     "summary": "타이머 줄이 반죽을 스치지 않게 콘센트 쪽 벽에 고정한 이유를 적었습니다.",
@@ -3576,7 +3579,8 @@ window.POSTS_DATA = [
         "title": "정리하며",
         "content": "<p>집 주방 노트 12편입니다. 타이머 줄이 반죽을 스치지 않게 한 기록입니다. </p><p>줄이 짧으면 타이머를 정면에서 살짝 옆으로 옮겼습니다. 화면은 보이게 두었습니다.</p><p>물기가 있는 날 줄이 볼을 스치면 더 위험합니다. 젖은 손 노트와 같이 읽으면 됩니다.</p><p>고정은 테이프 한 줄이면 됐습니다. 새 타이머를 사지 않았습니다.</p>"
       }
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "microwave-away-from-dough",
@@ -3584,17 +3588,15 @@ window.POSTS_DATA = [
     "subtitle": "돌릴 때마다 그릇이 따뜻해지던 코너",
     "category": "home-kitchen-notes",
     "author": "정지석",
-    "publishedAt": "2026-09-24",
-    "updatedAt": "2026-09-24",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
-    "status": "published",
+    "status": "redirect",
     "excerpt": "전자레인지 옆에 둔 반죽은, 가족이 음식을 데울 때마다 한쪽만 따뜻해졌습니다. 냉장고 옆 금지에 이어 기계 옆을 하나 더 지운 기록입니다.",
     "coverImage": "../assets/images/illustrations/home-kitchen/microwave-away-from-dough.jpg",
     "coverCaption": "11편. 전자레인지 옆을 발효 자리에서 뺀 이유",
     "relatedSlugs": [
-      "fridge-side-no-proof",
-      "heating-on-fermentation-home",
-      "window-vs-inner-table"
+      "home-baking-space-setup"
     ],
     "summary": "전자레인지 옆에서 반죽 한쪽만 따뜻해진 날을 계기로, 그 자리를 발효에서 뺀 기록입니다.",
     "sections": [
@@ -3616,7 +3618,8 @@ window.POSTS_DATA = [
         "title": "정리하며",
         "content": "<p>집 주방 노트 11편입니다. 전자레인지 옆을 발효 자리에서 뺀 기록입니다. 문의는 연락 페이지로 받습니다.</p><p>국을 데우는 저녁 시간대는 특히 면 차이가 났습니다. 그 시간대에는 옆을 비웠습니다.</p><p>전자레인지 문이 열리는 방향과 그릇이 겹치면 손이 그릇을 칩니다.</p><p>냉장고 옆 금지와 동시에 두 자리를 옮기지 않았습니다. 한 주에 기계 하나였습니다.</p>"
       }
-    ]
+    ],
+    "redirectTo": "home-baking-space-setup"
   },
   {
     "slug": "bread-rd-pan-liner-vs-bare",
@@ -3624,8 +3627,8 @@ window.POSTS_DATA = [
     "subtitle": "같은 반죽, 같은 단, 팬만 다르게",
     "category": "bread-rd",
     "author": "정지석",
-    "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
     "status": "published",
     "excerpt": "같은 밤식빵 반죽을 유산지 팬과 맨 팬에 나눠 넣었습니다. 옆구리 색과 떨어짐이 달랐습니다. 차수 레시피가 아니라 팬 한 가지 변수입니다.",
@@ -3633,7 +3636,7 @@ window.POSTS_DATA = [
     "coverCaption": "유산지 유무만 바꾼 날 — 옆구리 색이 달랐다",
     "relatedSlugs": [
       "bread-rd-night-bread-practical-guide",
-      "home-oven-shelf-height",
+      "home-baking-space-setup",
       "bread-rd-night-bread-v8"
     ],
     "summary": "유산지 유무만 바꿔 옆구리 색과 떨어짐을 본 기록입니다. 완성 그램 표는 없습니다.",
@@ -3670,8 +3673,8 @@ window.POSTS_DATA = [
     "subtitle": "같은 빵인데 부스러기가 달랐던 이유",
     "category": "bread-rd",
     "author": "정지석",
-    "publishedAt": "2026-09-28",
-    "updatedAt": "2026-09-28",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
     "featured": false,
     "status": "published",
     "excerpt": "밤식빵을 따뜻할 때 자르면 속가 뭉개지고, 다음 날 아침이면 결이 보였습니다. 차수 실험이 아니라, 평가 시각만 나눈 기록입니다. 완성 레시피가 아닙니다.",
@@ -3679,7 +3682,7 @@ window.POSTS_DATA = [
     "coverCaption": "단면을 언제 잘랐느냐 — 따뜻할 때와 다음 날 아침",
     "relatedSlugs": [
       "bread-rd-night-bread-practical-guide",
-      "cooling-rack-overnight",
+      "home-baking-space-setup",
       "bread-rd-night-bread-v4"
     ],
     "summary": "같은 배치를 따뜻할 때와 다음 날 아침에 잘랐을 때 단면이 달랐던 이유를 적었습니다. 변수는 칼질 시각 하나입니다.",
@@ -3713,6 +3716,100 @@ window.POSTS_DATA = [
         "heading": "h2",
         "title": "정리하며",
         "content": "<p>단면을 언제 잘랐느냐가 평가를 흔든 기록입니다. n차 실험이 아닙니다. 오류는 수정일을 남기고 고칩니다.</p><p>가족이 저녁에 먹고 싶어 하면, 평가용 한 조각만 아침으로 남겼습니다. 실패 빵을 나누는 약속과 같이 갑니다.</p><p>따뜻한 빵을 자르면 칼에 속이 붙습니다. 기공이 실제보다 작아 보였습니다.</p><p>다음 날 아침은 결이 보였습니다. 같은 덩어리의 다른 쪽이었습니다.</p><p>평가용 한 조각만 아침으로 남기고, 저녁은 가족과 나눴습니다.</p><p>4차 보관 실험은 아침 단면으로만 판단하기로 했습니다.</p><p>식힘 망 자리와 자르는 시각을 같은 주에 바꾸지 않았습니다.</p><p>실전 정리의 다음 날 기준과 이 글이 맞습니다. n차 번호는 붙이지 않았습니다.</p><p>칼은 마른 것만 썼습니다. 물기가 있으면 속이 더 밀립니다.</p><p>당일 저녁 사진으로 단면을 남기지 않았습니다. 오해가 생깁니다.</p><p>따뜻한 빵을 자르면 칼에 속이 붙습니다. 기공이 실제보다 작아 보였습니다.</p><p>다음 날 아침은 결이 보였습니다. 같은 덩어리의 다른 쪽이었습니다.</p><p>평가용 한 조각만 아침으로 남기고, 저녁은 가족과 나눴습니다.</p><p>4차 보관 실험은 아침 단면으로만 판단하기로 했습니다.</p><p>식힘 망 자리와 자르는 시각을 같은 주에 바꾸지 않았습니다.</p><p>실전 정리의 다음 날 기준과 이 글이 맞습니다. n차 번호는 붙이지 않았습니다.</p><p>칼은 마른 것만 썼습니다. 물기가 있으면 속이 더 밀립니다.</p><p>당일 저녁 사진으로 단면을 남기지 않았습니다. 오해가 생깁니다.</p><p>칼은 한 방향으로만 밀었습니다. 왔다 갔다 하면 속이 더 뭉개집니다.</p><p>따뜻한 빵을 누른 손가락 자국으로 기공을 판단하지 않았습니다.</p><p>다음 날 아침 한 조각은 가장자리와 가운데를 나눠 봤습니다.</p><p>4차 루즈 백과 이 글을 같은 주에 새로 열지 않았습니다.</p><p>실전 정리의 다음 날 기준이 이 글의 출발점입니다.</p><p>가족이 저녁에 먹고 싶어 하면 평가용만 남겼습니다.</p><p>n차 번호를 붙이지 않은 이유는, 고정값 실험이 아니기 때문입니다.</p><p>부스러기 양도 한 줄로 적었습니다. 따뜻할 때가 많았습니다.</p><p>이 기록은 평가 시각만 나눈 메모입니다. 레시피를 바꾸지 않았습니다.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "home-baking-space-setup",
+    "title": "집에서 빵 만들 때 작업대·발효·굽기·식힘 공간 구성하는 방법",
+    "subtitle": "학원과 다른 집 주방에서, 자리를 옮기며 남긴 동선 기록",
+    "category": "home-kitchen-notes",
+    "author": "정지석",
+    "publishedAt": "2026-08-01",
+    "updatedAt": "2026-09-15",
+    "featured": true,
+    "status": "published",
+    "excerpt": "집 식탁·창가·냉장고 옆·전자레인지 옆·난방·오븐 단·식힘 망·타이머 줄을 하나씩 옮기며 발효와 굽기가 달라진 점을 한 장에 모았습니다. 완성 레시피가 아닙니다.",
+    "coverImage": "../assets/images/illustrations/home-kitchen/kitchen-bench-timer-place.jpg",
+    "coverCaption": "집 주방 작업대와 타이머 자리",
+    "relatedSlugs": [
+      "bread-rd-night-bread-practical-guide",
+      "baker-cert-practical-mistakes",
+      "exam-item-fermentation-poke-not-minutes"
+    ],
+    "summary": "집 주방에서 작업대 높이, 발효 자리(창가·안쪽·냉장고·전자레인지·난방), 오븐 선반, 식힘, 타이머 줄, 가족 식탁 칸을 한 번에 보는 공간 가이드입니다.",
+    "sections": [
+      {
+        "id": "why",
+        "heading": "h2",
+        "title": "왜 자리를 한 장에 모았나",
+        "content": "<p>집 주방에서 빵을 만들면 학원과 다른 점이 한두 개가 아닙니다. 식탁 높이, 창가 찬기, 냉장고 문, 난방, 작은 오븐 단까지 한꺼번에 겹칩니다. 자리를 글마다 잘게 나누면 읽을 이유가 줄어듭니다. 그래서 제가 실제로 옮긴 자리만 이 한 장에 모았습니다.</p>\n<p>완성 그램 표는 없습니다. 시험장 규격을 집에서 흉내 내는 글도 아닙니다. 제 식탁·제 오븐 기준입니다.</p>"
+      },
+      {
+        "id": "bench",
+        "heading": "h2",
+        "title": "1. 작업대 높이",
+        "content": "<p>학원 작업대는 서서 반죽하기에 맞았고, 집에서는 식탁에 앉아 반죽했습니다. 같은 스크래퍼인데 어깨와 손목 각도가 달라 봉합이 헐거워진 날이 있었습니다. 도마를 겹쳐 높이를 조금 올린 뒤, 한 판이 한눈에 들어오기 시작했습니다.</p>\n<p>가구를 새로 사지 않았습니다. 높이만 올리고 흔들리면 성형이 더 나빠서, 아래에 수건을 깔아 고정했습니다. 앉아서만 하면 시선이 반죽에 너무 가까워 봉합만 보고 전체를 놓친 적도 있습니다.</p>"
+      },
+      {
+        "id": "timer",
+        "heading": "h2",
+        "title": "2. 타이머 자리와 줄",
+        "content": "<p>집에서는 타이머를 냉장고 옆, 등 뒤에 두었습니다. 울리면 고개를 돌리다 손이 멈췄습니다. 벽 타일 정면으로 옮긴 뒤로는 발효 분을 놓치는 일이 줄었습니다. 휴대폰을 주머니에 넣은 날은 진동을 못 느낀 적이 있어, 주방 전용 타이머를 썼습니다.</p>\n<p>정면으로 옮긴 뒤에는 줄이 반죽 볼 위를 지나갔습니다. 콘센트 쪽 벽에 줄을 고정하니 손이 덜 걸렸습니다. 줄이 짧으면 화면은 보이게, 줄만 옆으로 뺐습니다.</p>"
+      },
+      {
+        "id": "ferment-spots",
+        "heading": "h2",
+        "title": "3. 발효 자리 — 창가, 안쪽, 냉장고, 전자레인지",
+        "content": "<p>같은 주방이어도 창가와 안쪽은 달랐습니다. 2024년 12월, 같은 반죽을 나눠 두니 창가는 손가락이 잘 안 들어가고 안쪽은 이미 느슨했습니다. 난방을 켠 것은 같았습니다. 유리가 바깥 공기를 붙잡고 있었습니다. 메모에 ‘창가 / 안쪽 / 저녁’처럼 좌표를 넣기 시작했습니다.</p>\n<p>냉장고 옆에 두면 문을 열 때마다 찬 공기가 스쳤습니다. 보일러를 켜도 그 옆은 회복이 느렸습니다. 바닥에 발효 금지 표시를 하고 안쪽 선반으로 옮겼습니다. 냉동실 쪽 벽은 냉장실 쪽보다 더 찼습니다.</p>\n<p>전자레인지 옆은 반대입니다. 가족이 국을 데울 때마다 가까운 면만 따뜻해져 눌림이 면마다 달랐습니다. 저녁 시간대에는 그 옆을 비웠습니다. 한 주에 기계 옆을 두 곳 한꺼번에 옮기지 않았습니다.</p>"
+      },
+      {
+        "id": "heat",
+        "heading": "h2",
+        "title": "4. 난방이 발효에 미치는 영향",
+        "content": "<p>2024년 12월, 학실 실내는 반죽이 늦게 오르는 편이고 집은 난방을 켜 두었습니다. 1차 40분을 타이머대로 썼더니 표면이 이미 느슨했습니다. 배합을 바꾼 적이 없습니다. 방의 온기와, 그릇을 보일러 가까이 둔 자리였습니다.</p>\n<p>메모에 ‘난방 ON / 그릇-보일러 가까움 / 눌림 중’처럼 적었습니다. 난방을 끈 낮과 켠 저녁을 같은 분으로 보지 않았습니다. 창문을 잠깐 연 날은 발효가 다시 느려져, 환기와 난방을 같은 분에 묶지 않았습니다.</p>\n<p>1차 발효를 분이 아니라 눌림으로 보는 습관은 <a href=\"exam-item-fermentation-poke-not-minutes.html\">식빵 1차 노트</a>와 같이 읽으면 됩니다. 시험장 온도는 집이 아닙니다.</p>"
+      },
+      {
+        "id": "scale-wet",
+        "heading": "h2",
+        "title": "5. 저울과 물기",
+        "content": "<p>집에서는 싱크대가 저울 바로 옆입니다. 물기가 남은 손으로 판을 누르면 숫자가 튀었습니다. 행주를 저울 오른쪽에 두면 물기가 옮았습니다. 싱크대 → 마른 천 → 저울 순으로 말리는 동선을 그었습니다. 영점은 매 배치 전입니다.</p>\n<p>성형 직후 무게를 빼먹지 않는 습관은 <a href=\"exam-item-scale-after-shaping.html\">성형 저울 노트</a>와 이어집니다. 학원 저울은 멀어 손이 저절로 말랐습니다. 집에서는 그 거리를 만들어야 했습니다.</p>"
+      },
+      {
+        "id": "oven",
+        "heading": "h2",
+        "title": "6. 오븐 선반과 문",
+        "content": "<p>집 오븐은 작아 위 단이 편했습니다. 학원 중간 높이와 달라, 겉 색만 빨리 나고 속은 덜한 날이 있었습니다. 다이얼만 의심하다 선반이 변수인 줄 알았습니다. ‘위 / 가운데 / 아래’만 적고, 가운데로 내린 주에는 다이얼을 안 바꿨습니다. 팬 두 장을 동시에 넣지 않았습니다.</p>\n<p>단과자를 집에서 연습할 때는 색이 궁금해 문을 자주 열었습니다. 열수록 온도가 떨어졌습니다. 확인은 중반 한 번, 끝 근처 한 번으로 줄였습니다. 창으로 보는 것과 문을 여는 것을 나눴습니다. 오븐 다이얼 대응은 <a href=\"../columns/home-oven-temperature-notes.html\">오븐 칼럼</a>에 있습니다.</p>"
+      },
+      {
+        "id": "cool-store",
+        "heading": "h2",
+        "title": "7. 식힘 망과 가루 통",
+        "content": "<p>밤식빵은 다음 날 식감이 기준입니다. 식힘 망을 밀폐 용기 옆에 두면 김이 남고, 창가에 두면 겉만 굳었습니다. 안쪽 선반에 사방이 뜨게 두었습니다. 선풍기를 직접 꽂지 않았습니다. 밀폐는 완전히 식은 뒤에만 했습니다.</p>\n<p>2025년 7월 장마에 밀가루 통 뚜껑을 열어 두니 반죽 감이 축축했습니다. 물 온도 칸은 그대로였습니다. 계량할 때만 열고 끝나면 닫았습니다. 새 통을 사지 않았습니다.</p>\n<p>다음 날 식감 기준은 <a href=\"bread-rd-night-bread-practical-guide.html\">실전 정리</a>를 먼저 보세요.</p>"
+      },
+      {
+        "id": "family-light",
+        "heading": "h2",
+        "title": "8. 가족 식탁 칸과 밤 조명",
+        "content": "<p>식탁 중앙에 반죽을 두면 저녁 준비와 섞여 타이머가 사라졌습니다. 끝쪽만 실험 칸으로 표시했습니다. 테이프가 보기 싫으면 도마 자리만 고정해도 됩니다. 혼자 쓰는 날에는 선을 걷었습니다.</p>\n<p>퇴근 후 밤에만 구우면 노란 조명에서 겉색이 괜찮아 보였습니다. 아침 창가에서는 덜 익은 톤이었습니다. 전구를 바꾸지 않고, 색 판정만 아침으로 미뤘습니다. 타이머 자리와 조명 자리를 같은 날 바꾸지 않았습니다.</p>"
+      },
+      {
+        "id": "changed",
+        "heading": "h2",
+        "title": "9. 쓰면서 바꾼 배치",
+        "content": "<p>처음에는 식탁 중앙·창가·냉장고 옆·전자레인지 옆을 가리지 않았습니다. 지금은 안쪽 선반이 발효 기본이고, 타이머는 정면, 줄은 벽, 저울은 마른 손 다음에, 오븐은 가운데 단, 식힘은 안쪽 선반입니다.</p>\n<p>한 주에 자리 변수를 두 개 이상 열지 않았습니다. 무엇이 효과인지 모르기 때문입니다. 학원 다음 날 집에서 풀코스로 자리를 실험하지 않았습니다.</p>"
+      },
+      {
+        "id": "starter",
+        "heading": "h2",
+        "title": "10. 처음 집에서 굽는다면",
+        "content": "<p>한 번에 다 바꾸지 마세요. 먼저 타이머가 보이는지, 발효 그릇이 냉장고·전자레인지 옆이 아닌지만 보세요. 그다음 작업대 높이와 오븐 단입니다.</p>\n<p>시험 준비 중이라면 실기 실수(<a href=\"baker-cert-practical-mistakes.html\">3편</a>)와 모의(<a href=\"baker-cert-mock-three-weeks.html\">모의 3주</a>)를 이 글보다 먼저 읽어도 됩니다. 이 장은 집 공간만 다룹니다. 문의는 <a href=\"../contact/\">연락</a>으로 받습니다.</p>"
+      },
+      {
+        "id": "editor-note",
+        "heading": "h2",
+        "title": "정리하며",
+        "content": "<p>창가·냉장고 옆·전자레인지 옆·난방·작업대·타이머 줄·오븐 단·식힘 망을 따로 잘게 나누지 않고, 집에서 실제로 옮긴 자리만 한 장에 모았습니다. 시험장·학원 규격은 공고와 현장을 따릅니다.</p>"
       }
     ]
   }

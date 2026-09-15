@@ -22,7 +22,7 @@
     .map((c) => {
       const count = window.DataStore.getPostsByCategory(c.slug).length;
       return `
-      <a href="${window.SiteUtils.resolvePath("categories/index.html")}?cat=${c.slug}" class="category-card">
+      <a href="${window.SiteUtils.resolvePath("categories/" + c.slug + "/")}" class="category-card">
         <h3>${window.SiteUtils.escapeHtml(c.name)}</h3>
         <p>${window.SiteUtils.escapeHtml(c.description)}</p>
         <span class="category-count">글 ${count}편</span>

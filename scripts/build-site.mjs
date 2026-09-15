@@ -159,7 +159,7 @@ function renderHomeCategoryGrid() {
     .map((c) => {
       const count = pub.filter((p) => p.category === c.slug).length;
       return `
-      <a href="categories/index.html?cat=${c.slug}" class="category-card">
+      <a href="categories/${c.slug}/" class="category-card">
         <h3>${escapeHtml(c.name)}</h3>
         <p>${escapeHtml(c.description)}</p>
         <span class="category-count">글 ${count}편</span>
@@ -198,7 +198,7 @@ function renderSiteHeader(active = "") {
     categories
       .map(
         (c) =>
-          `<li><a href="categories/index.html?cat=${c.slug}" class="subnav-chip">${escapeHtml(c.name)}</a></li>`
+          `<li><a href="categories/${c.slug}/" class="subnav-chip">${escapeHtml(c.name)}</a></li>`
       )
       .join("") +
     `<li><a href="columns/" class="subnav-chip subnav-chip-column">운영자 칼럼</a></li>`;
@@ -296,7 +296,7 @@ function renderColumnsIndexCards(allColumns) {
 }
 
 function getPublishedPosts() {
-  return posts.filter((p) => p.status !== "draft");
+  return posts.filter((p) => p.status !== "draft" && p.status !== "redirect");
 }
 
 function renderPostCardsForCategories(catPosts) {
@@ -330,7 +330,7 @@ function renderCategoriesIndexGrid() {
     .map((c) => {
       const count = pub.filter((p) => p.category === c.slug).length;
       return `
-          <a href="?cat=${c.slug}" class="category-card">
+          <a href="${c.slug}/" class="category-card">
             <h3>${escapeHtml(c.name)}</h3>
             <p>${escapeHtml(c.description)}</p>
             <span class="category-count">글 ${count}편</span>
@@ -343,7 +343,7 @@ function renderCategoriesNav() {
   return categories
     .map(
       (c) =>
-        `<a href="?cat=${c.slug}" class="btn btn-secondary">${escapeHtml(c.name)}</a>`
+        `<a href="${c.slug}/" class="btn btn-secondary">${escapeHtml(c.name)}</a>`
     )
     .join(" ");
 }
@@ -459,7 +459,7 @@ function renderPostArticle(post) {
 
   return `<article class="article-main${diary ? " article-diary" : ""}">
   <header class="article-header">
-    <p class="article-category"><a href="../categories/index.html?cat=${post.category}">${escapeHtml(cat?.name || "")}</a></p>
+    <p class="article-category"><a href="../categories/${post.category}/">${escapeHtml(cat?.name || "")}</a></p>
     <h1>${escapeHtml(post.title)}</h1>
     <p class="article-subtitle">${escapeHtml(post.subtitle)}</p>
     <div class="article-meta">
@@ -553,6 +553,25 @@ for (const file of existingPostHtml) {
   if (!postSlugs.has(slug)) fs.unlinkSync(path.join(postsDir, file));
 }
 for (const post of posts) {
+  if (post.status === "redirect" && post.redirectTo) {
+    const dest = `${SITE_URL}/posts/${post.redirectTo}.html`;
+    const html = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0;url=${post.redirectTo}.html">
+  <link rel="canonical" href="${dest}">
+  <title>이동 중</title>
+</head>
+<body>
+  <p>이 글은 <a href="${post.redirectTo}.html">공간 가이드</a>로 합쳤습니다.</p>
+</body>
+</html>
+`;
+    fs.writeFileSync(path.join(ROOT, "posts", `${post.slug}.html`), html);
+    continue;
+  }
   const cat = getCategory(post.category);
   const canonical = `${SITE_URL}/posts/${post.slug}.html`;
   const title = `${post.title} | ${config.name}`;
@@ -566,7 +585,7 @@ for (const post of posts) {
     buildBreadcrumbJsonLd([
       { name: "홈", url: "/" },
       { name: "가이드", url: "/categories/" },
-      { name: cat?.name || "", url: `/categories/?cat=${post.category}` },
+      { name: cat?.name || "", url: `/categories/${post.category}/` },
       { name: post.title, url: `/posts/${post.slug}.html` }
     ]),
     buildFaqJsonLd(post.faq)
@@ -600,7 +619,7 @@ for (const post of posts) {
     <nav class="breadcrumb" aria-label="breadcrumb"><ol>
       <li><a href="../index.html">홈</a></li>
       <li><a href="../categories/index.html">가이드</a></li>
-      <li><a href="../categories/index.html?cat=${post.category}">${escapeHtml(cat?.name || "")}</a></li>
+      <li><a href="../categories/${post.category}/">${escapeHtml(cat?.name || "")}</a></li>
       <li aria-current="page">${escapeHtml(post.title)}</li>
     </ol></nav>
     <div id="article-root" class="article-layout" data-prerendered="true">${articleHtml}</div>
@@ -879,6 +898,59 @@ if (fs.existsSync(categoriesIndexPath)) {
   }
   fs.writeFileSync(categoriesIndexPath, categoriesHtml);
   console.log(`✓ 가이드 목록 프리렌더 (${categories.length}개 카테고리, ${getPublishedPosts().length}편)`);
+
+  for (const c of categories) {
+    const dir = path.join(ROOT, "categories", c.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    const catPosts = hubSortPosts(getPublishedPosts().filter((p) => p.category === c.slug));
+    const hubHtml = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="${escapeHtml(c.description)}">
+  <link rel="canonical" href="${SITE_URL}/categories/${c.slug}/">
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <title>${escapeHtml(c.name)} | ${escapeHtml(config.name)}</title>
+  <script src="../../assets/js/consent-mode.js"></script>
+  ${renderAdSenseHeadScript()}
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container page-main">
+    <header class="page-hero">
+      <p class="eyebrow"><a href="../">가이드</a></p>
+      <h1>${escapeHtml(c.name)}</h1>
+      <p class="hero-lead">${escapeHtml(c.description)}</p>
+    </header>
+    <div class="card-grid">${catPosts
+      .map((post) => {
+        const cover = postCoverForBuild(post, "../../");
+        const media = cover
+          ? `<img src="${cover}" alt="" class="card-media" loading="lazy" width="640" height="360">`
+          : "";
+        return `<article class="card">${media}<div class="card-body"><p class="card-category">${escapeHtml(c.name)}</p><h2><a href="../../posts/${post.slug}.html">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.excerpt || "")}</p></div></article>`;
+      })
+      .join("")}</div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../../data/site.config.js"></script>
+  <script src="../../data/categories.js"></script>
+  <script src="../../data/posts.js"></script>
+  <script src="../../data/columns.js"></script>
+  <script src="../../assets/js/data-store.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/layout.js"></script>
+  <script src="../../assets/js/consent.js" defer></script>
+  <script src="../../assets/js/adsense.js" defer></script>
+  <script>window.SiteLayout && window.SiteLayout.mountLayout("categories");</script>
+</body>
+</html>
+`;
+    fs.writeFileSync(path.join(dir, "index.html"), hubHtml);
+  }
+  console.log("✓ 카테고리 정식 URL", categories.map((c) => c.slug).join(", "));
 }
 
 function walkHtmlFiles(dir) {
@@ -910,12 +982,12 @@ const staticPages = [
   { loc: "/youth-policy/", priority: "0.4", changefreq: "yearly", lastmod: config.youthPolicyLastUpdated || config.privacyLastUpdated || today },
   { loc: "/sitemap/", priority: "0.5", changefreq: "monthly", lastmod: today }
 ];
+for (const c of categories) {
+  staticPages.push({ loc: `/categories/${c.slug}/`, priority: "0.8", changefreq: "weekly", lastmod: today });
+}
 
 const urls = [...staticPages];
-for (const c of categories) {
-  urls.push({ loc: `/categories/?cat=${c.slug}`, priority: "0.8", changefreq: "weekly", lastmod: today });
-}
-for (const p of posts) {
+for (const p of getPublishedPosts()) {
   urls.push({ loc: `/posts/${p.slug}.html`, priority: "0.7", changefreq: "monthly", lastmod: p.updatedAt || today });
 }
 for (const c of columns) {

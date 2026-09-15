@@ -42,7 +42,7 @@
   window.SiteSEO.breadcrumbJsonLd([
     { name: "홈", url: config.siteUrl + "/" },
     { name: "카테고리", url: config.siteUrl + "/categories/" },
-    { name: cat ? cat.name : "글", url: `${config.siteUrl}/categories/?cat=${post.category}` },
+    { name: cat ? cat.name : "글", url: `${config.siteUrl}/categories/${post.category}/` },
     { name: post.title, url: canonical }
   ]);
   window.SiteSEO.articleJsonLd(post, config);
@@ -61,7 +61,7 @@
     breadcrumbEl.innerHTML = window.SiteLayout.renderBreadcrumb([
       { name: "홈", url: base + "index.html" },
       { name: "카테고리", url: base + "categories/index.html" },
-      { name: cat ? cat.name : "글", url: base + `categories/index.html?cat=${post.category}` },
+      { name: cat ? cat.name : "글", url: base + `categories/${post.category}/` },
       { name: post.title, url: "#" }
     ]);
   }

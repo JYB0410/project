@@ -21,7 +21,7 @@
       categories
         .map(
           (c) =>
-            `<li><a href="${resolvePath("categories/index.html")}?cat=${c.slug}" class="subnav-chip">${escapeHtml(c.name)}</a></li>`
+            `<li><a href="${resolvePath("categories/" + c.slug + "/")}" class="subnav-chip">${escapeHtml(c.name)}</a></li>`
         )
         .join("") +
       `<li><a href="${resolvePath("columns/")}" class="subnav-chip subnav-chip-column">운영자 칼럼</a></li>`;

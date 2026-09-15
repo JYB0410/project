@@ -109,7 +109,7 @@
     return `
     <article class="article-main${diary ? " article-diary" : ""}">
       <header class="article-header">
-        <p class="article-category"><a href="${resolvePath("categories/index.html")}?cat=${post.category}">${escapeHtml(cat ? cat.name : "")}</a></p>
+        <p class="article-category"><a href="${resolvePath("categories/" + post.category + "/")}">${escapeHtml(cat ? cat.name : "")}</a></p>
         <h1>${escapeHtml(post.title)}</h1>
         <p class="article-subtitle">${escapeHtml(post.subtitle)}</p>
         <div class="article-meta">

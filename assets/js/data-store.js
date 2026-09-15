@@ -87,7 +87,7 @@
     getCategories: () => load().categories.slice().sort((a, b) => a.order - b.order),
     getCategory: (slug) => load().categories.find((c) => c.slug === slug),
     getPosts: (opts = {}) => {
-      let posts = load().posts.filter((p) => p.status !== "draft");
+      let posts = load().posts.filter((p) => p.status !== "draft" && p.status !== "redirect");
       if (opts.category) posts = posts.filter((p) => p.category === opts.category);
       if (opts.featured) posts = posts.filter((p) => p.featured);
       if (opts.slug) return posts.find((p) => p.slug === opts.slug);
@@ -105,7 +105,7 @@
         p.articleChrome === "diary" ||
         /bread-rd-night-bread-v\d+$/.test(p.slug || "") ||
         p.slug === "bread-rd-night-bread-mid-review";
-      const list = load().posts.filter((p) => p.status !== "draft");
+      const list = load().posts.filter((p) => p.status !== "draft" && p.status !== "redirect");
       const sorted = [...list].sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
       const hubs = sorted.filter((p) => !isDiary(p));
       const diaries = sorted.filter((p) => isDiary(p));
@@ -132,11 +132,11 @@
         /bread-rd-night-bread-v\d+$/.test(p.slug || "") ||
         p.slug === "bread-rd-night-bread-mid-review";
       const featured = load()
-        .posts.filter((p) => p.status !== "draft" && p.featured)
+        .posts.filter((p) => p.status !== "draft" && p.status !== "redirect" && p.featured)
         .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       if (featured.length >= limit) return featured.slice(0, limit);
       const rest = load()
-        .posts.filter((p) => p.status !== "draft" && !p.featured && !isDiary(p))
+        .posts.filter((p) => p.status !== "draft" && p.status !== "redirect" && !p.featured && !isDiary(p))
         .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       return [...featured, ...rest].slice(0, limit);
     },
@@ -145,7 +145,7 @@
       return (slugs || []).map((s) => all.find((p) => p.slug === s)).filter(Boolean);
     },
     getPostsByCategory: (slug) => DataStore.getPosts({ category: slug }),
-    getPostCount: () => load().posts.filter((p) => p.status !== "draft").length,
+    getPostCount: () => load().posts.filter((p) => p.status !== "draft" && p.status !== "redirect").length,
     getColumnCount: () => load().columns.filter((c) => c.status !== "draft").length
   };
 

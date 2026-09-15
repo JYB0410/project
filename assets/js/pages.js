@@ -123,7 +123,7 @@
       window.SiteSEO.setPageMeta({
         title: `${cat.name} | ${config.name}`,
         description: cat.description,
-        canonical: `${config.siteUrl}/categories/?cat=${cat.slug}`
+        canonical: `${config.siteUrl}/categories/${cat.slug}/`
       });
       document.getElementById("page-title").textContent = cat.name;
       document.getElementById("page-desc").textContent = cat.description;
@@ -148,7 +148,7 @@
       document.getElementById("all-cats-nav").innerHTML = categories
         .map(
           (c) =>
-            `<a href="?cat=${c.slug}" class="btn btn-secondary${c.slug === catSlug ? " active" : ""}">${window.SiteUtils.escapeHtml(c.name)}</a>`
+            `<a href="${window.SiteUtils.resolvePath("categories/" + c.slug + "/")}" class="btn btn-secondary${c.slug === catSlug ? " active" : ""}">${window.SiteUtils.escapeHtml(c.name)}</a>`
         )
         .join(" ");
     } else {
@@ -164,7 +164,7 @@
         .map((c) => {
           const count = window.DataStore.getPostsByCategory(c.slug).length;
           return `
-          <a href="?cat=${c.slug}" class="category-card">
+          <a href="${window.SiteUtils.resolvePath("categories/" + c.slug + "/")}" class="category-card">
             <h3>${window.SiteUtils.escapeHtml(c.name)}</h3>
             <p>${window.SiteUtils.escapeHtml(c.description)}</p>
             <span class="category-count">글 ${count}편</span>
@@ -214,7 +214,7 @@
         <li><a href="${base}youth-policy/">청소년보호정책</a></li>
       </ul>
       <h2>카테고리</h2>
-      <ul>${cats.map((c) => `<li><a href="${base}categories/?cat=${c.slug}">${window.SiteUtils.escapeHtml(c.name)}</a></li>`).join("")}</ul>
+      <ul>${cats.map((c) => `<li><a href="${base}categories/${c.slug}/">${window.SiteUtils.escapeHtml(c.name)}</a></li>`).join("")}</ul>
       <h2>글 (${posts.length})</h2>
       <ul>${posts.map((p) => `<li><a href="${base}posts/${p.slug}.html">${window.SiteUtils.escapeHtml(p.title)}</a></li>`).join("")}</ul>
       <h2>칼럼 (${cols.length})</h2>

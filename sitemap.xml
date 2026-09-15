@@ -11,10 +11,10 @@
   <url><loc>https://bcstarts.org/disclaimer/</loc><lastmod>2026-07-15</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bcstarts.org/youth-policy/</loc><lastmod>2026-07-28</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bcstarts.org/sitemap/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://bcstarts.org/categories/?cat=baker-cert</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcstarts.org/categories/?cat=bread-rd</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcstarts.org/categories/?cat=exam-item-notes</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcstarts.org/categories/?cat=home-kitchen-notes</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bcstarts.org/categories/baker-cert/</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bcstarts.org/categories/bread-rd/</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bcstarts.org/categories/exam-item-notes/</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bcstarts.org/categories/home-kitchen-notes/</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://bcstarts.org/posts/why-baker-certification.html</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/posts/baker-cert-series-roadmap.html</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/posts/baker-cert-8month-roadmap.html</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -46,24 +46,13 @@
   <url><loc>https://bcstarts.org/posts/exam-item-sweet-roll-approach.html</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/posts/exam-item-fermentation-poke-not-minutes.html</loc><lastmod>2026-08-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/posts/exam-item-scale-after-shaping.html</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/kitchen-bench-timer-place.html</loc><lastmod>2026-08-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/heating-on-fermentation-home.html</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/window-vs-inner-table.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/fridge-side-no-proof.html</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/wet-hands-scale-cloth.html</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/home-oven-shelf-height.html</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/cooling-rack-overnight.html</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/flour-tin-monsoon.html</loc><lastmod>2026-08-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/family-kitchen-tape-zone.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/night-bake-lamp.html</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/baker-cert-written-exam-desk.html</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bcstarts.org/posts/baker-cert-written-exam-desk.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/posts/baker-cert-wrist-pause-at-bench.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/exam-item-oven-door-peek.html</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/exam-item-second-proof-wait.html</loc><lastmod>2026-09-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/outlet-timer-cord.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/microwave-away-from-dough.html</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/bread-rd-pan-liner-vs-bare.html</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcstarts.org/posts/bread-rd-slice-warm-vs-morning.html</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bcstarts.org/posts/exam-item-oven-door-peek.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bcstarts.org/posts/exam-item-second-proof-wait.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bcstarts.org/posts/bread-rd-pan-liner-vs-bare.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bcstarts.org/posts/bread-rd-slice-warm-vs-morning.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bcstarts.org/posts/home-baking-space-setup.html</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/columns/no-full-home-bake-day-after-class.html</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/columns/no-new-practice-night-before-exam.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bcstarts.org/columns/rest-day-when-wrists-hurt.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

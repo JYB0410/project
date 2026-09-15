@@ -16,6 +16,7 @@ const plain = (h) => (h || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").tri
 // 1 char counts
 const thin = [];
 for (const p of posts) {
+  if (p.status === "redirect" || p.status === "draft") continue;
   const n = postCharCount(p);
   const min = p.category === "home-kitchen-notes" ? 280 : 1100;
   if (n < min) thin.push(`${p.slug}:${n}`);
