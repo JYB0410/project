@@ -866,7 +866,7 @@ window.POSTS_DATA = [
       "baker-cert-to-bread-rd"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v1.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v1.jpg",
     "coverCaption": "밤식빵 R&D 1차 — 추억과 첫 실험 사이의 간격",
     "articleChrome": "diary"
   },
@@ -972,7 +972,7 @@ window.POSTS_DATA = [
         "a": "2~5차 실험은 2025년 7~8월, 블로그 발행은 2026년 6월입니다. 각 일지 본문에 실험 날짜를 적어 두었습니다."
       }
     ],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-series-guide.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-series-guide.jpg",
     "coverCaption": "빵 R&D 일지 읽는 법 — 실전 정리 먼저"
   },
   {
@@ -1052,7 +1052,7 @@ window.POSTS_DATA = [
       "why-baker-certification"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v2.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v2.jpg",
     "coverCaption": "밤식빵 R&D 2차 — 토핑 시점을 앞당긴 날",
     "articleChrome": "diary"
   },
@@ -1133,7 +1133,7 @@ window.POSTS_DATA = [
       "baker-cert-to-bread-rd"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v3.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v3.jpg",
     "coverCaption": "밤식빵 R&D 3차 — 반죽 수분을 소폭 올린 날",
     "articleChrome": "diary"
   },
@@ -1214,7 +1214,7 @@ window.POSTS_DATA = [
       "why-baker-certification"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v4.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v4.jpg",
     "coverCaption": "밤식빵 R&D 4차 — 식힌 뒤 보관 방법 비교",
     "articleChrome": "diary"
   },
@@ -1295,7 +1295,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-v2"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v5.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v5.jpg",
     "coverCaption": "밤식빵 R&D 5차 — 시럽 졸임만 2분 늘린 날",
     "articleChrome": "diary"
   },
@@ -1377,7 +1377,7 @@ window.POSTS_DATA = [
       "why-baker-certification"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-mid-review.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-mid-review.jpg",
     "coverCaption": "밤식빵 프로젝트 중간 정리 — 1~5차에서 본 것",
     "articleChrome": "diary"
   },
@@ -1458,7 +1458,7 @@ window.POSTS_DATA = [
       "bread-rd-series-guide"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v6.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v6.jpg",
     "coverCaption": "밤식빵 R&D 6차 — 시럽 설탕만 소폭 줄인 날",
     "articleChrome": "diary"
   },
@@ -1539,7 +1539,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-mid-review"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v7.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v7.jpg",
     "coverCaption": "밤식빵 R&D 7차 — 통조림 대신 신선 밤을 쓴 날",
     "articleChrome": "diary"
   },
@@ -1619,7 +1619,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-v7"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v8.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v8.jpg",
     "coverCaption": "밤식빵 R&D 8차 — 굽기 직후 시럽을 얇게 바른 날",
     "articleChrome": "diary"
   },
@@ -1924,7 +1924,7 @@ window.POSTS_DATA = [
       "bread-rd-series-guide"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v9.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v9.jpg",
     "coverCaption": "밤식빵 R&D 9차 — 겨울 실내에서 8차 고정값을 다시 굽다",
     "articleChrome": "diary"
   },
@@ -2005,7 +2005,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-v4"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v10.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v10.jpg",
     "coverCaption": "밤식빵 R&D 10차 — 겨울 보관, 식힌 뒤 개방 시간을 줄인 날",
     "articleChrome": "diary"
   },
@@ -2086,7 +2086,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-practical-guide"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v11.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v11.jpg",
     "coverCaption": "밤식빵 R&D 11차 — 습도 40% 넘는 날, 58분을 다시 굽다",
     "articleChrome": "diary"
   },
@@ -2167,7 +2167,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-practical-guide"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v12.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v12.jpg",
     "coverCaption": "밤식빵 R&D 12차 — 습도 42%에서 발효 56분으로 맞춘 날",
     "articleChrome": "diary"
   },
@@ -2248,7 +2248,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-practical-guide"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v13.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v13.jpg",
     "coverCaption": "밤식빵 R&D 13차 — 습도 42%에서 발효 55분을 찍어 본 날",
     "articleChrome": "diary"
   },
@@ -2329,7 +2329,7 @@ window.POSTS_DATA = [
       "bread-rd-night-bread-v13"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v14.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v14.jpg",
     "coverCaption": "밤식빵 R&D 14차 — 신선 밤 크기를 골라 올린 날",
     "articleChrome": "diary"
   },
@@ -2410,7 +2410,7 @@ window.POSTS_DATA = [
       "bread-rd-series-guide"
     ],
     "faq": [],
-    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v15.svg",
+    "coverImage": "../assets/images/illustrations/rd-diaries/bread-rd-night-bread-v15.jpg",
     "coverCaption": "밤식빵 R&D 15차 — 큰 밤을 간격 넓혀 올린 날",
     "articleChrome": "diary"
   },
@@ -2514,7 +2514,7 @@ window.POSTS_DATA = [
         "a": "모의 주의 1차 목표는 끝 시각입니다. 맛은 평일 약한 공정 반복에서 보완하는 편이 원인 분리가 쉽습니다."
       }
     ],
-    "coverImage": "../assets/images/illustrations/baker/baker-cert-mock-three-weeks.svg",
+    "coverImage": "../assets/images/illustrations/baker/baker-cert-mock-three-weeks.jpg",
     "coverCaption": "실기 모의 3주 — 맛보다 제한 시간을 먼저 맞춘 기간"
   },
   {
@@ -2614,7 +2614,7 @@ window.POSTS_DATA = [
         "a": "동선·온도·무게 습관에는 도움이 됩니다. 오븐 색·시간은 학원·시험장과 다를 수 있어 메모로 구분하세요."
       }
     ],
-    "coverImage": "../assets/images/illustrations/exam-items/exam-item-white-bread-fail-points.svg",
+    "coverImage": "../assets/images/illustrations/exam-items/exam-item-white-bread-fail-points.jpg",
     "coverCaption": "식빵 실기 — 집에서 먼저 무너지는 세 지점"
   },
   {
@@ -2713,7 +2713,7 @@ window.POSTS_DATA = [
         "a": "가능하지만 초반에는 비추천입니다. 손 피로와 변수 혼선이 큽니다. 하루 한 품목의 한 층만 권합니다."
       }
     ],
-    "coverImage": "../assets/images/illustrations/exam-items/exam-item-sweet-roll-approach.svg",
+    "coverImage": "../assets/images/illustrations/exam-items/exam-item-sweet-roll-approach.jpg",
     "coverCaption": "단과자빵 계열 — 성형·굽기만 먼저 보는 접근 순서"
   },
   {
@@ -2784,7 +2784,7 @@ window.POSTS_DATA = [
       "baker-cert-mock-three-weeks",
       "exam-item-sweet-roll-approach"
     ],
-    "coverImage": "../assets/images/illustrations/exam-items/exam-item-fermentation-poke-not-minutes.svg",
+    "coverImage": "../assets/images/illustrations/exam-items/exam-item-fermentation-poke-not-minutes.jpg",
     "coverCaption": "1차 발효 — 레시피 분을 버리고 눌림을 본 날"
   },
   {
@@ -2843,7 +2843,7 @@ window.POSTS_DATA = [
       "exam-item-fermentation-poke-not-minutes",
       "exam-item-sweet-roll-approach"
     ],
-    "coverImage": "../assets/images/illustrations/exam-items/exam-item-scale-after-shaping.svg",
+    "coverImage": "../assets/images/illustrations/exam-items/exam-item-scale-after-shaping.jpg",
     "coverCaption": "성형 직후 저울 — 무게를 빼고 굽던 날"
   },
   {
