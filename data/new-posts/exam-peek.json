@@ -10,7 +10,7 @@
   "status": "published",
   "excerpt": "단과자 굽기 중 색을 보겠다고 문을 자주 열었습니다. 온도가 떨어지고 색이 더 들쭉날쭉했습니다. 확인 시점을 한두 번으로 줄인 기록입니다.",
   "coverImage": "../assets/images/illustrations/exam-items/oven-door-peek.jpg",
-  "coverCaption": "편집 일러스트 (실사 아님)",
+  "coverCaption": "굽기 중 문을 자주 열던 버릇 — 색 확인이 온도를 깎았다",
   "relatedSlugs": [
     "exam-item-sweet-roll-approach",
     "baker-cert-practical-mistakes",
@@ -40,7 +40,7 @@
       "id": "d",
       "heading": "h2",
       "title": "지금 색이 들쭉날쭉하면",
-      "content": "<p>다이얼 전에, 지난번 문을 몇 번 열었는지 세어 보세요. 문의는 <a href=\"../contact/\">연락</a>으로 받습니다. 그림은 편집 일러스트입니다.</p>"
+      "content": "<p>다이얼 전에, 지난번 문을 몇 번 열었는지 세어 보세요. 문의는 <a href=\"../contact/\">연락</a>으로 받습니다. </p>"
     },
     {
       "id": "e",
