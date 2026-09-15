@@ -295,6 +295,50 @@ function renderColumnsIndexCards(allColumns) {
     .join("")}</div>`;
 }
 
+function renderAuthorColumnCards(allColumns) {
+  if (!allColumns.length) return '<p class="empty-msg">표시할 칼럼이 없습니다.</p>';
+  return `<div class="card-grid column-grid">${allColumns
+    .map((col) => renderColumnCardHtml(col, "../columns/"))
+    .join("")}</div>`;
+}
+
+function renderSitemapPageHtml() {
+  const pub = getPublishedPosts();
+  const cols = columns.filter((c) => c.status !== "draft");
+  const staticLinks = [
+    ["../", "홈"],
+    ["../about/", "사이트 소개"],
+    ["../author/", "운영자 소개"],
+    ["../contact/", "문의하기"],
+    ["../privacy/", "개인정보처리방침"],
+    ["../terms/", "이용약관"],
+    ["../disclaimer/", "면책고지"],
+    ["../youth-policy/", "청소년보호정책"],
+    ["../categories/", "가이드"],
+    ["../columns/", "운영자 칼럼"]
+  ];
+  const staticUl = staticLinks
+    .map(([href, label]) => `<li><a href="${href}">${escapeHtml(label)}</a></li>`)
+    .join("");
+  const catUl = categories
+    .map((c) => `<li><a href="../categories/${c.slug}/">${escapeHtml(c.name)}</a></li>`)
+    .join("");
+  const postUl = pub
+    .map((p) => `<li><a href="../posts/${p.slug}.html">${escapeHtml(p.title)}</a></li>`)
+    .join("");
+  const colUl = cols
+    .map((c) => `<li><a href="../columns/${c.slug}.html">${escapeHtml(c.title)}</a></li>`)
+    .join("");
+  return `<h2>주요 페이지</h2>
+      <ul>${staticUl}</ul>
+      <h2>카테고리</h2>
+      <ul>${catUl}</ul>
+      <h2>글 (${pub.length})</h2>
+      <ul>${postUl}</ul>
+      <h2>칼럼 (${cols.length})</h2>
+      <ul>${colUl}</ul>`;
+}
+
 function getPublishedPosts() {
   return posts.filter((p) => p.status !== "draft" && p.status !== "redirect");
 }
@@ -951,6 +995,56 @@ if (fs.existsSync(categoriesIndexPath)) {
     fs.writeFileSync(path.join(dir, "index.html"), hubHtml);
   }
   console.log("✓ 카테고리 정식 URL", categories.map((c) => c.slug).join(", "));
+}
+
+function replaceDivById(html, id, inner, className) {
+  const token = `id="${id}"`;
+  const tokenIdx = html.indexOf(token);
+  if (tokenIdx < 0) return html;
+  const openIdx = html.lastIndexOf("<div", tokenIdx);
+  const afterOpen = html.indexOf(">", tokenIdx) + 1;
+  let i = afterOpen;
+  let depth = 1;
+  while (i < html.length && depth > 0) {
+    const nextOpen = html.indexOf("<div", i);
+    const nextClose = html.indexOf("</div>", i);
+    if (nextClose < 0) break;
+    if (nextOpen >= 0 && nextOpen < nextClose) {
+      depth++;
+      i = nextOpen + 4;
+    } else {
+      depth--;
+      if (depth === 0) {
+        const cls = className ? ` class="${className}"` : "";
+        return `${html.slice(0, openIdx)}<div id="${id}"${cls}>${inner}</div>${html.slice(nextClose + 6)}`;
+      }
+      i = nextClose + 6;
+    }
+  }
+  return html;
+}
+
+const sitemapPagePath = path.join(ROOT, "sitemap", "index.html");
+if (fs.existsSync(sitemapPagePath)) {
+  let sitemapPage = fs.readFileSync(sitemapPagePath, "utf8");
+  sitemapPage = replaceDivById(sitemapPage, "sitemap-links", renderSitemapPageHtml(), "page-content");
+  fs.writeFileSync(sitemapPagePath, sitemapPage);
+  console.log("✓ HTML 사이트맵 목록 프리렌더");
+}
+
+const authorPagePath = path.join(ROOT, "author", "index.html");
+if (fs.existsSync(authorPagePath)) {
+  let authorHtml = fs.readFileSync(authorPagePath, "utf8");
+  const authorPosts = [...getPublishedPosts()]
+    .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+    .slice(0, 6);
+  const authorCols = [...columns]
+    .filter((c) => c.status !== "draft")
+    .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+  authorHtml = replaceDivById(authorHtml, "author-posts", renderPostCardsForCategories(authorPosts));
+  authorHtml = replaceDivById(authorHtml, "author-columns", renderAuthorColumnCards(authorCols));
+  fs.writeFileSync(authorPagePath, authorHtml);
+  console.log(`✓ 운영자 페이지 글·칼럼 프리렌더 (${authorPosts.length}·${authorCols.length})`);
 }
 
 function walkHtmlFiles(dir) {

@@ -11,7 +11,6 @@
       description: config.sitePurpose,
       canonical: `${config.siteUrl}/about/`
     });
-    document.getElementById("about-purpose").textContent = config.sitePurpose;
     document.getElementById("about-audience").textContent = config.targetAudience;
     document.getElementById("principles-list").innerHTML = config.editorialPrinciples
       .map((p) => `<li>${window.SiteUtils.escapeHtml(p)}</li>`)
@@ -31,7 +30,6 @@
     ]);
     document.getElementById("author-name").textContent = config.ownerName;
     document.getElementById("author-bio").textContent = config.ownerBio;
-    document.getElementById("author-purpose").textContent = config.sitePurpose;
     const expEl = document.getElementById("author-experience");
     if (expEl) expEl.textContent = config.ownerExperience || config.ownerBio;
     const expertiseEl = document.getElementById("author-expertise");
@@ -65,10 +63,6 @@
           "제빵기능사 합격 경험과 빵 연구 기록을 운영합니다. 편집 원칙과 최신 글도 함께 확인할 수 있습니다.";
       }
     });
-
-    document.getElementById("author-principles").innerHTML = config.editorialPrinciples
-      .map((p) => `<li>${window.SiteUtils.escapeHtml(p)}</li>`)
-      .join("");
 
     const cols = window.DataStore.getColumns().sort(
       (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
@@ -195,7 +189,7 @@
   if (page === "sitemap") {
     window.SiteSEO.setPageMeta({
       title: `사이트맵 | ${config.name}`,
-      description: "펫함께 가이드의 전체 페이지 목록입니다.",
+      description: `${config.name}의 전체 페이지 목록입니다.`,
       canonical: `${config.siteUrl}/sitemap/`
     });
     const posts = window.DataStore.getPosts();
