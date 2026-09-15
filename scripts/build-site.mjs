@@ -565,7 +565,7 @@ for (const post of posts) {
   <title>이동 중</title>
 </head>
 <body>
-  <p>이 글은 <a href="${post.redirectTo}.html">공간 가이드</a>로 합쳤습니다.</p>
+  <p>이 글은 <a href="${post.redirectTo}.html">관련 글</a>로 합쳤습니다.</p>
 </body>
 </html>
 `;
