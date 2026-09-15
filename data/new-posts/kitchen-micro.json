@@ -1,0 +1,40 @@
+{
+  "slug": "microwave-away-from-dough",
+  "title": "11편. 전자레인지 옆을 발효 자리에서 뺀 이유",
+  "subtitle": "돌릴 때마다 그릇이 따뜻해지던 코너",
+  "category": "home-kitchen-notes",
+  "author": "정지석",
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-24",
+  "featured": false,
+  "status": "published",
+  "excerpt": "전자레인지 옆에 둔 반죽은, 가족이 음식을 데울 때마다 한쪽만 따뜻해졌습니다. 냉장고 옆 금지에 이어 기계 옆을 하나 더 지운 기록입니다.",
+  "coverImage": "../assets/images/illustrations/home-kitchen/microwave-away-from-dough.jpg",
+  "coverCaption": "편집 일러스트 (실사 아님)",
+  "relatedSlugs": [
+    "fridge-side-no-proof",
+    "heating-on-fermentation-home",
+    "window-vs-inner-table"
+  ],
+  "summary": "전자레인지 옆에서 반죽 한쪽만 따뜻해진 날을 계기로, 그 자리를 발효에서 뺀 기록입니다.",
+  "sections": [
+    {
+      "id": "a",
+      "heading": "h2",
+      "title": "한쪽만 따뜻한 그릇",
+      "content": "<p>공간이 없어 전자레인지 옆에 그릇을 두었습니다. 가족이 국을 데울 때마다 가까운 면만 따뜻해졌습니다. 눌림이 면마다 달랐습니다. 4편의 냉장고 옆과 방향은 반대인데, 기계 옆이라는 점은 같습니다.</p>"
+    },
+    {
+      "id": "b",
+      "heading": "h2",
+      "title": "자리를 옮긴 뒤",
+      "content": "<p>안쪽 선반으로 옮겼습니다. 3편 창가·안쪽 좌표와 이어집니다. 전자레인지를 쓰는 저녁 시간대에는 그 옆을 비우기로 했습니다.</p>"
+    },
+    {
+      "id": "c",
+      "heading": "h2",
+      "title": "정리하며",
+      "content": "<p>집 주방 노트 11편입니다. 전자레인지 옆을 발효 자리에서 뺀 기록입니다. 그림은 편집 일러스트입니다. 문의는 연락 페이지로 받습니다.</p><p>국을 데우는 저녁 시간대는 특히 면 차이가 났습니다. 그 시간대에는 옆을 비웠습니다.</p><p>전자레인지 문이 열리는 방향과 그릇이 겹치면 손이 그릇을 칩니다.</p><p>냉장고 옆 금지와 동시에 두 자리를 옮기지 않았습니다. 한 주에 기계 하나였습니다.</p>"
+    }
+  ]
+}

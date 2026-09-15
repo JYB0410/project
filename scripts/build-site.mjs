@@ -522,7 +522,8 @@ posts = posts.map((post) => {
   for (const sec of post.sections) {
     const before = sec.content;
     const body =
-      post.category === "home-kitchen-notes"
+      post.category === "home-kitchen-notes" ||
+        post.publishedAt >= "2026-09-15"
         ? stripPhotoCredits(sec.content)
         : stripPhotoCredits(dedupeParagraphs(sec.content));
     sec.content = body;

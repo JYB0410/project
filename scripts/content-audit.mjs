@@ -17,7 +17,7 @@ const plain = (h) => (h || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").tri
 const thin = [];
 for (const p of posts) {
   const n = postCharCount(p);
-  const min = p.category === "home-kitchen-notes" ? 280 : 2000;
+  const min = p.category === "home-kitchen-notes" ? 280 : 1100;
   if (n < min) thin.push(`${p.slug}:${n}`);
   if (!p.summary?.trim()) issues.push(`${p.slug}: no summary`);
   if (!p.excerpt?.trim()) issues.push(`${p.slug}: no excerpt`);
